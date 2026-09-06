@@ -1,0 +1,20 @@
+[/Script/OnlineSubsystemRedpointEOS.EOSNetDriver]
+!ChannelDefinitions=ClearArray
++ChannelDefinitions=(ChannelName=Control, ClassName=/Script/OnlineSubsystemRedpointEOS.EOSControlChannel, StaticChannelIndex=0, bTickOnCreate=true, bServerOpen=false, bClientOpen=true, bInitialServer=false, bInitialClient=true)
++ChannelDefinitions=(ChannelName=Voice, ClassName=/Script/Engine.VoiceChannel, StaticChannelIndex=1, bTickOnCreate=true, bServerOpen=true, bClientOpen=true, bInitialServer=true, bInitialClient=true)
++ChannelDefinitions=(ChannelName=Actor, ClassName=/Script/Engine.ActorChannel, StaticChannelIndex=-1, bTickOnCreate=false, bServerOpen=true, bClientOpen=false, bInitialServer=false, bInitialClient=false)
+NetConnectionClassName="/Script/OnlineSubsystemRedpointEOS.EOSNetConnection"
+ConnectionTimeout=120.0
+InitialConnectTimeout=120.0
+NetServerMaxTickRate=30
+MaxNetTickRate=30
+KeepAliveTime=0.2
+MaxClientRate=11000
+MaxInternetClientRate=10000
+RelevantTimeout=5.0
+SpawnPrioritySeconds=1.0
+ServerTravelPause=4.0
+TimeoutMultiplierForUnoptimizedBuilds=2
+RecentlyDisconnectedTrackingTime=120
+MaxPortCountToTry=512
+ReplicationDriverClassName=

@@ -1,0 +1,268 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_WhiteBodyV1_LowerLegs_PhysicsAsset",
+    "Flags": "RF_Public | RF_Standalone | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Package": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_WhiteBodyV1_LowerLegs_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_WhiteBodyV1_LowerLegs_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_WhiteBodyV1_LowerLegs_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_WhiteBodyV1_LowerLegs_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_WhiteBodyV1_LowerLegs_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.2"
+        }
+      ],
+      "SolverSettings": {
+        "CullDistance": 1.0,
+        "bUseLinearJointSolver": false,
+        "bUseManifolds": false
+      },
+      "ThumbnailInfo": null
+    },
+    "CollisionDisableTable": [
+      {
+        "Key": {
+          "Indices": [
+            0,
+            1
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            0,
+            2
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            1,
+            2
+          ]
+        },
+        "Value": false
+      }
+    ]
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_WhiteBodyV1_LowerLegs_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "calf_l",
+        "ConstraintBone1": "calf_l",
+        "ConstraintBone2": "pelvis",
+        "Pos2": {
+          "X": -43.66995,
+          "Y": 3.7562685,
+          "Z": -14.217838
+        },
+        "PriAxis2": {
+          "X": 0.9957657,
+          "Y": 0.05825818,
+          "Z": 0.07111059
+        },
+        "SecAxis2": {
+          "X": -0.053765927,
+          "Y": 0.9965305,
+          "Z": -0.06353186
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_WhiteBodyV1_LowerLegs_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "calf_r",
+        "ConstraintBone1": "calf_r",
+        "ConstraintBone2": "pelvis",
+        "Pos2": {
+          "X": -43.66998,
+          "Y": 3.756291,
+          "Z": 14.217861
+        },
+        "PriAxis2": {
+          "X": -0.9957657,
+          "Y": -0.0582577,
+          "Z": 0.071110606
+        },
+        "SecAxis2": {
+          "X": 0.053765476,
+          "Y": -0.99653053,
+          "Z": -0.06353139
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_WhiteBodyV1_LowerLegs_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -40.744213,
+              "Y": 4.0834923,
+              "Z": -0.017064562
+            },
+            "Rotation": {
+              "Pitch": 0.0059149433,
+              "Yaw": -89.99999,
+              "Roll": 0.0046111536
+            },
+            "Radius": 8.019084,
+            "Length": 19.357918,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "pelvis",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "E832DCCB4D677FA4049FF8BB3E97A6A6"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_WhiteBodyV1_LowerLegs_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -22.468826,
+              "Y": -0.7654228,
+              "Z": -0.839941
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": 86.922356,
+              "Roll": -88.15345
+            },
+            "Radius": 7.7939444,
+            "Length": 19.724209,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "calf_l",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "184892C9470718801C2DB8816540691D"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_WhiteBodyV1_LowerLegs_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/SK_WhiteBodyV1_LowerLegs_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 22.466015,
+              "Y": 0.767766,
+              "Z": 0.80104256
+            },
+            "Rotation": {
+              "Pitch": 6.830189E-06,
+              "Yaw": 86.922585,
+              "Roll": -88.218544
+            },
+            "Radius": 7.793923,
+            "Length": 19.72517,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "calf_r",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "45C655F44F1EA55214D37CAEDDC3FC02"
+  }
+]

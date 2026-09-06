@@ -1,0 +1,1605 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "UDS_Weather_Settings_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings",
+    "SuperStruct": {
+      "ObjectName": "Class'PrimaryDataAsset'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Are Material Values Identical'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.1"
+      },
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Are Weather Values Identical'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.2"
+      },
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Weather State Object to Structure'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.10"
+      },
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Copy Weather State Structure to Object'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.4"
+      },
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Populate Weather State'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.9"
+      },
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Lerp Between Weather States'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.7"
+      },
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Lerp State Source Maps'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.8"
+      },
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Copy Weather State'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.3"
+      },
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Get State Sources'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.6"
+      },
+      {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Custom Weather Behavior'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Cloud Coverage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Rain",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Snow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Thunder/Lightning",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Wind Intensity",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Fog",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Dust",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Material Wetness",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Material Snow Coverage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Material Dust Coverage",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Sky Modifier",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Modifier_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier.0"
+        }
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "Icon Texture",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | AdvancedDisplay",
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "User Friendly Name",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | AdvancedDisplay"
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "State Sources",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "State Sources",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "DoubleProperty",
+          "Name": "State Sources_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "Symbol Texture",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | AdvancedDisplay",
+        "PropertyClass": {
+          "ObjectName": "Class'Texture2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Changing",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Temperature",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Wind Direction",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Is Local Weather",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "Custom Weather Behavior": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Custom Weather Behavior'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.5"
+      },
+      "Get State Sources": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Get State Sources'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.6"
+      },
+      "Copy Weather State": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Copy Weather State'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.3"
+      },
+      "Lerp State Source Maps": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Lerp State Source Maps'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.8"
+      },
+      "Lerp Between Weather States": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Lerp Between Weather States'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.7"
+      },
+      "Populate Weather State": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Populate Weather State'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.9"
+      },
+      "Copy Weather State Structure to Object": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Copy Weather State Structure to Object'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.4"
+      },
+      "Weather State Object to Structure": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Weather State Object to Structure'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.10"
+      },
+      "Are Weather Values Identical": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Are Weather Values Identical'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.2"
+      },
+      "Are Material Values Identical": {
+        "ObjectName": "Function'UDS_Weather_Settings_C:Are Material Values Identical'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.1"
+      }
+    },
+    "ClassFlags": "CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UDS_Weather_Settings_C'Default__UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.11"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Are Material Values Identical",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "State Object to Compare",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Yes",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "Are Weather Values Identical",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "State Object to Compare",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Yes",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "Copy Weather State",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Source",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Set Material Effects",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Copy Sources",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "CallFunc_Get_State_Sources_Sources",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_Get_State_Sources_Sources",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "DoubleProperty",
+          "Name": "CallFunc_Get_State_Sources_Sources_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Copy Weather State Structure to Object",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Struct",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'UDW_WeatherState_Structure'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WeatherState_Structure.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Custom Weather Behavior",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UDS",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UDW",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsUDS_Modifier_Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Modifier_Interface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Get State Sources",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "MapProperty",
+        "Name": "Sources",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "Parm | OutParm",
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "Sources",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "DoubleProperty",
+          "Name": "Sources_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_IsEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "K2Node_MakeMap_Map",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeMap_Map",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "DoubleProperty",
+          "Name": "K2Node_MakeMap_Map_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Lerp Between Weather States",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "A",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "B",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Material Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Set Material Effects",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Use Bias for Material Effects",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Lerp Sources",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Material State Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Biased Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMin_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Ease_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Ease_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_8",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_9",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_10",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Lerp State Source Maps",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "A",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "B",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "State Sources B",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "State Sources B",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "DoubleProperty",
+          "Name": "State Sources B_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "State Sources A",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "State Sources A",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "DoubleProperty",
+          "Name": "State Sources A_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Keys Buffer",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Keys Buffer",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "CallFunc_Get_State_Sources_Sources",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_Get_State_Sources_Sources",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "DoubleProperty",
+          "Name": "CallFunc_Get_State_Sources_Sources_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "CallFunc_Get_State_Sources_Sources_1",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_Get_State_Sources_Sources_1",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "DoubleProperty",
+          "Name": "CallFunc_Get_State_Sources_Sources_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Map_Keys_Keys",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_Map_Keys_Keys",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Map_Keys_Keys_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_Map_Keys_Keys_1",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_AddUnique_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Map_Find_Value_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Populate Weather State",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Cloud Coverage",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Rain",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Snow",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Thunder/Lightning",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Wind Intensity",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Fog",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Dust",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Material Wetness",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Material Snow",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Material Dust",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Weather State Object to Structure",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Structure",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'UDW_WeatherState_Structure'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WeatherState_Structure.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_UDW_WeatherState_Structure",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'UDW_WeatherState_Structure'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WeatherState_Structure.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "UDS_Weather_Settings_C",
+    "Name": "Default__UDS_Weather_Settings_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings",
+    "Properties": {
+      "Icon Texture": {
+        "AssetPathName": "/Game/UltraDynamicSky/Textures/Icons/Weather/Weather_Icon_BG.Weather_Icon_BG",
+        "SubPathString": ""
+      },
+      "User Friendly Name": {
+        "Namespace": "",
+        "Key": "AA3CADF74F883E82CB495798FBE0938B",
+        "SourceString": "None",
+        "LocalizedString": "None"
+      },
+      "Symbol Texture": {
+        "AssetPathName": "/Game/UltraDynamicSky/Textures/Icons/Weather/Symbols/Unknown.Unknown",
+        "SubPathString": ""
+      }
+    }
+  }
+]

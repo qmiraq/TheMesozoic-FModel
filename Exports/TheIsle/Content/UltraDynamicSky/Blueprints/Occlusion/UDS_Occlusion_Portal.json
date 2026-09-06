@@ -1,0 +1,250 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "UDS_Occlusion_Portal_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'UDS_Occlusion_Portal_C:ExecuteUbergraph_UDS_Occlusion_Portal'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'StaticMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'UDS_Occlusion_Portal_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.2"
+      },
+      {
+        "ObjectName": "Function'UDS_Occlusion_Portal_C:ExecuteUbergraph_UDS_Occlusion_Portal'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Sample Range",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Distance Falloff Exponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Directional Occlusion",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Global Occlusion",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_UDS_Occlusion_Portal": {
+        "ObjectName": "Function'UDS_Occlusion_Portal_C:ExecuteUbergraph_UDS_Occlusion_Portal'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.1"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'UDS_Occlusion_Portal_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UDS_Occlusion_Portal_C'Default__UDS_Occlusion_Portal_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "BlueprintDisplayName": "UDS Occlusion Portal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_UDS_Occlusion_Portal",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Portal_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_DoubleToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Portal_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'ActorComponent:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "UDS_Occlusion_Portal_C",
+    "Name": "Default__UDS_Occlusion_Portal_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.UDS_Occlusion_Portal_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Sample Range": 2000.0,
+      "Distance Falloff Exponent": 2.0,
+      "Directional Occlusion": 0.55,
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Portal_Arrow'",
+        "ObjectPath": "/Game/UltraDynamicSky/Meshes/Portal_Arrow.2"
+      },
+      "bUseDefaultCollision": true,
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material'BasicShapeMaterial'",
+          "ObjectPath": "/Engine/BasicShapes/BasicShapeMaterial.0"
+        }
+      ],
+      "bEnableAutoLODGeneration": false,
+      "bGenerateOverlapEvents": false,
+      "bVisibleInReflectionCaptures": false,
+      "bVisibleInRealTimeSkyCaptures": false,
+      "bVisibleInRayTracing": false,
+      "bRenderInDepthPass": false,
+      "bReceivesDecals": false,
+      "bUseAsOccluder": false,
+      "CastShadow": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_PhysicsBody",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseToChannels": {
+            "WorldStatic": "ECR_Ignore",
+            "WorldDynamic": "ECR_Ignore",
+            "Pawn": "ECR_Ignore",
+            "Visibility": "ECR_Ignore",
+            "Camera": "ECR_Ignore",
+            "PhysicsBody": "ECR_Ignore",
+            "Vehicle": "ECR_Ignore",
+            "Destructible": "ECR_Ignore",
+            "GameTraceChannel12": "ECR_Ignore",
+            "GameTraceChannel13": "ECR_Ignore",
+            "GameTraceChannel14": "ECR_Ignore",
+            "GameTraceChannel15": "ECR_Ignore",
+            "GameTraceChannel16": "ECR_Ignore"
+          },
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "bComponentToWorldUpdated": true,
+      "bHiddenInGame": true,
+      "bBoundsChangeTriggersStreamingDataRebuild": false,
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      },
+      "bAutoActivate": true,
+      "bCanEverAffectNavigation": false
+    }
+  }
+]

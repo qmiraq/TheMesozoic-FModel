@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "SoundClass",
+    "Name": "Dialogue",
+    "Flags": "RF_Public | RF_Standalone | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundClass'",
+    "Package": "/Game/TheIsle/Sound/Classes/Dialogue",
+    "Properties": {
+      "Properties": {
+        "Volume": 0.75,
+        "LFEBleed": 0.1,
+        "bApplyEffects": true,
+        "bApplyAmbientVolumes": true,
+        "Default2DReverbSendAmount": 0.8
+      },
+      "ChildClasses": [
+        {
+          "ObjectName": "SoundClass'VOIP'",
+          "ObjectPath": "/Game/TheIsle/Sound/Classes/VOIP.0"
+        }
+      ],
+      "PassiveSoundMixModifiers": [
+        {
+          "SoundMix": {
+            "ObjectName": "SoundMix'Mix_DialogueDucking'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Mixes/Mix_DialogueDucking.0"
+          },
+          "MinVolumeThreshold": 0.01,
+          "MaxVolumeThreshold": 10.0
+        }
+      ],
+      "ParentClass": {
+        "ObjectName": "SoundClass'MASTER'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/MASTER.0"
+      }
+    }
+  }
+]

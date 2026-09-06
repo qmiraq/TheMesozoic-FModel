@@ -1,0 +1,268 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "PHYS_WorkBoot",
+    "Flags": "RF_Public | RF_Standalone | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Package": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'PHYS_WorkBoot:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'PHYS_WorkBoot:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'PHYS_WorkBoot:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'PHYS_WorkBoot:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'PHYS_WorkBoot:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.2"
+        }
+      ],
+      "SolverSettings": {
+        "CullDistance": 1.0,
+        "bUseLinearJointSolver": false,
+        "bUseManifolds": false
+      },
+      "ThumbnailInfo": null
+    },
+    "CollisionDisableTable": [
+      {
+        "Key": {
+          "Indices": [
+            0,
+            1
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            0,
+            2
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            1,
+            2
+          ]
+        },
+        "Value": false
+      }
+    ]
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_WorkBoot'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "foot_l",
+        "ConstraintBone1": "foot_l",
+        "ConstraintBone2": "pelvis",
+        "Pos2": {
+          "X": -89.62433,
+          "Y": 2.2221756,
+          "Z": -18.287853
+        },
+        "PriAxis2": {
+          "X": 0.9998481,
+          "Y": 0.009160175,
+          "Z": 0.014826043
+        },
+        "SecAxis2": {
+          "X": -0.008474064,
+          "Y": 0.9989194,
+          "Z": -0.04569657
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_WorkBoot'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "foot_r",
+        "ConstraintBone1": "foot_r",
+        "ConstraintBone2": "pelvis",
+        "Pos2": {
+          "X": -89.62449,
+          "Y": 2.222208,
+          "Z": 18.287998
+        },
+        "PriAxis2": {
+          "X": -0.99984837,
+          "Y": -0.009159659,
+          "Z": 0.014826104
+        },
+        "SecAxis2": {
+          "X": 0.008473598,
+          "Y": -0.99891984,
+          "Z": -0.04569316
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_WorkBoot'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -82.98742,
+              "Y": 3.4380798,
+              "Z": 0.0003464818
+            },
+            "Rotation": {
+              "Pitch": 0.04881536,
+              "Yaw": -89.99999,
+              "Roll": -0.028193388
+            },
+            "Radius": 9.066437,
+            "Length": 23.132042,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "pelvis",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "5D31DC2A4F243A2F84F447BF57A9327C"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_WorkBoot'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -2.0667408,
+              "Y": 9.137856,
+              "Z": -0.915123
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 175.47792,
+              "Roll": -86.78083
+            },
+            "Radius": 6.1982512,
+            "Length": 16.33763,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "foot_l",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "7C0954C3410C84C0E1149EA572655B17"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_WorkBoot'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Accessories/WorkingBoot/Meshes/PHYS_WorkBoot.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 2.0670924,
+              "Y": -9.136593,
+              "Z": 0.90887547
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 175.46898,
+              "Roll": -86.84908
+            },
+            "Radius": 6.1983953,
+            "Length": 16.337563,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "foot_r",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "1EA9BB32481F07D468339BAF7EE22FAB"
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SM_Longear_PhysicsAsset",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Package": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SM_Longear_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SM_Longear_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SM_Longear_PhysicsAsset:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SM_Longear_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SM_Longear_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.2"
+        }
+      ],
+      "SolverSettings": {
+        "CullDistance": 1.0,
+        "bUseLinearJointSolver": false,
+        "bUseManifolds": false
+      },
+      "ThumbnailInfo": null
+    },
+    "CollisionDisableTable": [
+      {
+        "Key": {
+          "Indices": [
+            0,
+            1
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            0,
+            2
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            1,
+            2
+          ]
+        },
+        "Value": false
+      }
+    ]
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Longear_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "FishBone02",
+        "ConstraintBone1": "FishBone02",
+        "ConstraintBone2": "FishBone01",
+        "Pos2": {
+          "X": 7.113056,
+          "Y": 3.1191357E-06,
+          "Z": -5.0624614E-13
+        },
+        "PriAxis2": {
+          "X": 1.0,
+          "Y": 1.3690442E-07,
+          "Z": 1.970645E-15
+        },
+        "SecAxis2": {
+          "X": -1.3690442E-07,
+          "Y": 1.0,
+          "Z": -7.549602E-08
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Longear_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "FishBone03",
+        "ConstraintBone1": "FishBone03",
+        "ConstraintBone2": "FishBone01",
+        "Pos2": {
+          "X": -1.19209275E-07,
+          "Y": 2.3841858E-07,
+          "Z": -1.799945E-21
+        },
+        "PriAxis2": {
+          "X": -1.0,
+          "Y": 2.3841858E-07,
+          "Z": -3.2584137E-07
+        },
+        "SecAxis2": {
+          "X": -2.3841855E-07,
+          "Y": -1.0,
+          "Z": -8.742278E-08
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Longear_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 4.273919,
+              "Y": 0.2156427,
+              "Z": 0.020605028
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -174.11421,
+              "Roll": -89.15479
+            },
+            "Radius": 2.5634255,
+            "Length": 7.148449,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 10.0
+      },
+      "BoneName": "FishBone01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "2F904DD541A9E293250CA58776484F67"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Longear_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 4.0887933,
+              "Y": 1.7514853,
+              "Z": -7.1525574E-07
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -125.35287,
+              "Roll": -90.0
+            },
+            "Radius": 2.2363153,
+            "Length": 5.279415,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 10.0
+      },
+      "BoneName": "FishBone02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "6E3949CC40EB17E296FF80AF48EE210E"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Longear_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Longear_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 1.6521016,
+              "Y": 0.68773484,
+              "Z": -0.00015668571
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 33.322876,
+              "Roll": -89.98833
+            },
+            "Radius": 3.2128203,
+            "Length": 4.061627,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 10.0
+      },
+      "BoneName": "FishBone03",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "4029BE98432EF482A1D3C496D1E68AB4"
+  }
+]

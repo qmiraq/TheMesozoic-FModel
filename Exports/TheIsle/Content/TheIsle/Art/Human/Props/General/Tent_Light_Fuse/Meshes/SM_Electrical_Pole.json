@@ -1,0 +1,215 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Electrical_Pole'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Tent_Light_Fuse/Meshes/SM_Electrical_Pole.2"
+    },
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -2.499998,
+              "Y": 1.0,
+              "Z": 75.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 180.0,
+              "Roll": 0.0
+            },
+            "X": 25.0,
+            "Y": 32.000008,
+            "Z": 149.99998,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "0403694C452531C4B128E88925E059FF",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 12646,
+        "SizeOnDisk": 12646,
+        "OffsetInFile": "0x589"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Electrical_Pole'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Tent_Light_Fuse/Meshes/SM_Electrical_Pole.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 410,
+        "SizeOnDisk": 410,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Electrical_Pole",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/Art/Human/Props/General/Tent_Light_Fuse/Meshes/SM_Electrical_Pole",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_TLFuse'",
+            "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Tent_Light_Fuse/Materials/MI_TLFuse.0"
+          },
+          "MaterialSlotName": "TentBox_Fuse_Light",
+          "ImportedMaterialSlotName": "TentBox_Fuse_Light",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 378.71567,
+            "LocalUVDensities[1]": 143.28488,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 143.28488,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.9000063,
+          "Z": 76.57246
+        },
+        "BoxExtent": {
+          "X": 15.000002,
+          "Y": 15.90001,
+          "Z": 76.58674
+        },
+        "SphereRadius": 79.25257873535156
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Electrical_Pole:BodySetup_0'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Tent_Light_Fuse/Meshes/SM_Electrical_Pole.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Electrical_Pole:NavCollision_0'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Tent_Light_Fuse/Meshes/SM_Electrical_Pole.1"
+    },
+    "LightingGuid": "472F56B7-490C706F-2B104DAF-2E249814",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 236,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 278,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 0.07315302,
+          "Y": 0.94148636,
+          "Z": 76.57246
+        },
+        "BoxExtent": {
+          "X": 15.073154,
+          "Y": 15.94149,
+          "Z": 76.58674
+        },
+        "SphereRadius": 85.59728
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

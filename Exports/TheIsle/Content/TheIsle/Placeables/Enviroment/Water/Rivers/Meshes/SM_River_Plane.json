@@ -1,0 +1,233 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_River_Plane'",
+      "ObjectPath": "/Game/TheIsle/Placeables/Enviroment/Water/Rivers/Meshes/SM_River_Plane.2"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "CollisionTraceFlag": "CTF_UseComplexAsSimple"
+    },
+    "BodySetupGuid": "7FB47F67411917748B9609A04BA33D20",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 11902,
+        "SizeOnDisk": 11902,
+        "OffsetInFile": "0x3C7"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_River_Plane'",
+      "ObjectPath": "/Game/TheIsle/Placeables/Enviroment/Water/Rivers/Meshes/SM_River_Plane.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21574,
+        "SizeOnDisk": 21574,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_River_Plane",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/Placeables/Enviroment/Water/Rivers/Meshes/SM_River_Plane",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Water_River_Dirty_TEST'",
+            "ObjectPath": "/Game/AquaticSurface/Materials/MI_Water_River_Dirty_TEST.0"
+          },
+          "MaterialSlotName": "phong2",
+          "ImportedMaterialSlotName": "phong2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1249.9982,
+            "LocalUVDensities[1]": 2622.9817,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material'M_Water_River_LOD'",
+            "ObjectPath": "/Game/TheIsle/Placeables/Enviroment/Water/Rivers/Materials/M_Water_River_LOD.0"
+          },
+          "MaterialSlotName": "phong1",
+          "ImportedMaterialSlotName": "phong1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities[1]": 0.0,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Water_River_Dirty_Underside_TEST'",
+            "ObjectPath": "/Game/AquaticSurface/Materials/MI_Water_River_Dirty_Underside_TEST.0"
+          },
+          "MaterialSlotName": "MI_Water_River_Underwater",
+          "ImportedMaterialSlotName": "MI_Water_River_Underwater",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1249.9982,
+            "LocalUVDensities[1]": 2622.9575,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 2622.9695,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 625.0,
+          "Y": 625.0,
+          "Z": 3.8270212E-14
+        },
+        "SphereRadius": 883.8834838867188
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_River_Plane:BodySetup_0'",
+      "ObjectPath": "/Game/TheIsle/Placeables/Enviroment/Water/Rivers/Meshes/SM_River_Plane.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_River_Plane:NavCollision_0'",
+      "ObjectPath": "/Game/TheIsle/Placeables/Enviroment/Water/Rivers/Meshes/SM_River_Plane.1"
+    },
+    "LightingGuid": "7D448E9E-405B76BA-13D03C9E-CC4D3C76",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 2,
+              "FirstIndex": 0,
+              "NumTriangles": 128,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 80,
+              "bEnableCollision": true,
+              "bCastShadow": false,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 384,
+              "NumTriangles": 128,
+              "MinVertexIndex": 81,
+              "MaxVertexIndex": 161,
+              "bEnableCollision": true,
+              "bCastShadow": false,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 625.0,
+          "Y": 625.0,
+          "Z": 3.8270212E-14
+        },
+        "SphereRadius": 883.8835
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

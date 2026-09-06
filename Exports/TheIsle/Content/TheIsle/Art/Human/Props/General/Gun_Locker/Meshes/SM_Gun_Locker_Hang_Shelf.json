@@ -1,0 +1,214 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Gun_Locker_Hang_Shelf'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Gun_Locker/Meshes/SM_Gun_Locker_Hang_Shelf.2"
+    },
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 16.0,
+              "Y": 11.000002,
+              "Z": -0.5000023
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 90.0,
+              "Roll": 90.0
+            },
+            "X": 22.0,
+            "Y": 1.0000046,
+            "Z": 27.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "3DD5511847D49FFDEC8059A0B6310088",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 2706,
+        "SizeOnDisk": 2706,
+        "OffsetInFile": "0x589"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Gun_Locker_Hang_Shelf'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Gun_Locker/Meshes/SM_Gun_Locker_Hang_Shelf.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 410,
+        "SizeOnDisk": 410,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Gun_Locker_Hang_Shelf",
+    "Flags": "RF_Public | RF_Standalone | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/Art/Human/Props/General/Gun_Locker/Meshes/SM_Gun_Locker_Hang_Shelf",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Gun_Locker'",
+            "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Gun_Locker/Materials/MI_Gun_Locker.0"
+          },
+          "MaterialSlotName": "Gun_Locker",
+          "ImportedMaterialSlotName": "Gun_Locker",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 273.65274,
+            "LocalUVDensities[1]": 0.0,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 273.65274,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 16.0,
+          "Y": 11.000002,
+          "Z": -4.4999986
+        },
+        "BoxExtent": {
+          "X": 13.5,
+          "Y": 11.0,
+          "Z": 4.4999986
+        },
+        "SphereRadius": 17.986105339334998
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Gun_Locker_Hang_Shelf:BodySetup_0'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Gun_Locker/Meshes/SM_Gun_Locker_Hang_Shelf.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Gun_Locker_Hang_Shelf:NavCollision_1'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Gun_Locker/Meshes/SM_Gun_Locker_Hang_Shelf.1"
+    },
+    "LightingGuid": "1DC4F731-418E0D2B-96CD5ABE-EAE56954",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 50,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 83,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 16.0,
+          "Y": 11.000002,
+          "Z": -4.4999986
+        },
+        "BoxExtent": {
+          "X": 13.5,
+          "Y": 11.0,
+          "Z": 4.4999986
+        },
+        "SphereRadius": 22.686712
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

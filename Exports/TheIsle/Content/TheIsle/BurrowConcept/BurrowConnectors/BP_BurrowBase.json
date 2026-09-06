@@ -1,0 +1,4049 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BurrowBase_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase",
+    "Properties": {
+      "NumReplicatedProperties": 3,
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_BurrowBase_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_BurrowBase_C:ExecuteUbergraph_BP_BurrowBase'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_BurrowBase_C:OnRep_DestroyThird'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.11"
+      },
+      {
+        "ObjectName": "Function'BP_BurrowBase_C:OnRep_DestroySecond'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.10"
+      },
+      {
+        "ObjectName": "Function'BP_BurrowBase_C:OnRep_DestroyFirst'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.9"
+      },
+      {
+        "ObjectName": "Function'BP_BurrowBase_C:DigModule'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.6"
+      },
+      {
+        "ObjectName": "Function'BP_BurrowBase_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.12"
+      },
+      {
+        "ObjectName": "Function'BP_BurrowBase_C:ExitBurrow'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.8"
+      },
+      {
+        "ObjectName": "Function'BP_BurrowBase_C:ExecuteUbergraph_BP_BurrowBase'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlaneThird",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlaneSecond",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlaneFirst",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ExitPointBoxOverlap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Entrance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SecondPointBoxOverlap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ThirdPointBoxOverlap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FirstPointBoxOverlap",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "ClassToSpawn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "DestroyFirst",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepNotifyFunc": "OnRep_DestroyFirst",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "DestroySecond",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepNotifyFunc": "OnRep_DestroySecond",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "DestroyThird",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepNotifyFunc": "OnRep_DestroyThird",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MyEntranceRef",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | ExposeOnSpawn",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BurrowEntrance_C'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowEntrance.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerDino",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | ExposeOnSpawn",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Dryosaurus_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Dryosaurus/BP_Dryosaurus.1"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_BurrowBase": {
+        "ObjectName": "Function'BP_BurrowBase_C:ExecuteUbergraph_BP_BurrowBase'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.7"
+      },
+      "ExitBurrow": {
+        "ObjectName": "Function'BP_BurrowBase_C:ExitBurrow'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.8"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_BurrowBase_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.12"
+      },
+      "DigModule": {
+        "ObjectName": "Function'BP_BurrowBase_C:DigModule'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.6"
+      },
+      "OnRep_DestroyFirst": {
+        "ObjectName": "Function'BP_BurrowBase_C:OnRep_DestroyFirst'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.9"
+      },
+      "OnRep_DestroySecond": {
+        "ObjectName": "Function'BP_BurrowBase_C:OnRep_DestroySecond'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.10"
+      },
+      "OnRep_DestroyThird": {
+        "ObjectName": "Function'BP_BurrowBase_C:OnRep_DestroyThird'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.11"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BurrowBase_C'Default__BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ExitPointBoxOverlap_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 45.0,
+        "Y": 50.0,
+        "Z": 50.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel4",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -140.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "FirstPointBoxOverlap_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 50.0,
+        "Y": 75.0,
+        "Z": 75.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel4",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 335.0,
+        "Y": -45.0,
+        "Z": 25.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "SecondPointBoxOverlap_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 50.0,
+        "Y": 75.0,
+        "Z": 75.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel4",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 199.99956,
+        "Y": -160.0029,
+        "Z": 25.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.00083,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ThirdPointBoxOverlap_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 50.0,
+        "Y": 75.0,
+        "Z": 75.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel4",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 200.0,
+        "Y": 85.0,
+        "Z": 25.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BP_BurrowBase_C",
+    "Name": "Default__BP_BurrowBase_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.BP_BurrowBase_C'",
+    "Package": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase",
+    "Properties": {
+      "UberGraphFrame": {},
+      "bReplicates": true,
+      "NetDormancy": "DORM_DormantAll",
+      "NetUpdateFrequency": 1.0,
+      "MinNetUpdateFrequency": 1.0
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "DigModule",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_BurrowBase",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValidClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValidClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_CustomEvent_Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchInteger_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentRotation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentRotation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValidClass_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Interactor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Dryosaurus_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Dryosaurus/BP_Dryosaurus.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentRotation_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_TeleportTo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_LastIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_RandomIntegerInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_LastIndex_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_RandomIntegerInRange_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_LastIndex_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_RandomIntegerInRange_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_8",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExitBurrow",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Interactor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_Dryosaurus_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Dryosaurus/BP_Dryosaurus.1"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_DestroyFirst",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_DestroySecond",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_DestroyThird",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Entrance_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "RelativeLocation": {
+        "X": -90.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BurrowBase_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.14"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.20"
+        }
+      ],
+      "VariableGuid": "EEC596DA-4ED98301-4648D1AE-57588A70",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_BurrowBase_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.30"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.21"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.22"
+        }
+      ],
+      "VariableGuid": "738DD6C8-4ABA9447-699160A2-905A142A",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_19",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BurrowBase_C:Entrance_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.15"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SceneComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SceneComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Yaw",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "974F4935-49DC240B-21B8968F-DB34D172",
+      "InternalVariableName": "Entrance"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_BurrowBase_C:FirstPointBoxOverlap_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.2"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "BoxExtent",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "bUseSystemDefaultObstacleAreaClass",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "AreaClassOverride",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 6,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 7,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.23"
+        }
+      ],
+      "VariableGuid": "58E7FAA7-407A46D0-80AC4D94-0CE5D6A2",
+      "InternalVariableName": "FirstPointBoxOverlap"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_21",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_BurrowBase_C:ExitPointBoxOverlap_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.1"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "BoxExtent",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "bUseSystemDefaultObstacleAreaClass",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "AreaClassOverride",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 6,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 7,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "CCDEB9D9-462B85BC-A2293E9A-23EAC578",
+      "InternalVariableName": "ExitPointBoxOverlap"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_BurrowBase_C:ThirdPointBoxOverlap_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.4"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "BoxExtent",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "bUseSystemDefaultObstacleAreaClass",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "AreaClassOverride",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 6,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 7,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Yaw",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.25"
+        }
+      ],
+      "VariableGuid": "53E21BC6-41DBF6B9-2F8A4B96-F384AC35",
+      "InternalVariableName": "ThirdPointBoxOverlap"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'BP_BurrowBase_C:SecondPointBoxOverlap_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.3"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "BoxExtent",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "bUseSystemDefaultObstacleAreaClass",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "AreaClassOverride",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 6,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 7,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BoxComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Yaw",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.24"
+        }
+      ],
+      "VariableGuid": "ADE4FDBD-4493CA85-62D9048E-F4E1A4AD",
+      "InternalVariableName": "SecondPointBoxOverlap"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_BurrowBase_C:PlaneFirst_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.27"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "OverrideMaterials",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bGenerateOverlapEvents",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Pitch",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Yaw",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Roll",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeScale3D",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "9BB97DD2-413B555A-B181A49D-02D8D0E7",
+      "InternalVariableName": "PlaneFirst"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_BurrowBase_C:PlaneSecond_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.28"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "OverrideMaterials",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bGenerateOverlapEvents",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Pitch",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Yaw",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Roll",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeScale3D",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "1225A96E-411B44FC-A8C82F8F-C477CD74",
+      "InternalVariableName": "PlaneSecond"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_8",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BurrowBase_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.26"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_BurrowBase_C:PlaneThird_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.29"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "OverrideMaterials",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bGenerateOverlapEvents",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Pitch",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Yaw",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Roll",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeScale3D",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "1A99B87B-4BEE64C4-357B20AE-86882659",
+      "InternalVariableName": "PlaneThird"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.16"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.19"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.21"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.22"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_19'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_21'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.23"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.24"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_8'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.25"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BurrowBase_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.16"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PlaneFirst_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'PlaneMesh'",
+        "ObjectPath": "/Engine/VREditor/WorldMovementGrid/PlaneMesh.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material'BasicShapeMaterial'",
+          "ObjectPath": "/Engine/BasicShapes/BasicShapeMaterial.0"
+        }
+      ],
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 5.622479E-16,
+        "Roll": 5.622479E-16
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PlaneSecond_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'PlaneMesh'",
+        "ObjectPath": "/Engine/VREditor/WorldMovementGrid/PlaneMesh.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material'BasicShapeMaterial'",
+          "ObjectPath": "/Engine/BasicShapes/BasicShapeMaterial.0"
+        }
+      ],
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 5.0,
+        "Y": 8.881784E-16,
+        "Z": 2.220446E-15
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": -1.1789855E-10,
+        "Roll": -1.1788982E-10
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PlaneThird_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'PlaneMesh'",
+        "ObjectPath": "/Engine/VREditor/WorldMovementGrid/PlaneMesh.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material'BasicShapeMaterial'",
+          "ObjectPath": "/Engine/BasicShapes/BasicShapeMaterial.0"
+        }
+      ],
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -10.0,
+        "Y": 5.3290705E-15,
+        "Z": 3.330669E-15
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 5.836472E-07,
+        "Roll": 5.836472E-07
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BurrowBase_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/BP_BurrowBase.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_CaveMid'",
+        "ObjectPath": "/Game/TheIsle/Environment/BurrowProxies/Meshes/SM_CaveMid.2"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 105.0,
+        "Y": 50.0,
+        "Z": -25.0
+      }
+    }
+  }
+]

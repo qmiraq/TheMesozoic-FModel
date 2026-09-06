@@ -1,0 +1,2207 @@
+[
+  {
+    "Type": "AudioComponent",
+    "Name": "HornsScrape_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.2"
+    },
+    "Properties": {
+      "Sound": {
+        "ObjectName": "MetaSoundSource'MS_Dino_Foley_Horns_Spar_Scrapes_Loop_Med'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Sound/Metasounds/Horns/MS_Dino_Foley_Horns_Spar_Scrapes_Loop_Med.0"
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "HeartbeatAudio",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Diabloceratops_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "ComponentClassOverrides": [
+        {
+          "ComponentName": "RibsMeatMesh",
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponentBudgeted'",
+            "ObjectPath": "/Script/AnimationBudgetAllocator"
+          }
+        },
+        {
+          "ComponentName": "SkeletonMesh",
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponentBudgeted'",
+            "ObjectPath": "/Script/AnimationBudgetAllocator"
+          }
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Diabloceratops_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.23"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Diabloceratops_C:ExecuteUbergraph_BP_Diabloceratops'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIDiabloceratops'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Diabloceratops_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.10"
+      },
+      {
+        "ObjectName": "Function'BP_Diabloceratops_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.11"
+      },
+      {
+        "ObjectName": "Function'BP_Diabloceratops_C:ExecuteUbergraph_BP_Diabloceratops'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.9"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HornsScrape",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_FluidImplementation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+          "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsPlayingLockedSounds",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Diabloceratops": {
+        "ObjectName": "Function'BP_Diabloceratops_C:ExecuteUbergraph_BP_Diabloceratops'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.9"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_Diabloceratops_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.11"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Diabloceratops_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.10"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "InteractableDetector",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 75.0,
+        "Y": 130.0,
+        "Z": 175.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      },
+      "RelativeLocation": {
+        "X": 120.0,
+        "Y": -1.192093E-06,
+        "Z": 50.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PouncebleArea",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 140.0,
+        "Y": 50.0,
+        "Z": 60.0
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      },
+      "RelativeLocation": {
+        "X": 10.0,
+        "Y": 0.0,
+        "Z": 30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_Diabloceratops_C",
+    "Name": "Default__BP_Diabloceratops_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.BP_Diabloceratops_C'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ImpaleLocation": {
+        "ObjectName": "SceneComponent'Default__BP_Diabloceratops_C:ImpaleLocation'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.19"
+      },
+      "DinosaurAssets": {
+        "ObjectName": "TIDinosaurAssets'DA_DinosaurAssets'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/DA_DinosaurAssets.0"
+      },
+      "VisualGrowthCurve": {
+        "ObjectName": "CurveFloat'Curve_DiabloceratopsVisualGrowth'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Curve_DiabloceratopsVisualGrowth.0"
+      },
+      "DinosaurMovement": {
+        "ObjectName": "TIDinosaurMovementComponent'Default__BP_Diabloceratops_C:CharMoveComp'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.36"
+      },
+      "HorizontalCameraYawOffset": {
+        "ObjectName": "CurveVector'CV_DiabloceratopsHorizontalCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Camera/CV_DiabloceratopsHorizontalCameraYawOffset.0"
+      },
+      "DownwardsCameraYawOffset": {
+        "ObjectName": "CurveVector'CV_DiabloceratopsDownwardsCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Camera/CV_DiabloceratopsDownwardsCameraYawOffset.0"
+      },
+      "UpwardsCameraYawOffset": {
+        "ObjectName": "CurveVector'CV_DiabloceratopsUpwardsCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Camera/CV_DiabloceratopsUpwardsCameraYawOffset.0"
+      },
+      "Up45CameraYawOffset": {
+        "ObjectName": "CurveVector'CV_DiabloceratopsUp45CameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Camera/CV_DiabloceratopsUp45CameraYawOffset.0"
+      },
+      "HorizontalCameraYawOffsetZoomed": {
+        "ObjectName": "CurveVector'CV_DiabloceratopsHorizontalCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Camera/CV_DiabloceratopsHorizontalCameraYawOffset.0"
+      },
+      "DownwardsCameraYawOffsetZoomed": {
+        "ObjectName": "CurveVector'CV_DiabloceratopsDownwardsCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Camera/CV_DiabloceratopsDownwardsCameraYawOffset.0"
+      },
+      "UpwardsCameraYawOffsetZoomed": {
+        "ObjectName": "CurveVector'CV_DiabloceratopsUpwardsCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Camera/CV_DiabloceratopsUpwardsCameraYawOffset.0"
+      },
+      "Up45CameraYawOffsetZoomed": {
+        "ObjectName": "CurveVector'CV_DiabloceratopsUp45CameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Camera/CV_DiabloceratopsUp45CameraYawOffset.0"
+      },
+      "ClientMeshCollisionProximity": {
+        "ObjectName": "SphereComponent'Default__BP_Diabloceratops_C:ClientMeshCollisionProximity'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.27"
+      },
+      "AttributeCurveDataTable": {
+        "ObjectName": "DataTable'DT_DiabloceratopsAttributeCurves'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Attributes/DT_DiabloceratopsAttributeCurves.0"
+      },
+      "RestCurveData": {
+        "ObjectName": "CurveLinearColor'ATT_Diabloceratops_RestCurve'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Attributes/ATT_Diabloceratops_RestCurve.0"
+      },
+      "AttributeBalanceDataTable": {
+        "ObjectName": "DataTable'DT_DiabloceratopsBalanceAttributes'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/DT_DiabloceratopsBalanceAttributes.0"
+      },
+      "VocalsDataTable": {
+        "ObjectName": "DataTable'DT_DiabloceratopsVocals'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/Vocals/DT_DiabloceratopsVocals.0"
+      },
+      "DeathPhysicsAsset": {
+        "AssetPathName": "/Game/TheIsle/Characters/Dinosaurs/Diabloceratops/Mesh/PHYS_Diabloceratops.PHYS_Diabloceratops",
+        "SubPathString": ""
+      },
+      "CharacterAssets": {
+        "ObjectName": "TICharacterAssets'DA_CharacterAssets'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/DA_CharacterAssets.0"
+      },
+      "AbilitySet": {
+        "ObjectName": "TIGameplayAbilitySet'DA_DiabloceratopsGameplayAbilities'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/DA_DiabloceratopsGameplayAbilities.0"
+      },
+      "Montages": {
+        "ObjectName": "TIDinosaurMontages'DA_DiabloceratopsMontages'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/DA_DiabloceratopsMontages.0"
+      },
+      "SmallVocalsSubmix": {
+        "ObjectName": "SoundSubmix'Submix_SmallRoar_Distant'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_SmallRoar_Distant.0"
+      },
+      "MediumVocalsSubmix": {
+        "ObjectName": "SoundSubmix'Submix_MediumRoars_Distant'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_MediumRoars_Distant.0"
+      },
+      "LargeVocalsSubmix": {
+        "ObjectName": "SoundSubmix'Submix_LargeRoars'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_LargeRoars.0"
+      },
+      "AntiCheatComponent": {
+        "ObjectName": "TIAntiCheatComponent'Default__BP_Diabloceratops_C:AntiCheatComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.34"
+      },
+      "AbilitySystemComponent": {
+        "ObjectName": "TIAbilitySystemComponent'Default__BP_Diabloceratops_C:AbilitySystemComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.33"
+      },
+      "DragLocation": {
+        "ObjectName": "SceneComponent'Default__BP_Diabloceratops_C:Draglocation'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.18"
+      },
+      "ThroatMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Diabloceratops_C:ThroatMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.32"
+      },
+      "SkeletonMesh": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:SkeletonMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.26"
+      },
+      "RibsMeatMesh": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:RibsMeatMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.25"
+      },
+      "ThroatSpline": {
+        "ObjectName": "SplineComponent'Default__BP_Diabloceratops_C:ThroatSpline'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.29"
+      },
+      "InteractableDetector": {
+        "ObjectName": "BoxComponent'Default__BP_Diabloceratops_C:InteractableDetector'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.3"
+      },
+      "CorpseDisableDetector": {
+        "ObjectName": "SphereComponent'Default__BP_Diabloceratops_C:CorpseDisableDetector'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.28"
+      },
+      "PouncebleArea": {
+        "ObjectName": "BoxComponent'Default__BP_Diabloceratops_C:PouncebleArea'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.4"
+      },
+      "NameWidget": {
+        "ObjectName": "WidgetComponent'Default__BP_Diabloceratops_C:NameWidget'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.38"
+      },
+      "BuoyancyPlane": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Diabloceratops_C:BuoyancyPlane'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.31"
+      },
+      "FootstepsComponent": {
+        "ObjectName": "TIFootstepsComponent'Default__BP_Diabloceratops_C:FootstepsComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.37"
+      },
+      "PhysicsHandleComponent": {
+        "ObjectName": "PhysicsHandleComponent'Default__BP_Diabloceratops_C:PhysicsHandle'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.16"
+      },
+      "AttributeSet": {
+        "ObjectName": "TIAttributeSetDinosaur'Default__BP_Diabloceratops_C:AttributeSetBase'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.35"
+      },
+      "CharacterMovementComponent": {
+        "ObjectName": "TIDinosaurMovementComponent'Default__BP_Diabloceratops_C:CharMoveComp'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.36"
+      },
+      "MainCamera": {
+        "ObjectName": "CameraComponent'Default__BP_Diabloceratops_C:Main Camera'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.7"
+      },
+      "SpringArm": {
+        "ObjectName": "SpringArmComponent'Default__BP_Diabloceratops_C:Spring Arm'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.30"
+      },
+      "PhysicalAnimation": {
+        "ObjectName": "PhysicalAnimationComponent'Default__BP_Diabloceratops_C:PhysicalAnim'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.14"
+      },
+      "PhysCons": {
+        "ObjectName": "PhysicsConstraintComponent'Default__BP_Diabloceratops_C:PhysicsConstraints'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.15"
+      },
+      "HeartbeatAudio": {
+        "ObjectName": "AudioComponent'Default__BP_Diabloceratops_C:HeartbeatAudio'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.1"
+      },
+      "NavigationInvoker": {
+        "ObjectName": "NavigationInvokerComponent'Default__BP_Diabloceratops_C:Navigation Invoker'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.12"
+      },
+      "FoliageBonesColliders": [
+        "DinoPelvis",
+        "DinoSpine00",
+        "DinoSpine01",
+        "DinoSpine02",
+        "DinoSpine03",
+        "DinoHead",
+        "DinoJaw",
+        "DinoLeftRearFoot",
+        "DinoRightRearFoot",
+        "DinoLeftCalf",
+        "DinoRightCalf",
+        "DinoRightFoot",
+        "DinoLeftFoot",
+        "DinoTail05",
+        "DinoTail02",
+        "DinoTail01",
+        "DinoTail00"
+      ],
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      },
+      "CharacterMovement": {
+        "ObjectName": "TIDinosaurMovementComponent'Default__BP_Diabloceratops_C:CharMoveComp'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.36"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AI_Diabloceratops_Controller_C'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Diabloceratops_Controller.4"
+      },
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      }
+    }
+  },
+  {
+    "Type": "BP_FluidImplementation_C",
+    "Name": "BP_FluidImplementation_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.BP_FluidImplementation_C'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.2"
+    },
+    "Template": {
+      "ObjectName": "BP_FluidImplementation_C'Default__BP_FluidImplementation_C'",
+      "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.1"
+    },
+    "Properties": {
+      "TraceOffsetUp": 100.0,
+      "TraceOffsetDown": -30.0,
+      "UsePerBoneTrace": true,
+      "FluidDrawSize": 0.0006,
+      "FluidMaxDrawIntensity": 0.016,
+      "VelocityDivideIntensity": 1.0,
+      "VelocityBegin": 5.0,
+      "MaxEffector": 3.0
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "Main Camera",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CameraComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "OrthoWidth": 512.0,
+      "bAutoCalculateOrthoPlanes": false,
+      "OrthoNearClipPlane": 0.0,
+      "PostProcessSettings": {
+        "bOverride_ColorSaturationShadows": true,
+        "bOverride_AutoExposureBiasCurve": true,
+        "ColorSaturationShadows": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "AutoExposureBiasCurve": {
+          "ObjectName": "CurveFloat'NV_Exposure_5'",
+          "ObjectPath": "/Game/TheIsle/MaterialLibrary/Utility/PostProcess/NightVision/NV_Exposure_5.0"
+        },
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "Material'M_NightVision_PP'",
+                "ObjectPath": "/Game/TheIsle/MaterialLibrary/Utility/PostProcess/M_NightVision_PP.0"
+              }
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SpringArmComponent'Default__BP_Diabloceratops_C:Spring Arm'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.30"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 99.0,
+      "CapsuleRadius": 70.0,
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Diabloceratops",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.2"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetTriggerParameter_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsCeratopsian_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetVisualGrowthFromJuvenileToAdult_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetFloatParameter_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Vector_IsZero_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDinosaurMovement_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TIDinosaurMovementComponent'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSparPushing_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSparPushing_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorScale3D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_VSizeXY_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMin_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetFloatParameter_self_CastInput_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_InFloat_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "NavigationInvokerComponent",
+    "Name": "Navigation Invoker",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavigationInvokerComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "TileGenerationRadius": 6000.0,
+      "TileRemovalRadius": 7000.0
+    }
+  },
+  {
+    "Type": "NavigationInvokerComponent",
+    "Name": "NavigationInvoker",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavigationInvokerComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    }
+  },
+  {
+    "Type": "PhysicalAnimationComponent",
+    "Name": "PhysicalAnim",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicalAnimationComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "PhysicsConstraints",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "ProjectionLinearTolerance": 300.0,
+          "LinearLimit": {
+            "Limit": 70.0
+          }
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -70.0
+      }
+    }
+  },
+  {
+    "Type": "PhysicsHandleComponent",
+    "Name": "PhysicsHandle",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsHandleComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "LinearDamping": 100.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.2"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Draglocation",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": -31.540377
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "ImpaleLocation",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Diabloceratops_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.23"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Diabloceratops_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.17"
+      },
+      "VariableGuid": "7C4044A2-4DF3B565-EDBEC9A3-FF12F770",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Diabloceratops_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.23"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'AudioComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent'BP_Diabloceratops_C:HornsScrape_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.0"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "Sound",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AudioComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bAutoActivate",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AudioComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "AttachToName": "DinoHead",
+      "ParentComponentOrVariableName": "CharacterMesh0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "AC141C35-44C1275F-563B66A7-ED831455",
+      "InternalVariableName": "HornsScrape"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Diabloceratops_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.23"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+        "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_FluidImplementation_C'BP_Diabloceratops_C:BP_FluidImplementation_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.6"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "TraceOffsetUp",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "TraceOffsetDown",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "UsePerBoneTrace",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "FluidDrawSize",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "FluidMaxDrawIntensity",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "VelocityDivideIntensity",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "VelocityBegin",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "MaxEffector",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "BEEB6DBD-45D42E93-C0861DB1-2A0A3734",
+      "InternalVariableName": "BP_FluidImplementation"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.2"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Diabloceratops_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.22"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Diabloceratops_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.21"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Diabloceratops_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.22"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Diabloceratops_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.21"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Diabloceratops_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.20"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponentBudgeted",
+    "Name": "CharacterMesh0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponentBudgeted'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "bAutoCalculateSignificance": true,
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Diabloceratops_C'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/ABP_Diabloceratops.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Diabloceratops'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Diabloceratops/Mesh/SK_Diabloceratops.6"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Diabloceratops'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Diabloceratops/Mesh/SK_Diabloceratops.6"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -99.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponentBudgeted",
+    "Name": "RibsMeatMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponentBudgeted'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "bAutoCalculateSignificance": true,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Diabloceratops_RibMeat'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Diabloceratops/Mesh/SK_Diabloceratops_RibMeat.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Diabloceratops_RibMeat'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Diabloceratops/Mesh/SK_Diabloceratops_RibMeat.0"
+      },
+      "LeaderPoseComponent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered",
+      "bEnableUpdateRateOptimizations": true,
+      "bReceivesDecals": false,
+      "bReplicatePhysicsToAutonomousProxy": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_PhysicsBody",
+        "CollisionProfileName": "Custom"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      },
+      "bHiddenInGame": true,
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponentBudgeted",
+    "Name": "SkeletonMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponentBudgeted'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "bAutoCalculateSignificance": true,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Diabloceratops_Bones'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Diabloceratops/Mesh/SK_Diabloceratops_Bones.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Diabloceratops_Bones'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Diabloceratops/Mesh/SK_Diabloceratops_Bones.0"
+      },
+      "LeaderPoseComponent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered",
+      "bEnableUpdateRateOptimizations": true,
+      "bReceivesDecals": false,
+      "bReplicatePhysicsToAutonomousProxy": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_PhysicsBody",
+        "CollisionProfileName": "Custom"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      },
+      "bHiddenInGame": true,
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "ClientMeshCollisionProximity",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "CorpseDisableDetector",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "SphereRadius": 800.0,
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      }
+    }
+  },
+  {
+    "Type": "SplineComponent",
+    "Name": "ThroatSpline",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SplineComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "SplineCurves": {
+        "Position": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": {
+                "X": 225.0732,
+                "Y": 39.99287,
+                "Z": -51.661293
+              },
+              "ArriveTangent": {
+                "X": -44.874546,
+                "Y": -20.041277,
+                "Z": 22.489992
+              },
+              "LeaveTangent": {
+                "X": -44.874546,
+                "Y": -20.041277,
+                "Z": 22.489992
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 1.0,
+              "OutVal": {
+                "X": 180.19865,
+                "Y": 19.951593,
+                "Z": -29.1713
+              },
+              "ArriveTangent": {
+                "X": -43.007195,
+                "Y": -14.423462,
+                "Z": 21.084572
+              },
+              "LeaveTangent": {
+                "X": -43.007195,
+                "Y": -14.423462,
+                "Z": 21.084572
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 2.0,
+              "OutVal": {
+                "X": 139.0588,
+                "Y": 11.145946,
+                "Z": -9.49215
+              },
+              "ArriveTangent": {
+                "X": -51.171707,
+                "Y": -9.284331,
+                "Z": 19.440912
+              },
+              "LeaveTangent": {
+                "X": -51.171707,
+                "Y": -9.284331,
+                "Z": 19.440912
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 3.0,
+              "OutVal": {
+                "X": 77.85524,
+                "Y": 1.3829302,
+                "Z": 9.710524
+              },
+              "ArriveTangent": {
+                "X": -69.5294,
+                "Y": -5.572973,
+                "Z": 4.746075
+              },
+              "LeaveTangent": {
+                "X": -69.5294,
+                "Y": -5.572973,
+                "Z": 4.746075
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 4.0,
+              "OutVal": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "ArriveTangent": {
+                "X": -77.85524,
+                "Y": -1.3829302,
+                "Z": -9.710524
+              },
+              "LeaveTangent": {
+                "X": -77.85524,
+                "Y": -1.3829302,
+                "Z": -9.710524
+              },
+              "InterpMode": "CIM_CurveAuto"
+            }
+          ]
+        },
+        "Rotation": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": {
+                "X": 0.007346884,
+                "Y": 0.17348857,
+                "Z": 0.21314609,
+                "W": 0.9614378,
+                "IsNormalized": true,
+                "Size": 0.99997306,
+                "SizeSquared": 0.9999462
+              },
+              "ArriveTangent": {
+                "X": 0.007346884,
+                "Y": 0.17348857,
+                "Z": 0.21314609,
+                "W": 0.9614378,
+                "IsNormalized": true,
+                "Size": 0.99997306,
+                "SizeSquared": 0.9999462
+              },
+              "LeaveTangent": {
+                "X": 0.007346884,
+                "Y": 0.17348857,
+                "Z": 0.21314609,
+                "W": 0.9614378,
+                "IsNormalized": true,
+                "Size": 0.99997306,
+                "SizeSquared": 0.9999462
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 1.0,
+              "OutVal": {
+                "X": 0.007346884,
+                "Y": 0.17348857,
+                "Z": 0.21314609,
+                "W": 0.9614378,
+                "IsNormalized": true,
+                "Size": 0.99997306,
+                "SizeSquared": 0.9999462
+              },
+              "ArriveTangent": {
+                "X": 0.003673442,
+                "Y": 0.086744286,
+                "Z": 0.106573045,
+                "W": 0.4807189,
+                "IsNormalized": false,
+                "Size": 0.49998653,
+                "SizeSquared": 0.24998654
+              },
+              "LeaveTangent": {
+                "X": 0.003673442,
+                "Y": 0.086744286,
+                "Z": 0.106573045,
+                "W": 0.4807189,
+                "IsNormalized": false,
+                "Size": 0.49998653,
+                "SizeSquared": 0.24998654
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 2.0,
+              "OutVal": {
+                "X": 0.007346884,
+                "Y": 0.17348857,
+                "Z": 0.21314609,
+                "W": 0.9614378,
+                "IsNormalized": true,
+                "Size": 0.99997306,
+                "SizeSquared": 0.9999462
+              },
+              "ArriveTangent": {
+                "X": 0.00457845,
+                "Y": 0.10811952,
+                "Z": 0.105652,
+                "W": 0.4765642,
+                "IsNormalized": false,
+                "Size": 0.49998656,
+                "SizeSquared": 0.24998657
+              },
+              "LeaveTangent": {
+                "X": 0.00457845,
+                "Y": 0.10811952,
+                "Z": 0.105652,
+                "W": 0.4765642,
+                "IsNormalized": false,
+                "Size": 0.49998656,
+                "SizeSquared": 0.24998657
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 3.0,
+              "OutVal": {
+                "X": 0.0036882388,
+                "Y": 0.08707589,
+                "Z": 0.21561049,
+                "W": 0.9725546,
+                "IsNormalized": true,
+                "Size": 0.99997306,
+                "SizeSquared": 0.9999462
+              },
+              "ArriveTangent": {
+                "X": 0.0018189043,
+                "Y": 0.04293378,
+                "Z": 0.1603766,
+                "W": 0.4716135,
+                "IsNormalized": false,
+                "Size": 0.49998656,
+                "SizeSquared": 0.24998656
+              },
+              "LeaveTangent": {
+                "X": 0.0018189043,
+                "Y": 0.04293378,
+                "Z": 0.1603766,
+                "W": 0.4716135,
+                "IsNormalized": false,
+                "Size": 0.49998656,
+                "SizeSquared": 0.24998656
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 4.0,
+              "OutVal": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "ArriveTangent": {
+                "X": -0.0018569084,
+                "Y": -0.043839883,
+                "Z": -0.10855288,
+                "W": 0.9931218,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "LeaveTangent": {
+                "X": -0.0018569084,
+                "Y": -0.043839883,
+                "Z": -0.10855288,
+                "W": 0.9931218,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            }
+          ]
+        },
+        "Scale": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 1.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 2.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 3.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 4.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            }
+          ]
+        },
+        "ReparamTable": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": 0.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 5.442942,
+              "OutVal": 0.1,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 10.945697,
+              "OutVal": 0.2,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 16.48293,
+              "OutVal": 0.3,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 22.028814,
+              "OutVal": 0.4,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 27.55741,
+              "OutVal": 0.5,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 33.043007,
+              "OutVal": 0.6,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 38.46052,
+              "OutVal": 0.7,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 43.785915,
+              "OutVal": 0.8,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 48.99668,
+              "OutVal": 0.90000004,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 54.07247,
+              "OutVal": 1.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 58.925026,
+              "OutVal": 1.1,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 63.530994,
+              "OutVal": 1.2,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 67.9682,
+              "OutVal": 1.3,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 72.312744,
+              "OutVal": 1.4,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 76.63929,
+              "OutVal": 1.5,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 81.02164,
+              "OutVal": 1.6,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 85.533356,
+              "OutVal": 1.7,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 90.24855,
+              "OutVal": 1.8,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 95.242355,
+              "OutVal": 1.9000001,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 100.5912,
+              "OutVal": 2.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 106.302505,
+              "OutVal": 2.1,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 112.30347,
+              "OutVal": 2.2,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 118.54864,
+              "OutVal": 2.3,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 124.99176,
+              "OutVal": 2.4,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 131.58864,
+              "OutVal": 2.5,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 138.29968,
+              "OutVal": 2.6,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 145.0925,
+              "OutVal": 2.7,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 151.94452,
+              "OutVal": 2.8,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 158.84601,
+              "OutVal": 2.9,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 165.80301,
+              "OutVal": 3.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 172.93488,
+              "OutVal": 3.1,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 180.34361,
+              "OutVal": 3.2,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 188.00647,
+              "OutVal": 3.3,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 195.88394,
+              "OutVal": 3.4,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 203.92513,
+              "OutVal": 3.5,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 212.07167,
+              "OutVal": 3.6,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 220.261,
+              "OutVal": 3.7,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 228.4289,
+              "OutVal": 3.8,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 236.51196,
+              "OutVal": 3.9,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 244.4501,
+              "OutVal": 4.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      },
+      "RelativeLocation": {
+        "X": 16.182825,
+        "Y": 0.823073,
+        "Z": 0.000164
+      },
+      "RelativeRotation": {
+        "Pitch": 3.5040154E-07,
+        "Yaw": -30.0,
+        "Roll": -90.0
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "Spring Arm",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SpringArmComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 60.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BuoyancyPlane",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'BuoyancyPlane'",
+        "ObjectPath": "/Game/TheIsle/Art/BuoyancyPlane.2"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ThroatMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Diabloceratops_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.24"
+      },
+      "RelativeLocation": {
+        "X": 14.731022,
+        "Y": 0.00025180727,
+        "Z": -0.0005361736
+      },
+      "RelativeRotation": {
+        "Pitch": -2.679709E-05,
+        "Yaw": 180.001,
+        "Roll": 89.999855
+      }
+    }
+  },
+  {
+    "Type": "TIAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIAbilitySystemComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    }
+  },
+  {
+    "Type": "TIAntiCheatComponent",
+    "Name": "AntiCheatComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIAntiCheatComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    }
+  },
+  {
+    "Type": "TIAttributeSetDinosaur",
+    "Name": "AttributeSetBase",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIAttributeSetDinosaur'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    }
+  },
+  {
+    "Type": "TIDinosaurMovementComponent",
+    "Name": "CharMoveComp",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIDinosaurMovementComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "MaxWalkSpeedCrouched": 140.0,
+      "bSweepWhileNavWalking": false,
+      "NavAgentProps": {
+        "PreferredNavData": {
+          "AssetPathName": "/Script/NavigationSystem.RecastNavMesh",
+          "SubPathString": ""
+        }
+      }
+    }
+  },
+  {
+    "Type": "TIFootstepsComponent",
+    "Name": "FootstepsComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIFootstepsComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "GrassPaintThickness": 5.0,
+      "EffectsDataTable": {
+        "ObjectName": "DataTable'DT_EffectSets'",
+        "ObjectPath": "/Game/TheIsle/Core/Data/DT_EffectSets.0"
+      },
+      "BackLegsFootstepStyle": "EFootstepStyle::EF_Medium",
+      "FrontLegsFootstepStyle": "EFootstepStyle::EF_Medium",
+      "FrontFootprintMask": {
+        "ObjectName": "Texture2D'T_Footprint_DiabloFront_M'",
+        "ObjectPath": "/Game/TheIsle/Art/Decals/Footprint/Textures/T_Footprint_DiabloFront_M.0"
+      },
+      "BackFootprintMask": {
+        "ObjectName": "Texture2D'T_Footprint_DiabloBack_M'",
+        "ObjectPath": "/Game/TheIsle/Art/Decals/Footprint/Textures/T_Footprint_DiabloBack_M.0"
+      },
+      "MovementSetsDataTable": {
+        "ObjectName": "DataTable'DT_MovementSets'",
+        "ObjectPath": "/Game/TheIsle/Core/Data/DT_MovementSets.0"
+      },
+      "FrontFootprintScale": 1.0,
+      "FootprintActor": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Footprint_C'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Footprint.0"
+      }
+    }
+  },
+  {
+    "Type": "WidgetComponent",
+    "Name": "NameWidget",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'WidgetComponent'",
+    "Outer": {
+      "ObjectName": "BP_Diabloceratops_C'Default__BP_Diabloceratops_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.5"
+    },
+    "Properties": {
+      "WidgetClass": null,
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Diabloceratops_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Diabloceratops/BP_Diabloceratops.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 150.0
+      }
+    }
+  }
+]

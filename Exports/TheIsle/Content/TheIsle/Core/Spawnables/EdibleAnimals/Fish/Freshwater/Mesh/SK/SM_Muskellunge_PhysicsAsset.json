@@ -1,0 +1,275 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SM_Muskellunge_PhysicsAsset",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Package": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SM_Muskellunge_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SM_Muskellunge_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SM_Muskellunge_PhysicsAsset:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SM_Muskellunge_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SM_Muskellunge_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.2"
+        }
+      ],
+      "SolverSettings": {
+        "CullDistance": 1.0,
+        "bUseLinearJointSolver": false,
+        "bUseManifolds": false
+      },
+      "ThumbnailInfo": null
+    },
+    "CollisionDisableTable": [
+      {
+        "Key": {
+          "Indices": [
+            0,
+            1
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            0,
+            2
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            1,
+            2
+          ]
+        },
+        "Value": false
+      }
+    ]
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Muskellunge_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "FishBone02",
+        "ConstraintBone1": "FishBone02",
+        "ConstraintBone2": "FishBone01",
+        "Pos2": {
+          "X": 23.914963,
+          "Y": 1.04263445E-05,
+          "Z": -1.6900264E-12
+        },
+        "PriAxis2": {
+          "X": 0.9998319,
+          "Y": 0.018332887,
+          "Z": -1.3840635E-09
+        },
+        "SecAxis2": {
+          "X": -0.018332887,
+          "Y": 0.9998319,
+          "Z": 4.768373E-07
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Muskellunge_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "FishBone03",
+        "ConstraintBone1": "FishBone03",
+        "ConstraintBone2": "FishBone01",
+        "PriAxis2": {
+          "X": -0.99985886,
+          "Y": 0.01680048,
+          "Z": -3.4309625E-07
+        },
+        "SecAxis2": {
+          "X": -0.01680048,
+          "Y": -0.99985886,
+          "Z": -3.718244E-07
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Muskellunge_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 12.878019,
+              "Y": -0.92042017,
+              "Z": -9.536743E-07
+            },
+            "Rotation": {
+              "Pitch": 1.3660378E-05,
+              "Yaw": -74.46631,
+              "Roll": -89.99989
+            },
+            "Radius": 3.7596867,
+            "Length": 10.613153,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 10.0
+      },
+      "BoneName": "FishBone01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "328FB09B453B9503687A62AB5E2C690A"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Muskellunge_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 9.75168,
+              "Y": 0.42598295,
+              "Z": -4.7683716E-06
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -86.62474,
+              "Roll": -89.999985
+            },
+            "Radius": 4.6359186,
+            "Length": 12.408171,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 10.0
+      },
+      "BoneName": "FishBone02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "1490577D41C68E1C38FE0FB0BF241ADD"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SM_Muskellunge_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdibleAnimals/Fish/Freshwater/Mesh/SK/SM_Muskellunge_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 3.944416,
+              "Y": -0.08349776,
+              "Z": 4.7683716E-07
+            },
+            "Rotation": {
+              "Pitch": 6.831023E-06,
+              "Yaw": 91.04502,
+              "Roll": -19.99994
+            },
+            "Radius": 4.141692,
+            "Length": 10.668266,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 10.0
+      },
+      "BoneName": "FishBone03",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "7B7901D540627735929A56AC6CD07404"
+  }
+]

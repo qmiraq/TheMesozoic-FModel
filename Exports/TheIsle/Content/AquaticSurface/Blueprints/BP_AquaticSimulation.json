@@ -1,0 +1,4733 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AquaticSimulation_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_AquaticSimulation_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.29"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:ExecuteUbergraph_BP_AquaticSimulation'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateSimulation'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.21"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:DoSimulationStep'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.5"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:OnWorldOriginChanged'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.11"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:SpawnSplash'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.17"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateSimulationFocus'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.22"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:DrawSplat'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.6"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:IsLocal'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.9"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:NewRenderTarget'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.10"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:DebugDraw'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.4"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:AddInteraction'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.2"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:SetTargetPoint'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.16"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:RemoveInteractionFinished'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.15"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateRenderPosition'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.20"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateInteractionTime'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.19"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:RemoveInteractionActor'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.14"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:AddInteractionActor'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.3"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateInteraction'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.18"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:GetRenderTarget'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.8"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UserConstructionScript'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.24"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:ReceiveTick'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.13"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.12"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateTransform'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.23"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSimulation_C:ExecuteUbergraph_BP_AquaticSimulation'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Plane",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Volume",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BoxComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "FrameIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "TimeAccumulator",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "AreaSize",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SimulationInstance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SplatInstance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "AquaticSurfaces",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "AquaticSurfaces",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+            "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "AquaticCaustics",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "AquaticCaustics",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AquaticCaustic_C'",
+            "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticCaustic.1"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "TextureResolution",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Interactions",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Interactions",
+          "Flags": "RF_Public",
+          "ElementSize": 112,
+          "Struct": {
+            "ObjectName": "UserDefinedStruct'BS_AquaticInteraction'",
+            "ObjectPath": "/Game/AquaticSurface/Blueprints/BS_AquaticInteraction.0"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "RemoveInteraction",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "TextureToWorld",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "HalfSize",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InterpStepSize",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "AreaSizeInv",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LocationShift",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LocationShiftPrev",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "TextureResolutionInv",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "WorldToTexture",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "UpdateRate",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "AnimationRate",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxInterationsPerFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "MaxTimeAccumulator",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MaxCameraDistance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "WaveTravelSpeed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "WaveDamping",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "WaveNormalScale",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "RenderTargets",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "RenderTargets",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'TextureRenderTarget2D'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SimulationFocus",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "SimulationCameraRadiusSq",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "SimulationCameraForward",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "SimulationCameraDistance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PrevWorldOrigin",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'IntVector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "DoInteractionUpdate",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PreviewTexture",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "AreaResolution",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'BE_Resolution'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BE_Resolution.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "AreaScaleRatio",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CameraForwardRatio",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CameraDistanceRatio",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "SimulationInterpSpeed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "DrawDebug",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CineamaticRenderTarget",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewVar_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticInteraction_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticInteraction.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AquaticSimulation": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:ExecuteUbergraph_BP_AquaticSimulation'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.7"
+      },
+      "UpdateTransform": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateTransform'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.23"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.12"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:ReceiveTick'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.13"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UserConstructionScript'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.24"
+      },
+      "GetRenderTarget": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:GetRenderTarget'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.8"
+      },
+      "UpdateInteraction": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateInteraction'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.18"
+      },
+      "AddInteractionActor": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:AddInteractionActor'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.3"
+      },
+      "RemoveInteractionActor": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:RemoveInteractionActor'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.14"
+      },
+      "UpdateInteractionTime": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateInteractionTime'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.19"
+      },
+      "UpdateRenderPosition": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateRenderPosition'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.20"
+      },
+      "RemoveInteractionFinished": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:RemoveInteractionFinished'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.15"
+      },
+      "SetTargetPoint": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:SetTargetPoint'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.16"
+      },
+      "AddInteraction": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:AddInteraction'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.2"
+      },
+      "DebugDraw": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:DebugDraw'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.4"
+      },
+      "NewRenderTarget": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:NewRenderTarget'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.10"
+      },
+      "IsLocal": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:IsLocal'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.9"
+      },
+      "DrawSplat": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:DrawSplat'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.6"
+      },
+      "UpdateSimulationFocus": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateSimulationFocus'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.22"
+      },
+      "SpawnSplash": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:SpawnSplash'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.17"
+      },
+      "OnWorldOriginChanged": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:OnWorldOriginChanged'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.11"
+      },
+      "DoSimulationStep": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:DoSimulationStep'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.5"
+      },
+      "UpdateSimulation": {
+        "ObjectName": "Function'BP_AquaticSimulation_C:UpdateSimulation'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.21"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AquaticSimulation_C'Default__BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AquaticSimulation_C",
+    "Name": "Default__BP_AquaticSimulation_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.BP_AquaticSimulation_C'",
+    "Package": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AreaSize": 1600,
+      "TextureResolution": 256,
+      "TargetPoint": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "RemoveInteraction": -1,
+      "TextureToWorld": 1.0,
+      "HalfSize": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "InterpStepSize": 1,
+      "AreaSizeInv": 1000.0,
+      "LocationShift": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "LocationShiftPrev": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "TextureResolutionInv": 1.0,
+      "WorldToTexture": 1.0,
+      "UpdateRate": 60.0,
+      "AnimationRate": 60.0,
+      "MaxInterationsPerFrame": 2,
+      "MaxCameraDistance": 2000,
+      "WaveTravelSpeed": 0.6000000238418579,
+      "WaveDamping": 0.9800000190734863,
+      "WaveNormalScale": 0.006000000052154064,
+      "SimulationFocus": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "SimulationCameraRadiusSq": 5000.0,
+      "SimulationCameraForward": 1000.0,
+      "SimulationCameraDistance": 1000.0,
+      "PrevWorldOrigin": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "AreaResolution": "BE_Resolution::NewEnumerator1",
+      "AreaScaleRatio": 6.5,
+      "CameraForwardRatio": 0.44999998807907104,
+      "CameraDistanceRatio": 0.5,
+      "SimulationInterpSpeed": 0.02500000037252903,
+      "PrimaryActorTick": {
+        "bCanEverTick": true
+      },
+      "bCanBeDamaged": false,
+      "bCanBeInCluster": true,
+      "NetDormancy": "DORM_Never"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AddInteraction",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Interaction",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'BS_AquaticInteractionData'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BS_AquaticInteractionData.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Duration",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "VisibilityTest",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_BS_AquaticInteraction",
+        "Flags": "RF_Public",
+        "ElementSize": 112,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'BS_AquaticInteraction'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BS_AquaticInteraction.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_VectorToVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_VSize2DSquared_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_TimeToEnd_22_BB29A2AD4316564D628DDF8B4A4F7B82_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AddInteractionActor",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "InteractionSurface",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Target",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_K2_GetComponentsByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_K2_GetComponentsByClass_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AquaticInteraction_C'",
+            "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticInteraction.0"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticInteraction_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticInteraction.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetTransform_Fade",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetTransform_Splash",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_BS_AquaticInteraction",
+        "Flags": "RF_Public",
+        "ElementSize": 112,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'BS_AquaticInteraction'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BS_AquaticInteraction.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DebugDraw",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 112,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'BS_AquaticInteraction'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BS_AquaticInteraction.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetTransform_Fade",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetTransform_Splash",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DoSimulationStep",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_X_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_Y_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeColor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetRenderTarget_HeightRT",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDrawCanvasToRenderTarget_Canvas",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Canvas'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BeginDrawCanvasToRenderTarget_Size",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BeginDrawCanvasToRenderTarget_Context",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'DrawToRenderTargetContext'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetRenderTarget_HeightRT_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetRenderTarget_HeightRT_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Percent_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeColor_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeColor_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeColor_R_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeColor_G_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DrawSplat",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ScreenSize",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Canvas'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "ForceSize",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Radius",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_InvertTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_TransformLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_LinearColor",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_R_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_G_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AquaticSimulation",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_VectorToVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_NewRenderTarget_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_NewRenderTarget_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_NewRenderTarget_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'TextureRenderTarget2D'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocal_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetWorldOriginLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class'IntVector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_OnWorldOriginChanged_Update",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetRenderTarget_HeightRT",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_RemoveItem_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_UpdateSimulation_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRenderTarget",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "NumFramesOld",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "HeightRT",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NewLocalVar_0",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Percent_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsLocal",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "NewRenderTarget",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "Temp_byte_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETextureRenderTargetFormat'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "Temp_byte_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETextureRenderTargetFormat'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETextureRenderTargetFormat'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateRenderTarget2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnWorldOriginChanged",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "OldLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'IntVector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'IntVector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Update",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_Vector2DToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 112,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'BS_AquaticInteraction'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BS_AquaticInteraction.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_SetFieldsInStruct_StructOut",
+        "Flags": "RF_Public",
+        "ElementSize": 112,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'BS_AquaticInteraction'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BS_AquaticInteraction.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_Vector2DVector2D_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RemoveInteractionActor",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Target",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "RemoveIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_K2_GetComponentsByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_K2_GetComponentsByClass_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "InstancedReference",
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BP_AquaticInteraction_C'",
+            "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticInteraction.0"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticInteraction_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticInteraction.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ObjectObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RemoveInteractionFinished",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTargetPoint",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "TargetLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "InterpSpeed",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "MaxDistance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_VectorToVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_Vector2DToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_ClampVectorSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_VLerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_VectorToVector2D_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_VLerp_Alpha_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnSplash",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Interaction",
+        "Flags": "RF_Public",
+        "ElementSize": 112,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'BS_AquaticInteraction'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BS_AquaticInteraction.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Surface",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_VSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_BoolBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_PlaySplashEffectByIndex_SplashScale_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateInteraction",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Canvas'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "ScreenSize",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Interaction",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticInteraction_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticInteraction.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Surface",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewInterationRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "ForceFade",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NewInteractionLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_UpdateInteractionTime_Draw",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetTransform_Fade",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetTransform_Splash",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RandomUnitVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_VectorToVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_VSize2DSquared_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_VSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_NormalizedDeltaRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_VectorFloat_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_DrawSplat_Radius_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SetTargetPoint_MaxDistance_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_Max_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_A_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateInteractionTime",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Draw",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Less_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Less_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_SetFieldsInStruct_TimeToEnd_22_BB29A2AD4316564D628DDF8B4A4F7B82_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateRenderPosition",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_VectorToVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_IntFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_Vector2DVector2D_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_Vector2DVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_VSize2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_LinearColor",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_Vector2DFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Multiply_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Multiply_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_Vector2DFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_Vector2DVector2D_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetActorLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_SetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_R_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_G_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateSimulation",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMin_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticCaustic_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticCaustic.1"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetRenderTarget_HeightRT",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TextureRenderTarget2D'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateSimulationFocus",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetScalarParameterValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCameraManager_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerCameraManager'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetCameraRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetCameraLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateTransform",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_IntFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Round_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_IntFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Round_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MultiplyMultiply_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_FTrunc_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult_1",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMin_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_8",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_9",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_10",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_IntFloat_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_11",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_IntToDouble_ReturnValue_12",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValue_Value_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValue_Value_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValue_Value_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValue_Value_ImplicitCast_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValue_Value_ImplicitCast_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValue_Value_ImplicitCast_5",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AquaticSimulation_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.29"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_AquaticSimulation_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.25"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_AquaticSimulation_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.27"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AquaticSimulation_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.28"
+        }
+      ],
+      "VariableGuid": "265B7C89-4A4A2DF5-CF67C88A-E7DC1AF8",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AquaticSimulation_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.29"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "A7ED41C7-41AE1DD1-D4D9BCA9-7D52B197",
+      "InternalVariableName": "Volume"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AquaticSimulation_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.29"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_AquaticSimulation_C:Plane_GEN_VARIABLE'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.30"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "OverrideMaterials",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionEnabled",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "272C17DF-4F4899BB-9EEDB1B6-82BA3B63",
+      "InternalVariableName": "Plane"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_AquaticSimulation_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.26"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_AquaticSimulation_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.26"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AquaticSimulation_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.27"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AquaticSimulation_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.28"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_AquaticSimulation_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.26"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Plane_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSimulation_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSimulation.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Plane'",
+        "ObjectPath": "/Engine/BasicShapes/Plane.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material'M_AquaticSimulationDebug'",
+          "ObjectPath": "/Game/AquaticSurface/Materials/M_AquaticSimulationDebug.0"
+        }
+      ],
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -4210.0,
+        "Y": -6390.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

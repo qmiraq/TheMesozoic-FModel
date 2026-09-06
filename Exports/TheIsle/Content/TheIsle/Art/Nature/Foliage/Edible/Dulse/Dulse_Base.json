@@ -1,0 +1,220 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'Dulse_Base'",
+      "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/Dulse/Dulse_Base.2"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 2.7979412,
+              "Y": -0.19683266,
+              "Z": 20.6787
+            },
+            "Radius": 39.411873,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "Foliage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "8965D11940E9C8F0C1D3BBB8C2B775D4",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 23990,
+        "SizeOnDisk": 23990,
+        "OffsetInFile": "0x665"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'Dulse_Base'",
+      "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/Dulse/Dulse_Base.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 7610,
+        "SizeOnDisk": 7610,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Dulse_Base",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/Art/Nature/Foliage/Edible/Dulse/Dulse_Base",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_DFF_Atlas1'",
+            "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/Dulse/Materials/MI_DFF_Atlas1.0"
+          },
+          "MaterialSlotName": "T_DFF_Atlas_D_Mat",
+          "ImportedMaterialSlotName": "T_DFF_Atlas_D_Mat",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 196.53761,
+            "LocalUVDensities[1]": 0.0,
+            "LocalUVDensities[2]": 134.14343,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.7984114,
+          "Y": -0.1964426,
+          "Z": 20.679245
+        },
+        "BoxExtent": {
+          "X": 33.882915,
+          "Y": 31.829033,
+          "Z": 31.123325
+        },
+        "SphereRadius": 39.41300582885742
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'Dulse_Base:BodySetup_2'",
+      "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/Dulse/Dulse_Base.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'Dulse_Base:NavCollision_4'",
+      "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/Dulse/Dulse_Base.1"
+    },
+    "LightingGuid": "37DB0FDE-4F67C947-9ECD1E8C-4255FAFB",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 447,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 374,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 3.620658,
+          "Y": -0.07894516,
+          "Z": 21.06845
+        },
+        "BoxExtent": {
+          "X": 34.862286,
+          "Y": 32.79539,
+          "Z": 31.512352
+        },
+        "SphereRadius": 52.150772
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

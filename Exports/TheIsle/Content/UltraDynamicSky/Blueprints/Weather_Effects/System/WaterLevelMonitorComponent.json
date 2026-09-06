@@ -1,0 +1,426 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WaterLevelMonitorComponent_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'WaterLevelMonitorComponent_C:ExecuteUbergraph_WaterLevelMonitorComponent'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'NiagaraComponent'",
+      "ObjectPath": "/Script/Niagara"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'WaterLevelMonitorComponent_C:ReceiveParticleData'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.3"
+      },
+      {
+        "ObjectName": "Function'WaterLevelMonitorComponent_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.2"
+      },
+      {
+        "ObjectName": "Function'WaterLevelMonitorComponent_C:ExecuteUbergraph_WaterLevelMonitorComponent'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Water Level",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Report Object",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WaterLevelMonitorComponent": {
+        "ObjectName": "Function'WaterLevelMonitorComponent_C:ExecuteUbergraph_WaterLevelMonitorComponent'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.1"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'WaterLevelMonitorComponent_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.2"
+      },
+      "ReceiveParticleData": {
+        "ObjectName": "Function'WaterLevelMonitorComponent_C:ReceiveParticleData'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "Class'NiagaraParticleCallbackHandler'",
+          "ObjectPath": "/Script/Niagara"
+        },
+        "PointerProperty": null,
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WaterLevelMonitorComponent_C'Default__WaterLevelMonitorComponent_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=\"/Script/CoreUObject.Class'/Script/Niagara.NiagaraParticleCallbackHandler'\"))"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WaterLevelMonitorComponent",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'WaterLevelMonitorComponent_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsWater_Level_Report_Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'WaterLevelReportInterface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelReportInterface.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_Event_Data",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_Event_Data",
+          "Flags": "RF_Public",
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "Class'BasicParticleData'",
+            "ObjectPath": "/Script/Niagara"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_NiagaraSystem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_SimulationPositionOffset",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Report_Water_Level_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "K2Node_VariableSet_Water_Level_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'WaterLevelMonitorComponent_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'ActorComponent:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveParticleData",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'WaterLevelMonitorComponent_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "Data",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Data",
+          "Flags": "RF_Public",
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "Class'BasicParticleData'",
+            "ObjectPath": "/Script/Niagara"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NiagaraSystem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SimulationPositionOffset",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "WaterLevelMonitorComponent_C",
+    "Name": "Default__WaterLevelMonitorComponent_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.WaterLevelMonitorComponent_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Asset": {
+        "ObjectName": "NiagaraSystem'WaterLevelMonitor'",
+        "ObjectPath": "/Game/UltraDynamicSky/Particles/WaterLevelMonitor.0"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "CallbackObject",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Object'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.CallbackObject",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Object'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 1,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Last Water Level",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Last Water Level",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Use Camera Location",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Use Camera Location",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "Owner": {
+          "ObjectName": "WaterLevelMonitorComponent_C'Default__WaterLevelMonitorComponent_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.4"
+        },
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.CallbackObject",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Object'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 1,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.Last Water Level",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.Use Camera Location",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraBool'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          128,
+          150,
+          24,
+          203,
+          255,
+          255,
+          255,
+          255
+        ],
+        "UObjects": [
+          null
+        ]
+      }
+    }
+  }
+]

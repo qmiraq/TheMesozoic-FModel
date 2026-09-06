@@ -1,0 +1,630 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Clam_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/PickablePieces/BP_Clam",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "ComponentTemplates": [
+        {
+          "ObjectName": "ProjectileMovementComponent'BP_Clam_C:NODE_AddProjectileMovementComponent-0'",
+          "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.9"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Clam_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Clam_C:ExecuteUbergraph_BP_Clam'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.3"
+      },
+      "CookedComponentInstancingData": [
+        {
+          "Key": "NODE_AddProjectileMovementComponent-0",
+          "Value": {
+            "ChangedPropertyList": [
+              {
+                "PropertyName": "MaxSpeed",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ProjectileMovementComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Velocity",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ProjectileMovementComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Z",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              }
+            ],
+            "bHasValidCookedData": true
+          }
+        }
+      ]
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIClam'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Clam_C:UserConstructionScript'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.7"
+      },
+      {
+        "ObjectName": "Function'BP_Clam_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.5"
+      },
+      {
+        "ObjectName": "Function'BP_Clam_C:ReceiveDestroyed'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.6"
+      },
+      {
+        "ObjectName": "Function'BP_Clam_C:OnbIsPickedUpChanged'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.4"
+      },
+      {
+        "ObjectName": "Function'BP_Clam_C:ExecuteUbergraph_BP_Clam'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Clam": {
+        "ObjectName": "Function'BP_Clam_C:ExecuteUbergraph_BP_Clam'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.3"
+      },
+      "OnbIsPickedUpChanged": {
+        "ObjectName": "Function'BP_Clam_C:OnbIsPickedUpChanged'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.4"
+      },
+      "ReceiveDestroyed": {
+        "ObjectName": "Function'BP_Clam_C:ReceiveDestroyed'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.6"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Clam_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.5"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BP_Clam_C:UserConstructionScript'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.7"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Clam_C'Default__BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "SceneComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_Clam_C'Default__BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.2"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 30.0,
+        "Y": 30.0,
+        "Z": 15.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Scent",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "BP_Clam_C",
+    "Name": "Default__BP_Clam_C",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/PickablePieces/BP_Clam.BP_Clam_C'",
+    "Package": "/Game/TheIsle/Core/PickablePieces/BP_Clam",
+    "Properties": {
+      "UberGraphFrame": {},
+      "OpenAnimSequence": {
+        "ObjectName": "AnimSequence'A_Clam_Open'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Clam/Animations/A_Clam_Open.0"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__BP_Clam_C:SceneComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMeshComponent'Default__BP_Clam_C:SkeletalMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.14"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Clam_C:StaticMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.15"
+      },
+      "PhysicsCons": {
+        "ObjectName": "PhysicsConstraintComponent'Default__BP_Clam_C:PhysicsConstraint'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.8"
+      },
+      "ProjectileMovement": {
+        "ObjectName": "ProjectileMovementComponent'Default__BP_Clam_C:ProjectileMovement'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.10"
+      },
+      "PhysicsRefBoneName": "None",
+      "CarriedRefBoneName": "None",
+      "bIsSolid": true,
+      "bReplicateMovement": true,
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__BP_Clam_C:SceneComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.1"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Clam",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetIsPickedUp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bPickedUp",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temp_struct_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetIsPickedUp_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'ProjectileMovementComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnbIsPickedUpChanged",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIGoreBase:OnbIsPickedUpChanged'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bPickedUp",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveDestroyed",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveDestroyed'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "PhysicsConstraint",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
+    "Outer": {
+      "ObjectName": "BP_Clam_C'Default__BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.2"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BP_Clam_C:SceneComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.1"
+      }
+    }
+  },
+  {
+    "Type": "ProjectileMovementComponent",
+    "Name": "NODE_AddProjectileMovementComponent-0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'ProjectileMovementComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.0"
+    },
+    "Properties": {
+      "MaxSpeed": 2000.0,
+      "Velocity": {
+        "X": 1.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "ProjectileMovementComponent",
+    "Name": "ProjectileMovement",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'ProjectileMovementComponent'",
+    "Outer": {
+      "ObjectName": "BP_Clam_C'Default__BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.2"
+    },
+    "Properties": {
+      "bSimulationEnabled": false,
+      "Velocity": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Clam_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.13"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Clam_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.11"
+      },
+      "VariableGuid": "76CF4742-4827F367-ED0AB7AD-6A925C89",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.0"
+    },
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Clam_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.12"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Clam_C'Default__BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.2"
+    },
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'A_Clam_Closed'",
+          "ObjectPath": "/Game/TheIsle/Characters/Animalia/Clam/Animations/A_Clam_Closed.0"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Clam'",
+        "ObjectPath": "/Game/TheIsle/Characters/Animalia/Clam/Meshes/SK_Clam.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Clam'",
+        "ObjectPath": "/Game/TheIsle/Characters/Animalia/Clam/Meshes/SK_Clam.1"
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BP_Clam_C:SceneComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.1"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -15.0
+      },
+      "RelativeScale3D": {
+        "X": 15.0,
+        "Y": 15.0,
+        "Z": 15.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Clam_C'Default__BP_Clam_C'",
+      "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.2"
+    },
+    "Properties": {
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BP_Clam_C:SceneComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_Clam.1"
+      },
+      "RelativeLocation": {
+        "X": -3.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 110.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]

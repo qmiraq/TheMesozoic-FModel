@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Amb_Swamp_Pondlife_Evening",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Sound/Ambience/Swamp/OneShots/CU_Amb_Swamp_Pondlife_Evening",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.02,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'Ambi_BirdCalls_OneShot'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/Ambi_BirdCalls_OneShot.0"
+      },
+      "bOverrideConcurrency": true,
+      "ConcurrencyOverrides": {
+        "MaxCount": 1
+      },
+      "Duration": 8.743438,
+      "MaxDistance": 60512.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_AmbientBirds'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Amb/ATT_AmbientBirds.0"
+      },
+      "SoundSubmixSends": [
+        {
+          "SendStage": "ESubmixSendStage::PostDistanceAttenuation",
+          "SendLevelControlMethod": "ESendLevelControlMethod::Linear",
+          "SoundSubmix": {
+            "ObjectName": "SoundSubmix'Submix_Convolution_Large'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_Convolution_Large.0"
+          },
+          "SendLevel": 0.0,
+          "DisableManualSendClamp": false,
+          "MinSendLevel": 0.0,
+          "MaxSendLevel": 0.2,
+          "MinSendDistance": 30000.0,
+          "MaxSendDistance": 75000.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

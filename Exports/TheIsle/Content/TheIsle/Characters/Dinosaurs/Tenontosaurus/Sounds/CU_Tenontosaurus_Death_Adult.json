@@ -1,0 +1,76 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Tenontosaurus_Death_Adult",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Sounds/CU_Tenontosaurus_Death_Adult",
+    "Properties": {
+      "FirstNode": null,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'Tenontosaurus'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/Tenontosaurus.0"
+      },
+      "VirtualizationMode": "EVirtualizationMode::PlayWhenSilent",
+      "ConcurrencySet": [
+        {
+          "ObjectName": "SoundConcurrency'MedFoley_SC'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Concurrency/MedFoley_SC.0"
+        }
+      ],
+      "Duration": 3.1614583,
+      "MaxDistance": 6985.867,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_CloseDinoFoley_Small'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Dinos/Other/ATT_CloseDinoFoley_Small.0"
+      },
+      "BusSends": [
+        {
+          "SourceBusSendLevelControlMethod": "ESourceBusSendLevelControlMethod::CustomCurve",
+          "SoundSourceBus": null,
+          "AudioBus": {
+            "ObjectName": "AudioBus'AB_WeatherDuck'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/AudioBuses/AB_WeatherDuck.0"
+          },
+          "SendLevel": 1.0,
+          "MinSendLevel": 1.0,
+          "MaxSendLevel": 0.0,
+          "MinSendDistance": 0.0,
+          "MaxSendDistance": 6000.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.0,
+                  "Value": 1.0,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_User",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 1.0,
+                  "Value": 0.0,
+                  "ArriveTangent": -1.787189,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": -1.78719,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

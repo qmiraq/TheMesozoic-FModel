@@ -1,0 +1,1048 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GC_Bleeding_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'GC_Bleeding_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'GameplayCueNotify_Actor'",
+      "ObjectPath": "/Script/GameplayAbilities"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'GC_Bleeding_C:SpawnBloodSplat'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.2"
+      },
+      {
+        "ObjectName": "Function'GC_Bleeding_C:OnExecute'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CueOwner",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "BloodDripScale",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Scale",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "BloodSpawnTransform",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 96,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "OnExecute": {
+        "ObjectName": "Function'GC_Bleeding_C:OnExecute'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.1"
+      },
+      "SpawnBloodSplat": {
+        "ObjectName": "Function'GC_Bleeding_C:SpawnBloodSplat'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GC_Bleeding_C'Default__GC_Bleeding_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "OnExecute",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'GC_Bleeding_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'GameplayCueNotify_Actor:OnExecute'",
+      "ObjectPath": "/Script/GameplayAbilities"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "MyTarget",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Parameters",
+        "Flags": "RF_Public",
+        "ElementSize": 224,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'GameplayCueParameters'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Character_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Human_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TIHumanBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDraggerCarrier_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAttached_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSwimming_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetAbilityState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EAbilityState'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsFlying_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsUnderwater_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSwimming_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetScaledCapsuleHalfHeight_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetScaledCapsuleRadius_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsBleedingClogged_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Dinosaur_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TIDinosaurBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsGodMode_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetIsAlive_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_LineTraceSingle_OutHit",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LineTraceSingle_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_VectorToRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentScale_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_ClampVectorSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Yaw_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Pitch_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnBloodSplat",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'GC_Bleeding_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_BloodSplat_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_BloodSplat.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "GC_Bleeding_C",
+    "Name": "Default__GC_Bleeding_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.GC_Bleeding_C'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding",
+    "Properties": {
+      "Scale": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      },
+      "BloodSpawnTransform": {
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 1.0,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0
+        },
+        "Translation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale3D": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "bAutoDestroyOnRemove": true,
+      "GameplayCueTag": {
+        "TagName": "GameplayCue.Active.Bleeding"
+      },
+      "GameplayCueName": "GameplayCue.Active.Bleeding"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'GC_Bleeding_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'GC_Bleeding_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.6"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'GC_Bleeding_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.4"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "9487450D-49889294-51CE4B8E-7262D17D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'GC_Bleeding_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'GC_Bleeding_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'GC_Bleeding_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'GC_Bleeding_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/GC_Bleeding.5"
+      }
+    }
+  }
+]

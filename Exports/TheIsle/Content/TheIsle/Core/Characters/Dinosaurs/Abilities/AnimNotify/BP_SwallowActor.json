@@ -1,0 +1,1419 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SwallowActor_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "Timelines": [
+        {
+          "ObjectName": "TimelineTemplate'BP_SwallowActor_C:GalliSwallowCorpseHands_Template'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.13"
+        },
+        {
+          "ObjectName": "TimelineTemplate'BP_SwallowActor_C:GalliSwallowCorpseNormal_Template'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.14"
+        },
+        {
+          "ObjectName": "TimelineTemplate'BP_SwallowActor_C:GalliSwallowPlantNormal_Template'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.15"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SwallowActor_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.12"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_SwallowActor_C:ExecuteUbergraph_BP_SwallowActor'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TISwallowedActor'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowCorpseNormal__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.6"
+      },
+      {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowCorpseNormal__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.7"
+      },
+      {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowPlantNormal__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.8"
+      },
+      {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowPlantNormal__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.9"
+      },
+      {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowCorpseHands__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.4"
+      },
+      {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowCorpseHands__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.5"
+      },
+      {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliMainExecute'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.3"
+      },
+      {
+        "ObjectName": "Function'BP_SwallowActor_C:ExecuteUbergraph_BP_SwallowActor'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "GalliSwallowPlantNormal_Alpha_60E8FBF54E8D1723FD72FAAD63782953",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "GalliSwallowPlantNormal__Direction_60E8FBF54E8D1723FD72FAAD63782953",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETimelineDirection'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GalliSwallowPlantNormal",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TimelineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "GalliSwallowCorpseNormal_Alpha_843017274E8D9B4B14FCA98C3B5FE7F5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "GalliSwallowCorpseNormal__Direction_843017274E8D9B4B14FCA98C3B5FE7F5",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETimelineDirection'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GalliSwallowCorpseNormal",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TimelineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "GalliSwallowCorpseHands_Alpha_316726CE4D65ABED4B29F4B8A11BD284",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "GalliSwallowCorpseHands__Direction_316726CE4D65ABED4B29F4B8A11BD284",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETimelineDirection'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GalliSwallowCorpseHands",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TimelineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "InstigatorActorGalli",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TIGallimimus'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DraggedActor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance | UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "GoreTarget",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'TIGoreBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "TimelineAlpha",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_SwallowActor": {
+        "ObjectName": "Function'BP_SwallowActor_C:ExecuteUbergraph_BP_SwallowActor'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.2"
+      },
+      "GalliMainExecute": {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliMainExecute'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.3"
+      },
+      "GalliSwallowCorpseHands__UpdateFunc": {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowCorpseHands__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.5"
+      },
+      "GalliSwallowCorpseHands__FinishedFunc": {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowCorpseHands__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.4"
+      },
+      "GalliSwallowPlantNormal__UpdateFunc": {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowPlantNormal__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.9"
+      },
+      "GalliSwallowPlantNormal__FinishedFunc": {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowPlantNormal__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.8"
+      },
+      "GalliSwallowCorpseNormal__UpdateFunc": {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowCorpseNormal__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.7"
+      },
+      "GalliSwallowCorpseNormal__FinishedFunc": {
+        "ObjectName": "Function'BP_SwallowActor_C:GalliSwallowCorpseNormal__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SwallowActor_C'Default__BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SwallowActor_C",
+    "Name": "Default__BP_SwallowActor_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.BP_SwallowActor_C'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_SwallowActor",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDraggedPickablePiece_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TIGoreBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetAbilityState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EAbilityState'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PhysicalAnimationData",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'PhysicalAnimationData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetAbilityState_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EAbilityState'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetSplineLength_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDraggedActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSwimming_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetSplineLength_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_AttachToComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorScale3D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Divide_VectorFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetSplineLength_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentScale_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Divide_VectorFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PhysicalAnimationData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'PhysicalAnimationData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetSplineLength_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsSwimming_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetSplineLength_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentScale_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Divide_VectorFloat_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetAbilityState_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EAbilityState'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetAbilityState_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EAbilityState'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetAbilityState_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EAbilityState'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetAbilityState_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EAbilityState'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Gallimimus",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TIGallimimus'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetWorldLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetActorLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_SetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetWorldRotation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLocationAtDistanceAlongSpline_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetWorldLocation_SweepHitResult_1",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetRotationAtDistanceAlongSpline_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetWorldRotation_SweepHitResult_1",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetWorldRotation_SweepHitResult_2",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_B_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_B_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_B_ImplicitCast_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_B_ImplicitCast_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_Alpha_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_Alpha_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetLocationAtDistanceAlongSpline_Distance_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetRotationAtDistanceAlongSpline_Distance_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetLocationAtDistanceAlongSpline_Distance_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Yaw_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_Alpha_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_Alpha_ImplicitCast_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetLocationAtDistanceAlongSpline_Distance_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetRotationAtDistanceAlongSpline_Distance_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_A_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_Alpha_ImplicitCast_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Yaw_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetRotationAtDistanceAlongSpline_Distance_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_A_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Yaw_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GalliMainExecute",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TISwallowedActor:GalliMainExecute'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GalliSwallowCorpseHands__FinishedFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GalliSwallowCorpseHands__UpdateFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GalliSwallowCorpseNormal__FinishedFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GalliSwallowCorpseNormal__UpdateFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GalliSwallowPlantNormal__FinishedFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GalliSwallowPlantNormal__UpdateFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_SwallowActor_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.12"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SwallowActor_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.10"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "FA874C36-4E23D8B2-D16D63A0-83097E8B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SwallowActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SwallowActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SwallowActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.11"
+      }
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "GalliSwallowCorpseHands_Template",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TimelineTemplate'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "Properties": {
+      "TimelineLength": 2.5,
+      "LengthMode": "TL_LastKeyFrame",
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat'CV_GalliSwallowCorpseHands'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/Swallow/CV_GalliSwallowCorpseHands.0"
+          },
+          "PropertyName": "GalliSwallowCorpseHands_Alpha_316726CE4D65ABED4B29F4B8A11BD284",
+          "TrackName": "Alpha",
+          "bIsExternalCurve": true
+        }
+      ],
+      "TimelineGuid": "316726CE-4D65ABED-4B29F4B8-A11BD284",
+      "VariableName": "GalliSwallowCorpseHands",
+      "DirectionPropertyName": "GalliSwallowCorpseHands__Direction_316726CE4D65ABED4B29F4B8A11BD284",
+      "UpdateFunctionName": "GalliSwallowCorpseHands__UpdateFunc",
+      "FinishedFunctionName": "GalliSwallowCorpseHands__FinishedFunc"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "GalliSwallowCorpseNormal_Template",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TimelineTemplate'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "Properties": {
+      "TimelineLength": 2.5,
+      "LengthMode": "TL_LastKeyFrame",
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat'CV_GalliSwallowCorpseNormal'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/Swallow/CV_GalliSwallowCorpseNormal.0"
+          },
+          "PropertyName": "GalliSwallowCorpseNormal_Alpha_843017274E8D9B4B14FCA98C3B5FE7F5",
+          "TrackName": "Alpha",
+          "bIsExternalCurve": true
+        }
+      ],
+      "TimelineGuid": "84301727-4E8D9B4B-14FCA98C-3B5FE7F5",
+      "VariableName": "GalliSwallowCorpseNormal",
+      "DirectionPropertyName": "GalliSwallowCorpseNormal__Direction_843017274E8D9B4B14FCA98C3B5FE7F5",
+      "UpdateFunctionName": "GalliSwallowCorpseNormal__UpdateFunc",
+      "FinishedFunctionName": "GalliSwallowCorpseNormal__FinishedFunc"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "GalliSwallowPlantNormal_Template",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TimelineTemplate'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SwallowActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BP_SwallowActor.0"
+    },
+    "Properties": {
+      "TimelineLength": 2.5,
+      "LengthMode": "TL_LastKeyFrame",
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat'CV_GalliSwallowPlantNormal'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Cues/Swallow/CV_GalliSwallowPlantNormal.0"
+          },
+          "PropertyName": "GalliSwallowPlantNormal_Alpha_60E8FBF54E8D1723FD72FAAD63782953",
+          "TrackName": "Alpha",
+          "bIsExternalCurve": true
+        }
+      ],
+      "TimelineGuid": "60E8FBF5-4E8D1723-FD72FAAD-63782953",
+      "VariableName": "GalliSwallowPlantNormal",
+      "DirectionPropertyName": "GalliSwallowPlantNormal__Direction_60E8FBF54E8D1723FD72FAAD63782953",
+      "UpdateFunctionName": "GalliSwallowPlantNormal__UpdateFunc",
+      "FinishedFunctionName": "GalliSwallowPlantNormal__FinishedFunc"
+    }
+  }
+]

@@ -1,0 +1,1086 @@
+[
+  {
+    "Type": "AC_Bodycam_C",
+    "Name": "AC_Bodycam_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/UI/BodycamFilter/BodycamComponent/AC_Bodycam.AC_Bodycam_C'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "Template": {
+      "ObjectName": "AC_Bodycam_C'Default__AC_Bodycam_C'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/BodycamComponent/AC_Bodycam.0"
+    },
+    "Properties": {
+      "BodyCamComponentEnabled?": false,
+      "Has Bodycam Frame?": true,
+      "Use Real Time?": false,
+      "Dirt Mask Intensity": 15.0,
+      "ZoomFOV": 70.0
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AdminPawn_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Pawns/BP_AdminPawn",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_AdminPawn_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.19"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AdminPawn_C:ExecuteUbergraph_BP_AdminPawn'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIAdminPawn'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AdminPawn_C:RequestedToTeleport'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.10"
+      },
+      {
+        "ObjectName": "Function'BP_AdminPawn_C:TeleportAdminToTarget'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.12"
+      },
+      {
+        "ObjectName": "Function'BP_AdminPawn_C:ReceiveEndPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.9"
+      },
+      {
+        "ObjectName": "Function'BP_AdminPawn_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.8"
+      },
+      {
+        "ObjectName": "Function'BP_AdminPawn_C:BodyCamEnable'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.5"
+      },
+      {
+        "ObjectName": "Function'BP_AdminPawn_C:BodyCamDisable'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.4"
+      },
+      {
+        "ObjectName": "Function'BP_AdminPawn_C:CustomEvent_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.6"
+      },
+      {
+        "ObjectName": "Function'BP_AdminPawn_C:SetServerLocation'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.11"
+      },
+      {
+        "ObjectName": "Function'BP_AdminPawn_C:ExecuteUbergraph_BP_AdminPawn'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WorldPartitionStreamingSource",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'WorldPartitionStreamingSourceComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AC_Bodycam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AC_Bodycam_C'",
+          "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/BodycamComponent/AC_Bodycam.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Camera",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'CameraComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AdminPawn": {
+        "ObjectName": "Function'BP_AdminPawn_C:ExecuteUbergraph_BP_AdminPawn'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.7"
+      },
+      "SetServerLocation": {
+        "ObjectName": "Function'BP_AdminPawn_C:SetServerLocation'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.11"
+      },
+      "CustomEvent_0": {
+        "ObjectName": "Function'BP_AdminPawn_C:CustomEvent_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.6"
+      },
+      "BodyCamDisable": {
+        "ObjectName": "Function'BP_AdminPawn_C:BodyCamDisable'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.4"
+      },
+      "BodyCamEnable": {
+        "ObjectName": "Function'BP_AdminPawn_C:BodyCamEnable'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.5"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_AdminPawn_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.8"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_AdminPawn_C:ReceiveEndPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.9"
+      },
+      "TeleportAdminToTarget": {
+        "ObjectName": "Function'BP_AdminPawn_C:TeleportAdminToTarget'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.12"
+      },
+      "RequestedToTeleport": {
+        "ObjectName": "Function'BP_AdminPawn_C:RequestedToTeleport'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.10"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_NotPlaceable | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AdminPawn_C'Default__BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AdminPawn_C",
+    "Name": "Default__BP_AdminPawn_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Pawns/BP_AdminPawn.BP_AdminPawn_C'",
+    "Package": "/Game/TheIsle/Core/Pawns/BP_AdminPawn",
+    "Properties": {
+      "UberGraphFrame": {},
+      "PostProcess": {
+        "ObjectName": "PostProcessComponent'Default__BP_AdminPawn_C:PostProcessComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.13"
+      },
+      "MPC_Underwater": {
+        "ObjectName": "MaterialParameterCollection'MPC_NewUnderwaterPostProcessing'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/MPC_NewUnderwaterPostProcessing.0"
+      },
+      "MovementComponent": {
+        "ObjectName": "SpectatorPawnMovement'Default__BP_AdminPawn_C:MovementComponent0'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.20"
+      },
+      "CollisionComponent": {
+        "ObjectName": "SphereComponent'Default__BP_AdminPawn_C:CollisionComponent0'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.21"
+      },
+      "bUseControllerRotationPitch": true,
+      "bUseControllerRotationYaw": true,
+      "bUseControllerRotationRoll": true,
+      "NetUpdateFrequency": 12.0,
+      "MinNetUpdateFrequency": 8.0,
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__BP_AdminPawn_C:CollisionComponent0'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.21"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "Camera_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CameraComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "Properties": {
+      "bUsePawnControlRotation": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BodyCamDisable",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BodyCamEnable",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomEvent_0",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AdminPawn",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PlayerController'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Player_Controller",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TIPlayerController'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_TeleportTo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Controller'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_bIsEditor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_NewLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetActorLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_SetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Yaw_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Class'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "RequestedToTeleport",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIAdminPawn:RequestedToTeleport'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetServerLocation",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "NewLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Net | FUNC_NetServer | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TeleportAdminToTarget",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Net | FUNC_NetClient | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "PostProcessComponent",
+    "Name": "PostProcessComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PostProcessComponent'",
+    "Outer": {
+      "ObjectName": "BP_AdminPawn_C'Default__BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.2"
+    },
+    "Properties": {
+      "Settings": {
+        "bOverride_AutoExposureBiasCurve": true,
+        "AutoExposureBiasCurve": {
+          "ObjectName": "CurveFloat'NV_Exposure_18'",
+          "ObjectPath": "/Game/TheIsle/MaterialLibrary/Utility/PostProcess/NightVision/NV_Exposure_18.0"
+        },
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "Material'M_NightVision_Admins_PP'",
+                "ObjectPath": "/Game/TheIsle/MaterialLibrary/Utility/PostProcess/M_NightVision_Admins_PP.0"
+              }
+            }
+          ]
+        }
+      },
+      "Priority": 10.0,
+      "bEnabled": false,
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__BP_AdminPawn_C:CollisionComponent0'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.21"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AdminPawn_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.19"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_AdminPawn_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.14"
+      },
+      "VariableGuid": "C996BA0A-43739705-C7F3F4B9-47F8BD25",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AdminPawn_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.19"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'CameraComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CameraComponent'BP_AdminPawn_C:Camera_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.3"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "bUsePawnControlRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CameraComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "CollisionComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F95015DF-488711F8-EA937184-75525943",
+      "InternalVariableName": "Camera"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AdminPawn_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.19"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'WorldPartitionStreamingSourceComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "WorldPartitionStreamingSourceComponent'BP_AdminPawn_C:WorldPartitionStreamingSource_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.22"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "DebugColor",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'WorldPartitionStreamingSourceComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "G",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Color'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "R",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Color'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Shapes",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'WorldPartitionStreamingSourceComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'WorldPartitionStreamingSourceComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bStreamingSourceEnabled",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'WorldPartitionStreamingSourceComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "57C47FC6-46A76D1A-6A4F5EA0-A3CD899C",
+      "InternalVariableName": "WorldPartitionStreamingSource"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AdminPawn_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.19"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'AC_Bodycam_C'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/BodycamComponent/AC_Bodycam.1"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AC_Bodycam_C'BP_AdminPawn_C:AC_Bodycam_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.0"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "BodyCamComponentEnabled?",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'AC_Bodycam_C'",
+              "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/BodycamComponent/AC_Bodycam.1"
+            }
+          },
+          {
+            "PropertyName": "Has Bodycam Frame?",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'AC_Bodycam_C'",
+              "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/BodycamComponent/AC_Bodycam.1"
+            }
+          },
+          {
+            "PropertyName": "Use Real Time?",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'AC_Bodycam_C'",
+              "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/BodycamComponent/AC_Bodycam.1"
+            }
+          },
+          {
+            "PropertyName": "Dirt Mask Intensity",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'AC_Bodycam_C'",
+              "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/BodycamComponent/AC_Bodycam.1"
+            }
+          },
+          {
+            "PropertyName": "ZoomFOV",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'AC_Bodycam_C'",
+              "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/BodycamComponent/AC_Bodycam.1"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "DEB03757-40B1AEEA-A039ECB5-D6E3C6B3",
+      "InternalVariableName": "AC_Bodycam"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_AdminPawn_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AdminPawn_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AdminPawn_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.17"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_AdminPawn_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.16"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AdminPawn_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.18"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AdminPawn_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.17"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_AdminPawn_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.15"
+      }
+    }
+  },
+  {
+    "Type": "SpectatorPawnMovement",
+    "Name": "MovementComponent0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SpectatorPawnMovement'",
+    "Outer": {
+      "ObjectName": "BP_AdminPawn_C'Default__BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.2"
+    },
+    "Properties": {
+      "MaxSpeed": 5000.0,
+      "Acceleration": 20000.0,
+      "Deceleration": 20000.0,
+      "TurningBoost": 10.0,
+      "NavAgentProps": {
+        "bCanFly": true
+      },
+      "bTickBeforeOwner": false,
+      "bAutoRegisterPhysicsVolumeUpdates": false
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "CollisionComponent0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_AdminPawn_C'Default__BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.2"
+    },
+    "Properties": {
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "WorldPartitionStreamingSourceComponent",
+    "Name": "WorldPartitionStreamingSource_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'WorldPartitionStreamingSourceComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AdminPawn_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Pawns/BP_AdminPawn.1"
+    },
+    "Properties": {
+      "DebugColor": {
+        "B": 0,
+        "G": 255,
+        "R": 232,
+        "A": 255,
+        "Hex": "E8FF00"
+      },
+      "Shapes": [
+        {
+          "bUseGridLoadingRange": true,
+          "LoadingRangeScale": 10.0,
+          "Radius": 10000.0,
+          "bIsSector": false,
+          "SectorAngle": 360.0,
+          "Location": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Rotation": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          }
+        }
+      ],
+      "bStreamingSourceEnabled": false
+    }
+  }
+]

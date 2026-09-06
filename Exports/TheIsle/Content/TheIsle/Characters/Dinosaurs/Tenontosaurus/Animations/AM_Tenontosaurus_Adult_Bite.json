@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "AM_Tenontosaurus_Adult_Bite",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AnimMontage'",
+    "Package": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Animations/AM_Tenontosaurus_Adult_Bite",
+    "Properties": {
+      "BlendOut": {
+        "BlendTime": 0.4
+      },
+      "CompositeSections": [
+        {
+          "SectionName": "Default",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'AM_Tenontosaurus_Adult_Bite'",
+            "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Animations/AM_Tenontosaurus_Adult_Bite.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 0.8333333,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'A_Tenontosaurus_Adult_Bite'",
+            "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Animations/A_Tenontosaurus_Adult_Bite.0"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "UpperBodyNeck",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'A_Tenontosaurus_Adult_Bite'",
+                  "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Animations/A_Tenontosaurus_Adult_Bite.0"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 0.8333333,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "CommonTargetFrameRate": {
+        "Numerator": 30
+      },
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "BPAN_FireBite_C",
+          "Notify": {
+            "ObjectName": "BPAN_FireBite_C'AM_Tenontosaurus_Adult_Bite:BPAN_FireBite_C_0'",
+            "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Animations/AM_Tenontosaurus_Adult_Bite.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.280941,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bCanBeFilteredViaRequest": true,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 1,
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'AM_Tenontosaurus_Adult_Bite'",
+            "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Animations/AM_Tenontosaurus_Adult_Bite.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 0.8333333,
+          "LinkValue": 0.23103715,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'A_Tenontosaurus_Adult_Bite'",
+            "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Animations/A_Tenontosaurus_Adult_Bite.0"
+          }
+        }
+      ],
+      "SequenceLength": 0.8333167,
+      "RateScale": 0.75,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SKEL_Tenontosaurus'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Mesh/SKEL_Tenontosaurus.24"
+      }
+    },
+    "SkeletonGuid": "A3E93625-43118A12-8B6F92B8-EAD2A33B"
+  },
+  {
+    "Type": "BPAN_FireBite_C",
+    "Name": "BPAN_FireBite_C_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BPAN_FireBite.BPAN_FireBite_C'",
+    "Outer": {
+      "ObjectName": "AnimMontage'AM_Tenontosaurus_Adult_Bite'",
+      "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Tenontosaurus/Animations/AM_Tenontosaurus_Adult_Bite.0"
+    },
+    "Template": {
+      "ObjectName": "BPAN_FireBite_C'Default__BPAN_FireBite_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BPAN_FireBite.1"
+    },
+    "Properties": {
+      "EventTag": {
+        "TagName": "Event.Montage.EndPrimaryAbility"
+      }
+    }
+  }
+]

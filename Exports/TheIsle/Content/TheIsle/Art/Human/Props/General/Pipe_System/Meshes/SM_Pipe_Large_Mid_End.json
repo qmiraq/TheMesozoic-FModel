@@ -1,0 +1,215 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Pipe_Large_Mid_End'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Pipe_System/Meshes/SM_Pipe_Large_Mid_End.2"
+    },
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 9.000015,
+              "Z": -0.61517954
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 180.0,
+              "Roll": 0.0
+            },
+            "X": 15.999985,
+            "Y": 18.00003,
+            "Z": 14.519999,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "1556F35B46FBB9B422A9BAAAC96C4F4D",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 43890,
+        "SizeOnDisk": 43890,
+        "OffsetInFile": "0x589"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Pipe_Large_Mid_End'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Pipe_System/Meshes/SM_Pipe_Large_Mid_End.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 410,
+        "SizeOnDisk": 410,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Pipe_Large_Mid_End",
+    "Flags": "RF_Public | RF_Standalone | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/Art/Human/Props/General/Pipe_System/Meshes/SM_Pipe_Large_Mid_End",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Pipe_System'",
+            "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Pipe_System/Materials/MI_Pipe_System.0"
+          },
+          "MaterialSlotName": "Pipe_Sys",
+          "ImportedMaterialSlotName": "Pipe_Sys",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 494.2767,
+            "LocalUVDensities[1]": 50.271145,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 50.271145,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -5.221367E-05,
+          "Y": 8.902059,
+          "Z": -0.38461375
+        },
+        "BoxExtent": {
+          "X": 7.623844,
+          "Y": 8.902059,
+          "Z": 7.623845
+        },
+        "SphereRadius": 11.720479965209961
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Pipe_Large_Mid_End:BodySetup_1'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Pipe_System/Meshes/SM_Pipe_Large_Mid_End.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Pipe_Large_Mid_End:NavCollision_2'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Pipe_System/Meshes/SM_Pipe_Large_Mid_End.1"
+    },
+    "LightingGuid": "65D1F06B-4A59E6C9-EE6EB99A-66553F2D",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 827,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1032,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": -0.04179573,
+          "Y": 9.056869,
+          "Z": -0.35404873
+        },
+        "BoxExtent": {
+          "X": 8.283033,
+          "Y": 9.201999,
+          "Z": 8.053873
+        },
+        "SphereRadius": 14.324804
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

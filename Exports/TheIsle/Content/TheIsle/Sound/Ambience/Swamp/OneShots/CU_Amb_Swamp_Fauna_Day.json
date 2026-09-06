@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Amb_Swamp_Fauna_Day",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Sound/Ambience/Swamp/OneShots/CU_Amb_Swamp_Fauna_Day",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.012,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'Ambi_BirdCalls_OneShot'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/Ambi_BirdCalls_OneShot.0"
+      },
+      "bOverrideConcurrency": true,
+      "ConcurrencyOverrides": {
+        "MaxCount": 1,
+        "VolumeScale": 0.3
+      },
+      "Duration": 8.312646,
+      "MaxDistance": 84512.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_AmbientFauna'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Amb/ATT_AmbientFauna.0"
+      },
+      "SoundSubmixObject": {
+        "ObjectName": "SoundSubmix'Submix_Convolution_Med'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_Convolution_Med.0"
+      },
+      "SoundSubmixSends": [
+        {
+          "SendStage": "ESubmixSendStage::PostDistanceAttenuation",
+          "SendLevelControlMethod": "ESendLevelControlMethod::Linear",
+          "SoundSubmix": {
+            "ObjectName": "SoundSubmix'Submix_DistantCalls'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_DistantCalls.0"
+          },
+          "SendLevel": 1.0,
+          "DisableManualSendClamp": false,
+          "MinSendLevel": 0.2,
+          "MaxSendLevel": 10.0,
+          "MinSendDistance": 100.0,
+          "MaxSendDistance": 64000.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

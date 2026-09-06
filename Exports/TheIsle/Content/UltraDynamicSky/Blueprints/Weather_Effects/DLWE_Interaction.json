@@ -1,0 +1,4348 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DLWE_Interaction_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'DLWE_Interaction_C:ExecuteUbergraph_DLWE_Interaction'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'NiagaraComponent'",
+      "ObjectPath": "/Script/Niagara"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Check for Disable Phys Mats'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.2"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Self Deactivate'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.17"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Self Activate'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.16"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Update Snow Trail Particles'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.22"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Update Sound'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.23"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Sleep'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.18"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Draw Snow/Dust Trails'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.4"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Make Sound Component'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.9"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Puddle Impact'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.11"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Ripple Size'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.15"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Snow/Dust Impact'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.19"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Spawn Ripple'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.20"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:General Surface Impact'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.6"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Trace for DLWE Surface'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.21"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Collision Trace Length'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.3"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Impact Surface'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.7"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Query Puddle Volume'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.12"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Play Puddle Splash Sound'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.10"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:ReceiveParticleData'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.14"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.13"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:ExecuteUbergraph_DLWE_Interaction'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.5"
+      },
+      {
+        "ObjectName": "Function'DLWE_Interaction_C:Impacted Ground__DelegateSignature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.8"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Size",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Interaction Settings",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_DLWE_Interaction_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_DLWE_Interaction_Settings.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Material Puddles",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Snow Depth",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Dust Depth",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "System Velocity",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Interaction Sound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Puddle Fluid Depth",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Last Trace Location",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Hit Puddle Fluid Volume",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "MulticastInlineDelegateProperty",
+        "Name": "Impacted Ground",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | BlueprintAssignable | BlueprintCallable",
+        "SignatureFunction": {
+          "ObjectName": "Function'DLWE_Interaction_C:Impacted Ground__DelegateSignature'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.8"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Landscape Hit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 264,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Last Update Hit Landscape",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Ground Location",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Ground Normal",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Run General Surface Impacts",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Last Trace Velocity",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Average Speed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Sound Enabled",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Asleep",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UDW Ref Manager",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDW_Actor_Reference_Manager_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDW_Actor_Reference_Manager.0"
+        }
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "DLWE System",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FuncMap": {
+      "Impacted Ground__DelegateSignature": {
+        "ObjectName": "Function'DLWE_Interaction_C:Impacted Ground__DelegateSignature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.8"
+      },
+      "ExecuteUbergraph_DLWE_Interaction": {
+        "ObjectName": "Function'DLWE_Interaction_C:ExecuteUbergraph_DLWE_Interaction'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.5"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'DLWE_Interaction_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.13"
+      },
+      "ReceiveParticleData": {
+        "ObjectName": "Function'DLWE_Interaction_C:ReceiveParticleData'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.14"
+      },
+      "Play Puddle Splash Sound": {
+        "ObjectName": "Function'DLWE_Interaction_C:Play Puddle Splash Sound'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.10"
+      },
+      "Query Puddle Volume": {
+        "ObjectName": "Function'DLWE_Interaction_C:Query Puddle Volume'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.12"
+      },
+      "Impact Surface": {
+        "ObjectName": "Function'DLWE_Interaction_C:Impact Surface'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.7"
+      },
+      "Collision Trace Length": {
+        "ObjectName": "Function'DLWE_Interaction_C:Collision Trace Length'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.3"
+      },
+      "Trace for DLWE Surface": {
+        "ObjectName": "Function'DLWE_Interaction_C:Trace for DLWE Surface'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.21"
+      },
+      "General Surface Impact": {
+        "ObjectName": "Function'DLWE_Interaction_C:General Surface Impact'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.6"
+      },
+      "Spawn Ripple": {
+        "ObjectName": "Function'DLWE_Interaction_C:Spawn Ripple'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.20"
+      },
+      "Snow/Dust Impact": {
+        "ObjectName": "Function'DLWE_Interaction_C:Snow/Dust Impact'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.19"
+      },
+      "Ripple Size": {
+        "ObjectName": "Function'DLWE_Interaction_C:Ripple Size'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.15"
+      },
+      "Puddle Impact": {
+        "ObjectName": "Function'DLWE_Interaction_C:Puddle Impact'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.11"
+      },
+      "Make Sound Component": {
+        "ObjectName": "Function'DLWE_Interaction_C:Make Sound Component'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.9"
+      },
+      "Draw Snow/Dust Trails": {
+        "ObjectName": "Function'DLWE_Interaction_C:Draw Snow/Dust Trails'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.4"
+      },
+      "Sleep": {
+        "ObjectName": "Function'DLWE_Interaction_C:Sleep'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.18"
+      },
+      "Update Sound": {
+        "ObjectName": "Function'DLWE_Interaction_C:Update Sound'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.23"
+      },
+      "Update Snow Trail Particles": {
+        "ObjectName": "Function'DLWE_Interaction_C:Update Snow Trail Particles'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.22"
+      },
+      "Self Activate": {
+        "ObjectName": "Function'DLWE_Interaction_C:Self Activate'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.16"
+      },
+      "Self Deactivate": {
+        "ObjectName": "Function'DLWE_Interaction_C:Self Deactivate'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.17"
+      },
+      "Check for Disable Phys Mats": {
+        "ObjectName": "Function'DLWE_Interaction_C:Check for Disable Phys Mats'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.2"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "Class'NiagaraParticleCallbackHandler'",
+          "ObjectPath": "/Script/Niagara"
+        },
+        "PointerProperty": null,
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DLWE_Interaction_C'Default__DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=\"/Script/CoreUObject.Class'/Script/Niagara.NiagaraParticleCallbackHandler'\"))"
+    }
+  },
+  {
+    "Type": "DLWE_Interaction_C",
+    "Name": "Default__DLWE_Interaction_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.DLWE_Interaction_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Size": 24.0,
+      "Interaction Settings": {
+        "ObjectName": "UDS_DLWE_Interaction_Settings_C'Standard_DLWE_Interaction_Settings'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Interaction_Settings/Standard_DLWE_Interaction_Settings.0"
+      },
+      "System Velocity": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Last Trace Location": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Impacted Ground": {
+        "InvocationList": []
+      },
+      "Landscape Hit": {
+        "FaceIndex": 0,
+        "Time": 1.0,
+        "Distance": 0.0,
+        "Location": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "ImpactPoint": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Normal": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "ImpactNormal": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "TraceStart": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "TraceEnd": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "PenetrationDepth": 0.0,
+        "MyItem": -1,
+        "Item": 0,
+        "ElementIndex": 0,
+        "bBlockingHit": false,
+        "bStartPenetrating": false,
+        "PhysMaterial": null,
+        "HitObjectHandle": {
+          "ReferenceObject": null
+        },
+        "Component": null,
+        "BoneName": "None",
+        "MyBoneName": "None"
+      },
+      "Ground Location": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Ground Normal": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Last Trace Velocity": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "DLWE System": {
+        "AssetPathName": "/Game/UltraDynamicSky/Particles/DLWE_Interaction_System.DLWE_Interaction_System",
+        "SubPathString": ""
+      },
+      "TickBehavior": "ENiagaraTickBehavior::ForceTickLast",
+      "OverrideParameters": {
+        "Owner": {
+          "ObjectName": "DLWE_Interaction_C'Default__DLWE_Interaction_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.1"
+        }
+      },
+      "bEnableAutoLODGeneration": false,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "LightingChannels": {
+        "bChannel0": false
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Check for Disable Phys Mats",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Collision Trace Length",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "Draw Snow/Dust Trails",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Trail Source",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Custom Surface Trail",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Min Depth",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Depth Fraction",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_SelectInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_SelectInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Vector_Distance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotFromX_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Vector_Distance2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_VLerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MakeVector_Z_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_DLWE_Interaction",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_Event_Data",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_Event_Data",
+          "Flags": "RF_Public",
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "Class'BasicParticleData'",
+            "ObjectPath": "/Script/Niagara"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_NiagaraSystem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_SimulationPositionOffset",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_IsNotEmpty_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_VSize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_VSize_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Function'UDW_Actor_Reference_Manager_C:Got New UDW Reference__DelegateSignature'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDW_Actor_Reference_Manager.2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDW_Actor_Reference_Manager_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDW_Actor_Reference_Manager.0"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Function'UDW_Actor_Reference_Manager_C:UDW Reference Ended Play__DelegateSignature'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDW_Actor_Reference_Manager.5"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsActive_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_LoadAsset_Blocking_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsNiagara_System",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "General Surface Impact",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SoundBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_PlaySoundAtLocation_VolumeMultiplier_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Impact Surface",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Impacted Ground__DelegateSignature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Ground Collision Hit",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_Delegate | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Make Sound Component",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSoundAttached_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_InFloat_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_InFloat_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SpawnSoundAttached_VolumeMultiplier_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SpawnSoundAttached_PitchMultiplier_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_InFloat_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Play Puddle Splash Sound",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Conv_BoolToDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetTriggerParameter_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetFloatParameter_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_InFloat_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Puddle Impact",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Ripple_Size_Size",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotFromZ_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_Param_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Query Puddle Volume",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "Hits",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Hits",
+          "Flags": "RF_Public",
+          "ElementSize": 264,
+          "PropertyFlags": "ContainsInstancedReference",
+          "Struct": {
+            "ObjectName": "Class'HitResult'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Impacting Puddle",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Ground Height",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Puddle Hit",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "Edit | BlueprintVisible | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsPuddle_Fluid_Volume_Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'Puddle_Fluid_Volume_Interface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Puddle_Fluid_Volume_Interface.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Interact_with_Puddle_Effective_Depth",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'ActorComponent:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveParticleData",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "Data",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Data",
+          "Flags": "RF_Public",
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "Class'BasicParticleData'",
+            "ObjectPath": "/Script/Niagara"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NiagaraSystem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraSystem'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SimulationPositionOffset",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Ripple Size",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Size",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "Self Activate",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Self Deactivate",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Sleep",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AudioParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "Class'AudioParameter'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AudioParameter_1",
+        "Flags": "RF_Public",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "Class'AudioParameter'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 160,
+          "Struct": {
+            "ObjectName": "Class'AudioParameter'",
+            "ObjectPath": "/Script/AudioExtensions"
+          }
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetParameters_Blueprint_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Snow/Dust Impact",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetFloatParameter_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetTriggerParameter_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetTriggerParameter_self_CastInput_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetFloatParameter_self_CastInput_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_InFloat_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_InFloat_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Spawn Ripple",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Size",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetFloatParameter_Param_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Trace for DLWE Surface",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "Hits",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | ContainsInstancedReference",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Hits",
+          "Flags": "RF_Public",
+          "ElementSize": 264,
+          "PropertyFlags": "ContainsInstancedReference",
+          "Struct": {
+            "ObjectName": "Class'HitResult'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Hit Index",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Hit Landscape",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Hit",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "Edit | BlueprintVisible | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_True_if_break_was_hit_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Collision_Trace_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName_1",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_DoesImplementInterface_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Temp_object_Variable",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName_2",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_GetObjectClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "ClassProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Class'",
+            "ObjectPath": "/Script/CoreUObject"
+          },
+          "MetaClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Contains_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_LineTraceMultiForObjects_OutHits",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm | ContainsInstancedReference",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "CallFunc_LineTraceMultiForObjects_OutHits",
+          "Flags": "RF_Public",
+          "ElementSize": 264,
+          "PropertyFlags": "ContainsInstancedReference",
+          "Struct": {
+            "ObjectName": "Class'HitResult'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LineTraceMultiForObjects_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update Snow Trail Particles",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update Sound",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'DLWE_Interaction_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMax_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AudioParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "Class'AudioParameter'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_AudioParameter_1",
+        "Flags": "RF_Public",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "Class'AudioParameter'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 160,
+          "Struct": {
+            "ObjectName": "Class'AudioParameter'",
+            "ObjectPath": "/Script/AudioExtensions"
+          }
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetParameters_Blueprint_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_FloatParam_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_MakeStruct_FloatParam_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

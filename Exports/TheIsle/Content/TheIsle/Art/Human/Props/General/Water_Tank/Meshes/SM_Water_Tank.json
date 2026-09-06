@@ -1,0 +1,215 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Water_Tank'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Water_Tank/Meshes/SM_Water_Tank.2"
+    },
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 58.999996
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 180.0,
+              "Roll": 0.0
+            },
+            "X": 120.0,
+            "Y": 99.99999,
+            "Z": 117.99999,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "55F6924B4430A794DA6F78BED2CBB074",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 80106,
+        "SizeOnDisk": 80106,
+        "OffsetInFile": "0x589"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Water_Tank'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Water_Tank/Meshes/SM_Water_Tank.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 410,
+        "SizeOnDisk": 410,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Water_Tank",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/Art/Human/Props/General/Water_Tank/Meshes/SM_Water_Tank",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_WaterTank'",
+            "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Water_Tank/Materials/MI_WaterTank.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 310.43866,
+            "LocalUVDensities[1]": 481.38553,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 481.38553,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.87174225,
+          "Y": 1.9073486E-06,
+          "Z": 59.499996
+        },
+        "BoxExtent": {
+          "X": 60.871758,
+          "Y": 50.602615,
+          "Z": 59.499996
+        },
+        "SphereRadius": 93.86825775688474
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Water_Tank:BodySetup_0'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Water_Tank/Meshes/SM_Water_Tank.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Water_Tank:NavCollision_0'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Water_Tank/Meshes/SM_Water_Tank.1"
+    },
+    "LightingGuid": "1708E723-4C868891-ECBF7FBC-EF0283A7",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 1571,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1546,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 1.0049648,
+          "Y": 1.9073486E-06,
+          "Z": 60.343353
+        },
+        "BoxExtent": {
+          "X": 62.424232,
+          "Y": 50.602615,
+          "Z": 61.1448
+        },
+        "SphereRadius": 130.49188
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

@@ -1,0 +1,2088 @@
+[
+  {
+    "Type": "AudioComponent",
+    "Name": "SlideAudio_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.2"
+    },
+    "Properties": {
+      "Sound": {
+        "ObjectName": "MetaSoundSource'MS_Dino_Climb_Latch_Slide_Small_Loop'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Sound/Metasounds/Climbing/MS_Dino_Climb_Latch_Slide_Small_Loop.0"
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "HeartbeatAudio",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.24"
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Herrerasaurus_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "ComponentClassOverrides": [
+        {
+          "ComponentName": "RibsMeatMesh",
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponentBudgeted'",
+            "ObjectPath": "/Script/AnimationBudgetAllocator"
+          }
+        },
+        {
+          "ComponentName": "SkeletonMesh",
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponentBudgeted'",
+            "ObjectPath": "/Script/AnimationBudgetAllocator"
+          }
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Herrerasaurus_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.23"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Herrerasaurus_C:ExecuteUbergraph_BP_Herrerasaurus'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIHerrerasaurus'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Herrerasaurus_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.10"
+      },
+      {
+        "ObjectName": "Function'BP_Herrerasaurus_C:ReceiveDestroyed'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.11"
+      },
+      {
+        "ObjectName": "Function'BP_Herrerasaurus_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.12"
+      },
+      {
+        "ObjectName": "Function'BP_Herrerasaurus_C:ExecuteUbergraph_BP_Herrerasaurus'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.9"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SlideAudio",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_FluidImplementation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+          "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SpawnedSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Herrerasaurus": {
+        "ObjectName": "Function'BP_Herrerasaurus_C:ExecuteUbergraph_BP_Herrerasaurus'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.9"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_Herrerasaurus_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.12"
+      },
+      "ReceiveDestroyed": {
+        "ObjectName": "Function'BP_Herrerasaurus_C:ReceiveDestroyed'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.11"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Herrerasaurus_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.10"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "InteractableDetector",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 55.0,
+        "Y": 80.0,
+        "Z": 80.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      },
+      "RelativeLocation": {
+        "X": 80.0,
+        "Y": 0.00025081635,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.00018,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PouncebleArea",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 65.0,
+        "Y": 25.0,
+        "Z": 25.0
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      },
+      "RelativeLocation": {
+        "X": 15.0,
+        "Y": 0.0,
+        "Z": 30.0
+      }
+    }
+  },
+  {
+    "Type": "BP_FluidImplementation_C",
+    "Name": "BP_FluidImplementation_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.BP_FluidImplementation_C'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.2"
+    },
+    "Template": {
+      "ObjectName": "BP_FluidImplementation_C'Default__BP_FluidImplementation_C'",
+      "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.1"
+    },
+    "Properties": {
+      "TraceOffsetUp": 50.0,
+      "TraceOffsetDown": -25.0,
+      "UsePerBoneTrace": true,
+      "FluidDrawSize": 0.0022,
+      "FluidMaxDrawIntensity": 0.0035000001080334187,
+      "VelocityDivideIntensity": 1.0,
+      "VelocityBegin": 5.0
+    }
+  },
+  {
+    "Type": "BP_Herrerasaurus_C",
+    "Name": "Default__BP_Herrerasaurus_C",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.BP_Herrerasaurus_C'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DinosaurAssets": {
+        "ObjectName": "TIDinosaurAssets'DA_DinosaurAssets'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/DA_DinosaurAssets.0"
+      },
+      "VisualGrowthCurve": {
+        "ObjectName": "CurveFloat'Curve_AcceleratedMorph_Visual_Growth'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Curve_AcceleratedMorph_Visual_Growth.0"
+      },
+      "DinosaurMovement": {
+        "ObjectName": "TIDinosaurMovementComponent'Default__BP_Herrerasaurus_C:CharMoveComp'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.36"
+      },
+      "HorizontalCameraYawOffset": {
+        "ObjectName": "CurveVector'CV_HerrerasaurusHorizontalCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Camera/CV_HerrerasaurusHorizontalCameraYawOffset.0"
+      },
+      "DownwardsCameraYawOffset": {
+        "ObjectName": "CurveVector'CV_HerrerasaurusDownwardsCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Camera/CV_HerrerasaurusDownwardsCameraYawOffset.0"
+      },
+      "UpwardsCameraYawOffset": {
+        "ObjectName": "CurveVector'CV_HerrerasaurusUpwardsCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Camera/CV_HerrerasaurusUpwardsCameraYawOffset.0"
+      },
+      "Up45CameraYawOffset": {
+        "ObjectName": "CurveVector'CV_HerrerasaurusUp45CameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Camera/CV_HerrerasaurusUp45CameraYawOffset.0"
+      },
+      "HorizontalCameraYawOffsetZoomed": {
+        "ObjectName": "CurveVector'CV_HerrerasaurusHorizontalCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Camera/CV_HerrerasaurusHorizontalCameraYawOffset.0"
+      },
+      "DownwardsCameraYawOffsetZoomed": {
+        "ObjectName": "CurveVector'CV_HerrerasaurusDownwardsCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Camera/CV_HerrerasaurusDownwardsCameraYawOffset.0"
+      },
+      "UpwardsCameraYawOffsetZoomed": {
+        "ObjectName": "CurveVector'CV_HerrerasaurusUpwardsCameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Camera/CV_HerrerasaurusUpwardsCameraYawOffset.0"
+      },
+      "Up45CameraYawOffsetZoomed": {
+        "ObjectName": "CurveVector'CV_HerrerasaurusUp45CameraYawOffset'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Camera/CV_HerrerasaurusUp45CameraYawOffset.0"
+      },
+      "ClientMeshCollisionProximity": {
+        "ObjectName": "SphereComponent'Default__BP_Herrerasaurus_C:ClientMeshCollisionProximity'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.27"
+      },
+      "AttributeCurveDataTable": {
+        "ObjectName": "DataTable'DT_HerrerasaurusAttributeCurves'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Attributes/DT_HerrerasaurusAttributeCurves.0"
+      },
+      "RestCurveData": {
+        "ObjectName": "CurveLinearColor'ATT_Herrerasaurus_RestCurve'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Attributes/ATT_Herrerasaurus_RestCurve.0"
+      },
+      "NVUnderwaterRangeCurveData": {
+        "ObjectName": "CurveFloat'ATT_Beipiaosaurus_NVUnderwaterRangeF'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Beipiaosaurus/Attributes/OldFloatCurves/ATT_Beipiaosaurus_NVUnderwaterRangeF.0"
+      },
+      "AttributeBalanceDataTable": {
+        "ObjectName": "DataTable'DT_HerrerasaurusBalanceAttributes'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/DT_HerrerasaurusBalanceAttributes.0"
+      },
+      "VocalsDataTable": {
+        "ObjectName": "DataTable'DT_HerrerasaurusVocals'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/Vocals/DT_HerrerasaurusVocals.0"
+      },
+      "DeathPhysicsAsset": {
+        "AssetPathName": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Mesh/PHYS_Herrerasaurus.PHYS_Herrerasaurus",
+        "SubPathString": ""
+      },
+      "EatingChunkPiece": {
+        "ObjectName": "BlueprintGeneratedClass'BP_GoreMeat_C'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_GoreMeat.0"
+      },
+      "StretchChunkPiece": {
+        "ObjectName": "BlueprintGeneratedClass'BP_GoreMeatStretch_C'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_GoreMeatStretch.0"
+      },
+      "CharacterAssets": {
+        "ObjectName": "TICharacterAssets'DA_CharacterAssets'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/DA_CharacterAssets.0"
+      },
+      "AbilitySet": {
+        "ObjectName": "TIGameplayAbilitySet'DA_HerrerasaurusGameplayAbilities'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/DA_HerrerasaurusGameplayAbilities.0"
+      },
+      "Montages": {
+        "ObjectName": "TIDinosaurMontages'DA_HerrerasaurusMontages'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/DA_HerrerasaurusMontages.0"
+      },
+      "SmallVocalsSubmix": {
+        "ObjectName": "SoundSubmix'Submix_SmallRoar_Distant'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_SmallRoar_Distant.0"
+      },
+      "MediumVocalsSubmix": {
+        "ObjectName": "SoundSubmix'Submix_MediumRoars_Distant'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_MediumRoars_Distant.0"
+      },
+      "LargeVocalsSubmix": {
+        "ObjectName": "SoundSubmix'Submix_LargeRoars'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_LargeRoars.0"
+      },
+      "AntiCheatComponent": {
+        "ObjectName": "TIAntiCheatComponent'Default__BP_Herrerasaurus_C:AntiCheatComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.34"
+      },
+      "AbilitySystemComponent": {
+        "ObjectName": "TIAbilitySystemComponent'Default__BP_Herrerasaurus_C:AbilitySystemComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.33"
+      },
+      "DragLocation": {
+        "ObjectName": "SceneComponent'Default__BP_Herrerasaurus_C:Draglocation'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.19"
+      },
+      "ThroatMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Herrerasaurus_C:ThroatMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.32"
+      },
+      "SkeletonMesh": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:SkeletonMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.26"
+      },
+      "RibsMeatMesh": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:RibsMeatMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.25"
+      },
+      "ThroatSpline": {
+        "ObjectName": "SplineComponent'Default__BP_Herrerasaurus_C:ThroatSpline'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.29"
+      },
+      "InteractableDetector": {
+        "ObjectName": "BoxComponent'Default__BP_Herrerasaurus_C:InteractableDetector'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.3"
+      },
+      "CorpseDisableDetector": {
+        "ObjectName": "SphereComponent'Default__BP_Herrerasaurus_C:CorpseDisableDetector'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.28"
+      },
+      "PouncebleArea": {
+        "ObjectName": "BoxComponent'Default__BP_Herrerasaurus_C:PouncebleArea'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.4"
+      },
+      "NameWidget": {
+        "ObjectName": "WidgetComponent'Default__BP_Herrerasaurus_C:NameWidget'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.38"
+      },
+      "BuoyancyPlane": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Herrerasaurus_C:BuoyancyPlane'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.31"
+      },
+      "FootstepsComponent": {
+        "ObjectName": "TIFootstepsComponent'Default__BP_Herrerasaurus_C:FootstepsComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.37"
+      },
+      "PhysicsHandleComponent": {
+        "ObjectName": "PhysicsHandleComponent'Default__BP_Herrerasaurus_C:PhysicsHandle'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.17"
+      },
+      "AttributeSet": null,
+      "SpecialIdleMontages": [
+        {
+          "ObjectName": "AnimMontage'AM_Herrerasaurus_Adult_Idle'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Animations/AM_Herrerasaurus_Adult_Idle.0"
+        },
+        {
+          "ObjectName": "AnimMontage'AM_Herrerasaurus_Adult_Idle2'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Animations/AM_Herrerasaurus_Adult_Idle2.0"
+        },
+        {
+          "ObjectName": "AnimMontage'AM_Herrerasaurus_Adult_Idle3'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Animations/AM_Herrerasaurus_Adult_Idle3.0"
+        }
+      ],
+      "CharacterMovementComponent": {
+        "ObjectName": "TIDinosaurMovementComponent'Default__BP_Herrerasaurus_C:CharMoveComp'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.36"
+      },
+      "MainCamera": {
+        "ObjectName": "CameraComponent'Default__BP_Herrerasaurus_C:Main Camera'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.7"
+      },
+      "SpringArm": {
+        "ObjectName": "SpringArmComponent'Default__BP_Herrerasaurus_C:Spring Arm'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.30"
+      },
+      "PhysicalAnimation": {
+        "ObjectName": "PhysicalAnimationComponent'Default__BP_Herrerasaurus_C:PhysicalAnim'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.15"
+      },
+      "PhysCons": {
+        "ObjectName": "PhysicsConstraintComponent'Default__BP_Herrerasaurus_C:PhysicsConstraints'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.16"
+      },
+      "HeartbeatAudio": {
+        "ObjectName": "AudioComponent'Default__BP_Herrerasaurus_C:HeartbeatAudio'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.1"
+      },
+      "NavigationInvoker": {
+        "ObjectName": "NavigationInvokerComponent'Default__BP_Herrerasaurus_C:Navigation Invoker'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.13"
+      },
+      "FoliageBonesColliders": [
+        "DinoPelvis",
+        "DinoSpine02",
+        "DinoSpine03",
+        "DinoSpine04",
+        "DinoSpine05",
+        "DinoHead",
+        "DinoHyoid",
+        "DinoLeftHand",
+        "DinoRightHand",
+        "DinoLeftCalf",
+        "DinoRightCalf",
+        "DinoRightFoot",
+        "DinoLeftFoot",
+        "DinoTail06",
+        "DinoTail05",
+        "DinoTail04",
+        "DinoTail03",
+        "DinoTail02",
+        "DinoTail01"
+      ],
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.24"
+      },
+      "CharacterMovement": {
+        "ObjectName": "TIDinosaurMovementComponent'Default__BP_Herrerasaurus_C:CharMoveComp'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.36"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      },
+      "AIControllerClass": null,
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "Main Camera",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CameraComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "OrthoWidth": 512.0,
+      "bAutoCalculateOrthoPlanes": false,
+      "OrthoNearClipPlane": 0.0,
+      "PostProcessSettings": {
+        "bOverride_ColorSaturationShadows": true,
+        "bOverride_AutoExposureBiasCurve": true,
+        "ColorSaturationShadows": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "AutoExposureBiasCurve": {
+          "ObjectName": "CurveFloat'NV_Exposure_12'",
+          "ObjectPath": "/Game/TheIsle/MaterialLibrary/Utility/PostProcess/NightVision/NV_Exposure_12.0"
+        },
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "Material'M_NightVision_PP'",
+                "ObjectPath": "/Game/TheIsle/MaterialLibrary/Utility/PostProcess/M_NightVision_PP.0"
+              }
+            },
+            {
+              "Weight": 0.0,
+              "Object": {
+                "ObjectName": "Material'M_NightVision_Underwater_PP'",
+                "ObjectPath": "/Game/TheIsle/MaterialLibrary/Utility/PostProcess/M_NightVision_Underwater_PP.0"
+              }
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SpringArmComponent'Default__BP_Herrerasaurus_C:Spring Arm'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.30"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 59.0,
+      "CapsuleRadius": 30.0,
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "bOverrideWalkableSlopeOnInstance": false
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Herrerasaurus",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.2"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Has_Been_Initd_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_IsClosed_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCharacterMovementComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterMovementComponentBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsAudio_Parameter_Controller_Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLatching_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLatchSliding_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlaying_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_BoolBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveDestroyed",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveDestroyed'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "NavigationInvokerComponent",
+    "Name": "Navigation Invoker",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavigationInvokerComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    }
+  },
+  {
+    "Type": "NavigationInvokerComponent",
+    "Name": "NavigationInvoker",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavigationInvokerComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    }
+  },
+  {
+    "Type": "PhysicalAnimationComponent",
+    "Name": "PhysicalAnim",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicalAnimationComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "PhysicsConstraints",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      }
+    }
+  },
+  {
+    "Type": "PhysicsHandleComponent",
+    "Name": "PhysicsHandle",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsHandleComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "LinearDamping": 10000.0,
+      "InterpolationSpeed": 20.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.2"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Draglocation",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.24"
+      },
+      "RelativeLocation": {
+        "X": 2.4424907E-15,
+        "Y": 2.4868996E-14,
+        "Z": 6.0331354
+      },
+      "RelativeRotation": {
+        "Pitch": 1.09843,
+        "Yaw": 83.286064,
+        "Roll": 83.408295
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Herrerasaurus_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.23"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Herrerasaurus_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.18"
+      },
+      "VariableGuid": "3C99B2FF-43E4D529-2C66DB9F-FE39222E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Herrerasaurus_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.23"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'AudioComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent'BP_Herrerasaurus_C:SlideAudio_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.0"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "Sound",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AudioComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bAutoActivate",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AudioComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "CollisionCylinder",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "99C1FF30-4264591F-41D2858E-0E32709D",
+      "InternalVariableName": "SlideAudio"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Herrerasaurus_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.23"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+        "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BP_FluidImplementation_C'BP_Herrerasaurus_C:BP_FluidImplementation_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.5"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "TraceOffsetUp",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "TraceOffsetDown",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "UsePerBoneTrace",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "FluidDrawSize",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "FluidMaxDrawIntensity",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "VelocityDivideIntensity",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          },
+          {
+            "PropertyName": "VelocityBegin",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'BP_FluidImplementation_C'",
+              "ObjectPath": "/Game/FluidInteractionTool/Blueprints/BP_FluidImplementation.0"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "2D2FF887-4997AC3A-2587FBB9-74EAC008",
+      "InternalVariableName": "BP_FluidImplementation"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.2"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Herrerasaurus_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.22"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Herrerasaurus_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.21"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Herrerasaurus_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.22"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Herrerasaurus_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.21"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Herrerasaurus_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.20"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponentBudgeted",
+    "Name": "CharacterMesh0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponentBudgeted'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "bAutoCalculateSignificance": true,
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Herrerasaurus_C'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/ABP_Herrerasaurus.1"
+      },
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'A_Omniraptor_Adult_Swallow'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Omniraptor/Animations/A_Omniraptor_Adult_Swallow.0"
+        }
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Herrerasaurus'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Mesh/SK_Herrerasaurus.6"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Herrerasaurus'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Mesh/SK_Herrerasaurus.6"
+      },
+      "OverrideMaterials": [
+        null
+      ],
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -59.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponentBudgeted",
+    "Name": "RibsMeatMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponentBudgeted'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "bAutoCalculateSignificance": true,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Herrerasaurus_Meat'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Mesh/SK_Herrerasaurus_Meat.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Herrerasaurus_Meat'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Mesh/SK_Herrerasaurus_Meat.0"
+      },
+      "LeaderPoseComponent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.24"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered",
+      "bEnableUpdateRateOptimizations": true,
+      "bReceivesDecals": false,
+      "bReplicatePhysicsToAutonomousProxy": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_PhysicsBody",
+        "CollisionProfileName": "Custom"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.24"
+      },
+      "bHiddenInGame": true,
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponentBudgeted",
+    "Name": "SkeletonMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponentBudgeted'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "bAutoCalculateSignificance": true,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Herrerasaurus_Bones'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Mesh/SK_Herrerasaurus_Bones.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Herrerasaurus_Bones'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Herrerasaurus/Mesh/SK_Herrerasaurus_Bones.0"
+      },
+      "LeaderPoseComponent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.24"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::OnlyTickPoseWhenRendered",
+      "bEnableUpdateRateOptimizations": true,
+      "bReceivesDecals": false,
+      "bReplicatePhysicsToAutonomousProxy": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_PhysicsBody",
+        "CollisionProfileName": "Custom"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.24"
+      },
+      "bHiddenInGame": true,
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "ClientMeshCollisionProximity",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "CorpseDisableDetector",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "SphereRadius": 500.0,
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      }
+    }
+  },
+  {
+    "Type": "SplineComponent",
+    "Name": "ThroatSpline",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SplineComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "SplineCurves": {
+        "Position": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": {
+                "X": -0.38633838,
+                "Y": 0.00014865235,
+                "Z": 0.0035440924
+              },
+              "ArriveTangent": {
+                "X": 76.29208,
+                "Y": 0.00034314394,
+                "Z": -0.7043457
+              },
+              "LeaveTangent": {
+                "X": 76.29208,
+                "Y": 0.00034314394,
+                "Z": -0.7043457
+              },
+              "InterpMode": "CIM_CurveUser"
+            },
+            {
+              "InVal": 1.0,
+              "OutVal": {
+                "X": 56.851852,
+                "Y": 0.0007466608,
+                "Z": -18.050047
+              },
+              "ArriveTangent": {
+                "X": 29.51878,
+                "Y": -4.24881E-05,
+                "Z": -36.32896
+              },
+              "LeaveTangent": {
+                "X": 29.51878,
+                "Y": -4.24881E-05,
+                "Z": -36.32896
+              },
+              "InterpMode": "CIM_CurveUser"
+            },
+            {
+              "InVal": 2.0,
+              "OutVal": {
+                "X": 33.455658,
+                "Y": -0.114602976,
+                "Z": -63.40604
+              },
+              "ArriveTangent": {
+                "X": 9.063317,
+                "Y": 0.026494853,
+                "Z": -69.026886
+              },
+              "LeaveTangent": {
+                "X": 9.063317,
+                "Y": 0.026494853,
+                "Z": -69.026886
+              },
+              "InterpMode": "CIM_CurveUser"
+            },
+            {
+              "InVal": 3.0,
+              "OutVal": {
+                "X": 66.7948,
+                "Y": -0.010188553,
+                "Z": -110.13695
+              },
+              "ArriveTangent": {
+                "X": 68.76814,
+                "Y": 0.34379745,
+                "Z": -43.62115
+              },
+              "LeaveTangent": {
+                "X": 68.76814,
+                "Y": 0.34379745,
+                "Z": -43.62115
+              },
+              "InterpMode": "CIM_CurveUser"
+            },
+            {
+              "InVal": 4.0,
+              "OutVal": {
+                "X": 116.15298,
+                "Y": 0.26579717,
+                "Z": -138.67276
+              },
+              "ArriveTangent": {
+                "X": 98.86705,
+                "Y": 0.55199975,
+                "Z": -44.595764
+              },
+              "LeaveTangent": {
+                "X": 98.86705,
+                "Y": 0.55199975,
+                "Z": -44.595764
+              },
+              "InterpMode": "CIM_CurveUser"
+            }
+          ]
+        },
+        "Rotation": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": {
+                "X": -4.223548E-07,
+                "Y": 0.08715434,
+                "Z": -5.355105E-09,
+                "W": 0.9961757,
+                "IsNormalized": true,
+                "Size": 0.9999809,
+                "SizeSquared": 0.9999619
+              },
+              "ArriveTangent": {
+                "X": -7.447727E-07,
+                "Y": -0.22310267,
+                "Z": 1.0922395E-07,
+                "W": 0.97477543,
+                "IsNormalized": true,
+                "Size": 0.999981,
+                "SizeSquared": 0.999962
+              },
+              "LeaveTangent": {
+                "X": -7.447727E-07,
+                "Y": -0.22310267,
+                "Z": 1.0922395E-07,
+                "W": 0.97477543,
+                "IsNormalized": true,
+                "Size": 0.999981,
+                "SizeSquared": 0.999962
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 1.0,
+              "OutVal": {
+                "X": 3.099658E-07,
+                "Y": 0.6531184,
+                "Z": -2.2190943E-07,
+                "W": 0.7568986,
+                "IsNormalized": true,
+                "Size": 0.9997295,
+                "SizeSquared": 0.9994591
+              },
+              "ArriveTangent": {
+                "X": 0.0001708715,
+                "Y": 0.47602975,
+                "Z": -1.8771141E-07,
+                "W": 0.15251364,
+                "IsNormalized": false,
+                "Size": 0.49986476,
+                "SizeSquared": 0.24986477
+              },
+              "LeaveTangent": {
+                "X": 0.0001708715,
+                "Y": 0.47602975,
+                "Z": -1.8771141E-07,
+                "W": 0.15251364,
+                "IsNormalized": false,
+                "Size": 0.49986476,
+                "SizeSquared": 0.24986477
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 2.0,
+              "OutVal": {
+                "X": -0.0006913191,
+                "Y": 0.23648535,
+                "Z": 1.7390539E-13,
+                "W": 0.9716348,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "ArriveTangent": {
+                "X": -0.0007592047,
+                "Y": 0.08591915,
+                "Z": -4.7069207E-05,
+                "W": 0.492562,
+                "IsNormalized": false,
+                "Size": 0.5,
+                "SizeSquared": 0.25
+              },
+              "LeaveTangent": {
+                "X": -0.0007592047,
+                "Y": 0.08591915,
+                "Z": -4.7069207E-05,
+                "W": 0.492562,
+                "IsNormalized": false,
+                "Size": 0.5,
+                "SizeSquared": 0.25
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 3.0,
+              "OutVal": {
+                "X": 0.00034810888,
+                "Y": -0.10206567,
+                "Z": 0.00018500965,
+                "W": 0.99477756,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.00022972134,
+                "Y": -0.108909,
+                "Z": 0.00018218487,
+                "W": 0.4879946,
+                "IsNormalized": false,
+                "Size": 0.5,
+                "SizeSquared": 0.25
+              },
+              "LeaveTangent": {
+                "X": 0.00022972134,
+                "Y": -0.108909,
+                "Z": 0.00018218487,
+                "W": 0.4879946,
+                "IsNormalized": false,
+                "Size": 0.5,
+                "SizeSquared": 0.25
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 4.0,
+              "OutVal": {
+                "X": 0.001156049,
+                "Y": -0.20705652,
+                "Z": 8.36367E-13,
+                "W": 0.9783283,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0015556884,
+                "Y": -0.25874823,
+                "Z": -9.2635695E-05,
+                "W": 0.9659435,
+                "IsNormalized": true,
+                "Size": 0.99999994,
+                "SizeSquared": 0.99999994
+              },
+              "LeaveTangent": {
+                "X": 0.0015556884,
+                "Y": -0.25874823,
+                "Z": -9.2635695E-05,
+                "W": 0.9659435,
+                "IsNormalized": true,
+                "Size": 0.99999994,
+                "SizeSquared": 0.99999994
+              },
+              "InterpMode": "CIM_CurveAuto"
+            }
+          ]
+        },
+        "Scale": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 1.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 2.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 3.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            },
+            {
+              "InVal": 4.0,
+              "OutVal": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              },
+              "ArriveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "LeaveTangent": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "InterpMode": "CIM_CurveAuto"
+            }
+          ]
+        },
+        "ReparamTable": {
+          "Points": [
+            {
+              "InVal": 0.0,
+              "OutVal": 0.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 7.5209794,
+              "OutVal": 0.1,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 14.800929,
+              "OutVal": 0.2,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 21.806202,
+              "OutVal": 0.3,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 28.50713,
+              "OutVal": 0.4,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 34.87961,
+              "OutVal": 0.5,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 40.907352,
+              "OutVal": 0.6,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 46.585033,
+              "OutVal": 0.7,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 51.92265,
+              "OutVal": 0.8,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 56.95123,
+              "OutVal": 0.90000004,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 61.729527,
+              "OutVal": 1.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 65.736694,
+              "OutVal": 1.1,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 69.39783,
+              "OutVal": 1.2,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 73.73111,
+              "OutVal": 1.3,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 78.93411,
+              "OutVal": 1.4,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 84.80984,
+              "OutVal": 1.5,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 91.05807,
+              "OutVal": 1.6,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 97.39868,
+              "OutVal": 1.7,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 103.65921,
+              "OutVal": 1.8,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 109.886826,
+              "OutVal": 1.9000001,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 116.4682,
+              "OutVal": 2.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 123.06031,
+              "OutVal": 2.1,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 129.0163,
+              "OutVal": 2.2,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 134.50676,
+              "OutVal": 2.3,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 139.72336,
+              "OutVal": 2.4,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 144.87383,
+              "OutVal": 2.5,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 150.16957,
+              "OutVal": 2.6,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 155.81152,
+              "OutVal": 2.7,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 161.98082,
+              "OutVal": 2.8,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 168.83711,
+              "OutVal": 2.9,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 176.52238,
+              "OutVal": 3.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 183.74792,
+              "OutVal": 3.1,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 189.43796,
+              "OutVal": 3.2,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 194.04167,
+              "OutVal": 3.3,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 198.0057,
+              "OutVal": 3.4,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 201.77686,
+              "OutVal": 3.5,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 205.8067,
+              "OutVal": 3.6,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 210.5527,
+              "OutVal": 3.7,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 216.47467,
+              "OutVal": 3.8,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 224.03123,
+              "OutVal": 3.9,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            },
+            {
+              "InVal": 233.67914,
+              "OutVal": 4.0,
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "InterpMode": "CIM_Linear"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.24"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 6.1322556
+      },
+      "RelativeRotation": {
+        "Pitch": 14.69375,
+        "Yaw": -179.99962,
+        "Roll": 4.4537104E-12
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "Spring Arm",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SpringArmComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 40.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BuoyancyPlane",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'BuoyancyPlane'",
+        "ObjectPath": "/Game/TheIsle/Art/BuoyancyPlane.2"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -400.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ThroatMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Throat'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Omniraptor/Mesh/SM_Throat.2"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Herrerasaurus_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.24"
+      },
+      "RelativeLocation": {
+        "X": 29.15359,
+        "Y": -9.325982,
+        "Z": 8.7746975E-13
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 16574.037,
+        "Roll": 16674.44
+      },
+      "RelativeScale3D": {
+        "X": 0.04,
+        "Y": 0.08,
+        "Z": 0.06
+      }
+    }
+  },
+  {
+    "Type": "TIAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIAbilitySystemComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "PrimaryComponentTick": {
+        "bAllowTickOnDedicatedServer": false
+      }
+    }
+  },
+  {
+    "Type": "TIAntiCheatComponent",
+    "Name": "AntiCheatComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIAntiCheatComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    }
+  },
+  {
+    "Type": "TIAttributeSetDinosaur",
+    "Name": "AttributeSetBase",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIAttributeSetDinosaur'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    }
+  },
+  {
+    "Type": "TIDinosaurMovementComponent",
+    "Name": "CharMoveComp",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIDinosaurMovementComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "WalkableFloorZ": 0.71000004
+    }
+  },
+  {
+    "Type": "TIFootstepsComponent",
+    "Name": "FootstepsComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIFootstepsComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "GrassPaintThickness": 2.0,
+      "EffectsDataTable": {
+        "ObjectName": "DataTable'DT_EffectSets'",
+        "ObjectPath": "/Game/TheIsle/Core/Data/DT_EffectSets.0"
+      },
+      "FrontFootprintMask": {
+        "ObjectName": "Texture2D'T_Footprint_Herrera_M'",
+        "ObjectPath": "/Game/TheIsle/Art/Decals/Footprint/Textures/T_Footprint_Herrera_M.0"
+      },
+      "BackFootprintMask": {
+        "ObjectName": "Texture2D'T_Footprint_Herrera_M'",
+        "ObjectPath": "/Game/TheIsle/Art/Decals/Footprint/Textures/T_Footprint_Herrera_M.0"
+      },
+      "MovementSetsDataTable": {
+        "ObjectName": "DataTable'DT_MovementSets'",
+        "ObjectPath": "/Game/TheIsle/Core/Data/DT_MovementSets.0"
+      },
+      "BackFootprintScale": 1.1,
+      "BackFootRotation": -20.0,
+      "FootprintActor": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Footprint_C'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Footprint.0"
+      }
+    }
+  },
+  {
+    "Type": "WidgetComponent",
+    "Name": "NameWidget",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'WidgetComponent'",
+    "Outer": {
+      "ObjectName": "BP_Herrerasaurus_C'Default__BP_Herrerasaurus_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.6"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Herrerasaurus_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Herrerasaurus/BP_Herrerasaurus.8"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      }
+    }
+  }
+]

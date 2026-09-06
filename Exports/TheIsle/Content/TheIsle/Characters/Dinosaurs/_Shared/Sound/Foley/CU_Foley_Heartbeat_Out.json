@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Foley_Heartbeat_Out",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Sound/Foley/CU_Foley_Heartbeat_Out",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.15,
+      "AttenuationOverrides": {
+        "bAttenuate": false,
+        "bSpatialize": false,
+        "bEnableReverbSend": false
+      },
+      "bOverrideAttenuation": true,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'Heartbeat'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/Heartbeat.0"
+      },
+      "Duration": 0.41666666,
+      "MaxDistance": 2097152.0,
+      "SoundSubmixSends": [
+        {
+          "SendStage": "ESubmixSendStage::PostDistanceAttenuation",
+          "SendLevelControlMethod": "ESendLevelControlMethod::Manual",
+          "SoundSubmix": {
+            "ObjectName": "SoundSubmix'SubMix_Drowning'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/SubMix_Drowning.0"
+          },
+          "SendLevel": 0.8,
+          "DisableManualSendClamp": false,
+          "MinSendLevel": 0.0,
+          "MaxSendLevel": 1.0,
+          "MinSendDistance": 100.0,
+          "MaxSendDistance": 1000.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

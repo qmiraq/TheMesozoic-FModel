@@ -1,0 +1,988 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SaltLickActor_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SaltLickActor_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_SaltLickActor_C:ExecuteUbergraph_BP_SaltLickActor'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIInteractableActorBase'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SaltLickActor_C:IsScentableFootprint'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.6"
+      },
+      {
+        "ObjectName": "Function'BP_SaltLickActor_C:GetScentLocation'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.3"
+      },
+      {
+        "ObjectName": "Function'BP_SaltLickActor_C:IsCorpse'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.5"
+      },
+      {
+        "ObjectName": "Function'BP_SaltLickActor_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.7"
+      },
+      {
+        "ObjectName": "Function'BP_SaltLickActor_C:ShowScentEffects'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.8"
+      },
+      {
+        "ObjectName": "Function'BP_SaltLickActor_C:HideScentEffects'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.4"
+      },
+      {
+        "ObjectName": "Function'BP_SaltLickActor_C:ExecuteUbergraph_BP_SaltLickActor'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ScentSphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SphereComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_SaltLickActor": {
+        "ObjectName": "Function'BP_SaltLickActor_C:ExecuteUbergraph_BP_SaltLickActor'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.2"
+      },
+      "HideScentEffects": {
+        "ObjectName": "Function'BP_SaltLickActor_C:HideScentEffects'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.4"
+      },
+      "ShowScentEffects": {
+        "ObjectName": "Function'BP_SaltLickActor_C:ShowScentEffects'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.8"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_SaltLickActor_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.7"
+      },
+      "IsCorpse": {
+        "ObjectName": "Function'BP_SaltLickActor_C:IsCorpse'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.5"
+      },
+      "GetScentLocation": {
+        "ObjectName": "Function'BP_SaltLickActor_C:GetScentLocation'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.3"
+      },
+      "IsScentableFootprint": {
+        "ObjectName": "Function'BP_SaltLickActor_C:IsScentableFootprint'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "Class'TIScentable'",
+          "ObjectPath": "/Script/TheIsle"
+        },
+        "PointerProperty": null,
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SaltLickActor_C'Default__BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=\"/Script/CoreUObject.Class'/Script/TheIsle.TIScentable'\"))"
+    }
+  },
+  {
+    "Type": "BP_SaltLickActor_C",
+    "Name": "Default__BP_SaltLickActor_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.BP_SaltLickActor_C'",
+    "Package": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor",
+    "Properties": {
+      "UberGraphFrame": {},
+      "InteractableType": "EInteractableType::IT_Mineral",
+      "NetDormancy": "DORM_DormantAll",
+      "NetUpdateFrequency": 0.0,
+      "MinNetUpdateFrequency": 0.0
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_SaltLickActor",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Scenter_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TIDinosaurBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bScentStarted",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Scenter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TIDinosaurBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bScentFinished",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetIsleHUD_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TIHUD'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetIsleHUD_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TIHUD'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetScentLocation",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "HideScentEffects",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Scenter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'TIDinosaurBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bScentFinished",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsCorpse",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsScentableFootprint",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ShowScentEffects",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Scenter",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'TIDinosaurBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bScentStarted",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_SaltLickActor_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.13"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SaltLickActor_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.9"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SaltLickActor_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SaltLickActor_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.11"
+        }
+      ],
+      "VariableGuid": "0B86EC55-41E192E5-6B5BB995-7F6362D9",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_SaltLickActor_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.13"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SphereComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent'BP_SaltLickActor_C:ScentSphere_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.14"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SphereComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 6,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 7,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 8,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "2F6DC3F1-44C96E81-29066EA9-946950CC",
+      "InternalVariableName": "ScentSphere"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_SaltLickActor_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.13"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_SaltLickActor_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.15"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "66F905AB-4B938F8F-38131AB0-2CBE5094",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SaltLickActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SaltLickActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.10"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SaltLickActor_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_SaltLickActor_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SaltLickActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.10"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "ScentSphere_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "Properties": {
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Scent",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SaltLickActor_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_SaltLickActor.0"
+    },
+    "Properties": {
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel4",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Scent",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

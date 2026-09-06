@@ -1,0 +1,2012 @@
+[
+  {
+    "Type": "AudioComponent",
+    "Name": "AudioUnderwater_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "Template": {
+      "ObjectName": "AudioComponent'BP_AquaticSurface_C:AudioUnderwater_GEN_VARIABLE'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.0"
+    },
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue'CU_UnderwaterAmbience_Ocean'",
+        "ObjectPath": "/Game/TheIsle/Sound/Ambience/Underwater/Loops/CU_UnderwaterAmbience_Ocean.0"
+      },
+      "AttenuationOverrides": {
+        "NonSpatializedRadiusStart": 1E+10
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AquaticSurfaceOcean_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+    },
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_AquaticSurfaceOcean_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.11"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_AquaticSurfaceOcean_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AquaticSurfaceOcean_C:ExecuteUbergraph_BP_AquaticSurfaceOcean'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.5"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AquaticSurfaceOcean_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.6"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSurfaceOcean_C:CustomEvent'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.4"
+      },
+      {
+        "ObjectName": "Function'BP_AquaticSurfaceOcean_C:ExecuteUbergraph_BP_AquaticSurfaceOcean'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Overlapping Actors",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Overlapping Actors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bOverlappingLocalPlayer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AquaticSurfaceOcean": {
+        "ObjectName": "Function'BP_AquaticSurfaceOcean_C:ExecuteUbergraph_BP_AquaticSurfaceOcean'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.5"
+      },
+      "CustomEvent": {
+        "ObjectName": "Function'BP_AquaticSurfaceOcean_C:CustomEvent'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_AquaticSurfaceOcean_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AquaticSurfaceOcean_C'Default__BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "SpecialCameraBox_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "Template": {
+      "ObjectName": "BoxComponent'BP_AquaticSurface_C:SpecialCameraBox_GEN_VARIABLE'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.4"
+    },
+    "Properties": {
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::NoCollision"
+      }
+    }
+  },
+  {
+    "Type": "BP_AquaticSurfaceOcean_C",
+    "Name": "Default__BP_AquaticSurfaceOcean_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.BP_AquaticSurfaceOcean_C'",
+    "Package": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean",
+    "Template": {
+      "ObjectName": "BP_AquaticSurface_C'Default__BP_AquaticSurface_C'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.5"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "OverWaterMaterial": {
+        "ObjectName": "MaterialInstanceConstant'MI_AquaticOverWaterOcean_UNLIT'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/MI_AquaticOverWaterOcean_UNLIT.0"
+      },
+      "VolumeMaterial": {
+        "ObjectName": "MaterialInstanceConstant'MI_AquaticVolumeOcean'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/MI_AquaticVolumeOcean.0"
+      },
+      "ScreenMaterial": {
+        "ObjectName": "MaterialInstanceConstant'MI_AquaticScreenOcean'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/MI_AquaticScreenOcean.0"
+      },
+      "VolumeBoxExtend": {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": 10000.0
+      },
+      "StaticReflectionCubemap": {
+        "ObjectName": "TextureCube'RT_AquaticCubemapOcean'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/RT_AquaticCubemapOcean.0"
+      },
+      "ReflectionBoxOverExtend": {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": 10000.0
+      },
+      "ReflectionBoxUnderExtend": {
+        "X": 150.0,
+        "Y": 150.0,
+        "Z": 400.0
+      },
+      "VolumeFogDensity": 0.10000000149011612,
+      "VolumeFogBase": 30.0,
+      "ShowVolumeMesh": false,
+      "SplashEffects": [
+        {
+          "VelocityMin_69_2F4FD72F49BCBB81FA9729A268993C4D": 10.0,
+          "VelocityMax_70_BFFA81594F81A9D829E82083436A0590": 20.0,
+          "ScaleMin_71_2B37AF5E4D20E2DF8559718620844133": 0.5,
+          "ScaleMax_74_4066453D4091EE781C3F5B837AADA58F": 0.7,
+          "SplashEffect_81_F337123A4FC29A0A7A8D348B0A40CDC4": {
+            "ObjectName": "ParticleSystem'PS_Splash'",
+            "ObjectPath": "/Game/AquaticSurface/Demo/Shared/Splash/PS_Splash.0"
+          },
+          "SplashSound_82_67AECE484557324346A8ABB042603C86": {
+            "ObjectName": "SoundCue'SC_WaterSplashTouch'",
+            "ObjectPath": "/Game/AquaticSurface/Demo/Shared/Audio/SC_WaterSplashTouch.0"
+          }
+        }
+      ],
+      "bShouldDry": false,
+      "WaterBodyType": "EW_Ocean",
+      "InteractableType": "EInteractableType::IT_None",
+      "RemoteRole": "ROLE_SimulatedProxy"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomEvent",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AquaticSurfaceOcean",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_True_if_break_was_hit_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Character'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Character_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ObjectObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetOverlappingActors_OverlappingActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetOverlappingActors_OverlappingActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'TICharacterBase'",
+            "ObjectPath": "/Script/TheIsle"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ObjectObject_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "Super": {
+      "ObjectName": "Function'BP_AquaticSurface_C:ReceiveBeginPlay'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.27"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent'BP_AquaticSurfaceOcean_C:PlaneOverWater_GEN_VARIABLE'",
+            "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.12"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+              "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+            },
+            "SCSVariableName": "PlaneOverWater",
+            "AssociatedGuid": "FBD0ACD9-4D219C0D-B1638FB9-D1A8A58A"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [
+              {
+                "PropertyName": "StaticMesh",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bEvaluateWorldPositionOffsetInRayTracing",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "OverrideMaterials",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "None",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bAffectDistanceFieldLighting",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bCastDynamicShadow",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bApplyImpulseOnDamage",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CanCharacterStepUpOn",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CustomDepthStencilValue",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "TranslucencySortPriority",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "BodyInstance",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionEnabled",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionProfileName",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionResponses",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 1,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 2,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 3,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 4,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "None",
+                "ArrayIndex": 5,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "PhysMaterialOverride",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bEnableGravity",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "RelativeRotation",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Yaw",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Rotator'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              }
+            ],
+            "bHasValidCookedData": true
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SceneComponent'BP_AquaticSurfaceOcean_C:Root_GEN_VARIABLE'",
+            "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.9"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+              "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+            },
+            "SCSVariableName": "Root",
+            "AssociatedGuid": "155BD01F-40358136-F71BDD8E-D3358105"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [
+              {
+                "PropertyName": "RelativeScale3D",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'SceneComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "X",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Y",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Z",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              }
+            ],
+            "bHasValidCookedData": true
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'BoxComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "BoxComponent'BP_AquaticSurfaceOcean_C:SpecialCameraBox_GEN_VARIABLE'",
+            "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.2"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+              "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+            },
+            "SCSVariableName": "SpecialCameraBox",
+            "AssociatedGuid": "E666AB70-4D285F47-613C9298-32671EBB"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [
+              {
+                "PropertyName": "BoxExtent",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BoxComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "X",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Y",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Z",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "bGenerateOverlapEvents",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BoxComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "BodyInstance",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BoxComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ObjectType",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionEnabled",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionProfileName",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionResponses",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 2,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 3,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 4,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 5,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 6,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 7,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bUpdateMassWhenScaleChanges",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            ],
+            "bHasValidCookedData": true
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'AudioComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "AudioComponent'BP_AquaticSurfaceOcean_C:AudioUnderwater_GEN_VARIABLE'",
+            "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.0"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+              "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+            },
+            "SCSVariableName": "AudioUnderwater",
+            "AssociatedGuid": "055B1B45-46B53737-78F47199-6BF48334"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [
+              {
+                "PropertyName": "Sound",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'AudioComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bOverrideAttenuation",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'AudioComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "AttenuationOverrides",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'AudioComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "NonSpatializedRadiusStart",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'SoundAttenuationSettings'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "AttenuationShape",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'SoundAttenuationSettings'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "AttenuationShapeExtents",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'SoundAttenuationSettings'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "X",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Y",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Z",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "FalloffDistance",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'SoundAttenuationSettings'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "RelativeLocation",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'AudioComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "X",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Y",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Z",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "RelativeRotation",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'AudioComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Yaw",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Rotator'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              }
+            ],
+            "bHasValidCookedData": true
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent'BP_AquaticSurfaceOcean_C:PostProcessMesh_GEN_VARIABLE'",
+            "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.14"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+              "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+            },
+            "SCSVariableName": "PostProcessMesh",
+            "AssociatedGuid": "C8BB61B8-4253B195-1F6C2593-D65F5857"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [
+              {
+                "PropertyName": "StaticMesh",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "OverrideMaterials",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "None",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bGenerateOverlapEvents",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CastShadow",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bAffectDistanceFieldLighting",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bCastDynamicShadow",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bCastStaticShadow",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bApplyImpulseOnDamage",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CanCharacterStepUpOn",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "TranslucencySortPriority",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "BodyInstance",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionEnabled",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionProfileName",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionResponses",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 1,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 2,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 3,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 4,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "None",
+                "ArrayIndex": 5,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bEnableGravity",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bCanEverAffectNavigation",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            ],
+            "bHasValidCookedData": true
+          }
+        },
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "StaticMeshComponent'BP_AquaticSurfaceOcean_C:PlaneTopDown_GEN_VARIABLE'",
+            "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.13"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurface_C'",
+              "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.1"
+            },
+            "SCSVariableName": "PlaneTopDown",
+            "AssociatedGuid": "93626262-433940B2-82D17999-F2EB4750"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [
+              {
+                "PropertyName": "StaticMesh",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "OverrideMaterials",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "None",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bGenerateOverlapEvents",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bAffectDistanceFieldLighting",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bCastDynamicShadow",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bApplyImpulseOnDamage",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CanCharacterStepUpOn",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "TranslucencySortPriority",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "BodyInstance",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionEnabled",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionProfileName",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "CollisionResponses",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 1,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 2,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 3,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ResponseArray",
+                "ArrayIndex": 4,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Channel",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Response",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'ResponseChannel'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "None",
+                "ArrayIndex": 5,
+                "PropertyScope": {
+                  "ObjectName": "Class'CollisionResponse'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bEnableGravity",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BodyInstance'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "RelativeLocation",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "X",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Y",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Z",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "RelativeRotation",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'StaticMeshComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "Yaw",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Rotator'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              },
+              {
+                "PropertyName": "Roll",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'Rotator'",
+                  "ObjectPath": "/Script/CoreUObject"
+                }
+              }
+            ],
+            "bHasValidCookedData": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Root_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "Template": {
+      "ObjectName": "SceneComponent'BP_AquaticSurface_C:Root_GEN_VARIABLE'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.42"
+    },
+    "Properties": {
+      "RelativeScale3D": {
+        "X": 100.0,
+        "Y": 70.0,
+        "Z": 2.0
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AquaticSurfaceOcean_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.11"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_AquaticSurfaceOcean_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.8"
+      },
+      "VariableGuid": "E450BBCE-41E58DB7-85ACA898-D40E63AE",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_AquaticSurfaceOcean_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.10"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PlaneOverWater_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "Template": {
+      "ObjectName": "StaticMeshComponent'BP_AquaticSurface_C:PlaneOverWater_GEN_VARIABLE'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.54"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Surface200x200'",
+        "ObjectPath": "/Game/AquaticSurface/Surfaces/SM_Surface200x200.2"
+      },
+      "bEvaluateWorldPositionOffsetInRayTracing": true,
+      "bAffectDistanceFieldLighting": false,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Water",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CorpseDisable",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PlaneTopDown_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "Template": {
+      "ObjectName": "StaticMeshComponent'BP_AquaticSurface_C:PlaneTopDown_GEN_VARIABLE'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.55"
+    },
+    "Properties": {
+      "bAffectDistanceFieldLighting": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "PostProcessMesh_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AquaticSurfaceOcean_C'",
+      "ObjectPath": "/Game/AquaticSurface/Demo/Templates/Ocean/BP_AquaticSurfaceOcean.1"
+    },
+    "Template": {
+      "ObjectName": "StaticMeshComponent'BP_AquaticSurface_C:PostProcessMesh_GEN_VARIABLE'",
+      "ObjectPath": "/Game/AquaticSurface/Blueprints/BP_AquaticSurface.56"
+    },
+    "Properties": {
+      "bAffectDistanceFieldLighting": false
+    }
+  }
+]

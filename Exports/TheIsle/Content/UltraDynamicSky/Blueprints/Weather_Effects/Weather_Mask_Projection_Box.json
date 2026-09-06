@@ -1,0 +1,533 @@
+[
+  {
+    "Type": "BillboardComponent",
+    "Name": "Billboard_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BillboardComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.1"
+    },
+    "Properties": {
+      "Sprite": {
+        "ObjectName": "Texture2D'Weather_Mask_Projection_Box'",
+        "ObjectPath": "/Game/UltraDynamicSky/Textures/Icons/Weather_Mask_Projection_Box.0"
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weather_Mask_Projection_Box_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Weather_Mask_Projection_Box_C:📘 Weather Mask Tools'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.4"
+      },
+      {
+        "ObjectName": "Function'Weather_Mask_Projection_Box_C:Force Update'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.2"
+      },
+      {
+        "ObjectName": "Function'Weather_Mask_Projection_Box_C:UserConstructionScript'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "UDS_Utility_Opener",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": null
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Weather_Mask_Projection_Box_Component",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_Component_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Components/Weather_Mask_Projection_Box_Component.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Billboard",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BillboardComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Box Extent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Mask Snow / Dust",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Mask Wetness",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Blur Radius",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Blur Slope (Snow/Dust)",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Blur Slope (Wetness)",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Capture Pixel Size",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | AdvancedDisplay | ExposeOnSpawn"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Exclude Actors from Occlusion",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | ExposeOnSpawn",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Exclude Actors from Occlusion",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "UObjectWrapper",
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'Weather_Mask_Projection_Box_C:UserConstructionScript'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.3"
+      },
+      "Force Update": {
+        "ObjectName": "Function'Weather_Mask_Projection_Box_C:Force Update'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.2"
+      },
+      "📘 Weather Mask Tools": {
+        "ObjectName": "Function'Weather_Mask_Projection_Box_C:📘 Weather Mask Tools'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weather_Mask_Projection_Box_C'Default__Weather_Mask_Projection_Box_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.11"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "BlueprintDisplayName": "Weather Mask Projection Box Actor"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Force Update",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.1"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_DoubleToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Divide_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_SetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "📘 Weather Mask Tools",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsUDS_Utility_Opener_Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Utility_Opener_Interface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Utility_Opener_Interface.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.10"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Weather_Mask_Projection_Box_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.5"
+      },
+      "VariableGuid": "63C9518A-485B35B7-D521B385-490F8E99",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.10"
+    },
+    "Properties": {
+      "ComponentClass": null,
+      "ComponentTemplate": null,
+      "VariableGuid": "C9A81ED2-4D927530-CA673085-CE914BE7",
+      "InternalVariableName": "UDS_Utility_Opener"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.10"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BillboardComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BillboardComponent'Weather_Mask_Projection_Box_C:Billboard_GEN_VARIABLE'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.0"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "Sprite",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BillboardComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.9"
+        }
+      ],
+      "VariableGuid": "B2B5575D-49966C87-E1B01B91-461627B0",
+      "InternalVariableName": "Billboard"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.10"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_Component_C'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Components/Weather_Mask_Projection_Box_Component.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "Weather_Mask_Projection_Box_Component_C'Weather_Mask_Projection_Box_C:Weather_Mask_Projection_Box_Component_GEN_VARIABLE'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.12"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "bEvaluateWorldPositionOffsetInRayTracing",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_Component_C'",
+              "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Components/Weather_Mask_Projection_Box_Component.0"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "9E47142D-48B41C49-B640E99F-ECE0B082",
+      "InternalVariableName": "Weather_Mask_Projection_Box_Component"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.1"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.8"
+        },
+        {
+          "ObjectName": "SCS_Node'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.8"
+        },
+        {
+          "ObjectName": "SCS_Node'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.9"
+        },
+        {
+          "ObjectName": "SCS_Node'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Weather_Mask_Projection_Box_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.6"
+      }
+    }
+  },
+  {
+    "Type": "Weather_Mask_Projection_Box_C",
+    "Name": "Default__Weather_Mask_Projection_Box_C",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.Weather_Mask_Projection_Box_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box",
+    "Properties": {
+      "Box Extent": {
+        "X": 500.0,
+        "Y": 500.0,
+        "Z": 300.0
+      },
+      "Mask Snow / Dust": 1.0,
+      "Mask Wetness": 1.0,
+      "Blur Radius": 50.0,
+      "Blur Slope (Snow/Dust)": 1.0,
+      "Blur Slope (Wetness)": 1.0,
+      "Capture Pixel Size": 5,
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bCanBeDamaged": false,
+      "bEnableAutoLODGeneration": false
+    }
+  },
+  {
+    "Type": "Weather_Mask_Projection_Box_Component_C",
+    "Name": "Weather_Mask_Projection_Box_Component_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/Components/Weather_Mask_Projection_Box_Component.Weather_Mask_Projection_Box_Component_C'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'Weather_Mask_Projection_Box_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Weather_Mask_Projection_Box.1"
+    },
+    "Template": {
+      "ObjectName": "Weather_Mask_Projection_Box_Component_C'Default__Weather_Mask_Projection_Box_Component_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/Components/Weather_Mask_Projection_Box_Component.12"
+    },
+    "Properties": {
+      "bEvaluateWorldPositionOffsetInRayTracing": true
+    }
+  }
+]

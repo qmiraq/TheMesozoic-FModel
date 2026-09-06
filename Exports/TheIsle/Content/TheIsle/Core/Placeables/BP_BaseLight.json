@@ -1,0 +1,1244 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BaseLight_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_BaseLight",
+    "Properties": {
+      "NumReplicatedProperties": 1,
+      "bHasCookedComponentInstancingData": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'BP_BaseLight_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.2"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BaseLight_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.19"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_BaseLight_C:ExecuteUbergraph_BP_BaseLight'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_BaseLight_C:OnRep_bTurnOn'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.8"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.9"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:Sunrise_Event_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.10"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:Sunset_Event_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.11"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:Midnight_Event_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.7"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:TurnOn'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.14"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:TurnOff'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.12"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:CustomEvent_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.5"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:TurnOffShadows'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.13"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:TurnOnShadows'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.15"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:BndEvt__BP_BaseFenceInverted_SphereCollider_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.3"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:BndEvt__BP_BaseLight_SphereCollider_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.4"
+      },
+      {
+        "ObjectName": "Function'BP_BaseLight_C:ExecuteUbergraph_BP_BaseLight'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.6"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SphereCollider",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SphereComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_SkyActor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'Ultra_Dynamic_Sky_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BP_WeatherActor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'Ultra_Dynamic_Weather_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.3"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bTurnOn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepNotifyFunc": "OnRep_bTurnOn",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_BaseLight": {
+        "ObjectName": "Function'BP_BaseLight_C:ExecuteUbergraph_BP_BaseLight'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.6"
+      },
+      "BndEvt__BP_BaseLight_SphereCollider_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_BaseLight_C:BndEvt__BP_BaseLight_SphereCollider_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.4"
+      },
+      "BndEvt__BP_BaseFenceInverted_SphereCollider_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_BaseLight_C:BndEvt__BP_BaseFenceInverted_SphereCollider_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.3"
+      },
+      "TurnOnShadows": {
+        "ObjectName": "Function'BP_BaseLight_C:TurnOnShadows'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.15"
+      },
+      "TurnOffShadows": {
+        "ObjectName": "Function'BP_BaseLight_C:TurnOffShadows'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.13"
+      },
+      "CustomEvent_0": {
+        "ObjectName": "Function'BP_BaseLight_C:CustomEvent_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.5"
+      },
+      "TurnOff": {
+        "ObjectName": "Function'BP_BaseLight_C:TurnOff'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.12"
+      },
+      "TurnOn": {
+        "ObjectName": "Function'BP_BaseLight_C:TurnOn'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.14"
+      },
+      "Midnight_Event_0": {
+        "ObjectName": "Function'BP_BaseLight_C:Midnight_Event_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.7"
+      },
+      "Sunset_Event_0": {
+        "ObjectName": "Function'BP_BaseLight_C:Sunset_Event_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.11"
+      },
+      "Sunrise_Event_0": {
+        "ObjectName": "Function'BP_BaseLight_C:Sunrise_Event_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.10"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_BaseLight_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.9"
+      },
+      "OnRep_bTurnOn": {
+        "ObjectName": "Function'BP_BaseLight_C:OnRep_bTurnOn'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.8"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BaseLight_C'Default__BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_BaseLight_C",
+    "Name": "Default__BP_BaseLight_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Placeables/BP_BaseLight.BP_BaseLight_C'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_BaseLight",
+    "Properties": {
+      "UberGraphFrame": {},
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      },
+      "bReplicates": true,
+      "NetDormancy": "DORM_DormantAll",
+      "NetUpdateFrequency": 1.0,
+      "MinNetUpdateFrequency": 1.0
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "SphereCollider",
+          "DelegatePropertyName": "OnComponentEndOverlap",
+          "FunctionNameToBind": "BndEvt__BP_BaseLight_SphereCollider_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "SphereCollider",
+          "DelegatePropertyName": "OnComponentBeginOverlap",
+          "FunctionNameToBind": "BndEvt__BP_BaseFenceInverted_SphereCollider_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_BaseFenceInverted_SphereCollider_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bFromSweep",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SweepResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_BaseLight_SphereCollider_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomEvent_0",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_BaseLight",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Function'Ultra_Dynamic_Sky_C:Midnight__DelegateSignature'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.339"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_2",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Function'Ultra_Dynamic_Sky_C:Sunset__DelegateSignature'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.458"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOfClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'Ultra_Dynamic_Sky_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_3",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Function'Ultra_Dynamic_Sky_C:Sunrise__DelegateSignature'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.457"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOfClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'Ultra_Dynamic_Weather_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.3"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Character'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocallyControlled_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Character_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetDistanceTo_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ComponentBoundEvent_bFromSweep",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_ComponentBoundEvent_SweepResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ConstParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Character_Base_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Character_Base_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlayerControlled_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlayerControlled_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Delay_Duration_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Delay_Duration_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "Midnight_Event_0",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_bTurnOn",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Sunrise_Event_0",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Sunset_Event_0",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TurnOff",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TurnOffShadows",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TurnOn",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TurnOnShadows",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BaseLight_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.19"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BaseLight_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.16"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BaseLight_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.18"
+        }
+      ],
+      "VariableGuid": "F0A789A8-4FAE1F23-076F668D-E73B5480",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BaseLight_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.19"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SphereComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent'BP_BaseLight_C:SphereCollider_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.20"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "SphereRadius",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SphereComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bUseSystemDefaultObstacleAreaClass",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SphereComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "AreaClassOverride",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SphereComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SphereComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 6,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 7,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "E6B8C353-45CF73C1-E97D6080-3093D048",
+      "InternalVariableName": "SphereCollider"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BaseLight_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.17"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BaseLight_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BaseLight_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.18"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BaseLight_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.17"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereCollider_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "Properties": {
+      "SphereRadius": 15000.0,
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

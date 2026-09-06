@@ -1,0 +1,616 @@
+[
+  {
+    "Type": "AudioComponent",
+    "Name": "AudioComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BP_Nest_Debris_C'Default__BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_Nest_Debris_C:RootComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.9"
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Nest_Debris_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Nest_Debris_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.11"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Nest_Debris_C:ExecuteUbergraph_BP_Nest_Debris'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIDebrisNest'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Nest_Debris_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.6"
+      },
+      {
+        "ObjectName": "Function'BP_Nest_Debris_C:ApplyMorphs'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.4"
+      },
+      {
+        "ObjectName": "Function'BP_Nest_Debris_C:ExecuteUbergraph_BP_Nest_Debris'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Nest_Debris": {
+        "ObjectName": "Function'BP_Nest_Debris_C:ExecuteUbergraph_BP_Nest_Debris'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.5"
+      },
+      "ApplyMorphs": {
+        "ObjectName": "Function'BP_Nest_Debris_C:ApplyMorphs'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Nest_Debris_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Nest_Debris_C'Default__BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBox",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_Nest_Debris_C'Default__BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.3"
+    },
+    "Properties": {
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_Nest_Debris_C:RootComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.9"
+      }
+    }
+  },
+  {
+    "Type": "BP_Nest_Debris_C",
+    "Name": "Default__BP_Nest_Debris_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.BP_Nest_Debris_C'",
+    "Package": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DebrisClasses": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_DebrisBranch_C'",
+          "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_DebrisBranch.0"
+        }
+      ],
+      "NestMesh": {
+        "ObjectName": "SkeletalMeshComponent'Default__BP_Nest_Debris_C:NestMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.12"
+      },
+      "CollisionMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Nest_Debris_C:CollisionMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.13"
+      },
+      "HitBox": {
+        "ObjectName": "BoxComponent'Default__BP_Nest_Debris_C:HitBox'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.2"
+      },
+      "RotEffect": {
+        "ObjectName": "NiagaraComponent'Default__BP_Nest_Debris_C:RotEffect'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.7"
+      },
+      "ShakeCurve": {
+        "ObjectName": "CurveFloat'Curve_HatchShake'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Curve_HatchShake.0"
+      },
+      "CollisionMeshes": [
+        {
+          "ObjectName": "StaticMesh'SM_Debris_Nest_Collision_Morph_0'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Nest/Mesh/DebrisNest/Collision/SM_Debris_Nest_Collision_Morph_0.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Debris_Nest_Collision_Morph_1'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Nest/Mesh/DebrisNest/Collision/SM_Debris_Nest_Collision_Morph_1.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Debris_Nest_Collision_Morph_2'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Nest/Mesh/DebrisNest/Collision/SM_Debris_Nest_Collision_Morph_2.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Debris_Nest_Collision_Morph_3'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Nest/Mesh/DebrisNest/Collision/SM_Debris_Nest_Collision_Morph_3.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Debris_Nest_Collision_Morph_4'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Nest/Mesh/DebrisNest/Collision/SM_Debris_Nest_Collision_Morph_4.2"
+        }
+      ],
+      "BrokenEggMeshes": [
+        null,
+        null,
+        null
+      ],
+      "Audio": {
+        "ObjectName": "AudioComponent'Default__BP_Nest_Debris_C:AudioComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.0"
+      },
+      "StageMorphs": [
+        "Nest_Debris_Morph_1",
+        "Nest_Debris_Morph_2",
+        "Nest_Debris_Morph_3",
+        "Nest_Debris_Morph_4"
+      ],
+      "Sockets": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "ClosedNestHatchSocket": [
+        "Spawn1",
+        "Spawn2",
+        "Spawn3",
+        "Spawn4",
+        "Spawn5",
+        "Spawn6",
+        "Spawn7",
+        "Spawn8"
+      ],
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_Nest_Debris_C:RootComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.9"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ApplyMorphs",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Nest_Debris",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "RotEffect",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Outer": {
+      "ObjectName": "BP_Nest_Debris_C'Default__BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.3"
+    },
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_RottenEggs'",
+        "ObjectPath": "/Game/TheIsle/VFX/EnvironmentalFX/Nest/NiagaraSystem/NS_RottenEggs.0"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Color",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector3f'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Color",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector3f'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "HideFogAndSparks",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.HideFogAndSparks",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Source",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector3f'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Source",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector3f'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 4,
+            "Name": "User.Color",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector3f'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.HideFogAndSparks",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraBool'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 16,
+            "Name": "User.Source",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector3f'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_Nest_Debris_C:RootComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.9"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.1"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_Nest_Debris_C'Default__BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Nest_Debris_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.11"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Nest_Debris_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.8"
+      },
+      "VariableGuid": "0F710215-4FFD20F0-DEC20686-FEE29ABD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.1"
+    },
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Nest_Debris_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.10"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "NestMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Nest_Debris_C'Default__BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.3"
+    },
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Debris_Nest'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Nest/Mesh/DebrisNest/SK_Debris_Nest.4"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SK_Debris_Nest'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Nest/Mesh/DebrisNest/SK_Debris_Nest.4"
+      },
+      "OverrideMaterials": [
+        null
+      ],
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_Nest_Debris_C:RootComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "CollisionMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Nest_Debris_C'Default__BP_Nest_Debris_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.3"
+    },
+    "Properties": {
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_Nest_Debris_C:RootComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/Dinosaur/BP_Nest_Debris.9"
+      }
+    }
+  }
+]

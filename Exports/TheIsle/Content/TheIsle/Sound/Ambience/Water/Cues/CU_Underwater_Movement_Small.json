@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Underwater_Movement_Small",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Sound/Ambience/Water/Cues/CU_Underwater_Movement_Small",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.01,
+      "PitchMultiplier": 1.4,
+      "AttenuationOverrides": {
+        "bEnableReverbSend": false,
+        "NonSpatializedRadiusStart": 1024.0,
+        "LPFRadiusMin": 0.0,
+        "LPFRadiusMax": 1200.0,
+        "LPFFrequencyAtMax": 1200.0,
+        "OcclusionLowPassFilterFrequency": 512.0,
+        "OcclusionVolumeAttenuation": 0.0,
+        "AttenuationShapeExtents": {
+          "X": 15.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "FalloffDistance": 1000.0
+      },
+      "bOverrideAttenuation": true,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'UnderwaterFoley'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/UnderwaterFoley.0"
+      },
+      "ConcurrencySet": [
+        {
+          "ObjectName": "SoundConcurrency'SmallFoley_SC'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Concurrency/SmallFoley_SC.0"
+        }
+      ],
+      "ConcurrencyOverrides": {
+        "MaxCount": 5,
+        "ResolutionRule": "EMaxConcurrentResolutionRule::StopQuietest",
+        "VolumeScale": 0.4
+      },
+      "Duration": 3.375,
+      "MaxDistance": 1015.0,
+      "Priority": 10.0
+    }
+  }
+]

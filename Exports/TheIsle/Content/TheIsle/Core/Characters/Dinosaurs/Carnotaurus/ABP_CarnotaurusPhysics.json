@@ -1,0 +1,1796 @@
+[
+  {
+    "Type": "ABP_CarnotaurusPhysics_C",
+    "Name": "Default__ABP_CarnotaurusPhysics_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "AnimBlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.ABP_CarnotaurusPhysics_C'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics",
+    "Properties": {
+      "AnimBlueprintExtension_PropertyAccess": {},
+      "AnimBlueprintExtension_Base": {},
+      "AnimGraphNode_Root_1": {
+        "Result": {
+          "LinkID": 3
+        }
+      },
+      "AnimGraphNode_LinkedInputPose": {
+        "Name": "InPose",
+        "Graph": "TailPhysics",
+        "InputPose": {
+          "LinkID": -1
+        },
+        "bIsOutputLinked": true
+      },
+      "AnimGraphNode_LocalToComponentSpace": {
+        "LocalPose": {
+          "LinkID": 1
+        }
+      },
+      "AnimGraphNode_ComponentToLocalSpace": {
+        "ComponentPose": {
+          "LinkID": 7
+        }
+      },
+      "AnimGraphNode_Trail_3": {
+        "TrailBone": {
+          "BoneName": "DinoTail02"
+        },
+        "ChainLength": 2,
+        "ChainBoneAxis": "EAxis::X",
+        "bInvertChainBoneAxis": false,
+        "bLimitStretch": true,
+        "bLimitRotation": true,
+        "bUsePlanarLimit": false,
+        "bActorSpaceFakeVel": false,
+        "bReorientParentToChild": true,
+        "MaxDeltaTime": 0.0,
+        "RelaxationSpeedScale": 5.0,
+        "TrailRelaxationSpeed": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 10.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.0,
+                "Value": 5.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "RCCE_Constant",
+            "PostInfinityExtrap": "RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "RelaxationSpeedScaleInputProcessor": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "RotationLimits": [
+          {
+            "LimitMin": {
+              "X": -20.0,
+              "Y": -180.0,
+              "Z": -180.0
+            },
+            "LimitMax": {
+              "X": 20.0,
+              "Y": 180.0,
+              "Z": 180.0
+            }
+          },
+          {
+            "LimitMin": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LimitMax": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        ],
+        "RotationOffsets": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ],
+        "PlanarLimits": [],
+        "StretchLimit": 1.0,
+        "FakeVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BaseJoint": {
+          "BoneName": "None"
+        },
+        "LastBoneRotationAnimAlphaBlend": 0.0,
+        "ComponentPose": {
+          "LinkID": 2
+        },
+        "LODThreshold": -1,
+        "ActualAlpha": 0.0,
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": true,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        }
+      },
+      "AnimGraphNode_Trail_2": {
+        "TrailBone": {
+          "BoneName": "DinoTail03"
+        },
+        "ChainLength": 2,
+        "ChainBoneAxis": "EAxis::X",
+        "bInvertChainBoneAxis": false,
+        "bLimitStretch": true,
+        "bLimitRotation": true,
+        "bUsePlanarLimit": false,
+        "bActorSpaceFakeVel": false,
+        "bReorientParentToChild": true,
+        "MaxDeltaTime": 0.0,
+        "RelaxationSpeedScale": 3.0,
+        "TrailRelaxationSpeed": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 10.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.0,
+                "Value": 5.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "RCCE_Constant",
+            "PostInfinityExtrap": "RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "RelaxationSpeedScaleInputProcessor": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "RotationLimits": [
+          {
+            "LimitMin": {
+              "X": -20.0,
+              "Y": -180.0,
+              "Z": -180.0
+            },
+            "LimitMax": {
+              "X": 20.0,
+              "Y": 180.0,
+              "Z": 180.0
+            }
+          },
+          {
+            "LimitMin": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LimitMax": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        ],
+        "RotationOffsets": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ],
+        "PlanarLimits": [],
+        "StretchLimit": 1.0,
+        "FakeVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BaseJoint": {
+          "BoneName": "None"
+        },
+        "LastBoneRotationAnimAlphaBlend": 0.0,
+        "ComponentPose": {
+          "LinkID": 4
+        },
+        "LODThreshold": -1,
+        "ActualAlpha": 0.0,
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": true,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        }
+      },
+      "AnimGraphNode_Trail_1": {
+        "TrailBone": {
+          "BoneName": "DinoTail04"
+        },
+        "ChainLength": 2,
+        "ChainBoneAxis": "EAxis::X",
+        "bInvertChainBoneAxis": false,
+        "bLimitStretch": true,
+        "bLimitRotation": true,
+        "bUsePlanarLimit": false,
+        "bActorSpaceFakeVel": false,
+        "bReorientParentToChild": true,
+        "MaxDeltaTime": 0.0,
+        "RelaxationSpeedScale": 1.0,
+        "TrailRelaxationSpeed": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 10.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.0,
+                "Value": 5.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "RCCE_Constant",
+            "PostInfinityExtrap": "RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "RelaxationSpeedScaleInputProcessor": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "RotationLimits": [
+          {
+            "LimitMin": {
+              "X": -20.0,
+              "Y": -180.0,
+              "Z": -180.0
+            },
+            "LimitMax": {
+              "X": 20.0,
+              "Y": 180.0,
+              "Z": 180.0
+            }
+          },
+          {
+            "LimitMin": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LimitMax": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        ],
+        "RotationOffsets": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ],
+        "PlanarLimits": [],
+        "StretchLimit": 1.0,
+        "FakeVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BaseJoint": {
+          "BoneName": "None"
+        },
+        "LastBoneRotationAnimAlphaBlend": 0.0,
+        "ComponentPose": {
+          "LinkID": 5
+        },
+        "LODThreshold": -1,
+        "ActualAlpha": 0.0,
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": true,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        }
+      },
+      "AnimGraphNode_Trail": {
+        "TrailBone": {
+          "BoneName": "DinoTail05"
+        },
+        "ChainLength": 2,
+        "ChainBoneAxis": "EAxis::X",
+        "bInvertChainBoneAxis": false,
+        "bLimitStretch": true,
+        "bLimitRotation": true,
+        "bUsePlanarLimit": false,
+        "bActorSpaceFakeVel": false,
+        "bReorientParentToChild": true,
+        "MaxDeltaTime": 0.0,
+        "RelaxationSpeedScale": 1.0,
+        "TrailRelaxationSpeed": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 10.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.0,
+                "Value": 5.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "RCCE_Constant",
+            "PostInfinityExtrap": "RCCE_Constant",
+            "KeyHandlesToIndices": {}
+          },
+          "ExternalCurve": null
+        },
+        "RelaxationSpeedScaleInputProcessor": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "RotationLimits": [
+          {
+            "LimitMin": {
+              "X": -20.0,
+              "Y": -180.0,
+              "Z": -180.0
+            },
+            "LimitMax": {
+              "X": 20.0,
+              "Y": 180.0,
+              "Z": 180.0
+            }
+          },
+          {
+            "LimitMin": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LimitMax": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        ],
+        "RotationOffsets": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        ],
+        "PlanarLimits": [],
+        "StretchLimit": 1.0,
+        "FakeVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BaseJoint": {
+          "BoneName": "None"
+        },
+        "LastBoneRotationAnimAlphaBlend": 0.0,
+        "ComponentPose": {
+          "LinkID": 6
+        },
+        "LODThreshold": -1,
+        "ActualAlpha": 0.0,
+        "AlphaInputType": "EAnimAlphaInputType::Float",
+        "bAlphaBoolEnabled": true,
+        "Alpha": 1.0,
+        "AlphaScaleBias": {
+          "Scale": 1.0,
+          "Bias": 0.0
+        },
+        "AlphaBoolBlend": {
+          "BlendInTime": 0.0,
+          "BlendOutTime": 0.0,
+          "BlendOption": "EAlphaBlendOption::Linear",
+          "bInitialized": false,
+          "CustomCurve": null,
+          "AlphaBlend": {
+            "CustomCurve": null,
+            "BlendTime": 0.2,
+            "BlendOption": "EAlphaBlendOption::Linear"
+          }
+        },
+        "AlphaCurveName": "None",
+        "AlphaScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        }
+      },
+      "AnimGraphNode_Root": {
+        "Result": {
+          "LinkID": -1
+        }
+      }
+    },
+    "SerializedSparseClassDataStruct": "ScriptStruct'/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.ABP_CarnotaurusPhysics_C:AnimBlueprintGeneratedConstantData'",
+    "SerializedSparseClassData": {
+      "__NameProperty_26": "TailPhysics",
+      "__StructProperty_27": {
+        "ClassName": "None",
+        "FunctionName": "None"
+      },
+      "__NameProperty_28": "DefaultSharedGroup",
+      "__NameProperty_29": "AnimGraph",
+      "AnimBlueprintExtension_PropertyAccess": {
+        "Library": {
+          "PathSegments": [],
+          "SrcPaths": [],
+          "DestPaths": [],
+          "CopyBatchArray": []
+        }
+      },
+      "AnimBlueprintExtension_Base": {},
+      "AnimGraphNode_Root_1": {
+        "CopyRecords": [],
+        "Function": null,
+        "BoundFunction": "None"
+      },
+      "AnimGraphNode_LinkedInputPose": {},
+      "AnimGraphNode_LocalToComponentSpace": {
+        "CopyRecords": [],
+        "Function": null,
+        "BoundFunction": "None"
+      },
+      "AnimGraphNode_ComponentToLocalSpace": {
+        "CopyRecords": [],
+        "Function": null,
+        "BoundFunction": "None"
+      },
+      "AnimGraphNode_Trail_3": {
+        "CopyRecords": [],
+        "Function": null,
+        "BoundFunction": "None"
+      },
+      "AnimGraphNode_Trail_2": {
+        "CopyRecords": [],
+        "Function": null,
+        "BoundFunction": "None"
+      },
+      "AnimGraphNode_Trail_1": {
+        "CopyRecords": [],
+        "Function": null,
+        "BoundFunction": "None"
+      },
+      "AnimGraphNode_Trail": {
+        "CopyRecords": [],
+        "Function": null,
+        "BoundFunction": "None"
+      },
+      "AnimGraphNode_Root": {
+        "CopyRecords": [],
+        "Function": null,
+        "BoundFunction": "None"
+      }
+    }
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_CarnotaurusPhysics_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SKEL_Carnotaurus'",
+        "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Carnotaurus/Mesh/SKEL_Carnotaurus.19"
+      },
+      "AnimNodeData": [
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            0,
+            2,
+            4294967295
+          ],
+          "NodeIndex": 0,
+          "Flags": 0
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 1,
+          "Flags": 0
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295
+          ],
+          "NodeIndex": 2,
+          "Flags": 0
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295
+          ],
+          "NodeIndex": 3,
+          "Flags": 0
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 4,
+          "Flags": 0
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 5,
+          "Flags": 0
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 6,
+          "Flags": 0
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295,
+            4294967295
+          ],
+          "NodeIndex": 7,
+          "Flags": 0
+        },
+        {
+          "AnimClassInterface": {
+            "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+          },
+          "Entries": [
+            1,
+            1,
+            1,
+            4294967295,
+            3,
+            2,
+            4294967295
+          ],
+          "NodeIndex": 8,
+          "Flags": 0
+        }
+      ],
+      "NodeTypeMap": [
+        {
+          "Key": "Class'/Script/Engine.AnimNode_Root'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Result",
+                "Value": 3
+              },
+              {
+                "Key": "Name",
+                "Value": 4
+              },
+              {
+                "Key": "LayerGroup",
+                "Value": 5
+              },
+              {
+                "Key": "Group",
+                "Value": 6
+              }
+            ],
+            "NumProperties": 7
+          }
+        },
+        {
+          "Key": "Class'/Script/Engine.AnimNode_Base'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              }
+            ],
+            "NumProperties": 3
+          }
+        },
+        {
+          "Key": "Class'/Script/AnimGraphRuntime.AnimNode_Trail'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              },
+              {
+                "Key": "ValidationVisualWarningMessage",
+                "Value": 13
+              },
+              {
+                "Key": "TrailBone",
+                "Value": 14
+              },
+              {
+                "Key": "ChainLength",
+                "Value": 15
+              },
+              {
+                "Key": "ChainBoneAxis",
+                "Value": 16
+              },
+              {
+                "Key": "bReorientParentToChild",
+                "Value": 17
+              },
+              {
+                "Key": "bLimitRotation",
+                "Value": 18
+              },
+              {
+                "Key": "bLimitStretch",
+                "Value": 19
+              },
+              {
+                "Key": "bInvertChainBoneAxis",
+                "Value": 20
+              },
+              {
+                "Key": "bEnableDebug",
+                "Value": 21
+              },
+              {
+                "Key": "bUsePlanarLimit",
+                "Value": 22
+              },
+              {
+                "Key": "bActorSpaceFakeVel",
+                "Value": 23
+              },
+              {
+                "Key": "bShowBaseMotion",
+                "Value": 24
+              },
+              {
+                "Key": "bShowTrailLocation",
+                "Value": 25
+              },
+              {
+                "Key": "bShowLimit",
+                "Value": 26
+              },
+              {
+                "Key": "DebugLifeTime",
+                "Value": 27
+              },
+              {
+                "Key": "TrailRelaxation",
+                "Value": 28
+              },
+              {
+                "Key": "MaxDeltaTime",
+                "Value": 29
+              },
+              {
+                "Key": "RelaxationSpeedScale",
+                "Value": 30
+              },
+              {
+                "Key": "TrailRelaxationSpeed",
+                "Value": 31
+              },
+              {
+                "Key": "RelaxationSpeedScaleInputProcessor",
+                "Value": 32
+              },
+              {
+                "Key": "RotationLimits",
+                "Value": 33
+              },
+              {
+                "Key": "RotationOffsets",
+                "Value": 34
+              },
+              {
+                "Key": "PlanarLimits",
+                "Value": 35
+              },
+              {
+                "Key": "StretchLimit",
+                "Value": 36
+              },
+              {
+                "Key": "FakeVelocity",
+                "Value": 37
+              },
+              {
+                "Key": "BaseJoint",
+                "Value": 38
+              },
+              {
+                "Key": "TrailBoneRotationBlendAlpha",
+                "Value": 39
+              },
+              {
+                "Key": "LastBoneRotationAnimAlphaBlend",
+                "Value": 40
+              }
+            ],
+            "NumProperties": 41
+          }
+        },
+        {
+          "Key": "Class'/Script/AnimGraphRuntime.AnimNode_SkeletalControlBase'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              },
+              {
+                "Key": "LODThreshold",
+                "Value": 4
+              },
+              {
+                "Key": "ActualAlpha",
+                "Value": 5
+              },
+              {
+                "Key": "AlphaInputType",
+                "Value": 6
+              },
+              {
+                "Key": "bAlphaBoolEnabled",
+                "Value": 7
+              },
+              {
+                "Key": "Alpha",
+                "Value": 8
+              },
+              {
+                "Key": "AlphaScaleBias",
+                "Value": 9
+              },
+              {
+                "Key": "AlphaBoolBlend",
+                "Value": 10
+              },
+              {
+                "Key": "AlphaCurveName",
+                "Value": 11
+              },
+              {
+                "Key": "AlphaScaleBiasClamp",
+                "Value": 12
+              },
+              {
+                "Key": "ValidationVisualWarningMessage",
+                "Value": 13
+              }
+            ],
+            "NumProperties": 14
+          }
+        },
+        {
+          "Key": "Class'/Script/Engine.AnimNode_ConvertComponentToLocalSpace'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "ComponentPose",
+                "Value": 3
+              }
+            ],
+            "NumProperties": 4
+          }
+        },
+        {
+          "Key": "Class'/Script/Engine.AnimNode_ConvertLocalToComponentSpace'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "LocalPose",
+                "Value": 3
+              }
+            ],
+            "NumProperties": 4
+          }
+        },
+        {
+          "Key": "Class'/Script/Engine.AnimNode_LinkedInputPose'",
+          "Value": {
+            "NameToIndexMap": [
+              {
+                "Key": "InitialUpdateFunction",
+                "Value": 0
+              },
+              {
+                "Key": "BecomeRelevantFunction",
+                "Value": 1
+              },
+              {
+                "Key": "UpdateFunction",
+                "Value": 2
+              },
+              {
+                "Key": "Name",
+                "Value": 3
+              },
+              {
+                "Key": "Graph",
+                "Value": 4
+              },
+              {
+                "Key": "InputPose",
+                "Value": 5
+              },
+              {
+                "Key": "bIsOutputLinked",
+                "Value": 6
+              }
+            ],
+            "NumProperties": 7
+          }
+        }
+      ]
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AnimInstance'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABP_CarnotaurusPhysics_C:TailPhysics'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.3"
+      },
+      {
+        "ObjectName": "Function'ABP_CarnotaurusPhysics_C:AnimGraph'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_PropertyAccess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'AnimSubsystemInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'AnimSubsystemInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 200,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LinkedInputPose",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 320,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_LinkedInputPose'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LocalToComponentSpace",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_ConvertLocalToComponentSpace'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_ComponentToLocalSpace",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_ConvertComponentToLocalSpace'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Trail_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 960,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Trail'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Trail_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 960,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Trail'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Trail_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 960,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Trail'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Trail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 960,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Trail'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 200,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "AnimGraph": {
+        "ObjectName": "Function'ABP_CarnotaurusPhysics_C:AnimGraph'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.2"
+      },
+      "TailPhysics": {
+        "ObjectName": "Function'ABP_CarnotaurusPhysics_C:TailPhysics'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.3"
+      }
+    },
+    "ClassFlags": "CLASS_Transient | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ALI_DinosaurPhysics_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/ALI_DinosaurPhysics.1"
+        },
+        "PointerProperty": null,
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_CarnotaurusPhysics_C'Default__ABP_CarnotaurusPhysics_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=\"/Script/Engine.AnimBlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Dinosaurs/ALI_DinosaurPhysics.ALI_DinosaurPhysics_C'\"))"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraph",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TailPhysics",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InPose",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TailPhysics",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintCallable"
+  },
+  {
+    "Type": "ScriptStruct",
+    "Name": "AnimBlueprintGeneratedConstantData",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'ScriptStruct'",
+    "Outer": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_CarnotaurusPhysics_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Carnotaurus/ABP_CarnotaurusPhysics.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AnimBlueprintConstantData'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_26",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "__StructProperty_27",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 40,
+        "PropertyFlags": "BlueprintVisible",
+        "Struct": {
+          "ObjectName": "Class'AnimNodeFunctionRef'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_28",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "__NameProperty_29",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_PropertyAccess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 192,
+        "Struct": {
+          "ObjectName": "Class'AnimSubsystem_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimBlueprintExtension_Base",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimSubsystem_Base'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "Class'AnimNodeExposedValueHandler_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LinkedInputPose",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'AnimNodeExposedValueHandler'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_LocalToComponentSpace",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "Class'AnimNodeExposedValueHandler_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_ComponentToLocalSpace",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "Class'AnimNodeExposedValueHandler_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Trail_3",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "Class'AnimNodeExposedValueHandler_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Trail_2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "Class'AnimNodeExposedValueHandler_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Trail_1",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "Class'AnimNodeExposedValueHandler_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Trail",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "Class'AnimNodeExposedValueHandler_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "Class'AnimNodeExposedValueHandler_PropertyAccess'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ]
+  }
+]

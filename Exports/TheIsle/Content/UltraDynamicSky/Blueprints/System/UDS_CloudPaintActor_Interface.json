@@ -1,0 +1,210 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "UDS_CloudPaintActor_Interface_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface",
+    "SuperStruct": {
+      "ObjectName": "Class'Interface'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'UDS_CloudPaintActor_Interface_C:Apply Effect to Cloud Coverage Value'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface.1"
+      },
+      {
+        "ObjectName": "Function'UDS_CloudPaintActor_Interface_C:Draw to Cloud Paint Target'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface.2"
+      }
+    ],
+    "FuncMap": {
+      "Draw to Cloud Paint Target": {
+        "ObjectName": "Function'UDS_CloudPaintActor_Interface_C:Draw to Cloud Paint Target'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface.2"
+      },
+      "Apply Effect to Cloud Coverage Value": {
+        "ObjectName": "Function'UDS_CloudPaintActor_Interface_C:Apply Effect to Cloud Coverage Value'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface.1"
+      }
+    },
+    "ClassFlags": "CLASS_Interface | CLASS_CompiledFromBlueprint | CLASS_Deprecated",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UDS_CloudPaintActor_Interface_C'Default__UDS_CloudPaintActor_Interface_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Interface"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Apply Effect to Cloud Coverage Value",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_CloudPaintActor_Interface_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Sample Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Cloud Coverage",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Painted Opacity",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Draw to Cloud Paint Target",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_CloudPaintActor_Interface_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Canvas'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Radial Storm Draw MID",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Target Mapping",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Target Res",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Can Add Coverage",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Can Subtract Coverage",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Cloud Painting Active",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "UDS_CloudPaintActor_Interface_C",
+    "Name": "Default__UDS_CloudPaintActor_Interface_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface.UDS_CloudPaintActor_Interface_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface"
+  }
+]

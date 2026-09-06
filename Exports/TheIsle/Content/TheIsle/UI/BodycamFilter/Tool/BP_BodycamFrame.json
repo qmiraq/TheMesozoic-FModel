@@ -1,0 +1,848 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BodycamFrame_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BodycamFrame_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_BodycamFrame_C:ExecuteUbergraph_BP_BodycamFrame'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_BodycamFrame_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.3"
+      },
+      {
+        "ObjectName": "Function'BP_BodycamFrame_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.4"
+      },
+      {
+        "ObjectName": "Function'BP_BodycamFrame_C:ExecuteUbergraph_BP_BodycamFrame'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Plane",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Cylinder",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_BodycamFrame": {
+        "ObjectName": "Function'BP_BodycamFrame_C:ExecuteUbergraph_BP_BodycamFrame'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.2"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_BodycamFrame_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_BodycamFrame_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BodycamFrame_C'Default__BP_BodycamFrame_C'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_BodycamFrame_C",
+    "Name": "Default__BP_BodycamFrame_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.BP_BodycamFrame_C'",
+    "Package": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_BodycamFrame",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BodycamFrame_C'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BodycamFrame_C'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BodycamFrame_C'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BodycamFrame_C'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BodycamFrame_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.9"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BodycamFrame_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.5"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BodycamFrame_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.7"
+        }
+      ],
+      "VariableGuid": "4CBCDBE3-47652B85-4F233BA0-8F3C3B2C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BodycamFrame_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.9"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_BodycamFrame_C:Cylinder_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.10"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "OverrideMaterials",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CastShadow",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionEnabled",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Pitch",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeScale3D",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BodycamFrame_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.8"
+        }
+      ],
+      "VariableGuid": "92452D2C-426D1358-1C710EA5-B75C692A",
+      "InternalVariableName": "Cylinder"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BodycamFrame_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.9"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_BodycamFrame_C:Plane_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.11"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "OverrideMaterials",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Pitch",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Yaw",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Roll",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeScale3D",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "361238EF-475283AF-8E0ED59A-7D29A59F",
+      "InternalVariableName": "Plane"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BodycamFrame_C'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BodycamFrame_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BodycamFrame_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.6"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BodycamFrame_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.7"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BodycamFrame_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BodycamFrame_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Cylinder_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BodycamFrame_C'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_BodycamFrame'",
+        "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/StaticMesh/SM_BodycamFrame.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material'M_SolidBlack'",
+          "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Materials/Material/M_SolidBlack.0"
+        }
+      ],
+      "CastShadow": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": -14.0,
+        "Y": -0.039767,
+        "Z": -1.684111
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.558127,
+        "Y": 0.49339,
+        "Z": 0.6
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Plane_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BodycamFrame_C'",
+      "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Tool/BP_BodycamFrame.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Plane'",
+        "ObjectPath": "/Engine/BasicShapes/Plane.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material'M_SolidBlack'",
+          "ObjectPath": "/Game/TheIsle/UI/BodycamFilter/Materials/Material/M_SolidBlack.0"
+        }
+      ],
+      "RelativeLocation": {
+        "X": 3.0174332,
+        "Y": 0.080599524,
+        "Z": 53.333332
+      },
+      "RelativeRotation": {
+        "Pitch": -6.971718E-07,
+        "Yaw": 360.0,
+        "Roll": 540.0
+      },
+      "RelativeScale3D": {
+        "X": 1.0417069,
+        "Y": 1.0267942,
+        "Z": 1.6666666
+      }
+    }
+  }
+]

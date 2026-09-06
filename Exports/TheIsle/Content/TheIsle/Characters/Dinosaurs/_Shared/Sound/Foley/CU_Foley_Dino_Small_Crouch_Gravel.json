@@ -1,0 +1,58 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Foley_Dino_Small_Crouch_Gravel",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Sound/Foley/CU_Foley_Dino_Small_Crouch_Gravel",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.1,
+      "PitchMultiplier": 1.05,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'SmallFootsteps'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/SmallFootsteps.0"
+      },
+      "ConcurrencySet": [
+        {
+          "ObjectName": "SoundConcurrency'SmallFootstep_SC'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Concurrency/SmallFootstep_SC.0"
+        }
+      ],
+      "ConcurrencyOverrides": {
+        "MaxCount": 24
+      },
+      "Duration": 1.2421666,
+      "MaxDistance": 3120.0,
+      "Priority": 100.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_DinoCrouch_Small'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Footsteps/ATT_DinoCrouch_Small.0"
+      },
+      "BusSends": [
+        {
+          "SourceBusSendLevelControlMethod": "ESourceBusSendLevelControlMethod::Manual",
+          "SoundSourceBus": null,
+          "AudioBus": {
+            "ObjectName": "AudioBus'AB_Footsteps'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/AudioBuses/AB_Footsteps.0"
+          },
+          "SendLevel": 1.0,
+          "MinSendLevel": 0.0,
+          "MaxSendLevel": 1.0,
+          "MinSendDistance": 100.0,
+          "MaxSendDistance": 1000.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

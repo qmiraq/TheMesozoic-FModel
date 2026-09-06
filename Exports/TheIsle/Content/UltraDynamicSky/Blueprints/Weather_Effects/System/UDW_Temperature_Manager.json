@@ -1,0 +1,1348 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "UDW_Temperature_Manager_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:ExecuteUbergraph_UDW_Temperature_Manager'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'ActorComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Get Current Value'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.4"
+      },
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Instant Update Temperature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.5"
+      },
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Calculate Temperature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.1"
+      },
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Get Current Min and Max Temperature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.3"
+      },
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Update Temperature Range'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.10"
+      },
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Update Target Temperature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.9"
+      },
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:ReceiveEndPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.6"
+      },
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Runtime Start Temperature Manager'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.7"
+      },
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Set Up Temperature Manager'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.8"
+      },
+      {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:ExecuteUbergraph_UDW_Temperature_Manager'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UDW",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | Transient | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Weather State",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Temperature Range",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Update Period",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Last Temperature Update Time",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Last Temperature",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Target Temperature",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Update Timer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_UDW_Temperature_Manager": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:ExecuteUbergraph_UDW_Temperature_Manager'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.2"
+      },
+      "Set Up Temperature Manager": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Set Up Temperature Manager'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.8"
+      },
+      "Runtime Start Temperature Manager": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Runtime Start Temperature Manager'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.7"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:ReceiveEndPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.6"
+      },
+      "Update Target Temperature": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Update Target Temperature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.9"
+      },
+      "Update Temperature Range": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Update Temperature Range'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.10"
+      },
+      "Get Current Min and Max Temperature": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Get Current Min and Max Temperature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.3"
+      },
+      "Calculate Temperature": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Calculate Temperature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.1"
+      },
+      "Instant Update Temperature": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Instant Update Temperature'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.5"
+      },
+      "Get Current Value": {
+        "ObjectName": "Function'UDW_Temperature_Manager_C:Get Current Value'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_Interface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager_Interface.0"
+        },
+        "PointerProperty": null,
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UDW_Temperature_Manager_C'Default__UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.11"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=\"/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager_Interface.UDW_Temperature_Manager_Interface_C'\"))"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Calculate Temperature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Settings",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Temperature",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UDS",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'Ultra_Dynamic_Sky_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Morning/Evening Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Dust Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Fog Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Snow Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Rain Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Overcast Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Day Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Night Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Unconverted Temperature",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Bias Value",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsUltra_Dynamic_Weather_Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'Ultra_Dynamic_Weather_Interface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Ultra_Dynamic_Weather_Interface.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Get_UDW_Current_UDS_Reference_UDS",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'Ultra_Dynamic_Sky_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.0"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsUltra_Dynamic_Weather_Interface_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'Ultra_Dynamic_Weather_Interface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Ultra_Dynamic_Weather_Interface.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Get_Temperature_Bias_Settings_Nighttime_Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Get_Temperature_Bias_Settings_Daytime__Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Get_Temperature_Bias_Settings_Overcast_Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Get_Temperature_Bias_Settings_Rain_Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Get_Temperature_Bias_Settings_Snow_Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Get_Temperature_Bias_Settings_Fog_Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Get_Temperature_Bias_Settings_Dust_Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Get_Temperature_Bias_Settings_Morning_Evening_Bias",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Percent_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Current_Sunset_Event_Time_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Current_Sunrise_Event_Time_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMin_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Abs_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMin_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MapRangeClamped_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_6",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_7",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_8",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Percent_FloatFloat_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_UDW_Temperature_Manager",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_UDW",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Weather_State",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_Time_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "Get Current Min and Max Temperature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Spring Min and Max",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Summer Min and Max",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Autumn Min and Max",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Winter Min and Max",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Range",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Individual Seasons",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "DoubleProperty",
+          "Name": "Individual Seasons",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Max Temperature",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Min Temperature",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Seasons Min and Max Values",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Seasons Min and Max Values",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "Class'Vector2D'",
+            "ObjectPath": "/Script/CoreUObject"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "Class'Vector2D'",
+            "ObjectPath": "/Script/CoreUObject"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsUltra_Dynamic_Weather_Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'Ultra_Dynamic_Weather_Interface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Ultra_Dynamic_Weather_Interface.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_Get_Individual_Seasons_Seasons",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "DoubleProperty",
+          "Name": "CallFunc_Get_Individual_Seasons_Seasons",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector2D_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Get Current Value",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Out",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetGameTimeInSeconds_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Instant Update Temperature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'ActorComponent:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Class'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Runtime Start Temperature Manager",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Set Up Temperature Manager",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "UDW",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Weather State",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Weather_Settings_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update Target Temperature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetGameTimeInSeconds_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Calculate_Temperature_Temperature",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Update Temperature Range",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_Temperature_Manager_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsUDW_And_Weather_Override_Volume_Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDW_and_Weather_Override_Volume_Interface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Get_Season_Temperature_Ranges_Spring",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Get_Season_Temperature_Ranges_Summer",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Get_Season_Temperature_Ranges_Autumn",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Get_Season_Temperature_Ranges_Winter",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Get_Current_Min_and_Max_Temperature_Range",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "UDW_Temperature_Manager_C",
+    "Name": "Default__UDW_Temperature_Manager_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager.UDW_Temperature_Manager_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Temperature Range": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "Update Period": 1.0,
+      "Update Timer": {
+        "Handle": 0
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  }
+]

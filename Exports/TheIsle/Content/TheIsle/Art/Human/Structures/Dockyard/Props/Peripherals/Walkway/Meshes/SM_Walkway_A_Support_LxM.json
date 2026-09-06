@@ -1,0 +1,233 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Walkway_A_Support_LxM'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dockyard/Props/Peripherals/Walkway/Meshes/SM_Walkway_A_Support_LxM.2"
+    },
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 10.000002,
+              "Y": -10.000014,
+              "Z": 92.5
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": -0.0
+            },
+            "X": 20.000002,
+            "Y": 20.000029,
+            "Z": 185.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": 10.000002,
+              "Y": -289.99994,
+              "Z": 92.5
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": -0.0
+            },
+            "X": 20.000004,
+            "Y": 20.0,
+            "Z": 185.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "D758B6FD459E73750FD567825B8099C7",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 3930,
+        "SizeOnDisk": 3930,
+        "OffsetInFile": "0x70A"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Walkway_A_Support_LxM'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dockyard/Props/Peripherals/Walkway/Meshes/SM_Walkway_A_Support_LxM.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 750,
+        "SizeOnDisk": 750,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Walkway_A_Support_LxM",
+    "Flags": "RF_Public | RF_Standalone | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/Art/Human/Structures/Dockyard/Props/Peripherals/Walkway/Meshes/SM_Walkway_A_Support_LxM",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Trim_Metal_003'",
+            "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dockyard/Structure/Materials/MI_Trim_Metal_003.0"
+          },
+          "MaterialSlotName": "Kit_TRIM_Metal",
+          "ImportedMaterialSlotName": "Kit_TRIM_Metal",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 360.23672,
+            "LocalUVDensities[1]": 0.0,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 360.23672,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 9.999925,
+          "Y": -149.99998,
+          "Z": 92.5
+        },
+        "BoxExtent": {
+          "X": 10.000018,
+          "Y": 149.99992,
+          "Z": 92.5
+        },
+        "SphereRadius": 176.51126712400688
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Walkway_A_Support_LxM:BodySetup_1'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dockyard/Props/Peripherals/Walkway/Meshes/SM_Walkway_A_Support_LxM.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Walkway_A_Support_LxM:NavCollision_1'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dockyard/Props/Peripherals/Walkway/Meshes/SM_Walkway_A_Support_LxM.1"
+    },
+    "LightingGuid": "F683A173-454169EE-477DD889-9E0DB861",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 68,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 119,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 9.999925,
+          "Y": -149.99998,
+          "Z": 92.5
+        },
+        "BoxExtent": {
+          "X": 10.000018,
+          "Y": 149.99992,
+          "Z": 92.5
+        },
+        "SphereRadius": 189.49683
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

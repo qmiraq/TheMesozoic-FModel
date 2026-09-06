@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Deino_Underwater_Growl",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Characters/Dinosaurs/Deinosuchus/Sound/CU_Deino_Underwater_Growl",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.02,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'UnderwaterFoley'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/UnderwaterFoley.0"
+      },
+      "bHasDelayNode": true,
+      "ConcurrencySet": [
+        {
+          "ObjectName": "SoundConcurrency'LargeFoley_SC'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Concurrency/LargeFoley_SC.0"
+        }
+      ],
+      "Duration": 4.6096044,
+      "MaxDistance": 34779.99,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_CloseDinoFoleyNoOcclude_Small'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Dinos/Other/ATT_CloseDinoFoleyNoOcclude_Small.0"
+      },
+      "SoundSubmixSends": [
+        {
+          "SendStage": "ESubmixSendStage::PreDistanceAttenuation",
+          "SendLevelControlMethod": "ESendLevelControlMethod::Linear",
+          "SoundSubmix": {
+            "ObjectName": "SoundSubmix'SubMix_UnderwaterReverb'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/SubMix_UnderwaterReverb.0"
+          },
+          "SendLevel": 1.0,
+          "DisableManualSendClamp": false,
+          "MinSendLevel": 0.0,
+          "MaxSendLevel": 2.0,
+          "MinSendDistance": 0.0,
+          "MaxSendDistance": 50000.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Linear",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.0,
+                  "Value": 0.5,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Linear",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 1.0,
+                  "Value": 2.0,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

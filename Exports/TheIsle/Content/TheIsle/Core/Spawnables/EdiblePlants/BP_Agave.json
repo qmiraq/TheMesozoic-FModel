@@ -1,0 +1,254 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Agave_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Agave_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Agave_C:ExecuteUbergraph_BP_Agave'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIAgave'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Agave_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.3"
+      },
+      {
+        "ObjectName": "Function'BP_Agave_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.4"
+      },
+      {
+        "ObjectName": "Function'BP_Agave_C:ExecuteUbergraph_BP_Agave'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "GrowHandler",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Agave": {
+        "ObjectName": "Function'BP_Agave_C:ExecuteUbergraph_BP_Agave'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.2"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_Agave_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Agave_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Agave_C'Default__BP_Agave_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Agave_C",
+    "Name": "Default__BP_Agave_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.BP_Agave_C'",
+    "Package": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave",
+    "Properties": {
+      "UberGraphFrame": {},
+      "GrowHandler": {
+        "Handle": 0
+      },
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Agave_C:MeshComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.8"
+      },
+      "PieceOfPlant": {
+        "ObjectName": "BlueprintGeneratedClass'BP_PieceOfAgave_C'",
+        "ObjectPath": "/Game/TheIsle/Core/PickablePieces/BP_PieceOfAgave.0"
+      },
+      "FullPlantStaticMesh": {
+        "ObjectName": "StaticMesh'SM_Agave_Plant'",
+        "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/Agave/SM_Agave_Plant.2"
+      },
+      "EmptyPlantStaticMesh": {
+        "ObjectName": "StaticMesh'SM_Agave_Plant_Consumed'",
+        "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/Agave/SM_Agave_Plant_Consumed.2"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Agave_C:MeshComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.8"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Agave",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Agave_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Agave_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Agave_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Agave_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Agave_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.7"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Agave_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.5"
+      },
+      "VariableGuid": "341183AF-4F903276-E91A42B3-F7806919",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Agave_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.0"
+    },
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Agave_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Agave_C'Default__BP_Agave_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Spawnables/EdiblePlants/BP_Agave.1"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Agave_Plant'",
+        "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/Agave/SM_Agave_Plant.2"
+      },
+      "CachedMaxDrawDistance": 35000.0,
+      "bAffectDistanceFieldLighting": false
+    }
+  }
+]

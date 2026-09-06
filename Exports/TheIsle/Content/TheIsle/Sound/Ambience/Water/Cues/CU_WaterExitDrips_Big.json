@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_WaterExitDrips_Big",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Sound/Ambience/Water/Cues/CU_WaterExitDrips_Big",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.25,
+      "PitchMultiplier": 0.9,
+      "AttenuationOverrides": {
+        "bAttenuateWithLPF": true,
+        "LPFRadiusMin": 512.0,
+        "LPFRadiusMax": 4096.0,
+        "LPFFrequencyAtMax": 1024.0,
+        "DistanceAlgorithm": "EAttenuationDistanceModel::Logarithmic",
+        "AttenuationShapeExtents": {
+          "X": 128.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "bOverrideAttenuation": true,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'WaterFoley'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/WaterFoley.0"
+      },
+      "bOverrideConcurrency": true,
+      "ConcurrencySet": [
+        {
+          "ObjectName": "SoundConcurrency'SmallFoley_SC'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Concurrency/SmallFoley_SC.0"
+        }
+      ],
+      "ConcurrencyOverrides": {
+        "MaxCount": 2,
+        "bLimitToOwner": true,
+        "ResolutionRule": "EMaxConcurrentResolutionRule::PreventNew",
+        "VolumeScale": 0.5
+      },
+      "Duration": 2.1250114,
+      "MaxDistance": 3728.0,
+      "Priority": 10.0
+    }
+  }
+]

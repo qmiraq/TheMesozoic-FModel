@@ -1,0 +1,918 @@
+[
+  {
+    "Type": "AudioComponent",
+    "Name": "HeartbeatAudio",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Rabbit_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.18"
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Rabbit_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit",
+    "Properties": {
+      "NumReplicatedProperties": 2,
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Rabbit_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.15"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIRabbit'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsDigging",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsDiggingOut",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Burrow_0",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_RabbitBurrow_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_RabbitBurrow.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "DestinationOut",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "DestinationIn",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PreBurrowLoc",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "PreBurrowRotation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "InteractableDetector",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 25.0,
+        "Y": 20.0,
+        "Z": 30.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "CollisionEnabled": "ECollisionEnabled::NoCollision"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      },
+      "RelativeLocation": {
+        "X": 25.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "PouncebleArea",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      },
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      }
+    }
+  },
+  {
+    "Type": "BP_Rabbit_C",
+    "Name": "Default__BP_Rabbit_C",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.BP_Rabbit_C'",
+    "Package": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit",
+    "Properties": {
+      "DestinationOut": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "DestinationIn": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "PreBurrowLoc": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "PreBurrowRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "BurrowClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_RabbitBurrow_C'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_RabbitBurrow.0"
+      },
+      "DigMontage": {
+        "ObjectName": "AnimMontage'Sitting_Digging_New_Montage'",
+        "ObjectPath": "/Game/TheIsle/Characters/Animalia/EuropeanRabbit/Animations/Sitting_Digging_New_Montage.0"
+      },
+      "BurrowMovementSpeed": 1.0,
+      "BurrowRotationSpeed": 1.0,
+      "DinosaurAssets": {
+        "ObjectName": "TIDinosaurAssets'DA_DinosaurAssetsSimplified'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/DA_DinosaurAssetsSimplified.0"
+      },
+      "DinosaurMovement": {
+        "ObjectName": "TIDinosaurMovementComponent'Default__BP_Rabbit_C:CharMoveComp'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.28"
+      },
+      "ClientMeshCollisionProximity": {
+        "ObjectName": "SphereComponent'Default__BP_Rabbit_C:ClientMeshCollisionProximity'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.19"
+      },
+      "AttributeCurveDataTable": {
+        "ObjectName": "DataTable'ATT_RabbitAttributeCurves'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/Attributes/ATT_RabbitAttributeCurves.0"
+      },
+      "VocalsDataTable": {
+        "ObjectName": "DataTable'DT_RabbitVocals'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/Vocals/DT_RabbitVocals.0"
+      },
+      "DeathPhysicsAsset": {
+        "AssetPathName": "/Game/TheIsle/Characters/Animalia/EuropeanRabbit/Meshes/Rabbit_PhysicsAsset.Rabbit_PhysicsAsset",
+        "SubPathString": ""
+      },
+      "CharacterAssets": {
+        "ObjectName": "TICharacterAssets'DA_CharacterAssetsSimplificed'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/DA_CharacterAssetsSimplificed.0"
+      },
+      "AntiCheatComponent": {
+        "ObjectName": "TIAntiCheatComponent'Default__BP_Rabbit_C:AntiCheatComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.26"
+      },
+      "AbilitySystemComponent": {
+        "ObjectName": "TIAbilitySystemComponent'Default__BP_Rabbit_C:AbilitySystemComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.25"
+      },
+      "DragLocation": {
+        "ObjectName": "SceneComponent'Default__BP_Rabbit_C:Draglocation'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.13"
+      },
+      "ThroatMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Rabbit_C:ThroatMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.24"
+      },
+      "SkeletonMesh": {
+        "ObjectName": "SkeletalMeshComponent'Default__BP_Rabbit_C:SkeletonMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.17"
+      },
+      "RibsMeatMesh": {
+        "ObjectName": "SkeletalMeshComponent'Default__BP_Rabbit_C:RibsMeatMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.16"
+      },
+      "ThroatSpline": {
+        "ObjectName": "SplineComponent'Default__BP_Rabbit_C:ThroatSpline'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.21"
+      },
+      "InteractableDetector": {
+        "ObjectName": "BoxComponent'Default__BP_Rabbit_C:InteractableDetector'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.2"
+      },
+      "CorpseDisableDetector": {
+        "ObjectName": "SphereComponent'Default__BP_Rabbit_C:CorpseDisableDetector'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.20"
+      },
+      "PouncebleArea": {
+        "ObjectName": "BoxComponent'Default__BP_Rabbit_C:PouncebleArea'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.3"
+      },
+      "NameWidget": {
+        "ObjectName": "WidgetComponent'Default__BP_Rabbit_C:NameWidget'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.30"
+      },
+      "BuoyancyPlane": {
+        "ObjectName": "StaticMeshComponent'Default__BP_Rabbit_C:BuoyancyPlane'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.23"
+      },
+      "FootstepsComponent": {
+        "ObjectName": "TIFootstepsComponent'Default__BP_Rabbit_C:FootstepsComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.29"
+      },
+      "PhysicsHandleComponent": {
+        "ObjectName": "PhysicsHandleComponent'Default__BP_Rabbit_C:PhysicsHandle'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.11"
+      },
+      "AttributeSet": {
+        "ObjectName": "TIAttributeSetAnimals'Default__BP_Rabbit_C:AttributeSetBase'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.27"
+      },
+      "CharacterMovementComponent": {
+        "ObjectName": "TIDinosaurMovementComponent'Default__BP_Rabbit_C:CharMoveComp'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.28"
+      },
+      "MainCamera": {
+        "ObjectName": "CameraComponent'Default__BP_Rabbit_C:Main Camera'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.5"
+      },
+      "SpringArm": {
+        "ObjectName": "SpringArmComponent'Default__BP_Rabbit_C:Spring Arm'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.22"
+      },
+      "PhysicalAnimation": {
+        "ObjectName": "PhysicalAnimationComponent'Default__BP_Rabbit_C:PhysicalAnim'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.9"
+      },
+      "PhysCons": {
+        "ObjectName": "PhysicsConstraintComponent'Default__BP_Rabbit_C:PhysicsConstraints'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.10"
+      },
+      "HeartbeatAudio": {
+        "ObjectName": "AudioComponent'Default__BP_Rabbit_C:HeartbeatAudio'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.0"
+      },
+      "NavigationInvoker": {
+        "ObjectName": "NavigationInvokerComponent'Default__BP_Rabbit_C:Navigation Invoker'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.7"
+      },
+      "AutosaveRate": 95.2031,
+      "FoliageBonesColliders": [
+        "RigPelvis",
+        "RigChest",
+        "RigJaw"
+      ],
+      "CollidersSphereRadius": 10.0,
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Rabbit_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.18"
+      },
+      "CharacterMovement": {
+        "ObjectName": "TIDinosaurMovementComponent'Default__BP_Rabbit_C:CharMoveComp'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.28"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_AI_Rabbit_Controller_C'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Animals/BP_AI_Rabbit_Controller.4"
+      },
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "Main Camera",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CameraComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "OrthoWidth": 512.0,
+      "bAutoCalculateOrthoPlanes": false,
+      "OrthoNearClipPlane": 0.0,
+      "AttachParent": {
+        "ObjectName": "SpringArmComponent'Default__BP_Rabbit_C:Spring Arm'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.22"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 30.0,
+      "CapsuleRadius": 20.0,
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WaterVolume",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "NavigationInvokerComponent",
+    "Name": "Navigation Invoker",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavigationInvokerComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "TileGenerationRadius": 6000.0,
+      "TileRemovalRadius": 7000.0,
+      "SupportedAgents": {
+        "PackedBits": 4294967293
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "NavigationInvokerComponent",
+    "Name": "NavigationInvoker",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavigationInvokerComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    }
+  },
+  {
+    "Type": "PhysicalAnimationComponent",
+    "Name": "PhysicalAnim",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicalAnimationComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "PhysicsConstraints",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "LinearLimit": {
+            "Limit": 50.0
+          }
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      }
+    }
+  },
+  {
+    "Type": "PhysicsHandleComponent",
+    "Name": "PhysicsHandle",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsHandleComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.1"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Draglocation",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Rabbit_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.18"
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Rabbit_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.15"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Rabbit_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.12"
+      },
+      "VariableGuid": "918904D2-4408ECA0-AE72F093-82B1025C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.1"
+    },
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Rabbit_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.14"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "RibsMeatMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "LeaderPoseComponent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Rabbit_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.18"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Rabbit_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.18"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletonMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "LeaderPoseComponent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Rabbit_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.18"
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Rabbit_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.18"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponentBudgeted",
+    "Name": "CharacterMesh0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalMeshComponentBudgeted'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "bAutoCalculateSignificance": true,
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_RabbitNew_C'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/ABP_RabbitNew.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'EuropeanRabbit'",
+        "ObjectPath": "/Game/TheIsle/Characters/Animalia/EuropeanRabbit/Meshes/EuropeanRabbit.1"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'EuropeanRabbit'",
+        "ObjectPath": "/Game/TheIsle/Characters/Animalia/EuropeanRabbit/Meshes/EuropeanRabbit.1"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      },
+      "RelativeLocation": {
+        "X": 10.0,
+        "Y": 5.9604645E-07,
+        "Z": -30.0
+      },
+      "RelativeRotation": {
+        "Pitch": 2.7320755E-05,
+        "Yaw": -89.998505,
+        "Roll": 0.004389763
+      },
+      "RelativeScale3D": {
+        "X": 1.6,
+        "Y": 1.6,
+        "Z": 1.6
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "ClientMeshCollisionProximity",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "CorpseDisableDetector",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "SphereRadius": 400.0,
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      }
+    }
+  },
+  {
+    "Type": "SplineComponent",
+    "Name": "ThroatSpline",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SplineComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Rabbit_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.18"
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "Spring Arm",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SpringArmComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "BuoyancyPlane",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'BuoyancyPlane'",
+        "ObjectPath": "/Game/TheIsle/Art/BuoyancyPlane.2"
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ThroatMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'Default__BP_Rabbit_C:CharacterMesh0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.18"
+      }
+    }
+  },
+  {
+    "Type": "TIAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIAbilitySystemComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    }
+  },
+  {
+    "Type": "TIAntiCheatComponent",
+    "Name": "AntiCheatComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIAntiCheatComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    }
+  },
+  {
+    "Type": "TIAttributeSetAnimals",
+    "Name": "AttributeSetBase",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIAttributeSetAnimals'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    }
+  },
+  {
+    "Type": "TIDinosaurMovementComponent",
+    "Name": "CharMoveComp",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIDinosaurMovementComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "bIsAIControlled": true
+    }
+  },
+  {
+    "Type": "TIFootstepsComponent",
+    "Name": "FootstepsComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIFootstepsComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "GrassPaintThickness": 5.0,
+      "EffectsDataTable": {
+        "ObjectName": "DataTable'DT_EffectSetsTinyOnly'",
+        "ObjectPath": "/Game/TheIsle/Core/Data/DT_EffectSetsTinyOnly.0"
+      },
+      "BackLegsFootstepStyle": "EFootstepStyle::EF_Tiny",
+      "FrontLegsFootstepStyle": "EFootstepStyle::EF_Tiny",
+      "MovementSetsDataTable": {
+        "ObjectName": "DataTable'DT_MovementSetsTinyOnly'",
+        "ObjectPath": "/Game/TheIsle/Core/Data/DT_MovementSetsTinyOnly.0"
+      },
+      "MaxSpawnAmount": 50
+    }
+  },
+  {
+    "Type": "WidgetComponent",
+    "Name": "NameWidget",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'WidgetComponent'",
+    "Outer": {
+      "ObjectName": "BP_Rabbit_C'Default__BP_Rabbit_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.4"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__BP_Rabbit_C:CollisionCylinder'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.6"
+      }
+    }
+  }
+]

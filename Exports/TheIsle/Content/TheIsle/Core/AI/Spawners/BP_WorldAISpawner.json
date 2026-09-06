@@ -1,0 +1,520 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_WorldAISpawner_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_WorldAISpawner_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_WorldAISpawner_C:ExecuteUbergraph_BP_WorldAISpawner'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIAIWorldSpawner'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_WorldAISpawner_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.4"
+      },
+      {
+        "ObjectName": "Function'BP_WorldAISpawner_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.3"
+      },
+      {
+        "ObjectName": "Function'BP_WorldAISpawner_C:ExecuteUbergraph_BP_WorldAISpawner'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "TreeFilter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "TreeFilter",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "UObjectWrapper",
+          "PropertyClass": {
+            "ObjectName": "Class'StaticMesh'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "BushFilter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "BushFilter",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "UObjectWrapper",
+          "PropertyClass": {
+            "ObjectName": "Class'StaticMesh'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "GeneralFilter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "GeneralFilter",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyFlags": "UObjectWrapper",
+          "PropertyClass": {
+            "ObjectName": "Class'StaticMesh'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bSpawnJump",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bSpawnSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "TotalMemory",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "TotalPoints",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_WorldAISpawner": {
+        "ObjectName": "Function'BP_WorldAISpawner_C:ExecuteUbergraph_BP_WorldAISpawner'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_WorldAISpawner_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.3"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_WorldAISpawner_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_WorldAISpawner_C'Default__BP_WorldAISpawner_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_WorldAISpawner_C",
+    "Name": "Default__BP_WorldAISpawner_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.BP_WorldAISpawner_C'",
+    "Package": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TreeFilter": [
+        {
+          "ObjectName": "StaticMesh'SM_CoconutPalm_Adult'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/CoconutPalm/SM_CoconutPalm_Adult.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_CoconutPalm_Bent'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/CoconutPalm/SM_CoconutPalm_Bent.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_CoconutPalm_Elder'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/CoconutPalm/SM_CoconutPalm_Elder.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Symphonia_Adult_1'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Symphonia/SM_Symphonia_Adult_1.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Symphonia_Adult_2'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Symphonia/SM_Symphonia_Adult_2.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Symphonia_Adult_3'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Symphonia/SM_Symphonia_Adult_3.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Symphonia_Adult_4'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Symphonia/SM_Symphonia_Adult_4.2"
+        },
+        {
+          "ObjectName": "StaticMesh'Ceiba_Elder'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Ceiba/Ceiba_Elder.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Ceiba_Adult'",
+          "ObjectPath": "/Game/TheIsle/Temp/BillboardTest/SM_Ceiba_Adult.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Ceiba_Adult_2'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Ceiba/SM_Ceiba_Adult_2.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Ceiba_Adult_2_Forest'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Ceiba/SM_Ceiba_Adult_2_Forest.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Ceiba_Adult_Forest'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Ceiba/SM_Ceiba_Adult_Forest.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Ceiba_Juvenile_2'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Ceiba/SM_Ceiba_Juvenile_2.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Ceiba_Juvenile'",
+          "ObjectPath": "/Game/TheIsle/Temp/BillboardTest/SM_Ceiba_Juvenile.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Eucalyptus_Adult'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Eucalyptus/SM_Eucalyptus_Adult.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Eucalyptus_Juvenile'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/Trees/Eucalyptus/SM_Eucalyptus_Juvenile.2"
+        }
+      ],
+      "BushFilter": [
+        {
+          "ObjectName": "StaticMesh'SM_Forest_Bush_01'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Universal/GroundCoverage/Bush/Mesh/SM_Forest_Bush_01.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Philodendron_Tall'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/GroundCoverage/Philodendron/SM_Philodendron_Tall.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Philodendron_Short'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/GroundCoverage/Philodendron/SM_Philodendron_Short.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_Ceriman_Tall'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Jungle/GroundCoverage/Ceriman/SM_Ceriman_Tall.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_JungleBush_Adult'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Universal/GroundCoverage/Bush/SM_JungleBush_Adult.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_JungleBush_Elder'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Universal/GroundCoverage/Bush/SM_JungleBush_Elder.2"
+        },
+        {
+          "ObjectName": "StaticMesh'SM_JungleBush_Juvenile'",
+          "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Universal/GroundCoverage/Bush/SM_JungleBush_Juvenile.2"
+        }
+      ],
+      "bSpawnJump": true,
+      "bSpawnSound": true,
+      "DefaultScavengerClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Compsognathus_C'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Compsognathus/BP_Compsognathus.1"
+      },
+      "AIEvents": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Ptero_JumpScare_C'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/Events/Scavengers/BP_Ptero_JumpScare.0"
+        }
+      ],
+      "AIPteroHarassEvent": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Ptero_Harass_MeatChunk_C'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/Events/Scavengers/BP_Ptero_Harass_MeatChunk.0"
+      },
+      "AIDinoCharacters": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Dryosaurus_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Dryosaurus/BP_Dryosaurus.1"
+        }
+      ],
+      "AIAnimalCharacters": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Rabbit_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Rabbit/BP_Rabbit.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Chicken_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Chicken/BP_Chicken.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Grasshopper_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Grasshopper/BP_Grasshopper.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Lizard_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Lizard/BP_Lizard.1"
+        }
+      ],
+      "AIWaterAnimalCharacters": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Bullfrog_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Bullfrog/BP_Bullfrog.1"
+        }
+      ],
+      "AIAerialAmbientCharacters": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Dragonfly_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/DragonFly/BP_Dragonfly.1"
+        }
+      ],
+      "AIAmbientBirdCharacters": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_AmbientBird_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/AmbientBird/BP_AmbientBird.2"
+        }
+      ],
+      "AIAmbientFishClasses": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Catfish_C'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Characters/Fish/BP_Catfish.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Coalecanth_C'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Characters/Fish/BP_Coalecanth.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Forktail_C'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Characters/Fish/BP_Forktail.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Hoplo_C'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Characters/Fish/BP_Hoplo.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Longear_C'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Characters/Fish/BP_Longear.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Muskel_C'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Characters/Fish/BP_Muskel.1"
+        }
+      ],
+      "AISaltWaterAnimalCharacters": [
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Crab_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Crab/BP_Crab.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_Seaturtle_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Seaturtle/BP_Seaturtle.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_ClamCharacter_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Clam/BP_ClamCharacter.1"
+        },
+        {
+          "ObjectName": "BlueprintGeneratedClass'BP_GiantCrab_C'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Crab/BP_GiantCrab.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_WorldAISpawner",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WorldAISpawner_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WorldAISpawner_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WorldAISpawner_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WorldAISpawner_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_WorldAISpawner_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.7"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_WorldAISpawner_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.5"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "BDC62951-4B669337-EA964986-4FD3A590",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_WorldAISpawner_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_WorldAISpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_WorldAISpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_WorldAISpawner_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Spawners/BP_WorldAISpawner.6"
+      }
+    }
+  }
+]

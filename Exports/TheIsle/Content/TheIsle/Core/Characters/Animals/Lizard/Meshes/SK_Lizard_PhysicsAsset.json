@@ -1,0 +1,160 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Lizard_PhysicsAsset",
+    "Flags": "RF_Public | RF_Standalone | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Package": "/Game/TheIsle/Core/Characters/Animals/Lizard/Meshes/SK_Lizard_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Lizard_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Lizard/Meshes/SK_Lizard_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Lizard_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Lizard/Meshes/SK_Lizard_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Lizard_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Lizard/Meshes/SK_Lizard_PhysicsAsset.1"
+        }
+      ],
+      "SolverSettings": {
+        "bUseManifolds": false
+      }
+    },
+    "CollisionDisableTable": [
+      {
+        "Key": {
+          "Indices": [
+            0,
+            1
+          ]
+        },
+        "Value": false
+      }
+    ]
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_Lizard_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Lizard/Meshes/SK_Lizard_PhysicsAsset.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "LizardBody02",
+        "ConstraintBone1": "LizardBody02",
+        "ConstraintBone2": "LizardBody01",
+        "Pos2": {
+          "X": -0.1148617,
+          "Y": 0.022516204,
+          "Z": 6.3973393E-10
+        },
+        "PriAxis2": {
+          "X": -0.9970911,
+          "Y": 0.076218955,
+          "Z": 6.932531E-07
+        },
+        "SecAxis2": {
+          "X": 0.076218955,
+          "Y": 0.9970911,
+          "Z": 1.8341866E-07
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_Lizard_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Lizard/Meshes/SK_Lizard_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 13.476947,
+              "Y": -0.00683568,
+              "Z": -1.3034117E-05
+            },
+            "Rotation": {
+              "Pitch": -6.3611094E-15,
+              "Yaw": -88.77739,
+              "Roll": -89.99995
+            },
+            "Radius": 6.744606,
+            "Length": 13.471561,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "LizardBody01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "06E89F1C4267E18BE813B3BA411F7AA1"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_Lizard_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Lizard/Meshes/SK_Lizard_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 5.4304404,
+              "Y": -0.43441695,
+              "Z": 0.00014804509
+            },
+            "Rotation": {
+              "Pitch": -0.0071465187,
+              "Yaw": -90.0,
+              "Roll": -90.02868
+            },
+            "Radius": 4.497503,
+            "Length": 5.7792645,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "LizardBody02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "34D69E6741DC89AAC06188ACE3957C52"
+  }
+]

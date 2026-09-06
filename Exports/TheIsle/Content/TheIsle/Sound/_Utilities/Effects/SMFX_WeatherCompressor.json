@@ -1,0 +1,63 @@
+[
+  {
+    "Type": "SubmixEffectMultibandCompressorPreset",
+    "Name": "SMFX_WeatherCompressor",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SubmixEffectMultibandCompressorPreset'",
+    "Package": "/Game/TheIsle/Sound/_Utilities/Effects/SMFX_WeatherCompressor",
+    "Properties": {
+      "Settings": {
+        "LinkMode": "ESubmixEffectDynamicsChannelLinkMode::Peak",
+        "LookAheadMsec": 5.0,
+        "bBypass": true,
+        "KeySource": "ESubmixEffectDynamicsKeySource::AudioBus",
+        "ExternalAudioBus": {
+          "ObjectName": "AudioBus'AB_WeatherDuck'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/AudioBuses/AB_WeatherDuck.0"
+        },
+        "Bands": [
+          {
+            "CrossoverTopFrequency": 400.0,
+            "AttackTimeMsec": 60.0,
+            "ReleaseTimeMsec": 100.0,
+            "ThresholdDb": -12.0,
+            "Ratio": 2.176,
+            "KneeBandwidthDb": 2.0,
+            "InputGainDb": 1.0,
+            "OutputGainDb": 0.75
+          },
+          {
+            "CrossoverTopFrequency": 1800.0,
+            "AttackTimeMsec": 60.0,
+            "ReleaseTimeMsec": 100.0,
+            "ThresholdDb": -20.0,
+            "Ratio": 2.436,
+            "KneeBandwidthDb": 2.0,
+            "InputGainDb": 1.0,
+            "OutputGainDb": 0.86
+          },
+          {
+            "CrossoverTopFrequency": 8000.0,
+            "AttackTimeMsec": 40.0,
+            "ReleaseTimeMsec": 50.0,
+            "ThresholdDb": -22.0,
+            "Ratio": 2.0,
+            "KneeBandwidthDb": 2.0,
+            "InputGainDb": 1.0,
+            "OutputGainDb": 1.0
+          },
+          {
+            "CrossoverTopFrequency": 20000.0,
+            "AttackTimeMsec": 20.0,
+            "ReleaseTimeMsec": 30.0,
+            "ThresholdDb": -22.0,
+            "Ratio": 2.976,
+            "KneeBandwidthDb": 2.0,
+            "InputGainDb": 1.0,
+            "OutputGainDb": 1.0
+          }
+        ]
+      }
+    }
+  }
+]

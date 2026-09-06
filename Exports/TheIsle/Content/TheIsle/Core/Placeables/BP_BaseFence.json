@@ -1,0 +1,304 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BaseFence_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_BaseFence",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BaseFence_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIPhysicsDoor'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DoorCreakSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BaseFence_C'Default__BP_BaseFence_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxCollider",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFence_C'Default__BP_BaseFence_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.2"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 500.0,
+        "Y": 650.0,
+        "Z": 250.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFence_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.5"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 235.854
+      }
+    }
+  },
+  {
+    "Type": "BP_BaseFence_C",
+    "Name": "Default__BP_BaseFence_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Placeables/BP_BaseFence.BP_BaseFence_C'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_BaseFence",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFence_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.5"
+      },
+      "FrameMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_BaseFence_C:FrameMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.10"
+      },
+      "DoorMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_BaseFence_C:DoorMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.9"
+      },
+      "PhysicsConstraint": {
+        "ObjectName": "PhysicsConstraintComponent'Default__BP_BaseFence_C:PhysicsConstraint'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.3"
+      },
+      "BoxCollider": {
+        "ObjectName": "BoxComponent'Default__BP_BaseFence_C:BoxCollider'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.1"
+      },
+      "SphereCollider": {
+        "ObjectName": "SphereComponent'Default__BP_BaseFence_C:SphereCollider'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.8"
+      },
+      "MetalCreakSound": {
+        "ObjectName": "SoundCue'CUE_Metal_Creak_Large_04'",
+        "ObjectPath": "/Game/TheIsle/Sound/Ambience/Creaks/WAVs/CUE_Metal_Creak_Large_04.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFence_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.5"
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "PhysicsConstraint",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFence_C'Default__BP_BaseFence_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.2"
+    },
+    "Properties": {
+      "ComponentName1": {
+        "ComponentName": "FrameMesh"
+      },
+      "ComponentName2": {
+        "ComponentName": "DoorMesh"
+      },
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 110.0
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Damping": 2.0
+            },
+            "SwingDrive": {
+              "Damping": 2.0,
+              "bEnableVelocityDrive": true
+            },
+            "SlerpDrive": {
+              "Damping": 2.0
+            }
+          }
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFence_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.5"
+      },
+      "RelativeLocation": {
+        "X": -0.000122,
+        "Y": 284.99988,
+        "Z": 236.21542
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -179.99997,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFence_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.0"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFence_C'Default__BP_BaseFence_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BaseFence_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.7"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BaseFence_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.4"
+      },
+      "VariableGuid": "BECE21A7-4219ECB9-4CEB5DBA-F628DC3B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFence_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.0"
+    },
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BaseFence_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereCollider",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFence_C'Default__BP_BaseFence_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.2"
+    },
+    "Properties": {
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFence_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DoorMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFence_C'Default__BP_BaseFence_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.2"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Door_Framing_R_R'",
+        "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Fences/Meshes/SM_Door_Framing_R_R.2"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFence_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.5"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 284.99997,
+        "Z": 5.0
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 2.05,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FrameMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFence_C'Default__BP_BaseFence_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.2"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Frame_Ranger'",
+        "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Fences/Meshes/SM_Frame_Ranger.2"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFence_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFence.5"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]

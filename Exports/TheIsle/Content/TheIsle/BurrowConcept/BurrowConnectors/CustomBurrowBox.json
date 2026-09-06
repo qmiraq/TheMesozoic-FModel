@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'CustomBurrowBox'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/CustomBurrowBox.2"
+    },
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -50.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 100.0,
+            "Y": 100.0,
+            "Z": 100.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "5BB97E3D4FDBB1AAF456B6B1ADB98D70",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 2554,
+        "SizeOnDisk": 2554,
+        "OffsetInFile": "0x589"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'CustomBurrowBox'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/CustomBurrowBox.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 410,
+        "SizeOnDisk": 410,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CustomBurrowBox",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/BurrowConcept/BurrowConnectors/CustomBurrowBox",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": null,
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 100.0,
+            "LocalUVDensities[1]": 356.3928,
+            "LocalUVDensities[2]": 327.48767,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 327.48767,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -50.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 50.0
+        },
+        "SphereRadius": 86.6025390625
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'CustomBurrowBox:BodySetup_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/CustomBurrowBox.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'CustomBurrowBox:NavCollision_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BurrowConnectors/CustomBurrowBox.1"
+    },
+    "LightingGuid": "2C32F716-434DA7A1-580B91A0-FAC19212",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 48,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 53,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": -50.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 50.0
+        },
+        "SphereRadius": 86.60254
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

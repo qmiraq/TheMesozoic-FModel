@@ -1,0 +1,548 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "TitleMap_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Maps/TitleMap",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "UberGraphFunction": {
+        "ObjectName": "Function'TitleMap_C:ExecuteUbergraph_TitleMap'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'LevelScriptActor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'TitleMap_C:CheckAgainstBlacklist'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.1"
+      },
+      {
+        "ObjectName": "Function'TitleMap_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.3"
+      },
+      {
+        "ObjectName": "Function'TitleMap_C:ExecuteUbergraph_TitleMap'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Evrima",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "Evrima",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "BlackListedIps",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "BlackListedIps",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "BlackListedNames",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "BlackListedNames",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "ServerIP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "MapName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_TitleMap": {
+        "ObjectName": "Function'TitleMap_C:ExecuteUbergraph_TitleMap'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'TitleMap_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.3"
+      },
+      "CheckAgainstBlacklist": {
+        "ObjectName": "Function'TitleMap_C:CheckAgainstBlacklist'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.1"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_NotPlaceable | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TitleMap_C'Default__TitleMap_C'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.7"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_LevelScript"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckAgainstBlacklist",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'TitleMap_C'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "ServerName",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "ServerIp",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_TitleMap",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'TitleMap_C'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetGameMode_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'GameModeBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Title_Game_Mode",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_TitleGameMode_C'",
+          "ObjectPath": "/Game/TheIsle/Core/GameModes/BP_TitleGameMode.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetSettings_ServerName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetSettings_MapName",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetSettings_Discord",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetSettings_MaxPlayerCount",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetSettings_bServerPassword",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_GetSettings_ServerPassword",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetSettings_bQueueEnabled",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetSettings_QueuePort",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetSettings_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Conv_StringToName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'TitleMap_C'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Level'",
+    "Outer": {
+      "ObjectName": "World'TitleMap'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.10"
+    },
+    "Properties": {
+      "Model": {
+        "ObjectName": "Model'TitleMap:PersistentLevel.Model_0'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.5"
+      },
+      "LevelScriptActor": {
+        "ObjectName": "TitleMap_C'TitleMap:PersistentLevel.TitleMap_C_3'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.8"
+      },
+      "LevelBuildDataId": "1ED1C68E-4F9DB36C-F7B64D84-2FBBA36D",
+      "WorldSettings": {
+        "ObjectName": "TIWorldSettings'TitleMap:PersistentLevel.TIWorldSettings'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.9"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "TIWorldSettings'TitleMap:PersistentLevel.TIWorldSettings'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.9"
+      },
+      null,
+      {
+        "ObjectName": "TitleMap_C'TitleMap:PersistentLevel.TitleMap_C_3'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.8"
+      }
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/TheIsle/Maps/MainMenu/MainMenu",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'TitleMap:PersistentLevel.Model_0'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.5"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": {
+      "ObjectName": "TitleMap_C'TitleMap:PersistentLevel.TitleMap_C_3'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.8"
+    },
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Model'",
+    "Outer": {
+      "ObjectName": "Level'TitleMap:PersistentLevel'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.4"
+    },
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "FEB478EB-43959D49-DD819A36-64DDC389",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "NavigationSystemModuleConfig",
+    "Name": "NavigationSystemModuleConfig_1",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavigationSystemModuleConfig'",
+    "Outer": {
+      "ObjectName": "TIWorldSettings'TitleMap:PersistentLevel.TIWorldSettings'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.9"
+    },
+    "Properties": {
+      "bCreateOnClient": true,
+      "bAutoSpawnMissingNavData": true,
+      "NavigationSystemClass": {
+        "AssetPathName": "/Script/NavigationSystem.NavigationSystemV1",
+        "SubPathString": ""
+      }
+    }
+  },
+  {
+    "Type": "TitleMap_C",
+    "Name": "Default__TitleMap_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Maps/TitleMap.TitleMap_C'",
+    "Package": "/Game/TheIsle/Maps/TitleMap",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Evrima": [
+        "3.250.191.172",
+        "3.250.111.132",
+        "52.48.44.22",
+        "18.203.67.73",
+        "3.249.154.224",
+        "34.251.58.103",
+        "34.245.27.8",
+        "54.67.100.202",
+        "13.57.204.50",
+        "3.101.83.56",
+        "52.53.225.74",
+        "54.94.45.219",
+        "13.211.86.139",
+        "34.244.178.139",
+        "54.215.235.213",
+        "54.253.190.42"
+      ],
+      "MapName": "Isla_Spiro"
+    }
+  },
+  {
+    "Type": "TitleMap_C",
+    "Name": "TitleMap_C_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Maps/TitleMap.TitleMap_C'",
+    "Outer": {
+      "ObjectName": "Level'TitleMap:PersistentLevel'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.4"
+    },
+    "Template": {
+      "ObjectName": "TitleMap_C'Default__TitleMap_C'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.7"
+    },
+    "ActorLabel": "TitleMap3",
+    "ActorInstanceGuid": {
+      "ActorGuid": "147468E0-41B3392F-654190B3-3A172D41",
+      "ActorInstanceGuid": "00000000-00000000-00000000-00000000"
+    }
+  },
+  {
+    "Type": "TIWorldSettings",
+    "Name": "TIWorldSettings",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TIWorldSettings'",
+    "Outer": {
+      "ObjectName": "Level'TitleMap:PersistentLevel'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.4"
+    },
+    "Properties": {
+      "NavigationSystemConfig": {
+        "ObjectName": "NavigationSystemModuleConfig'TitleMap:PersistentLevel.TIWorldSettings.NavigationSystemModuleConfig_1'",
+        "ObjectPath": "/Game/TheIsle/Maps/TitleMap.6"
+      },
+      "DefaultGameMode": {
+        "ObjectName": "BlueprintGeneratedClass'BP_TitleGameMode_C'",
+        "ObjectPath": "/Game/TheIsle/Core/GameModes/BP_TitleGameMode.0"
+      },
+      "BookmarkArray": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "ActorLabel": "IWorldSettings-1",
+    "ActorInstanceGuid": {
+      "ActorGuid": "A258DB9B-43486D1D-C3AA9490-ACD2F207",
+      "ActorInstanceGuid": "00000000-00000000-00000000-00000000"
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "TitleMap",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'World'",
+    "Package": "/Game/TheIsle/Maps/TitleMap",
+    "PersistentLevel": {
+      "ObjectName": "Level'TitleMap:PersistentLevel'",
+      "ObjectPath": "/Game/TheIsle/Maps/TitleMap.4"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  }
+]

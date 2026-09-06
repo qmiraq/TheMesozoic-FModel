@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Foley_Dino_Big_Trot_Metal",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Sound/Foley/CU_Foley_Dino_Big_Trot_Metal",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.4,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'LargeFootsteps'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/LargeFootsteps.0"
+      },
+      "ConcurrencySet": [
+        {
+          "ObjectName": "SoundConcurrency'LargeFootstep_SC'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Concurrency/LargeFootstep_SC.0"
+        }
+      ],
+      "ConcurrencyOverrides": {
+        "MaxCount": 32
+      },
+      "Duration": 1.9570833,
+      "MaxDistance": 19024.0,
+      "Priority": 100.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_DinoTrot_Big'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Footsteps/ATT_DinoTrot_Big.0"
+      },
+      "BusSends": [
+        {
+          "SourceBusSendLevelControlMethod": "ESourceBusSendLevelControlMethod::Linear",
+          "SoundSourceBus": null,
+          "AudioBus": {
+            "ObjectName": "AudioBus'AB_Footsteps'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/AudioBuses/AB_Footsteps.0"
+          },
+          "SendLevel": 1.0,
+          "MinSendLevel": 1.0,
+          "MaxSendLevel": 0.0,
+          "MinSendDistance": 100.0,
+          "MaxSendDistance": 6000.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

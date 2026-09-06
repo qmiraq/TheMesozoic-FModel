@@ -1,0 +1,227 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "UDS_Sky_Configuration_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/System/UDS_Sky_Configuration",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_SharedConfig_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "MapProperty",
+        "Name": "Sky Mode Map",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "IntProperty",
+          "Name": "Sky Mode Map",
+          "Flags": "RF_Public",
+          "ElementSize": 4
+        },
+        "ValueProp": {
+          "Type": "ByteProperty",
+          "Name": "Sky Mode Map_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "UserDefinedEnum'UDS_SkyMode'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Enum/UDS_SkyMode.0"
+          }
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "Platform Feature Levels",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "StrProperty",
+          "Name": "Platform Feature Levels",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        },
+        "ValueProp": {
+          "Type": "ByteProperty",
+          "Name": "Platform Feature Levels_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "UserDefinedEnum'UDS_RenderingFeatureLevel'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Enum/UDS_RenderingFeatureLevel.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Post Process Components",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Post Process Components",
+          "Flags": "RF_Public",
+          "ElementSize": 2000,
+          "Struct": {
+            "ObjectName": "UserDefinedStruct'UDS_Post_Process_Stage'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Post_Process_Stage.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Planets/Moons",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Planets/Moons",
+          "Flags": "RF_Public",
+          "ElementSize": 640,
+          "Struct": {
+            "ObjectName": "UserDefinedStruct'UDS_Space_Planet'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Space_Planet.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Starting Modifiers",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Starting Modifiers",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Modifier_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Custom Time Dispatchers",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "DoubleProperty",
+          "Name": "Custom Time Dispatchers",
+          "Flags": "RF_Public",
+          "ElementSize": 8
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Disable Cvar Control",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "StrProperty",
+          "Name": "Disable Cvar Control",
+          "Flags": "RF_Public",
+          "ElementSize": 16
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "Time of Day Specific Modifiers",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "KeyProp": {
+          "Type": "ObjectProperty",
+          "Name": "Time of Day Specific Modifiers",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'UDS_Modifier_C'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier.0"
+          }
+        },
+        "ValueProp": {
+          "Type": "StructProperty",
+          "Name": "Time of Day Specific Modifiers_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 32,
+          "Struct": {
+            "ObjectName": "UserDefinedStruct'UDS_TimeOfDay_FadeRange'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_TimeOfDay_FadeRange.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Water Body Classes",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "SoftClassProperty",
+          "Name": "Water Body Classes",
+          "Flags": "RF_Public",
+          "ElementSize": 48,
+          "PropertyClass": {
+            "ObjectName": "Class'Class'",
+            "ObjectPath": "/Script/CoreUObject"
+          },
+          "MetaClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UDS_Sky_Configuration_C'Default__UDS_Sky_Configuration_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Sky_Configuration.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "UDS_Sky_Configuration_C",
+    "Name": "Default__UDS_Sky_Configuration_C",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_Sky_Configuration.UDS_Sky_Configuration_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/System/UDS_Sky_Configuration",
+    "Template": {
+      "ObjectName": "UDS_SharedConfig_C'Default__UDS_SharedConfig_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.1"
+    },
+    "Properties": {
+      "Water Body Classes": [
+        {
+          "AssetPathName": "/Script/Water.WaterBodyLake",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Script/Water.WaterBodyRiver",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Script/Water.WaterBodyOcean",
+          "SubPathString": ""
+        }
+      ]
+    }
+  }
+]

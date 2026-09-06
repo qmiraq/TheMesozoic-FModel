@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Surface_Drips",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Sound/Ambience/Water/Cues/CU_Surface_Drips",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.07,
+      "PitchMultiplier": 1.24,
+      "AttenuationOverrides": {
+        "bAttenuateWithLPF": true,
+        "LPFRadiusMin": 0.0,
+        "LPFRadiusMax": 4096.0,
+        "LPFFrequencyAtMax": 512.0,
+        "DistanceAlgorithm": "EAttenuationDistanceModel::Logarithmic",
+        "AttenuationShapeExtents": {
+          "X": 32.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "FalloffDistance": 4096.0
+      },
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'Ambient'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/Ambient.0"
+      },
+      "bOverrideConcurrency": true,
+      "ConcurrencySet": [
+        {
+          "ObjectName": "SoundConcurrency'SmallFoley_SC'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Concurrency/SmallFoley_SC.0"
+        }
+      ],
+      "ConcurrencyOverrides": {
+        "MaxCount": 3,
+        "bLimitToOwner": true,
+        "ResolutionRule": "EMaxConcurrentResolutionRule::StopQuietest"
+      },
+      "Duration": 3.0,
+      "MaxDistance": 4379.276,
+      "Priority": 10.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_Foley_Intimate'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Dinos/Other/ATT_Foley_Intimate.0"
+      }
+    }
+  }
+]

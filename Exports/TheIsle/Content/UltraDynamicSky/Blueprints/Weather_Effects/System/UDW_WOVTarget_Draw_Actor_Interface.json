@@ -1,0 +1,175 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "UDW_WOVTarget_Draw_Actor_Interface_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface",
+    "SuperStruct": {
+      "ObjectName": "Class'Interface'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'UDW_WOVTarget_Draw_Actor_Interface_C:Canvas Space Update'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface.1"
+      },
+      {
+        "ObjectName": "Function'UDW_WOVTarget_Draw_Actor_Interface_C:Draw to WOV Target'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface.2"
+      }
+    ],
+    "FuncMap": {
+      "Draw to WOV Target": {
+        "ObjectName": "Function'UDW_WOVTarget_Draw_Actor_Interface_C:Draw to WOV Target'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface.2"
+      },
+      "Canvas Space Update": {
+        "ObjectName": "Function'UDW_WOVTarget_Draw_Actor_Interface_C:Canvas Space Update'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface.1"
+      }
+    },
+    "ClassFlags": "CLASS_Interface | CLASS_CompiledFromBlueprint | CLASS_Deprecated",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UDW_WOVTarget_Draw_Actor_Interface_C'Default__UDW_WOVTarget_Draw_Actor_Interface_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Interface"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Canvas Space Update",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_WOVTarget_Draw_Actor_Interface_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Corner Position",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Width",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Resolution",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Draw to WOV Target",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDW_WOVTarget_Draw_Actor_Interface_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "WOV Render Target State",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_RenderTarget_State_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_RenderTarget_State.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Canvas",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Canvas'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WOV Target Brush MID",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Radial Storm Brush MID",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "UDW_WOVTarget_Draw_Actor_Interface_C",
+    "Name": "Default__UDW_WOVTarget_Draw_Actor_Interface_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface.UDW_WOVTarget_Draw_Actor_Interface_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface"
+  }
+]

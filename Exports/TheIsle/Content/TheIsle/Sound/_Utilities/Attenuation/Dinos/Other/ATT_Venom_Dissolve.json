@@ -1,0 +1,142 @@
+[
+  {
+    "Type": "SoundAttenuation",
+    "Name": "ATT_Venom_Dissolve",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundAttenuation'",
+    "Package": "/Game/TheIsle/Sound/_Utilities/Attenuation/Dinos/Other/ATT_Venom_Dissolve",
+    "Properties": {
+      "Attenuation": {
+        "bAttenuateWithLPF": true,
+        "bEnableListenerFocus": true,
+        "bEnableFocusInterpolation": true,
+        "bEnableOcclusion": true,
+        "bEnableReverbSend": false,
+        "bEnableSubmixSends": true,
+        "OcclusionTraceChannel": "ECC_GameTraceChannel11",
+        "NonSpatializedRadiusStart": 512.0,
+        "StereoSpread": 256.0,
+        "LPFRadiusMin": 64.0,
+        "LPFRadiusMax": 2600.0,
+        "LPFFrequencyAtMax": 512.0,
+        "FocusAzimuth": 200.0,
+        "NonFocusAzimuth": 280.0,
+        "NonFocusVolumeAttenuation": 0.85,
+        "FocusAttackInterpSpeed": 1.3,
+        "FocusReleaseInterpSpeed": 1.3,
+        "OcclusionLowPassFilterFrequency": 60.0,
+        "OcclusionVolumeAttenuation": 0.4,
+        "OcclusionInterpolationTime": 0.5,
+        "ReverbWetLevelMin": 0.0,
+        "ReverbWetLevelMax": 1.0,
+        "ReverbDistanceMin": 0.0,
+        "ReverbDistanceMax": 1500.0,
+        "ManualReverbSendLevel": 0.35,
+        "SubmixSendSettings": [
+          {
+            "SendLevelControlMethod": "ESendLevelControlMethod::CustomCurve",
+            "SoundSubmix": {
+              "ObjectName": "SoundSubmix'Submix_MediumRoars_Distant'",
+              "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_MediumRoars_Distant.0"
+            },
+            "SendLevel": 0.2,
+            "DisableManualSendClamp": false,
+            "MinSendLevel": 0.0,
+            "MaxSendLevel": 1.0,
+            "MinSendDistance": 1024.0,
+            "MaxSendDistance": 4000.0,
+            "CustomSendLevelCurve": {
+              "EditorCurveData": {
+                "Keys": [
+                  {
+                    "InterpMode": "RCIM_Cubic",
+                    "TangentMode": "RCTM_User",
+                    "TangentWeightMode": "RCTWM_WeightedNone",
+                    "Time": 0.0,
+                    "Value": 0.0,
+                    "ArriveTangent": 1.545308,
+                    "ArriveTangentWeight": 0.0,
+                    "LeaveTangent": 1.545308,
+                    "LeaveTangentWeight": 0.0
+                  },
+                  {
+                    "InterpMode": "RCIM_Linear",
+                    "TangentMode": "RCTM_Auto",
+                    "TangentWeightMode": "RCTWM_WeightedNone",
+                    "Time": 0.999479,
+                    "Value": 0.980333,
+                    "ArriveTangent": 0.0,
+                    "ArriveTangentWeight": 0.0,
+                    "LeaveTangent": 0.0,
+                    "LeaveTangentWeight": 0.0
+                  }
+                ],
+                "DefaultValue": 3.4028235E+38,
+                "PreInfinityExtrap": "RCCE_Constant",
+                "PostInfinityExtrap": "RCCE_Constant"
+              },
+              "ExternalCurve": null
+            }
+          }
+        ],
+        "DistanceAlgorithm": "EAttenuationDistanceModel::Custom",
+        "AttenuationShapeExtents": {
+          "X": 350.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "FalloffDistance": 4000.0,
+        "CustomAttenuationCurve": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.008163512,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_User",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.1,
+                "Value": 0.6,
+                "ArriveTangent": -0.9040034,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -0.90400195,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_User",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.90121114,
+                "Value": 0.29261684,
+                "ArriveTangent": -0.47769576,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -0.47769606,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_User",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.343092,
+                "Value": -2.35712,
+                "ArriveTangent": -10.855579,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -10.855526,
+                "LeaveTangentWeight": 0.0
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

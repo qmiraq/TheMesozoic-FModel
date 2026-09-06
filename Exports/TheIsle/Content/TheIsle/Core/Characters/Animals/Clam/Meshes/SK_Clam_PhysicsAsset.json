@@ -1,0 +1,160 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Clam_PhysicsAsset",
+    "Flags": "RF_Public | RF_Standalone | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Package": "/Game/TheIsle/Core/Characters/Animals/Clam/Meshes/SK_Clam_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Clam_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Clam/Meshes/SK_Clam_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Clam_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Clam/Meshes/SK_Clam_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Clam_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Clam/Meshes/SK_Clam_PhysicsAsset.1"
+        }
+      ],
+      "SolverSettings": {
+        "bUseManifolds": false
+      }
+    },
+    "CollisionDisableTable": [
+      {
+        "Key": {
+          "Indices": [
+            0,
+            1
+          ]
+        },
+        "Value": false
+      }
+    ]
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_Clam_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Clam/Meshes/SK_Clam_PhysicsAsset.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "ClamShell",
+        "ConstraintBone1": "ClamShell",
+        "ConstraintBone2": "ClamBody",
+        "Pos2": {
+          "X": 2.327302,
+          "Y": 5.329066E-07,
+          "Z": 2.71896E-07
+        },
+        "PriAxis2": {
+          "X": -0.82584035,
+          "Y": -0.563904,
+          "Z": -2.0171768E-07
+        },
+        "SecAxis2": {
+          "X": 0.563904,
+          "Y": -0.82584035,
+          "Z": -8.82369E-08
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_Clam_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Clam/Meshes/SK_Clam_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.51808256,
+              "Y": -0.31034622,
+              "Z": -0.10857587
+            },
+            "Rotation": {
+              "Pitch": 8.284226,
+              "Yaw": -90.0,
+              "Roll": 31.879446
+            },
+            "Radius": 2.4222338,
+            "Length": 3.0186036,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "ClamBody",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "2FEB49DF40B170251CE16EA7D9F2D303"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_Clam_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Animals/Clam/Meshes/SK_Clam_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 3.0098822,
+              "Y": 0.5215738,
+              "Z": -0.04499149
+            },
+            "Rotation": {
+              "Pitch": 2.192757,
+              "Yaw": -90.0,
+              "Roll": -43.04727
+            },
+            "Radius": 2.524118,
+            "Length": 2.9304001,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "ClamShell",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "AC312CAA4ED8BC47A2A14B888757D697"
+  }
+]

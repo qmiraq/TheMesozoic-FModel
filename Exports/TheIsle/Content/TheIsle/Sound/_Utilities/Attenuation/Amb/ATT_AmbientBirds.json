@@ -1,0 +1,182 @@
+[
+  {
+    "Type": "SoundAttenuation",
+    "Name": "ATT_AmbientBirds",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundAttenuation'",
+    "Package": "/Game/TheIsle/Sound/_Utilities/Attenuation/Amb/ATT_AmbientBirds",
+    "Properties": {
+      "Attenuation": {
+        "bAttenuateWithLPF": true,
+        "bEnableListenerFocus": true,
+        "bEnableSubmixSends": true,
+        "CustomLowpassAirAbsorptionCurve": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_User",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": -0.0019184127,
+                "Value": 0.995,
+                "ArriveTangent": -1.518359,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -1.5183591,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.9997026,
+                "Value": 0.02699995,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ]
+          }
+        },
+        "AbsorptionMethod": "EAirAbsorptionMethod::CustomCurve",
+        "NonSpatializedRadiusStart": 512.0,
+        "LPFRadiusMin": 512.0,
+        "LPFRadiusMax": 32000.0,
+        "LPFFrequencyAtMax": 800.0,
+        "OcclusionLowPassFilterFrequency": 800.0,
+        "OcclusionVolumeAttenuation": 0.7,
+        "ReverbWetLevelMin": 0.5,
+        "ReverbWetLevelMax": 1.3,
+        "ReverbDistanceMin": 512.0,
+        "ReverbDistanceMax": 32000.0,
+        "ManualReverbSendLevel": 1.0,
+        "SubmixSendSettings": [
+          {
+            "SendLevelControlMethod": "ESendLevelControlMethod::CustomCurve",
+            "SoundSubmix": {
+              "ObjectName": "SoundSubmix'Submix_DistantCalls'",
+              "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_DistantCalls.0"
+            },
+            "SendLevel": 1.0,
+            "DisableManualSendClamp": false,
+            "MinSendLevel": 0.0,
+            "MaxSendLevel": 10.0,
+            "MinSendDistance": 400.0,
+            "MaxSendDistance": 80000.0,
+            "CustomSendLevelCurve": {
+              "EditorCurveData": {
+                "Keys": [
+                  {
+                    "InterpMode": "RCIM_Linear",
+                    "TangentMode": "RCTM_Auto",
+                    "TangentWeightMode": "RCTWM_WeightedNone",
+                    "Time": 0.0011301935,
+                    "Value": 0.16763735,
+                    "ArriveTangent": 0.0,
+                    "ArriveTangentWeight": 0.0,
+                    "LeaveTangent": 0.0,
+                    "LeaveTangentWeight": 0.0
+                  },
+                  {
+                    "InterpMode": "RCIM_Cubic",
+                    "TangentMode": "RCTM_Auto",
+                    "TangentWeightMode": "RCTWM_WeightedNone",
+                    "Time": 0.22396863,
+                    "Value": 0.4938774,
+                    "ArriveTangent": 0.8841373,
+                    "ArriveTangentWeight": 0.0,
+                    "LeaveTangent": 0.8841373,
+                    "LeaveTangentWeight": 0.0
+                  },
+                  {
+                    "InterpMode": "RCIM_Cubic",
+                    "TangentMode": "RCTM_Auto",
+                    "TangentWeightMode": "RCTWM_WeightedNone",
+                    "Time": 0.79349095,
+                    "Value": 0.86819303,
+                    "ArriveTangent": 0.7723386,
+                    "ArriveTangentWeight": 0.0,
+                    "LeaveTangent": 0.7723386,
+                    "LeaveTangentWeight": 0.0
+                  },
+                  {
+                    "InterpMode": "RCIM_Linear",
+                    "TangentMode": "RCTM_Auto",
+                    "TangentWeightMode": "RCTWM_WeightedNone",
+                    "Time": 0.90324795,
+                    "Value": 1.018511,
+                    "ArriveTangent": 0.0,
+                    "ArriveTangentWeight": 0.0,
+                    "LeaveTangent": 0.0,
+                    "LeaveTangentWeight": 0.0
+                  },
+                  {
+                    "InterpMode": "RCIM_Linear",
+                    "TangentMode": "RCTM_Auto",
+                    "TangentWeightMode": "RCTWM_WeightedNone",
+                    "Time": 1.0009438,
+                    "Value": 1.018511,
+                    "ArriveTangent": 0.0,
+                    "ArriveTangentWeight": 0.0,
+                    "LeaveTangent": 0.0,
+                    "LeaveTangentWeight": 0.0
+                  }
+                ],
+                "DefaultValue": 3.4028235E+38,
+                "PreInfinityExtrap": "RCCE_Constant",
+                "PostInfinityExtrap": "RCCE_Constant"
+              },
+              "ExternalCurve": null
+            }
+          }
+        ],
+        "DistanceAlgorithm": "EAttenuationDistanceModel::NaturalSound",
+        "AttenuationShapeExtents": {
+          "X": 512.0,
+          "Y": 220.0,
+          "Z": 256.0
+        },
+        "FalloffDistance": 60000.0,
+        "CustomAttenuationCurve": {
+          "EditorCurveData": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.5,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_User",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.88598084,
+                "Value": 0.6484078,
+                "ArriveTangent": -2.0429199,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -2.0429146,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.0,
+                "Value": 0.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

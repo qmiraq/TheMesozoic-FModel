@@ -1,0 +1,1620 @@
+[
+  {
+    "Type": "BillboardComponent",
+    "Name": "Billboard_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BillboardComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_GeneratedVoxelMeshActor_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor",
+    "Properties": {
+      "NumReplicatedProperties": 8,
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_GeneratedVoxelMeshActor_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.22"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:ExecuteUbergraph_BP_GeneratedVoxelMeshActor'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'DynamicMeshActor'",
+      "ObjectPath": "/Script/GeometryFramework"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:CreateBasicMainBox'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.6"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:OnRep_InitialOpening'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.12"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:OnRep_TargetLocation'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.13"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:OnRep_bLoaded'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.11"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.14"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:VoxelDestruction'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.16"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:OnActorLoaded'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.10"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:ForceEntranceOpening'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.8"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:GenerateInitialCutMesh'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.9"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:UpdateMeshCollision'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.15"
+      },
+      {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:ExecuteUbergraph_BP_GeneratedVoxelMeshActor'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Billboard",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'BillboardComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Scene",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Target Mesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "MeshSize",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "VoxelCutSphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Hit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 264,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "SaveToolsLocations",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | SaveGame",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "SaveToolsLocations",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "Class'Vector'",
+            "ObjectPath": "/Script/CoreUObject"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bLoaded",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepNotifyFunc": "OnRep_bLoaded",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetLocation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepNotifyFunc": "OnRep_TargetLocation",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OpeningMeshCut",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "InitialOpening",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance | RepNotify",
+        "RepNotifyFunc": "OnRep_InitialOpening",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BoxelCutBox",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_GeneratedVoxelMeshActor": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:ExecuteUbergraph_BP_GeneratedVoxelMeshActor'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.7"
+      },
+      "UpdateMeshCollision": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:UpdateMeshCollision'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.15"
+      },
+      "GenerateInitialCutMesh": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:GenerateInitialCutMesh'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.9"
+      },
+      "ForceEntranceOpening": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:ForceEntranceOpening'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.8"
+      },
+      "OnActorLoaded": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:OnActorLoaded'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.10"
+      },
+      "VoxelDestruction": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:VoxelDestruction'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.16"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.14"
+      },
+      "OnRep_bLoaded": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:OnRep_bLoaded'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.11"
+      },
+      "OnRep_TargetLocation": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:OnRep_TargetLocation'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.13"
+      },
+      "OnRep_InitialOpening": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:OnRep_InitialOpening'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.12"
+      },
+      "CreateBasicMainBox": {
+        "ObjectName": "Function'BP_GeneratedVoxelMeshActor_C:CreateBasicMainBox'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_VoxelInterface_C'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BPI_VoxelInterface.0"
+        },
+        "PointerProperty": null,
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      },
+      {
+        "Class": {
+          "ObjectName": "Class'TISavableObjectInterface'",
+          "ObjectPath": "/Script/TheIsle"
+        },
+        "PointerProperty": null,
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_GeneratedVoxelMeshActor_C'Default__BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=\"/Script/Engine.BlueprintGeneratedClass'/Game/TheIsle/BurrowConcept/BPI_VoxelInterface.BPI_VoxelInterface_C'\"),(Interface=\"/Script/CoreUObject.Class'/Script/TheIsle.TISavableObjectInterface'\"))"
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "DynamicMeshComponent'Default__BP_GeneratedVoxelMeshActor_C:DynamicMeshComponent'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.5"
+    },
+    "Properties": {
+      "bGenerateMirroredCollision": false,
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "CollisionTraceFlag": "CTF_UseComplexAsSimple"
+    },
+    "BodySetupGuid": "03EF036947830E2A565DD7AF99335CAF"
+  },
+  {
+    "Type": "BP_GeneratedVoxelMeshActor_C",
+    "Name": "Default__BP_GeneratedVoxelMeshActor_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.BP_GeneratedVoxelMeshActor_C'",
+    "Package": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MeshSize": {
+        "X": 1400.0,
+        "Y": 900.0,
+        "Z": 500.0
+      },
+      "Hit": {
+        "FaceIndex": 0,
+        "Time": 1.0,
+        "Distance": 0.0,
+        "Location": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "ImpactPoint": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Normal": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "ImpactNormal": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "TraceStart": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "TraceEnd": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "PenetrationDepth": 0.0,
+        "MyItem": -1,
+        "Item": 0,
+        "ElementIndex": 0,
+        "bBlockingHit": false,
+        "bStartPenetrating": false,
+        "PhysMaterial": null,
+        "HitObjectHandle": {
+          "ReferenceObject": null
+        },
+        "Component": null,
+        "BoneName": "None",
+        "MyBoneName": "None"
+      },
+      "TargetLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "InitialOpening": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "DynamicMeshComponent": {
+        "ObjectName": "DynamicMeshComponent'Default__BP_GeneratedVoxelMeshActor_C:DynamicMeshComponent'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.5"
+      },
+      "bReplicates": true,
+      "NetUpdateFrequency": 5.0,
+      "RootComponent": {
+        "ObjectName": "DynamicMeshComponent'Default__BP_GeneratedVoxelMeshActor_C:DynamicMeshComponent'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.5"
+      }
+    }
+  },
+  {
+    "Type": "DynamicMesh",
+    "Name": "DynamicMesh",
+    "Flags": "RF_Public | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'DynamicMesh'",
+    "Outer": {
+      "ObjectName": "DynamicMeshComponent'Default__BP_GeneratedVoxelMeshActor_C:DynamicMeshComponent'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.5"
+    }
+  },
+  {
+    "Type": "DynamicMeshComponent",
+    "Name": "DynamicMeshComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'DynamicMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_GeneratedVoxelMeshActor_C'Default__BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.3"
+    },
+    "Properties": {
+      "MeshObject": {
+        "ObjectName": "DynamicMesh'Default__BP_GeneratedVoxelMeshActor_C:DynamicMeshComponent.DynamicMesh'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.4"
+      },
+      "bDeferCollisionUpdates": true,
+      "MeshBodySetup": {
+        "ObjectName": "BodySetup'Default__BP_GeneratedVoxelMeshActor_C:DynamicMeshComponent.BodySetup_0'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.2"
+      },
+      "BaseMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_Mud'",
+          "ObjectPath": "/Game/TheIsle/Placeables/Enviroment/Mud/Materials/MI_Mud.0"
+        }
+      ],
+      "bReplicatePhysicsToAutonomousProxy": false,
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CreateBasicMainBox",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetDynamicMesh_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Reset_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AppendBox_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_AppendBox_DimensionX_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_AppendBox_DimensionY_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_AppendBox_DimensionZ_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_GeneratedVoxelMeshActor",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_Hit",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AllocateComputeMesh_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AppendSphereBox_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicalMaterial'",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_BoneName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_InverseTransformLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_InitialOpening",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_InverseTransformLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AllocateComputeMesh_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AppendSphereBox_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AllocateComputeMesh_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AppendBox_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ForceEntranceOpening",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InitialOpening",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GenerateInitialCutMesh",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnActorLoaded",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_bLoaded",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_InitialOpening",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnRep_TargetLocation",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_ApplyMeshBoolean_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DynamicMesh'",
+          "ObjectPath": "/Script/GeometryFramework"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateMeshCollision",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "VoxelDestruction",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Hit",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Scene_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "Properties": {
+      "RelativeLocation": {
+        "X": -700.0,
+        "Y": 0.0,
+        "Z": 150.0
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_GeneratedVoxelMeshActor_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.22"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_GeneratedVoxelMeshActor_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.17"
+      },
+      "VariableGuid": "948411E1-4B0DD736-AA369DBA-B5BE55E3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_GeneratedVoxelMeshActor_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.22"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_GeneratedVoxelMeshActor_C:Scene_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.18"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SceneComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "DynamicMeshComponent",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GeneratedVoxelMeshActor_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.21"
+        }
+      ],
+      "VariableGuid": "6BA97099-4280DF26-274B1CB7-8ED6BC76",
+      "InternalVariableName": "Scene"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_GeneratedVoxelMeshActor_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.22"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BillboardComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BillboardComponent'BP_GeneratedVoxelMeshActor_C:Billboard_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.0"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "1A69371B-4584D487-47A9B281-8EB58554",
+      "InternalVariableName": "Billboard"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_GeneratedVoxelMeshActor_C'",
+      "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.1"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GeneratedVoxelMeshActor_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.20"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_GeneratedVoxelMeshActor_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.20"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_GeneratedVoxelMeshActor_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.21"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_GeneratedVoxelMeshActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/BurrowConcept/BP_GeneratedVoxelMeshActor.19"
+      }
+    }
+  }
+]

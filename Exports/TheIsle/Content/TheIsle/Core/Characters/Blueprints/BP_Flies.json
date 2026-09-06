@@ -1,0 +1,2018 @@
+[
+  {
+    "Type": "AudioComponent",
+    "Name": "FliesSwarmSound_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue'CU_Insect_Swarm_Flies_Generic'",
+        "ObjectPath": "/Game/TheIsle/Sound/Ambience/Insects/CU_Insect_Swarm_Flies_Generic.0"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "FliesSwarmSoundAgitated_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "Sound": {
+        "ObjectName": "SoundCue'CU_Insect_Swarm_Flies_Agitated'",
+        "ObjectPath": "/Game/TheIsle/Sound/Ambience/Insects/CU_Insect_Swarm_Flies_Agitated.0"
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Flies_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'BP_Flies_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.4"
+        }
+      ],
+      "Timelines": [
+        {
+          "ObjectName": "TimelineTemplate'BP_Flies_C:PlayerNearbyStart_Template'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.35"
+        },
+        {
+          "ObjectName": "TimelineTemplate'BP_Flies_C:AmountMultiplier_Template'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.33"
+        },
+        {
+          "ObjectName": "TimelineTemplate'BP_Flies_C:AmountMultiplierRev_Template'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.34"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Flies_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.31"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Flies_C:ExecuteUbergraph_BP_Flies'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.17"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIInsectsBase'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Flies_C:PlayerNearbyStart__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.19"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:PlayerNearbyStart__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.20"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:AmountMultiplier__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.8"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:AmountMultiplier__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.9"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:AmountMultiplierRev__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.10"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:AmountMultiplierRev__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.11"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.21"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:StartApproachPlayer'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.23"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:StopApproachPlayer'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.24"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.12"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.13"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:SetAmountAsState'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.22"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:ExternalStarter'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.18"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:CustomEvent_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.15"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:CustomEvent_1'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.16"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:CustomEvent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.14"
+      },
+      {
+        "ObjectName": "Function'BP_Flies_C:ExecuteUbergraph_BP_Flies'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.17"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FliesSwarmSoundAgitated",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FliesSwarmSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "AmountMultiplierRev_Amount_8BB7731E4ACAC746E8D321829502B399",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "AmountMultiplierRev__Direction_8BB7731E4ACAC746E8D321829502B399",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETimelineDirection'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AmountMultiplierRev",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TimelineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "AmountMultiplier_Amount_6BB090F34AEA8CD844A0C5BE943A0861",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "AmountMultiplier__Direction_6BB090F34AEA8CD844A0C5BE943A0861",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETimelineDirection'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AmountMultiplier",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TimelineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "PlayerNearbyStart_Value_C6F549D842AF9D20CB1ADDB1170B7F47",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "PlayerNearbyStart__Direction_C6F549D842AF9D20CB1ADDB1170B7F47",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETimelineDirection'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PlayerNearbyStart",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TimelineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "FliesSpread",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "FliesAmount",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "FliesTurbulence",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "FliesInitialTotal",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bAlreadyInitiated?",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NiagaraTargetLocation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NiagaraLocationHandler",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "FliesAdjstmentTimeOver",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Flies": {
+        "ObjectName": "Function'BP_Flies_C:ExecuteUbergraph_BP_Flies'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.17"
+      },
+      "CustomEvent": {
+        "ObjectName": "Function'BP_Flies_C:CustomEvent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.14"
+      },
+      "CustomEvent_1": {
+        "ObjectName": "Function'BP_Flies_C:CustomEvent_1'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.16"
+      },
+      "CustomEvent_0": {
+        "ObjectName": "Function'BP_Flies_C:CustomEvent_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.15"
+      },
+      "ExternalStarter": {
+        "ObjectName": "Function'BP_Flies_C:ExternalStarter'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.18"
+      },
+      "SetAmountAsState": {
+        "ObjectName": "Function'BP_Flies_C:SetAmountAsState'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.22"
+      },
+      "BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_Flies_C:BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.13"
+      },
+      "BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_Flies_C:BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.12"
+      },
+      "StopApproachPlayer": {
+        "ObjectName": "Function'BP_Flies_C:StopApproachPlayer'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.24"
+      },
+      "StartApproachPlayer": {
+        "ObjectName": "Function'BP_Flies_C:StartApproachPlayer'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.23"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Flies_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.21"
+      },
+      "AmountMultiplierRev__UpdateFunc": {
+        "ObjectName": "Function'BP_Flies_C:AmountMultiplierRev__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.11"
+      },
+      "AmountMultiplierRev__FinishedFunc": {
+        "ObjectName": "Function'BP_Flies_C:AmountMultiplierRev__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.10"
+      },
+      "AmountMultiplier__UpdateFunc": {
+        "ObjectName": "Function'BP_Flies_C:AmountMultiplier__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.9"
+      },
+      "AmountMultiplier__FinishedFunc": {
+        "ObjectName": "Function'BP_Flies_C:AmountMultiplier__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.8"
+      },
+      "PlayerNearbyStart__UpdateFunc": {
+        "ObjectName": "Function'BP_Flies_C:PlayerNearbyStart__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.20"
+      },
+      "PlayerNearbyStart__FinishedFunc": {
+        "ObjectName": "Function'BP_Flies_C:PlayerNearbyStart__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.19"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Flies_C'Default__BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_Flies_C",
+    "Name": "Default__BP_Flies_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.BP_Flies_C'",
+    "Package": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies",
+    "Properties": {
+      "UberGraphFrame": {},
+      "FliesSpread": 500.0,
+      "FliesAmount": 5.0,
+      "FliesTurbulence": 1000.0,
+      "FliesInitialTotal": 1.0,
+      "NiagaraTargetLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "NiagaraLocationHandler": {
+        "Handle": 0
+      },
+      "SceneComponent": {
+        "ObjectName": "SceneComponent'Default__BP_Flies_C:SceneComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.27"
+      },
+      "NiagaraComponent": {
+        "ObjectName": "NiagaraComponent'Default__BP_Flies_C:NiagaraComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.25"
+      },
+      "SphereComponent": {
+        "ObjectName": "SphereComponent'Default__BP_Flies_C:SphereComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.32"
+      },
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false
+      },
+      "bReplicates": false,
+      "MinNetUpdateFrequency": 1.0,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_Flies_C:SceneComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.27"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "SphereComponent",
+          "DelegatePropertyName": "OnComponentEndOverlap",
+          "FunctionNameToBind": "BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "SphereComponent",
+          "DelegatePropertyName": "OnComponentBeginOverlap",
+          "FunctionNameToBind": "BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_0",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CurveFloat'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 5.0,
+            "Value": 5.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_2",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CurveFloat'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 5.0,
+            "Value": 5.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_2_3",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CurveFloat'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 5.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 5.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AmountMultiplier__FinishedFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AmountMultiplier__UpdateFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AmountMultiplierRev__FinishedFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "AmountMultiplierRev__UpdateFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bFromSweep",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SweepResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_Flies_SphereComponent_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomEvent",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomEvent_0",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomEvent_1",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Flies",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Character_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetScaledCapsuleHalfHeight_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ComponentBoundEvent_bFromSweep",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_ComponentBoundEvent_SweepResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ConstParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Character_Base_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlayerControlled_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Character_Base_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Event_CorpseStage",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ECorpseType'",
+          "ObjectPath": "/Script/TheIsle"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlayerControlled_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetWorldDeltaSeconds_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_VInterpTo_Constant_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NearlyEqual_FloatFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetWorldLocation_SweepHitResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ObjectObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ObjectObject_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_B_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_B_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_B_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetNiagaraVariableFloat_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetNiagaraVariableFloat_InValue_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetNiagaraVariableFloat_InValue_ImplicitCast_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetNiagaraVariableFloat_InValue_ImplicitCast_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_VInterpTo_Constant_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExternalStarter",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayerNearbyStart__FinishedFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayerNearbyStart__UpdateFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetAmountAsState",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIInsectsBase:SetAmountAsState'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "CorpseStage",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Class'ECorpseType'",
+          "ObjectPath": "/Script/TheIsle"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartApproachPlayer",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StopApproachPlayer",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "NiagaraComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Outer": {
+      "ObjectName": "BP_Flies_C'Default__BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.3"
+    },
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_Environment_Flies_Control'",
+        "ObjectPath": "/Game/TheIsle/VFX/EnvironmentalFX/Niagara/NS_Environment_Flies_Control.0"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Flies/Bees_on/off",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Flies/Bees_on/off",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "FliesSpread",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.FliesSpread",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "SpawnCount",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.SpawnCount",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "Turbulence_Strength",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.Turbulence_Strength",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Flies/Bees_on/off",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.FliesSpread",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "User.SpawnCount",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "User.Turbulence_Strength",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          150,
+          67,
+          0,
+          0,
+          160,
+          65,
+          0,
+          0,
+          122,
+          68
+        ]
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_Flies_C:SceneComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.27"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_Flies_C'Default__BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Flies_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.31"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Flies_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.26"
+      },
+      "VariableGuid": "F170B734-4973A088-C5FB4084-11139268",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Flies_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.31"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'AudioComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent'BP_Flies_C:FliesSwarmSound_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.0"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "Sound",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AudioComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "SceneComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "DC7153D9-469FE25F-DD36FFA8-E92D1B48",
+      "InternalVariableName": "FliesSwarmSound"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Flies_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.31"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'AudioComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent'BP_Flies_C:FliesSwarmSoundAgitated_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.1"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "Sound",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AudioComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bAutoActivate",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AudioComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "SceneComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "4A6C434E-445AEFBF-EC63B88A-0E8D9C84",
+      "InternalVariableName": "FliesSwarmSoundAgitated"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Flies_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.29"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Flies_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.30"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Flies_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.29"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Flies_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.30"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Flies_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.28"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_Flies_C'Default__BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.3"
+    },
+    "Properties": {
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_Flies_C:SceneComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.27"
+      }
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "AmountMultiplier_Template",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TimelineTemplate'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat'BP_Flies_C:CurveFloat_2'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.6"
+          },
+          "PropertyName": "AmountMultiplier_Amount_6BB090F34AEA8CD844A0C5BE943A0861",
+          "TrackName": "Amount",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "6BB090F3-4AEA8CD8-44A0C5BE-943A0861",
+      "VariableName": "AmountMultiplier",
+      "DirectionPropertyName": "AmountMultiplier__Direction_6BB090F34AEA8CD844A0C5BE943A0861",
+      "UpdateFunctionName": "AmountMultiplier__UpdateFunc",
+      "FinishedFunctionName": "AmountMultiplier__FinishedFunc"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "AmountMultiplierRev_Template",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TimelineTemplate'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat'BP_Flies_C:CurveFloat_2_3'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.7"
+          },
+          "PropertyName": "AmountMultiplierRev_Amount_8BB7731E4ACAC746E8D321829502B399",
+          "TrackName": "Amount",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "8BB7731E-4ACAC746-E8D32182-9502B399",
+      "VariableName": "AmountMultiplierRev",
+      "DirectionPropertyName": "AmountMultiplierRev__Direction_8BB7731E4ACAC746E8D321829502B399",
+      "UpdateFunctionName": "AmountMultiplierRev__UpdateFunc",
+      "FinishedFunctionName": "AmountMultiplierRev__FinishedFunc"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "PlayerNearbyStart_Template",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TimelineTemplate'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Flies_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.2"
+    },
+    "Properties": {
+      "TimelineLength": 3.0,
+      "LengthMode": "TL_LastKeyFrame",
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat'BP_Flies_C:CurveFloat_0'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_Flies.5"
+          },
+          "PropertyName": "PlayerNearbyStart_Value_C6F549D842AF9D20CB1ADDB1170B7F47",
+          "TrackName": "Value",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "C6F549D8-42AF9D20-CB1ADDB1-170B7F47",
+      "VariableName": "PlayerNearbyStart",
+      "DirectionPropertyName": "PlayerNearbyStart__Direction_C6F549D842AF9D20CB1ADDB1170B7F47",
+      "UpdateFunctionName": "PlayerNearbyStart__UpdateFunc",
+      "FinishedFunctionName": "PlayerNearbyStart__FinishedFunc"
+    }
+  }
+]

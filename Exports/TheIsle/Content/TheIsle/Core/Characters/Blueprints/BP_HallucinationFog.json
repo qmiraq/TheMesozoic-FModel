@@ -1,0 +1,1780 @@
+[
+  {
+    "Type": "AudioComponent",
+    "Name": "Ambience_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AudioComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "Properties": {
+      "Sound": {
+        "ObjectName": "MetaSoundSource'MS_Ambience_Venom'",
+        "ObjectPath": "/Game/TheIsle/Sound/Ambience/Venom/MS_Ambience_Venom.0"
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_HallucinationFog_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "Timelines": [
+        {
+          "ObjectName": "TimelineTemplate'BP_HallucinationFog_C:Timeline_Template'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.21"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_HallucinationFog_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.18"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_HallucinationFog_C:ExecuteUbergraph_BP_HallucinationFog'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIHallucinationFogActor'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_HallucinationFog_C:Timeline__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.9"
+      },
+      {
+        "ObjectName": "Function'BP_HallucinationFog_C:Timeline__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.10"
+      },
+      {
+        "ObjectName": "Function'BP_HallucinationFog_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.7"
+      },
+      {
+        "ObjectName": "Function'BP_HallucinationFog_C:CustomEvent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.4"
+      },
+      {
+        "ObjectName": "Function'BP_HallucinationFog_C:HallucinationFogRandomSoundAround'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.6"
+      },
+      {
+        "ObjectName": "Function'BP_HallucinationFog_C:ReceiveDestroyed'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.8"
+      },
+      {
+        "ObjectName": "Function'BP_HallucinationFog_C:ExecuteUbergraph_BP_HallucinationFog'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PostProcess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PostProcessComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SphereCollision",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SphereComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Ambience",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Sphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Timeline_Opacity_25A93B22477276ACE0F8C193FCCC4A8C",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "Timeline__Direction_25A93B22477276ACE0F8C193FCCC4A8C",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETimelineDirection'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Timeline",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'TimelineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SphereMaterialInst",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Opacity",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Add Audio Effects",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Add Audio Effects",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'SoundEffectSubmixPreset'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Add Audio Effects AMB",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Add Audio Effects AMB",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'SoundEffectSubmixPreset'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MI_FogPPMaterialInstance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_HallucinationFog": {
+        "ObjectName": "Function'BP_HallucinationFog_C:ExecuteUbergraph_BP_HallucinationFog'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.5"
+      },
+      "ReceiveDestroyed": {
+        "ObjectName": "Function'BP_HallucinationFog_C:ReceiveDestroyed'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.8"
+      },
+      "HallucinationFogRandomSoundAround": {
+        "ObjectName": "Function'BP_HallucinationFog_C:HallucinationFogRandomSoundAround'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.6"
+      },
+      "CustomEvent": {
+        "ObjectName": "Function'BP_HallucinationFog_C:CustomEvent'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.4"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_HallucinationFog_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.7"
+      },
+      "Timeline__UpdateFunc": {
+        "ObjectName": "Function'BP_HallucinationFog_C:Timeline__UpdateFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.10"
+      },
+      "Timeline__FinishedFunc": {
+        "ObjectName": "Function'BP_HallucinationFog_C:Timeline__FinishedFunc'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.9"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_HallucinationFog_C'Default__BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_HallucinationFog_C",
+    "Name": "Default__BP_HallucinationFog_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.BP_HallucinationFog_C'",
+    "Package": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Add Audio Effects": [
+        {
+          "ObjectName": "SubmixEffectReverbPreset'SMFX_VenomReverb'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Effects/SMFX_VenomReverb.0"
+        },
+        {
+          "ObjectName": "SubmixEffectStereoDelayPreset'SMFX_VenomStereoDelay'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Effects/SMFX_VenomStereoDelay.0"
+        }
+      ],
+      "Add Audio Effects AMB": [
+        {
+          "ObjectName": "SubmixEffectReverbPreset'SMFX_VenomReverbWet'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Effects/SMFX_VenomReverbWet.0"
+        },
+        {
+          "ObjectName": "SubmixEffectStereoDelayPreset'SMFX_VenomStereoDelayWet'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Effects/SMFX_VenomStereoDelayWet.0"
+        },
+        {
+          "ObjectName": "SubmixEffectTapDelayPreset'SMFX_MultitapDelay_SM'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Effects/SMFX_MultitapDelay_SM.0"
+        }
+      ],
+      "PrimaryActorTick": {
+        "bStartWithTickEnabled": false,
+        "bAllowTickOnDedicatedServer": false
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_0",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CurveFloat'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 2.5,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomEvent",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_HallucinationFog",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SoundBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SoundBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_WeightedBlendable",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'WeightedBlendable'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 16,
+          "Struct": {
+            "ObjectName": "Class'WeightedBlendable'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Temp_object_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Select_Default",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Temp_bool_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "SignatureFunction": {
+          "ObjectName": "Class'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchInteger_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetTriggerParameter_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetTriggerParameter_self_CastInput_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetTriggerParameter_self_CastInput_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetIntParameter_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetIntParameter_self_CastInput_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetIntParameter_self_CastInput_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_SetTriggerParameter_self_CastInput_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'AudioParameterControllerInterface'",
+          "ObjectPath": "/Script/AudioExtensions"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllSocketNames_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "NameProperty",
+          "Name": "CallFunc_GetAllSocketNames_ReturnValue",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_LastIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_RandomIntegerInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Select_Default_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SoundBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSoundAtLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FClamp_Value_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetScalarParameterValue_Value_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_Time_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "HallucinationFogRandomSoundAround",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveDestroyed",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveDestroyed'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Timeline__FinishedFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "Timeline__UpdateFunc",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "PostProcessComponent",
+    "Name": "PostProcess_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PostProcessComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "Properties": {
+      "Settings": {
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "MaterialInstanceConstant'MI_HallucinationFog_Troodon'",
+                "ObjectPath": "/Game/TheIsle/Temp/NewShaders/HallucinationFog/MI_HallucinationFog_Troodon.0"
+              }
+            }
+          ]
+        }
+      },
+      "BlendRadius": 500.0,
+      "bUnbound": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_HallucinationFog_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.18"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_HallucinationFog_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.12"
+      },
+      "CookedComponentInstancingData": {
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.17"
+        }
+      ],
+      "VariableGuid": "7EAE4AFF-4B181C4C-43F4DE8E-1C184357",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_HallucinationFog_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.18"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_HallucinationFog_C:Sphere_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.20"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "OverrideMaterials",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bGenerateOverlapEvents",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CanCharacterStepUpOn",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "TranslucencySortPriority",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionEnabled",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeScale3D",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "bHiddenInGame",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "381BB77F-4B24F91D-B6ACDABA-D65A09B2",
+      "InternalVariableName": "Sphere"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_HallucinationFog_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.18"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'AudioComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent'BP_HallucinationFog_C:Ambience_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.0"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "Sound",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AudioComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bAutoActivate",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AudioComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "6860FE8C-44DD7522-8ABCD091-724822F6",
+      "InternalVariableName": "Ambience"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_HallucinationFog_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.18"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PostProcessComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PostProcessComponent'BP_HallucinationFog_C:PostProcess_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.11"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "Settings",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PostProcessComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "WeightedBlendables",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PostProcessSettings'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Array",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'WeightedBlendables'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'WeightedBlendables'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BlendRadius",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PostProcessComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bUnbound",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PostProcessComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "VariableGuid": "76589BC1-4D48179A-89A1B8BF-D5907983",
+      "InternalVariableName": "PostProcess"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_HallucinationFog_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.18"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SphereComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent'BP_HallucinationFog_C:SphereCollision_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.19"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "SphereRadius",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SphereComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bGenerateOverlapEvents",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SphereComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CanCharacterStepUpOn",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SphereComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'SphereComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionEnabled",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 6,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 7,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.16"
+        }
+      ],
+      "VariableGuid": "6DEDEF6F-4DB30414-581F32BF-49BE422A",
+      "InternalVariableName": "SphereCollision"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.14"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.17"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.16"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_HallucinationFog_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.13"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereCollision_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "Properties": {
+      "SphereRadius": 3000.0,
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Sphere_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_EnvenomatedSphere'",
+        "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/SM_EnvenomatedSphere.2"
+      },
+      "OverrideMaterials": [
+        null
+      ],
+      "bGenerateOverlapEvents": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "TranslucencySortPriority": 10,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeScale3D": {
+        "X": 0.0015,
+        "Y": 0.0015,
+        "Z": 0.0015
+      },
+      "bHiddenInGame": true
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "Timeline_Template",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'TimelineTemplate'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_HallucinationFog_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.1"
+    },
+    "Properties": {
+      "TimelineLength": 2.5,
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat'BP_HallucinationFog_C:CurveFloat_0'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Blueprints/BP_HallucinationFog.3"
+          },
+          "PropertyName": "Timeline_Opacity_25A93B22477276ACE0F8C193FCCC4A8C",
+          "TrackName": "Opacity",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "25A93B22-477276AC-E0F8C193-FCCC4A8C",
+      "VariableName": "Timeline",
+      "DirectionPropertyName": "Timeline__Direction_25A93B22477276ACE0F8C193FCCC4A8C",
+      "UpdateFunctionName": "Timeline__UpdateFunc",
+      "FinishedFunctionName": "Timeline__FinishedFunc"
+    }
+  }
+]

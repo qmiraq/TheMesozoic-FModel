@@ -1,0 +1,1033 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Arrow",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Outer": {
+      "ObjectName": "BP_Thermal_C'Default__BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.3"
+    },
+    "Properties": {
+      "ArrowSize": 50.0,
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_Thermal_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.11"
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Thermal_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_Thermal",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Thermal_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.14"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_Thermal_C:ExecuteUbergraph_BP_Thermal'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.4"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIThermal'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_Thermal_C:UserConstructionScript'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.8"
+      },
+      {
+        "ObjectName": "Function'BP_Thermal_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.5"
+      },
+      {
+        "ObjectName": "Function'BP_Thermal_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.7"
+      },
+      {
+        "ObjectName": "Function'BP_Thermal_C:ReceiveEndPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.6"
+      },
+      {
+        "ObjectName": "Function'BP_Thermal_C:ExecuteUbergraph_BP_Thermal'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Niagara",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_Thermal": {
+        "ObjectName": "Function'BP_Thermal_C:ExecuteUbergraph_BP_Thermal'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.4"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_Thermal_C:ReceiveEndPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.6"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_Thermal_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.7"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_Thermal_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.5"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BP_Thermal_C:UserConstructionScript'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.8"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Thermal_C'Default__BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxVolume",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_Thermal_C'Default__BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.3"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 1500.0,
+        "Y": 1500.0,
+        "Z": 3000.0
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_Thermal_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.11"
+      }
+    }
+  },
+  {
+    "Type": "BP_Thermal_C",
+    "Name": "Default__BP_Thermal_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Placeables/BP_Thermal.BP_Thermal_C'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_Thermal",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Default__BP_Thermal_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.11"
+      },
+      "BoxVolume": {
+        "ObjectName": "BoxComponent'Default__BP_Thermal_C:BoxVolume'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.2"
+      },
+      "Arrow": {
+        "ObjectName": "ArrowComponent'Default__BP_Thermal_C:Arrow'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_Thermal_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.11"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_Thermal",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsActive_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerCharacter_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Character'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsThe_Isle_Character_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'TICharacterBase'",
+          "ObjectPath": "/Script/TheIsle"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAbilitySystemComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AbilitySystemComponent'",
+          "ObjectPath": "/Script/GameplayAbilities"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 12,
+          "Struct": {
+            "ObjectName": "Class'GameplayTag'",
+            "ObjectPath": "/Script/GameplayTags"
+          }
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeGameplayTagContainerFromArray_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "Class'GameplayTagContainer'",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "CallFunc_HasAnyMatchingGameplayTags_self_CastInput",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'GameplayTagAssetInterface'",
+          "ObjectPath": "/Script/GameplayTags"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAnyMatchingGameplayTags_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_SelectFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "Class'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorScale3D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVariableFloat_InValue_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "Niagara_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NiagaraComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.1"
+    },
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem'NS_ThermalVents_New'",
+        "ObjectPath": "/Game/TheIsle/VFX/Charactervfx/Niagara/NS_ThermalVents_New.0"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": [
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "MainParticleScale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.MainParticleScale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "MainZScale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.MainZScale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "ThermalDistortion",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.ThermalDistortion",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "ThermalDust",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.ThermalDust",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "ThermalLeaves",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.ThermalLeaves",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          },
+          {
+            "Key": {
+              "VarData": "",
+              "Name": "ThermalWInd",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            },
+            "Value": {
+              "VarData": "",
+              "Name": "User.ThermalWInd",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2,
+                "Flags": 0
+              }
+            }
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.MainParticleScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.MainZScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "User.ThermalDistortion",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "User.ThermalDust",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 16,
+            "Name": "User.ThermalLeaves",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          },
+          {
+            "Offset": 20,
+            "Name": "User.ThermalWInd",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2,
+              "Flags": 0
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          64,
+          0,
+          0,
+          0,
+          64,
+          0,
+          0,
+          128,
+          63
+        ]
+      },
+      "RelativeScale3D": {
+        "X": 0.75,
+        "Y": 0.75,
+        "Z": 0.75
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.1"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_Thermal_C'Default__BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.3"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Thermal_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.14"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Thermal_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.10"
+      },
+      "VariableGuid": "EF950442-4D554C06-47FBDDB2-17E9708B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_Thermal_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.14"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'NiagaraComponent'",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent'BP_Thermal_C:Niagara_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.9"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "Asset",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'NiagaraComponent'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          },
+          {
+            "PropertyName": "OverrideParameters",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'NiagaraComponent'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          },
+          {
+            "PropertyName": "UserParameterRedirects",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'NiagaraUserRedirectionParameterStore'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          },
+          {
+            "PropertyName": "SortedParameterOffsets",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'NiagaraUserRedirectionParameterStore'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'NiagaraUserRedirectionParameterStore'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          },
+          {
+            "PropertyName": "ParameterData",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'NiagaraUserRedirectionParameterStore'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'NiagaraUserRedirectionParameterStore'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          },
+          {
+            "PropertyName": "RelativeScale3D",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'NiagaraComponent'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "bAutoActivate",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'NiagaraComponent'",
+              "ObjectPath": "/Script/Niagara"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "70715392-4EA44BA0-B61826A9-0141F436",
+      "InternalVariableName": "Niagara"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Thermal_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.1"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Thermal_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Thermal_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Thermal_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_Thermal.12"
+      }
+    }
+  }
+]

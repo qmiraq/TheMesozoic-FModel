@@ -1,0 +1,77 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Omniraptor_Courtship_Male_Purr",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Characters/Dinosaurs/Omniraptor/Sound/CU_Omniraptor_Courtship_Male_Purr",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 1.0,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'Omniraptor'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/Omniraptor.0"
+      },
+      "ConcurrencySet": [
+        {
+          "ObjectName": "SoundConcurrency'SmallFoley_SC'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Concurrency/SmallFoley_SC.0"
+        }
+      ],
+      "Duration": 1.8617604,
+      "MaxDistance": 2560.0,
+      "Priority": 50.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_DinoIdles_Small'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Dinos/Other/ATT_DinoIdles_Small.0"
+      },
+      "BusSends": [
+        {
+          "SourceBusSendLevelControlMethod": "ESourceBusSendLevelControlMethod::CustomCurve",
+          "SoundSourceBus": null,
+          "AudioBus": {
+            "ObjectName": "AudioBus'AB_WeatherDuck'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/AudioBuses/AB_WeatherDuck.0"
+          },
+          "SendLevel": 1.0,
+          "MinSendLevel": 1.0,
+          "MaxSendLevel": 0.0,
+          "MinSendDistance": 0.0,
+          "MaxSendDistance": 4096.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.0,
+                  "Value": 1.0,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_User",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 1.0,
+                  "Value": 0.0,
+                  "ArriveTangent": -1.787189,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": -1.78719,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

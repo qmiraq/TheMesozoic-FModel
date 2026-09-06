@@ -1,0 +1,91 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Amb_Swamp_Fauna_Evening",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Sound/Ambience/Swamp/OneShots/CU_Amb_Swamp_Fauna_Evening",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.006,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'Ambi_BirdCalls_OneShot'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/Ambi_BirdCalls_OneShot.0"
+      },
+      "bOverrideConcurrency": true,
+      "ConcurrencyOverrides": {
+        "MaxCount": 1,
+        "VolumeScale": 0.3
+      },
+      "Duration": 7.536521,
+      "MaxDistance": 60512.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_AmbientBirds'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Amb/ATT_AmbientBirds.0"
+      },
+      "SoundSubmixObject": {
+        "ObjectName": "SoundSubmix'Submix_Convolution_Med'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_Convolution_Med.0"
+      },
+      "SoundSubmixSends": [
+        {
+          "SendStage": "ESubmixSendStage::PostDistanceAttenuation",
+          "SendLevelControlMethod": "ESendLevelControlMethod::CustomCurve",
+          "SoundSubmix": {
+            "ObjectName": "SoundSubmix'Submix_DistantCalls'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_DistantCalls.0"
+          },
+          "SendLevel": 0.0,
+          "DisableManualSendClamp": false,
+          "MinSendLevel": 0.0,
+          "MaxSendLevel": 1000.0,
+          "MinSendDistance": 100.0,
+          "MaxSendDistance": 1000.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_User",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.0025488734,
+                  "Value": 56.428345,
+                  "ArriveTangent": 665.7112,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 665.71063,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_User",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.5589638,
+                  "Value": 272.20813,
+                  "ArriveTangent": -136.11623,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": -136.22116,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 1.0104871,
+                  "Value": 839.9022,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

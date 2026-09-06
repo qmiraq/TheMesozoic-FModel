@@ -1,0 +1,1657 @@
+[
+  {
+    "Type": "MetaSoundSource",
+    "Name": "UDS_Distant_Thunder_Loop",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'MetaSoundSource'",
+    "Package": "/Game/UltraDynamicSky/Sound/MetaSounds/UDS_Distant_Thunder_Loop",
+    "Properties": {
+      "RootMetasoundDocument": {
+        "Metadata": {
+          "Version": {
+            "Number": {
+              "Minor": 14
+            }
+          }
+        },
+        "Interfaces": [
+          {
+            "Name": "UE.OutputFormat.Stereo",
+            "Number": {
+              "Major": 1,
+              "Minor": 0
+            }
+          },
+          {
+            "Name": "UE.Source",
+            "Number": {
+              "Major": 1,
+              "Minor": 1
+            }
+          }
+        ],
+        "RootGraph": {
+          "PagedGraphs": [
+            {
+              "Nodes": [
+                {
+                  "ID": "AE5B7DF3-42DC12BD-58C123BC-8E13D128",
+                  "ClassID": "BC40CCEA-4AB20146-ED027B85-E7457652",
+                  "Name": "UE.Source.OnPlay",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "UE.Source.OnPlay",
+                        "TypeName": "Trigger",
+                        "VertexID": "6D4C300C-4E3C5936-FF68FDB0-C5136FF8"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "UE.Source.OnPlay",
+                        "TypeName": "Trigger",
+                        "VertexID": "63B5453B-42B6A04C-88FF39BF-98798925"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "B008C698-4C20C7C9-CD375DB7-CD8F265A",
+                  "ClassID": "F7E1C94A-4D19D159-64735D96-E4D02920",
+                  "Name": "Multiply",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "PrimaryOperand",
+                        "TypeName": "Audio",
+                        "VertexID": "40395A69-9C48D41A-A47B0444-AA3322F5"
+                      },
+                      {
+                        "Name": "AdditionalOperands",
+                        "TypeName": "Float",
+                        "VertexID": "05ACEB5F-4E04B199-2885DA11-E9BC86E4"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "Out",
+                        "TypeName": "Audio",
+                        "VertexID": "A88F113B-960A0731-A09EE5CF-9885B330"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "39F1C9C0-46E81AC7-28537497-FB839410",
+                  "ClassID": "2B9451A1-422742F6-2D2E0AB9-3D934841",
+                  "Name": "Power",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "PrimaryOperand",
+                        "TypeName": "Float",
+                        "VertexID": "50914C6E-47088D23-AB34DE83-80AFDD89"
+                      },
+                      {
+                        "Name": "AdditionalOperands",
+                        "TypeName": "Float",
+                        "VertexID": "5D4C2B11-42EDC7F9-2F3E6D8C-87D30AFE"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "Out",
+                        "TypeName": "Float",
+                        "VertexID": "F47DB03C-447F0C41-387178A8-8A0D164E"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [
+                    {
+                      "VertexID": "5D4C2B11-42EDC7F9-2F3E6D8C-87D30AFE",
+                      "Value": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          1.6
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      }
+                    }
+                  ],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "F129E7D1-4E3122B8-9E690B9C-A3944494",
+                  "ClassID": "BB5A44C6-4A550022-EF73E6AB-CC17BFCE",
+                  "Name": "RandomTime",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "Next",
+                        "TypeName": "Trigger",
+                        "VertexID": "F6BEDABE-B69495CD-A63257DF-B105522F"
+                      },
+                      {
+                        "Name": "Reset",
+                        "TypeName": "Trigger",
+                        "VertexID": "37840F5D-693567D0-90727E1F-A82FD707"
+                      },
+                      {
+                        "Name": "Seed",
+                        "TypeName": "Int32",
+                        "VertexID": "B2B2C084-CC8B3A9B-F4839890-990B3B63"
+                      },
+                      {
+                        "Name": "Min",
+                        "TypeName": "Time",
+                        "VertexID": "D5777239-F9FF1166-2DFBF55C-AFF36FC9"
+                      },
+                      {
+                        "Name": "Max",
+                        "TypeName": "Time",
+                        "VertexID": "BC6803C3-A690AD83-3BB62C2E-64B0BEBF"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "On Next",
+                        "TypeName": "Trigger",
+                        "VertexID": "F8B1C2F1-F29BC98D-E70114D4-1D747FE7"
+                      },
+                      {
+                        "Name": "On Reset",
+                        "TypeName": "Trigger",
+                        "VertexID": "737539EF-06D2594F-F9A3F5A6-0C6BB54D"
+                      },
+                      {
+                        "Name": "Value",
+                        "TypeName": "Time",
+                        "VertexID": "EC5B0E8F-E94707CA-A4E160D2-96DBDA55"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [
+                    {
+                      "VertexID": "BC6803C3-A690AD83-3BB62C2E-64B0BEBF",
+                      "Value": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          90.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      }
+                    }
+                  ],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "C19DBB91-43826B6E-0AD503A1-79D97A6D",
+                  "ClassID": "64707C43-45612666-D0553DBE-6B687232",
+                  "Name": "UE.OutputFormat.Stereo.Audio:1",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "UE.OutputFormat.Stereo.Audio:1",
+                        "TypeName": "Audio",
+                        "VertexID": "18CAF21C-4B1F9980-1B3DF08B-AA037FEA"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "UE.OutputFormat.Stereo.Audio:1",
+                        "TypeName": "Audio",
+                        "VertexID": "4A59267F-4B28C008-92FAD0A6-4E73CAFE"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [
+                    {
+                      "VertexID": "18CAF21C-4B1F9980-1B3DF08B-AA037FEA",
+                      "Value": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      }
+                    }
+                  ],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "696BF760-43532E7F-90C72288-30EFDA3A",
+                  "ClassID": "64707C43-45612666-D0553DBE-6B687232",
+                  "Name": "UE.OutputFormat.Stereo.Audio:0",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "UE.OutputFormat.Stereo.Audio:0",
+                        "TypeName": "Audio",
+                        "VertexID": "18CAF21C-4B1F9980-1B3DF08B-AA037FEA"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "UE.OutputFormat.Stereo.Audio:0",
+                        "TypeName": "Audio",
+                        "VertexID": "4A59267F-4B28C008-92FAD0A6-4E73CAFE"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "374423BB-4A16C4A3-DF37FA86-8AAB3C3D",
+                  "ClassID": "0699BD2C-41BD4C6E-51020687-621E07FD",
+                  "Name": "Wave Player",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "Play",
+                        "TypeName": "Trigger",
+                        "VertexID": "E488C091-52673EB8-F2DC89B9-60A6AF04"
+                      },
+                      {
+                        "Name": "Stop",
+                        "TypeName": "Trigger",
+                        "VertexID": "D63DCB94-DBA2EF9F-78B6B364-B737EEF0"
+                      },
+                      {
+                        "Name": "Wave Asset",
+                        "TypeName": "WaveAsset",
+                        "VertexID": "F2D4E208-F33E4270-D01FAC59-B1342A2A"
+                      },
+                      {
+                        "Name": "Start Time",
+                        "TypeName": "Time",
+                        "VertexID": "AAC8C513-5BF05FEE-87E90A30-B04A0F35"
+                      },
+                      {
+                        "Name": "Pitch Shift",
+                        "TypeName": "Float",
+                        "VertexID": "CA25E5E6-F5C486B9-03FE65A0-C8372BF6"
+                      },
+                      {
+                        "Name": "Loop",
+                        "TypeName": "Bool",
+                        "VertexID": "E2FBD8A5-0A918367-B54A096B-072437DE"
+                      },
+                      {
+                        "Name": "Loop Start",
+                        "TypeName": "Time",
+                        "VertexID": "DEC6FAEF-FFDAA5F7-6AD20C9B-69D8A1FE"
+                      },
+                      {
+                        "Name": "Loop Duration",
+                        "TypeName": "Time",
+                        "VertexID": "25E5E4D8-1AC6E9A4-83ADD925-FCC1BA55"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "On Play",
+                        "TypeName": "Trigger",
+                        "VertexID": "ECF8266E-AABE8ADE-C208EAD9-AE6F795C"
+                      },
+                      {
+                        "Name": "On Finished",
+                        "TypeName": "Trigger",
+                        "VertexID": "8D9B132C-6AF67AD9-1C16DE10-2B0D8769"
+                      },
+                      {
+                        "Name": "On Nearly Finished",
+                        "TypeName": "Trigger",
+                        "VertexID": "08544E4A-03DF9182-73E5B49C-24338937"
+                      },
+                      {
+                        "Name": "On Looped",
+                        "TypeName": "Trigger",
+                        "VertexID": "E5011FA2-CC5C16CE-838E3F26-2C463260"
+                      },
+                      {
+                        "Name": "On Cue Point",
+                        "TypeName": "Trigger",
+                        "VertexID": "2F042104-3DB78A1A-EB094517-2D35602E"
+                      },
+                      {
+                        "Name": "Cue Point ID",
+                        "TypeName": "Int32",
+                        "VertexID": "6B7904A0-39F81696-6DE03079-CB019521"
+                      },
+                      {
+                        "Name": "Cue Point Label",
+                        "TypeName": "String",
+                        "VertexID": "9B47D829-46E980B8-3CEA5533-2B4D9ECB"
+                      },
+                      {
+                        "Name": "Loop Percent",
+                        "TypeName": "Float",
+                        "VertexID": "F985D4B3-EFF3F261-2EBDA86C-F8FF3736"
+                      },
+                      {
+                        "Name": "Playback Location",
+                        "TypeName": "Float",
+                        "VertexID": "DF978A8F-E1896344-88DF88D0-EA7F695B"
+                      },
+                      {
+                        "Name": "Playback Time",
+                        "TypeName": "Time",
+                        "VertexID": "7262643E-91ADAACC-5FD4365C-81EC7E05"
+                      },
+                      {
+                        "Name": "Out Left",
+                        "TypeName": "Audio",
+                        "VertexID": "1A904EBD-19B1D5B4-DAC9AE8B-FBA82027"
+                      },
+                      {
+                        "Name": "Out Right",
+                        "TypeName": "Audio",
+                        "VertexID": "7A0BBD14-A89598B2-B11B4ACC-1AE0FA9F"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [
+                    {
+                      "VertexID": "F2D4E208-F33E4270-D01FAC59-B1342A2A",
+                      "Value": {
+                        "Type": "EMetasoundFrontendLiteralType::UObject",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": [
+                          {
+                            "ObjectName": "SoundWave'DistantThunderLoop'",
+                            "ObjectPath": "/Game/UltraDynamicSky/Sound/Distant_Thunder/DistantThunderLoop.0"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "VertexID": "E2FBD8A5-0A918367-B54A096B-072437DE",
+                      "Value": {
+                        "Type": "EMetasoundFrontendLiteralType::Boolean",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [
+                          true
+                        ],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      }
+                    }
+                  ],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "46C00403-45BA1C86-9C1BADA5-66F5B516",
+                  "ClassID": "B059AD94-4D0805C2-DB835EBD-CDA6846D",
+                  "Name": "UDS_LoopingSoundControl",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "Volume",
+                        "TypeName": "Float",
+                        "VertexID": "393EB643-4ADB3600-0EC5A28C-60DEE44E"
+                      },
+                      {
+                        "Name": "Play",
+                        "TypeName": "Trigger",
+                        "VertexID": "76192A24-47BC13FB-D3113AB7-DEA4FE85"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "Play",
+                        "TypeName": "Trigger",
+                        "VertexID": "7BDD02FF-404759AB-206B2F92-2E9F59B4"
+                      },
+                      {
+                        "Name": "Stop",
+                        "TypeName": "Trigger",
+                        "VertexID": "FE6BBC3A-42B72F3F-4FBE6BBC-82121BDA"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "3D9A4C4E-4EA625EC-6CDB1191-B9DC0DB5",
+                  "ClassID": "509B89A1-483771E6-1A6FC3AC-BCEBCA50",
+                  "Name": "Thunder Value",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "Thunder Value",
+                        "TypeName": "Float",
+                        "VertexID": "8FD195D2-469FE40F-D23737A7-F4563681"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "Thunder Value",
+                        "TypeName": "Float",
+                        "VertexID": "1DC67D27-47898066-AE9DECAE-67C6F58D"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "493FA98C-4FCD1780-733F43B3-A5BFD0FC",
+                  "ClassID": "F7E1C94A-4D19D159-64735D96-E4D02920",
+                  "Name": "Multiply",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "PrimaryOperand",
+                        "TypeName": "Audio",
+                        "VertexID": "40395A69-9C48D41A-A47B0444-AA3322F5"
+                      },
+                      {
+                        "Name": "AdditionalOperands",
+                        "TypeName": "Float",
+                        "VertexID": "05ACEB5F-4E04B199-2885DA11-E9BC86E4"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "Out",
+                        "TypeName": "Audio",
+                        "VertexID": "A88F113B-960A0731-A09EE5CF-9885B330"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                },
+                {
+                  "ID": "36827BB8-4EED9151-8926B0A6-9F0E34E4",
+                  "ClassID": "79347EC4-4E0C2721-50B35397-8446B8D5",
+                  "Name": "Divide",
+                  "Interface": {
+                    "Inputs": [
+                      {
+                        "Name": "PrimaryOperand",
+                        "TypeName": "Float",
+                        "VertexID": "07D9355B-49DE70F8-74678D9A-A5EF6FF8"
+                      },
+                      {
+                        "Name": "AdditionalOperands",
+                        "TypeName": "Float",
+                        "VertexID": "F688B2BC-4F1166A4-5186AC86-E1C37EFC"
+                      }
+                    ],
+                    "Outputs": [
+                      {
+                        "Name": "Out",
+                        "TypeName": "Float",
+                        "VertexID": "B692423A-45BD1978-6DE3F194-F0F8DD2F"
+                      }
+                    ],
+                    "Environment": []
+                  },
+                  "InputLiterals": [
+                    {
+                      "VertexID": "F688B2BC-4F1166A4-5186AC86-E1C37EFC",
+                      "Value": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          10.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      }
+                    }
+                  ],
+                  "Configuration": null,
+                  "ClassInterfaceOverride": null
+                }
+              ],
+              "Edges": [
+                {
+                  "FromNodeID": "F129E7D1-4E3122B8-9E690B9C-A3944494",
+                  "FromVertexID": "EC5B0E8F-E94707CA-A4E160D2-96DBDA55",
+                  "ToNodeID": "374423BB-4A16C4A3-DF37FA86-8AAB3C3D",
+                  "ToVertexID": "AAC8C513-5BF05FEE-87E90A30-B04A0F35"
+                },
+                {
+                  "FromNodeID": "F129E7D1-4E3122B8-9E690B9C-A3944494",
+                  "FromVertexID": "F8B1C2F1-F29BC98D-E70114D4-1D747FE7",
+                  "ToNodeID": "374423BB-4A16C4A3-DF37FA86-8AAB3C3D",
+                  "ToVertexID": "E488C091-52673EB8-F2DC89B9-60A6AF04"
+                },
+                {
+                  "FromNodeID": "B008C698-4C20C7C9-CD375DB7-CD8F265A",
+                  "FromVertexID": "A88F113B-960A0731-A09EE5CF-9885B330",
+                  "ToNodeID": "C19DBB91-43826B6E-0AD503A1-79D97A6D",
+                  "ToVertexID": "18CAF21C-4B1F9980-1B3DF08B-AA037FEA"
+                },
+                {
+                  "FromNodeID": "374423BB-4A16C4A3-DF37FA86-8AAB3C3D",
+                  "FromVertexID": "1A904EBD-19B1D5B4-DAC9AE8B-FBA82027",
+                  "ToNodeID": "493FA98C-4FCD1780-733F43B3-A5BFD0FC",
+                  "ToVertexID": "40395A69-9C48D41A-A47B0444-AA3322F5"
+                },
+                {
+                  "FromNodeID": "39F1C9C0-46E81AC7-28537497-FB839410",
+                  "FromVertexID": "F47DB03C-447F0C41-387178A8-8A0D164E",
+                  "ToNodeID": "493FA98C-4FCD1780-733F43B3-A5BFD0FC",
+                  "ToVertexID": "05ACEB5F-4E04B199-2885DA11-E9BC86E4"
+                },
+                {
+                  "FromNodeID": "3D9A4C4E-4EA625EC-6CDB1191-B9DC0DB5",
+                  "FromVertexID": "1DC67D27-47898066-AE9DECAE-67C6F58D",
+                  "ToNodeID": "36827BB8-4EED9151-8926B0A6-9F0E34E4",
+                  "ToVertexID": "07D9355B-49DE70F8-74678D9A-A5EF6FF8"
+                },
+                {
+                  "FromNodeID": "3D9A4C4E-4EA625EC-6CDB1191-B9DC0DB5",
+                  "FromVertexID": "1DC67D27-47898066-AE9DECAE-67C6F58D",
+                  "ToNodeID": "46C00403-45BA1C86-9C1BADA5-66F5B516",
+                  "ToVertexID": "393EB643-4ADB3600-0EC5A28C-60DEE44E"
+                },
+                {
+                  "FromNodeID": "46C00403-45BA1C86-9C1BADA5-66F5B516",
+                  "FromVertexID": "7BDD02FF-404759AB-206B2F92-2E9F59B4",
+                  "ToNodeID": "F129E7D1-4E3122B8-9E690B9C-A3944494",
+                  "ToVertexID": "F6BEDABE-B69495CD-A63257DF-B105522F"
+                },
+                {
+                  "FromNodeID": "493FA98C-4FCD1780-733F43B3-A5BFD0FC",
+                  "FromVertexID": "A88F113B-960A0731-A09EE5CF-9885B330",
+                  "ToNodeID": "696BF760-43532E7F-90C72288-30EFDA3A",
+                  "ToVertexID": "18CAF21C-4B1F9980-1B3DF08B-AA037FEA"
+                },
+                {
+                  "FromNodeID": "39F1C9C0-46E81AC7-28537497-FB839410",
+                  "FromVertexID": "F47DB03C-447F0C41-387178A8-8A0D164E",
+                  "ToNodeID": "B008C698-4C20C7C9-CD375DB7-CD8F265A",
+                  "ToVertexID": "05ACEB5F-4E04B199-2885DA11-E9BC86E4"
+                },
+                {
+                  "FromNodeID": "36827BB8-4EED9151-8926B0A6-9F0E34E4",
+                  "FromVertexID": "B692423A-45BD1978-6DE3F194-F0F8DD2F",
+                  "ToNodeID": "39F1C9C0-46E81AC7-28537497-FB839410",
+                  "ToVertexID": "50914C6E-47088D23-AB34DE83-80AFDD89"
+                },
+                {
+                  "FromNodeID": "374423BB-4A16C4A3-DF37FA86-8AAB3C3D",
+                  "FromVertexID": "7A0BBD14-A89598B2-B11B4ACC-1AE0FA9F",
+                  "ToNodeID": "B008C698-4C20C7C9-CD375DB7-CD8F265A",
+                  "ToVertexID": "40395A69-9C48D41A-A47B0444-AA3322F5"
+                },
+                {
+                  "FromNodeID": "46C00403-45BA1C86-9C1BADA5-66F5B516",
+                  "FromVertexID": "FE6BBC3A-42B72F3F-4FBE6BBC-82121BDA",
+                  "ToNodeID": "374423BB-4A16C4A3-DF37FA86-8AAB3C3D",
+                  "ToVertexID": "D63DCB94-DBA2EF9F-78B6B364-B737EEF0"
+                },
+                {
+                  "FromNodeID": "AE5B7DF3-42DC12BD-58C123BC-8E13D128",
+                  "FromVertexID": "63B5453B-42B6A04C-88FF39BF-98798925",
+                  "ToNodeID": "46C00403-45BA1C86-9C1BADA5-66F5B516",
+                  "ToVertexID": "76192A24-47BC13FB-D3113AB7-DEA4FE85"
+                }
+              ],
+              "Variables": [],
+              "PageID": "00000000-00000000-00000000-00000000"
+            }
+          ],
+          "ID": "B638B42F-42FE833D-9BE48082-D62934DA",
+          "Metadata": {
+            "ClassName": {
+              "Name": "DEFF6D54461C2B52AA367A9D33C52261"
+            }
+          },
+          "Interface": {
+            "Inputs": [
+              {
+                "Defaults": [
+                  {
+                    "Literal": {
+                      "Type": "EMetasoundFrontendLiteralType::Boolean",
+                      "AsNumDefault": 0,
+                      "AsBoolean": [
+                        false
+                      ],
+                      "AsInteger": [],
+                      "AsFloat": [],
+                      "AsString": [],
+                      "AsUObject": []
+                    },
+                    "PageID": "00000000-00000000-00000000-00000000"
+                  }
+                ],
+                "NodeID": "AE5B7DF3-42DC12BD-58C123BC-8E13D128",
+                "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                "Name": "UE.Source.OnPlay",
+                "TypeName": "Trigger",
+                "VertexID": "40098B8F-407A6437-C493AE83-FF9220D5"
+              },
+              {
+                "Defaults": [
+                  {
+                    "Literal": {
+                      "Type": "EMetasoundFrontendLiteralType::Float",
+                      "AsNumDefault": 0,
+                      "AsBoolean": [],
+                      "AsInteger": [],
+                      "AsFloat": [
+                        10.0
+                      ],
+                      "AsString": [],
+                      "AsUObject": []
+                    },
+                    "PageID": "00000000-00000000-00000000-00000000"
+                  }
+                ],
+                "NodeID": "3D9A4C4E-4EA625EC-6CDB1191-B9DC0DB5",
+                "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                "Name": "Thunder Value",
+                "TypeName": "Float",
+                "VertexID": "1B0FF6C8-4C48F715-4D290798-C272C47D"
+              }
+            ],
+            "Outputs": [
+              {
+                "NodeID": "C19DBB91-43826B6E-0AD503A1-79D97A6D",
+                "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                "Name": "UE.OutputFormat.Stereo.Audio:1",
+                "TypeName": "Audio",
+                "VertexID": "C4281445-43CAF32A-6211CDB6-1D236142"
+              },
+              {
+                "NodeID": "696BF760-43532E7F-90C72288-30EFDA3A",
+                "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                "Name": "UE.OutputFormat.Stereo.Audio:0",
+                "TypeName": "Audio",
+                "VertexID": "20FBA1FA-4957D611-3FFCF5A4-3B0AA137"
+              }
+            ]
+          }
+        },
+        "Dependencies": [
+          {
+            "ID": "0699BD2C-41BD4C6E-51020687-621E07FD",
+            "Metadata": {
+              "ClassName": {
+                "Namespace": "UE",
+                "Name": "Wave Player",
+                "Variant": "Stereo"
+              },
+              "Version": {
+                "Major": 1,
+                "Minor": 0
+              },
+              "Type": "EMetasoundFrontendClassType::External",
+              "bIsDeprecated": false
+            },
+            "Interface": {
+              "Inputs": [
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Play",
+                  "TypeName": "Trigger",
+                  "VertexID": "E488C091-52673EB8-F2DC89B9-60A6AF04"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Stop",
+                  "TypeName": "Trigger",
+                  "VertexID": "D63DCB94-DBA2EF9F-78B6B364-B737EEF0"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Wave Asset",
+                  "TypeName": "WaveAsset",
+                  "VertexID": "F2D4E208-F33E4270-D01FAC59-B1342A2A"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          0.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Start Time",
+                  "TypeName": "Time",
+                  "VertexID": "AAC8C513-5BF05FEE-87E90A30-B04A0F35"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          0.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Pitch Shift",
+                  "TypeName": "Float",
+                  "VertexID": "CA25E5E6-F5C486B9-03FE65A0-C8372BF6"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Boolean",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [
+                          false
+                        ],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Loop",
+                  "TypeName": "Bool",
+                  "VertexID": "E2FBD8A5-0A918367-B54A096B-072437DE"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          0.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Loop Start",
+                  "TypeName": "Time",
+                  "VertexID": "DEC6FAEF-FFDAA5F7-6AD20C9B-69D8A1FE"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          -1.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Loop Duration",
+                  "TypeName": "Time",
+                  "VertexID": "25E5E4D8-1AC6E9A4-83ADD925-FCC1BA55"
+                }
+              ],
+              "Outputs": [
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "On Play",
+                  "TypeName": "Trigger",
+                  "VertexID": "ECF8266E-AABE8ADE-C208EAD9-AE6F795C"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "On Finished",
+                  "TypeName": "Trigger",
+                  "VertexID": "8D9B132C-6AF67AD9-1C16DE10-2B0D8769"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "On Nearly Finished",
+                  "TypeName": "Trigger",
+                  "VertexID": "08544E4A-03DF9182-73E5B49C-24338937"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "On Looped",
+                  "TypeName": "Trigger",
+                  "VertexID": "E5011FA2-CC5C16CE-838E3F26-2C463260"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "On Cue Point",
+                  "TypeName": "Trigger",
+                  "VertexID": "2F042104-3DB78A1A-EB094517-2D35602E"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Cue Point ID",
+                  "TypeName": "Int32",
+                  "VertexID": "6B7904A0-39F81696-6DE03079-CB019521"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Cue Point Label",
+                  "TypeName": "String",
+                  "VertexID": "9B47D829-46E980B8-3CEA5533-2B4D9ECB"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Loop Percent",
+                  "TypeName": "Float",
+                  "VertexID": "F985D4B3-EFF3F261-2EBDA86C-F8FF3736"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Playback Location",
+                  "TypeName": "Float",
+                  "VertexID": "DF978A8F-E1896344-88DF88D0-EA7F695B"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Playback Time",
+                  "TypeName": "Time",
+                  "VertexID": "7262643E-91ADAACC-5FD4365C-81EC7E05"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Out Left",
+                  "TypeName": "Audio",
+                  "VertexID": "1A904EBD-19B1D5B4-DAC9AE8B-FBA82027"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Out Right",
+                  "TypeName": "Audio",
+                  "VertexID": "7A0BBD14-A89598B2-B11B4ACC-1AE0FA9F"
+                }
+              ],
+              "Environment": []
+            }
+          },
+          {
+            "ID": "2B9451A1-422742F6-2D2E0AB9-3D934841",
+            "Metadata": {
+              "ClassName": {
+                "Namespace": "UE",
+                "Name": "Power",
+                "Variant": "Float"
+              },
+              "Version": {
+                "Major": 1,
+                "Minor": 1
+              },
+              "Type": "EMetasoundFrontendClassType::External",
+              "bIsDeprecated": false
+            },
+            "Interface": {
+              "Inputs": [
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "PrimaryOperand",
+                  "TypeName": "Float",
+                  "VertexID": "50914C6E-47088D23-AB34DE83-80AFDD89"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "AdditionalOperands",
+                  "TypeName": "Float",
+                  "VertexID": "5D4C2B11-42EDC7F9-2F3E6D8C-87D30AFE"
+                }
+              ],
+              "Outputs": [
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Out",
+                  "TypeName": "Float",
+                  "VertexID": "F47DB03C-447F0C41-387178A8-8A0D164E"
+                }
+              ],
+              "Environment": []
+            }
+          },
+          {
+            "ID": "509B89A1-483771E6-1A6FC3AC-BCEBCA50",
+            "Metadata": {
+              "ClassName": {
+                "Namespace": "Input",
+                "Name": "Float",
+                "Variant": "None"
+              },
+              "Version": {
+                "Major": 1,
+                "Minor": 0
+              },
+              "Type": "EMetasoundFrontendClassType::Input",
+              "bIsDeprecated": false
+            },
+            "Interface": {
+              "Inputs": [
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "None",
+                  "TypeName": "Float",
+                  "VertexID": "8FD195D2-469FE40F-D23737A7-F4563681"
+                }
+              ],
+              "Outputs": [
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "None",
+                  "TypeName": "Float",
+                  "VertexID": "1DC67D27-47898066-AE9DECAE-67C6F58D"
+                }
+              ],
+              "Environment": []
+            }
+          },
+          {
+            "ID": "64707C43-45612666-D0553DBE-6B687232",
+            "Metadata": {
+              "ClassName": {
+                "Namespace": "Output",
+                "Name": "Audio",
+                "Variant": "None"
+              },
+              "Version": {
+                "Major": 1,
+                "Minor": 0
+              },
+              "Type": "EMetasoundFrontendClassType::Output",
+              "bIsDeprecated": false
+            },
+            "Interface": {
+              "Inputs": [
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "None",
+                  "TypeName": "Audio",
+                  "VertexID": "18CAF21C-4B1F9980-1B3DF08B-AA037FEA"
+                }
+              ],
+              "Outputs": [
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "None",
+                  "TypeName": "Audio",
+                  "VertexID": "4A59267F-4B28C008-92FAD0A6-4E73CAFE"
+                }
+              ],
+              "Environment": []
+            }
+          },
+          {
+            "ID": "79347EC4-4E0C2721-50B35397-8446B8D5",
+            "Metadata": {
+              "ClassName": {
+                "Namespace": "UE",
+                "Name": "Divide",
+                "Variant": "Float"
+              },
+              "Version": {
+                "Major": 1,
+                "Minor": 1
+              },
+              "Type": "EMetasoundFrontendClassType::External",
+              "bIsDeprecated": false
+            },
+            "Interface": {
+              "Inputs": [
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          1.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "PrimaryOperand",
+                  "TypeName": "Float",
+                  "VertexID": "07D9355B-49DE70F8-74678D9A-A5EF6FF8"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          1.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "AdditionalOperands",
+                  "TypeName": "Float",
+                  "VertexID": "F688B2BC-4F1166A4-5186AC86-E1C37EFC"
+                }
+              ],
+              "Outputs": [
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Out",
+                  "TypeName": "Float",
+                  "VertexID": "B692423A-45BD1978-6DE3F194-F0F8DD2F"
+                }
+              ],
+              "Environment": []
+            }
+          },
+          {
+            "ID": "B059AD94-4D0805C2-DB835EBD-CDA6846D",
+            "Metadata": {
+              "ClassName": {
+                "Namespace": "None",
+                "Name": "638ED0DD4AEEE3909BBECFB159E47C11",
+                "Variant": "None"
+              },
+              "Version": {
+                "Major": 1,
+                "Minor": 0
+              },
+              "Type": "EMetasoundFrontendClassType::External",
+              "bIsDeprecated": false
+            },
+            "Interface": {
+              "Inputs": [
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          0.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "67AB8421-411A5FDC-EA607791-E35A4248",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Volume",
+                  "TypeName": "Float",
+                  "VertexID": "393EB643-4ADB3600-0EC5A28C-60DEE44E"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Boolean",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [
+                          false
+                        ],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "C138D70F-403F849F-819E8EB0-422C56FB",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Play",
+                  "TypeName": "Trigger",
+                  "VertexID": "76192A24-47BC13FB-D3113AB7-DEA4FE85"
+                }
+              ],
+              "Outputs": [
+                {
+                  "NodeID": "82E96520-4BADF75C-790CAB9E-61EA45F4",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Play",
+                  "TypeName": "Trigger",
+                  "VertexID": "7BDD02FF-404759AB-206B2F92-2E9F59B4"
+                },
+                {
+                  "NodeID": "72C2FE83-4B840B6C-BF9AE4B2-57B17840",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Stop",
+                  "TypeName": "Trigger",
+                  "VertexID": "FE6BBC3A-42B72F3F-4FBE6BBC-82121BDA"
+                }
+              ],
+              "Environment": []
+            }
+          },
+          {
+            "ID": "BB5A44C6-4A550022-EF73E6AB-CC17BFCE",
+            "Metadata": {
+              "ClassName": {
+                "Namespace": "UE",
+                "Name": "RandomTime",
+                "Variant": "None"
+              },
+              "Version": {
+                "Major": 1,
+                "Minor": 1
+              },
+              "Type": "EMetasoundFrontendClassType::External",
+              "bIsDeprecated": false
+            },
+            "Interface": {
+              "Inputs": [
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Next",
+                  "TypeName": "Trigger",
+                  "VertexID": "F6BEDABE-B69495CD-A63257DF-B105522F"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Reset",
+                  "TypeName": "Trigger",
+                  "VertexID": "37840F5D-693567D0-90727E1F-A82FD707"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Integer",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [
+                          -1
+                        ],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Seed",
+                  "TypeName": "Int32",
+                  "VertexID": "B2B2C084-CC8B3A9B-F4839890-990B3B63"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          0.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Min",
+                  "TypeName": "Time",
+                  "VertexID": "D5777239-F9FF1166-2DFBF55C-AFF36FC9"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          1.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Max",
+                  "TypeName": "Time",
+                  "VertexID": "BC6803C3-A690AD83-3BB62C2E-64B0BEBF"
+                }
+              ],
+              "Outputs": [
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "On Next",
+                  "TypeName": "Trigger",
+                  "VertexID": "F8B1C2F1-F29BC98D-E70114D4-1D747FE7"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "On Reset",
+                  "TypeName": "Trigger",
+                  "VertexID": "737539EF-06D2594F-F9A3F5A6-0C6BB54D"
+                },
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Value",
+                  "TypeName": "Time",
+                  "VertexID": "EC5B0E8F-E94707CA-A4E160D2-96DBDA55"
+                }
+              ],
+              "Environment": []
+            }
+          },
+          {
+            "ID": "BC40CCEA-4AB20146-ED027B85-E7457652",
+            "Metadata": {
+              "ClassName": {
+                "Namespace": "Input",
+                "Name": "Trigger",
+                "Variant": "None"
+              },
+              "Version": {
+                "Major": 1,
+                "Minor": 0
+              },
+              "Type": "EMetasoundFrontendClassType::Input",
+              "bIsDeprecated": false
+            },
+            "Interface": {
+              "Inputs": [
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "None",
+                  "TypeName": "Trigger",
+                  "VertexID": "6D4C300C-4E3C5936-FF68FDB0-C5136FF8"
+                }
+              ],
+              "Outputs": [
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "None",
+                  "TypeName": "Trigger",
+                  "VertexID": "63B5453B-42B6A04C-88FF39BF-98798925"
+                }
+              ],
+              "Environment": []
+            }
+          },
+          {
+            "ID": "F7E1C94A-4D19D159-64735D96-E4D02920",
+            "Metadata": {
+              "ClassName": {
+                "Namespace": "UE",
+                "Name": "Multiply",
+                "Variant": "Audio by Float"
+              },
+              "Version": {
+                "Major": 1,
+                "Minor": 1
+              },
+              "Type": "EMetasoundFrontendClassType::External",
+              "bIsDeprecated": false
+            },
+            "Interface": {
+              "Inputs": [
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::None",
+                        "AsNumDefault": 1,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "PrimaryOperand",
+                  "TypeName": "Audio",
+                  "VertexID": "40395A69-9C48D41A-A47B0444-AA3322F5"
+                },
+                {
+                  "Defaults": [
+                    {
+                      "Literal": {
+                        "Type": "EMetasoundFrontendLiteralType::Float",
+                        "AsNumDefault": 0,
+                        "AsBoolean": [],
+                        "AsInteger": [],
+                        "AsFloat": [
+                          1.0
+                        ],
+                        "AsString": [],
+                        "AsUObject": []
+                      },
+                      "PageID": "00000000-00000000-00000000-00000000"
+                    }
+                  ],
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "AdditionalOperands",
+                  "TypeName": "Float",
+                  "VertexID": "05ACEB5F-4E04B199-2885DA11-E9BC86E4"
+                }
+              ],
+              "Outputs": [
+                {
+                  "NodeID": "00000000-00000000-00000000-00000000",
+                  "AccessType": "EMetasoundFrontendVertexAccessType::Reference",
+                  "Name": "Out",
+                  "TypeName": "Audio",
+                  "VertexID": "A88F113B-960A0731-A09EE5CF-9885B330"
+                }
+              ],
+              "Environment": []
+            }
+          }
+        ]
+      },
+      "ReferencedAssetClassKeys": [
+        "External_None.638ED0DD4AEEE3909BBECFB159E47C11_1.0"
+      ],
+      "ReferencedAssetClassObjects": [
+        {
+          "ObjectName": "MetaSoundPatch'UDS_LoopingSoundControl'",
+          "ObjectPath": "/Game/UltraDynamicSky/Sound/MetaSounds/UDS_LoopingSoundControl.0"
+        }
+      ],
+      "OutputFormat": "EMetaSoundOutputAudioFormat::Stereo",
+      "bLooping": true,
+      "NumChannels": 2,
+      "SampleRate": 48000,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'UDS_Weather'",
+        "ObjectPath": "/Game/UltraDynamicSky/Sound/UDS_Weather.0"
+      },
+      "Duration": 10000.0
+    },
+    "CompressedFormatData": null,
+    "RawData": null,
+    "CompressedDataGuid": "00000000-00000000-00000000-00000000",
+    "RunningPlatformData": null,
+    "Settings": {
+      "UniqueId": "00000000-00000000-00000000-00000000",
+      "Name": "None",
+      "SampleRate": {
+        "bCooked": true,
+        "Default": 0,
+        "PerPlatform": null,
+        "Value": 0
+      },
+      "BlockRate": {
+        "bCooked": true,
+        "Default": 0.0,
+        "PerPlatform": null,
+        "Value": 0.0
+      }
+    }
+  }
+]

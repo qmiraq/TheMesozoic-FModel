@@ -1,0 +1,505 @@
+[
+  {
+    "Type": "BillboardComponent",
+    "Name": "Billboard_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted | RF_InheritableComponentTemplate",
+    "Class": "UScriptClass'BillboardComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    },
+    "Template": {
+      "ObjectName": "BillboardComponent'UDS_Volume_Actor_C:Billboard_GEN_VARIABLE'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.0"
+    },
+    "Properties": {
+      "Sprite": {
+        "ObjectName": "Texture2D'OcclusionVolume'",
+        "ObjectPath": "/Game/UltraDynamicSky/Textures/Icons/OcclusionVolume.0"
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "UDS_Occlusion_Volume_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Volume_Actor_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.1"
+    },
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'UDS_Occlusion_Volume_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.12"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'UDS_Occlusion_Volume_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.8"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:ExecuteUbergraph_UDS_Occlusion_Volume'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.3"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:📘 Player Occlusion'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.7"
+      },
+      {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:Query Occlusion Multiplier'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.4"
+      },
+      {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:Configure Weather Particle Blocking'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.2"
+      },
+      {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:UserConstructionScript'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.6"
+      },
+      {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.5"
+      },
+      {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:ExecuteUbergraph_UDS_Occlusion_Volume'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "UDS_Utility_Opener",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Affects Sound Occlusion / Interior Adjusments",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Occlusion Multiplier",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Block Weather Particles",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | ExposeOnSpawn",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_UDS_Occlusion_Volume": {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:ExecuteUbergraph_UDS_Occlusion_Volume'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.5"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:UserConstructionScript'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.6"
+      },
+      "Configure Weather Particle Blocking": {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:Configure Weather Particle Blocking'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.2"
+      },
+      "Query Occlusion Multiplier": {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:Query Occlusion Multiplier'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.4"
+      },
+      "📘 Player Occlusion": {
+        "ObjectName": "Function'UDS_Occlusion_Volume_C:📘 Player Occlusion'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.7"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UDS_Occlusion_Volume_C'Default__UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.13"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Configure Weather Particle Blocking",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetScalarParameterValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Round_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetValidValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Round_A_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_UDS_Occlusion_Volume",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "Query Occlusion Multiplier",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Multiplier",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Query_Blend_Radius_Multiplier",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Lerp_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    },
+    "Super": {
+      "ObjectName": "Function'UDS_Volume_Actor_C:ReceiveBeginPlay'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.8"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    },
+    "Super": {
+      "ObjectName": "Function'UDS_Volume_Actor_C:UserConstructionScript'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.9"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "📘 Player Occlusion",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsUDS_Utility_Opener_Interface",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'UDS_Utility_Opener_Interface_C'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Utility_Opener_Interface.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Private | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    },
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'BillboardComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "BillboardComponent'UDS_Occlusion_Volume_C:Billboard_GEN_VARIABLE'",
+            "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.0"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'UDS_Volume_Actor_C'",
+              "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.1"
+            },
+            "SCSVariableName": "Billboard",
+            "AssociatedGuid": "CC921D1E-48677665-75C40190-E2810A12"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [
+              {
+                "PropertyName": "Sprite",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BillboardComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "bIsScreenSizeScaled",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BillboardComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              },
+              {
+                "PropertyName": "ScreenSize",
+                "ArrayIndex": 0,
+                "PropertyScope": {
+                  "ObjectName": "Class'BillboardComponent'",
+                  "ObjectPath": "/Script/Engine"
+                }
+              }
+            ],
+            "bHasValidCookedData": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'UDS_Occlusion_Volume_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.12"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'UDS_Occlusion_Volume_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.9"
+      },
+      "VariableGuid": "1C3C00D9-4C76CDFB-4346ABA4-2C27B865",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'UDS_Occlusion_Volume_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.12"
+    },
+    "Properties": {
+      "ComponentClass": null,
+      "ComponentTemplate": null,
+      "VariableGuid": "89E77155-4080F535-947E47B9-8FDF34D8",
+      "InternalVariableName": "UDS_Utility_Opener"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'UDS_Occlusion_Volume_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.1"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'UDS_Occlusion_Volume_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.11"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'UDS_Occlusion_Volume_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.11"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'UDS_Occlusion_Volume_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.10"
+      }
+    }
+  },
+  {
+    "Type": "UDS_Occlusion_Volume_C",
+    "Name": "Default__UDS_Occlusion_Volume_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.UDS_Occlusion_Volume_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume",
+    "Template": {
+      "ObjectName": "UDS_Volume_Actor_C'Default__UDS_Volume_Actor_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.15"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "Affects Sound Occlusion / Interior Adjusments": true
+    }
+  }
+]

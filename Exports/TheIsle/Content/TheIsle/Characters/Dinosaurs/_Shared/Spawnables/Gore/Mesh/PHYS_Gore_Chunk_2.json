@@ -1,0 +1,300 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "PHYS_Gore_Chunk_2",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Package": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'PHYS_Gore_Chunk_2:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'PHYS_Gore_Chunk_2:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'PHYS_Gore_Chunk_2:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'PHYS_Gore_Chunk_2:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'PHYS_Gore_Chunk_2:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.2"
+        }
+      ],
+      "SolverSettings": {
+        "CullDistance": 1.0,
+        "bUseLinearJointSolver": false,
+        "bUseManifolds": false
+      },
+      "ThumbnailInfo": null
+    },
+    "CollisionDisableTable": [
+      {
+        "Key": {
+          "Indices": [
+            0,
+            1
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            0,
+            2
+          ]
+        },
+        "Value": false
+      },
+      {
+        "Key": {
+          "Indices": [
+            1,
+            2
+          ]
+        },
+        "Value": false
+      }
+    ]
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_Gore_Chunk_2'",
+      "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Meat02",
+        "ConstraintBone1": "Meat02",
+        "ConstraintBone2": "Meat01",
+        "Pos2": {
+          "X": 130.46185,
+          "Y": 1.8189894E-12,
+          "Z": 3.637979E-12
+        },
+        "PriAxis2": {
+          "X": 1.0,
+          "Y": -1.1920929E-07,
+          "Z": 0.0
+        },
+        "SecAxis2": {
+          "X": 1.1920929E-07,
+          "Y": 1.0,
+          "Z": 1.463679E-23
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Stiffness": 25.0,
+              "Damping": 2.0
+            },
+            "SwingDrive": {
+              "Stiffness": 25.0,
+              "Damping": 2.0
+            },
+            "SlerpDrive": {
+              "Stiffness": 25.0,
+              "Damping": 2.0,
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_Gore_Chunk_2'",
+      "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Meat03",
+        "ConstraintBone1": "Meat03",
+        "ConstraintBone2": "Meat02",
+        "Pos2": {
+          "X": 118.67091,
+          "Y": 1.41466735E-05,
+          "Z": -5.2750693E-11
+        },
+        "PriAxis2": {
+          "X": 1.0,
+          "Y": 1.323489E-23,
+          "Z": -3.9790393E-13
+        },
+        "SecAxis2": {
+          "X": -1.323489E-23,
+          "Y": 1.0,
+          "Z": 1.4018879E-24
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Stiffness": 25.0,
+              "Damping": 2.0
+            },
+            "SwingDrive": {
+              "Stiffness": 25.0,
+              "Damping": 2.0
+            },
+            "SlerpDrive": {
+              "Stiffness": 25.0,
+              "Damping": 2.0,
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_Gore_Chunk_2'",
+      "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 58.118042,
+              "Y": -2.1592445,
+              "Z": 0.74077225
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -94.836006,
+              "Roll": -85.77785
+            },
+            "Radius": 42.456207,
+            "Length": 64.91896,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Meat01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "A51457D646F5275055AE3C8B79A02F01"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_Gore_Chunk_2'",
+      "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 56.421745,
+              "Y": -3.6741886,
+              "Z": 0.14922333
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -88.70832,
+              "Roll": -89.10339
+            },
+            "Radius": 38.217186,
+            "Length": 60.90598,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Meat02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "692F18584480153030C381893BB5077C"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'PHYS_Gore_Chunk_2'",
+      "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/_Shared/Spawnables/Gore/Mesh/PHYS_Gore_Chunk_2.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 53.72149,
+              "Y": -3.6073883,
+              "Z": -1.1200733
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 86.19892,
+              "Roll": -79.28391
+            },
+            "Radius": 43.696316,
+            "Length": 59.04838,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Meat03",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "F8087AE44E0212D8B424C08EE5436BCC"
+  }
+]

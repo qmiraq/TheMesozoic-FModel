@@ -1,0 +1,1635 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BaseFenceDouble_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'BP_BaseFenceDouble_C:ComponentDelegateBinding_0'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.3"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BaseFenceDouble_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.15"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_BaseFenceDouble_C:ExecuteUbergraph_BP_BaseFenceDouble'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIPhysicsDoor'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_BaseFenceDouble_C:BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.4"
+      },
+      {
+        "ObjectName": "Function'BP_BaseFenceDouble_C:BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.5"
+      },
+      {
+        "ObjectName": "Function'BP_BaseFenceDouble_C:ExecuteUbergraph_BP_BaseFenceDouble'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.6"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PhysicsConstraint2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PhysicsConstraintComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DoorMesh2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FrameMesh2",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DoorCreakSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'AudioComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_BaseFenceDouble": {
+        "ObjectName": "Function'BP_BaseFenceDouble_C:ExecuteUbergraph_BP_BaseFenceDouble'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.6"
+      },
+      "BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_BaseFenceDouble_C:BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.5"
+      },
+      "BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature": {
+        "ObjectName": "Function'BP_BaseFenceDouble_C:BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.4"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BaseFenceDouble_C'Default__BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxCollider",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BoxComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFenceDouble_C'Default__BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.2"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 800.0,
+        "Y": 1000.0,
+        "Z": 250.0
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFenceDouble_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.10"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -300.0,
+        "Z": 235.854
+      }
+    }
+  },
+  {
+    "Type": "BP_BaseFenceDouble_C",
+    "Name": "Default__BP_BaseFenceDouble_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.BP_BaseFenceDouble_C'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFenceDouble_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.10"
+      },
+      "FrameMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_BaseFenceDouble_C:FrameMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.20"
+      },
+      "DoorMesh": {
+        "ObjectName": "StaticMeshComponent'Default__BP_BaseFenceDouble_C:DoorMesh'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.19"
+      },
+      "PhysicsConstraint": {
+        "ObjectName": "PhysicsConstraintComponent'Default__BP_BaseFenceDouble_C:PhysicsConstraint'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.8"
+      },
+      "BoxCollider": {
+        "ObjectName": "BoxComponent'Default__BP_BaseFenceDouble_C:BoxCollider'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.1"
+      },
+      "SphereCollider": {
+        "ObjectName": "SphereComponent'Default__BP_BaseFenceDouble_C:SphereCollider'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.16"
+      },
+      "MetalCreakSound": {
+        "ObjectName": "SoundCue'CUE_Metal_Creak_Large_04'",
+        "ObjectPath": "/Game/TheIsle/Sound/Ambience/Creaks/WAVs/CUE_Metal_Creak_Large_04.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFenceDouble_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.10"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_0",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.0"
+    },
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "BoxCollider",
+          "DelegatePropertyName": "OnComponentEndOverlap",
+          "FunctionNameToBind": "BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "BoxCollider",
+          "DelegatePropertyName": "OnComponentBeginOverlap",
+          "FunctionNameToBind": "BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bFromSweep",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "SweepResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm | OutParm | ReferenceParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_HasOutParms | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BP_BaseFenceDouble_BoxCollider_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_BaseFenceDouble",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ComponentBoundEvent_bFromSweep",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_ComponentBoundEvent_SweepResult",
+        "Flags": "RF_Public",
+        "ElementSize": 264,
+        "PropertyFlags": "ConstParm | ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OverlappedComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherActor",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherComp",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'PrimitiveComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_ComponentBoundEvent_OtherBodyIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "PhysicsConstraint2_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.0"
+    },
+    "Properties": {
+      "ComponentName1": {
+        "ComponentName": "FrameMesh2"
+      },
+      "ComponentName2": {
+        "ComponentName": "DoorMesh2"
+      },
+      "ConstraintInstance": {
+        "Pos1": {
+          "X": 0.00065762876,
+          "Y": -885.0001,
+          "Z": 236.21542
+        },
+        "Pos2": {
+          "X": 0.00065762876,
+          "Y": -885.0001,
+          "Z": 236.21542
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 110.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Locked"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Damping": 2.0
+            },
+            "SwingDrive": {
+              "Damping": 2.0,
+              "bEnableVelocityDrive": true
+            },
+            "SlerpDrive": {
+              "Damping": 2.0
+            },
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.00065762876,
+        "Y": -885.0001,
+        "Z": 236.21542
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "PhysicsConstraint",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFenceDouble_C'Default__BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.2"
+    },
+    "Properties": {
+      "ComponentName1": {
+        "ComponentName": "FrameMesh"
+      },
+      "ComponentName2": {
+        "ComponentName": "DoorMesh"
+      },
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 110.0
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Damping": 2.0
+            },
+            "SwingDrive": {
+              "Damping": 2.0,
+              "bEnableVelocityDrive": true
+            },
+            "SlerpDrive": {
+              "Damping": 2.0
+            }
+          }
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFenceDouble_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.10"
+      },
+      "RelativeLocation": {
+        "X": -0.000122,
+        "Y": 284.99988,
+        "Z": 236.21542
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -179.99997,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.0"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFenceDouble_C'Default__BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BaseFenceDouble_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.15"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BaseFenceDouble_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.9"
+      },
+      "VariableGuid": "BECE21A7-4219ECB9-4CEB5DBA-F628DC3B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BaseFenceDouble_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.15"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_BaseFenceDouble_C:FrameMesh2_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.18"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bGenerateOverlapEvents",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeRotation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Yaw",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Rotator'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "0C95E4E2-4DD59209-43BFAD9E-DB1D45E3",
+      "InternalVariableName": "FrameMesh2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BaseFenceDouble_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.15"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_BaseFenceDouble_C:DoorMesh2_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.17"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bGenerateOverlapEvents",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "BodyInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ObjectType",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionProfileName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CollisionResponses",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 1,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 2,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 3,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ResponseArray",
+            "ArrayIndex": 4,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Channel",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Response",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ResponseChannel'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "None",
+            "ArrayIndex": 5,
+            "PropertyScope": {
+              "ObjectName": "Class'CollisionResponse'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "LinearDamping",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "AngularDamping",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bSimulatePhysics",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'BodyInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "RelativeScale3D",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "bReplicates",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "7362224D-436B981A-08F43D9A-2EA8EC58",
+      "InternalVariableName": "DoorMesh2"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_BaseFenceDouble_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.15"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PhysicsConstraintComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PhysicsConstraintComponent'BP_BaseFenceDouble_C:PhysicsConstraint2_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.7"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "ComponentName1",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PhysicsConstraintComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ComponentName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstrainComponentPropName'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ComponentName2",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PhysicsConstraintComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ComponentName",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstrainComponentPropName'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ConstraintInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PhysicsConstraintComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Pos1",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Pos2",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "ProfileInstance",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintInstance'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "ConeLimit",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintProfileProperties'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Swing1LimitDegrees",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConeConstraint'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Swing1Motion",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConeConstraint'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Swing2Motion",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConeConstraint'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "TwistLimit",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintProfileProperties'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "TwistMotion",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'TwistConstraint'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "AngularDrive",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintProfileProperties'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "TwistDrive",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AngularDriveConstraint'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Damping",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintDrive'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "SwingDrive",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AngularDriveConstraint'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Damping",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintDrive'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "bEnableVelocityDrive",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintDrive'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "SlerpDrive",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AngularDriveConstraint'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Damping",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'ConstraintDrive'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "AngularDriveMode",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'AngularDriveConstraint'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PhysicsConstraintComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Y",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B493F41E-44CB18B3-3B5CF18A-1F235E20",
+      "InternalVariableName": "PhysicsConstraint2"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BaseFenceDouble_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BaseFenceDouble_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BaseFenceDouble_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.14"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BaseFenceDouble_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BaseFenceDouble_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_BaseFenceDouble_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.14"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BaseFenceDouble_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.11"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereCollider",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SphereComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFenceDouble_C'Default__BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.2"
+    },
+    "Properties": {
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFenceDouble_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.10"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DoorMesh2_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Door_Framing_R_R'",
+        "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Fences/Meshes/SM_Door_Framing_R_R.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_PhysicsBody",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel2",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel3",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel4",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel5",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "EngineTraceChannel6",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "LinearDamping": 0.1,
+        "AngularDamping": 1.0,
+        "bSimulatePhysics": true
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -304.0,
+        "Z": 5.0
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 2.05,
+        "Z": 1.0
+      },
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FrameMesh2_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Frame_Ranger'",
+        "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Fences/Meshes/SM_Frame_Ranger.2"
+      },
+      "bGenerateOverlapEvents": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.00014305118,
+        "Y": -600.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DoorMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFenceDouble_C'Default__BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.2"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Door_Framing_R_R'",
+        "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Fences/Meshes/SM_Door_Framing_R_R.2"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFenceDouble_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.10"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 284.99997,
+        "Z": 5.0
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 2.05,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "FrameMesh",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BP_BaseFenceDouble_C'Default__BP_BaseFenceDouble_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.2"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Frame_Ranger'",
+        "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Fences/Meshes/SM_Frame_Ranger.2"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BaseFenceDouble_C:DefaultSceneRoot'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseFenceDouble.10"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]

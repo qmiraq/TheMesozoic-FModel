@@ -1,0 +1,187 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_InsideBox'",
+      "ObjectPath": "/Game/AquaticSurface/Surfaces/SM_InsideBox.2"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "9A5BAB154B9E7E64CDCCE193000D0B9D",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 794,
+        "SizeOnDisk": 794,
+        "OffsetInFile": "0x38E"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_InsideBox'",
+      "ObjectPath": "/Game/AquaticSurface/Surfaces/SM_InsideBox.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 70,
+        "SizeOnDisk": 70,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_InsideBox",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/AquaticSurface/Surfaces/SM_InsideBox",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material'WorldGridMaterial'",
+            "ObjectPath": "/Engine/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 100.0,
+            "LocalUVDensities[1]": 327.48724,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 327.48724,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 50.0
+        },
+        "SphereRadius": 86.6025390625
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_InsideBox:BodySetup_0'",
+      "ObjectPath": "/Game/AquaticSurface/Surfaces/SM_InsideBox.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_InsideBox:NavCollision_2'",
+      "ObjectPath": "/Game/AquaticSurface/Surfaces/SM_InsideBox.1"
+    },
+    "LightingGuid": "D8746AA6-4C1AAB15-1FE7D686-D5E00C30",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 12,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 23,
+              "bEnableCollision": true,
+              "bCastShadow": false,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 50.0
+        },
+        "SphereRadius": 86.60254
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_Underwater_Bite_Large",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Sound/Ambience/Water/Cues/CU_Underwater_Bite_Large",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 0.03,
+      "PitchMultiplier": 0.8,
+      "AttenuationOverrides": {
+        "bEnableReverbSend": false,
+        "NonSpatializedRadiusStart": 1024.0,
+        "LPFRadiusMin": 0.0,
+        "LPFRadiusMax": 1200.0,
+        "LPFFrequencyAtMax": 1200.0,
+        "OcclusionLowPassFilterFrequency": 512.0,
+        "OcclusionVolumeAttenuation": 0.0,
+        "AttenuationShapeExtents": {
+          "X": 15.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "FalloffDistance": 3000.0
+      },
+      "bOverrideAttenuation": true,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'UnderwaterFoley'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/UnderwaterFoley.0"
+      },
+      "ConcurrencySet": [
+        {
+          "ObjectName": "SoundConcurrency'LargeFoley_SC'",
+          "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Concurrency/LargeFoley_SC.0"
+        }
+      ],
+      "ConcurrencyOverrides": {
+        "MaxCount": 5,
+        "ResolutionRule": "EMaxConcurrentResolutionRule::StopQuietest",
+        "VolumeScale": 0.4
+      },
+      "Duration": 2.0968542,
+      "MaxDistance": 3015.0,
+      "Priority": 10.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_CloseDinoFoleyWaterOcclude_Small'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Dinos/Other/ATT_CloseDinoFoleyWaterOcclude_Small.0"
+      }
+    }
+  }
+]

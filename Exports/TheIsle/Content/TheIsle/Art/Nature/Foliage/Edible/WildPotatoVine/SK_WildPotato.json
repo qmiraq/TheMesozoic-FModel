@@ -1,0 +1,221 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SK_WildPotato'",
+      "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/WildPotatoVine/SK_WildPotato.2"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 0.9418985,
+              "Y": -3.630528,
+              "Z": 0.41402203
+            },
+            "Radius": 17.583885,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "CollisionProfileName": "Foliage",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "6F2FC2AA4C1F72CE85D9E3ACD46C655D",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 24206,
+        "SizeOnDisk": 24206,
+        "OffsetInFile": "0x665"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SK_WildPotato'",
+      "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/WildPotatoVine/SK_WildPotato.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 7610,
+        "SizeOnDisk": 7610,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SK_WildPotato",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/Art/Nature/Foliage/Edible/WildPotatoVine/SK_WildPotato",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_CHW_AtlasPotato'",
+            "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/ChanterelleMushroom/Materials/MI_CHW_AtlasPotato.0"
+          },
+          "MaterialSlotName": "defaultMat_001",
+          "ImportedMaterialSlotName": "defaultMat_001",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 143.65688,
+            "LocalUVDensities[1]": 56.55167,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 56.55167,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.82543373,
+          "Y": -0.1549921,
+          "Z": 0.3471346
+        },
+        "BoxExtent": {
+          "X": 15.80415,
+          "Y": 13.668408,
+          "Z": 7.440834
+        },
+        "SphereRadius": 17.991052627563477
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SK_WildPotato:BodySetup_1'",
+      "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/WildPotatoVine/SK_WildPotato.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SK_WildPotato:NavCollision_2'",
+      "ObjectPath": "/Game/TheIsle/Art/Nature/Foliage/Edible/WildPotatoVine/SK_WildPotato.1"
+    },
+    "LightingGuid": "E7859A15-466271FC-7F9096BE-E2C0B171",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 494,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 329,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 0.87849474,
+          "Y": 0.24762964,
+          "Z": 0.3471346
+        },
+        "BoxExtent": {
+          "X": 16.01131,
+          "Y": 14.07103,
+          "Z": 7.440834
+        },
+        "SphereRadius": 21.925028
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BodySetup'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Dome_Floor'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dome/Meshes/Modular/SM_Dome_Floor.2"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Detector",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "TinyCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "SmallCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MediumCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WeatherCamera",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "CollisionTraceFlag": "CTF_UseComplexAsSimple"
+    },
+    "BodySetupGuid": "7F954B6B41962FF57E10958E958C3EC8",
+    "CookedFormatData": {
+      "Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 706,
+        "SizeOnDisk": 706,
+        "OffsetInFile": "0x3C7"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'NavCollision'",
+    "Outer": {
+      "ObjectName": "StaticMesh'SM_Dome_Floor'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dome/Meshes/Modular/SM_Dome_Floor.2"
+    },
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 910,
+        "SizeOnDisk": 910,
+        "OffsetInFile": "0x39"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Dome_Floor",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMesh'",
+    "Package": "/Game/TheIsle/Art/Human/Structures/Dome/Meshes/Modular/SM_Dome_Floor",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Concrete_Ceiling'",
+            "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dome/Materials/MI_Concrete_Ceiling.0"
+          },
+          "MaterialSlotName": "MI_Dome_Interior_Kit_Floor",
+          "ImportedMaterialSlotName": "MI_Dome_Interior_Kit_Floor",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 300.04044,
+            "LocalUVDensities[1]": 333.47128,
+            "LocalUVDensities[2]": 0.0,
+            "LocalUVDensities[3]": 0.0
+          },
+          "OverlayMaterialInterface": null
+        }
+      ],
+      "LightmapUVDensity": 300.04044,
+      "LightMapResolution": 64,
+      "MeshPaintTextureCoordinateIndex": 1,
+      "MeshPaintTextureResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 150.0,
+          "Y": -150.0,
+          "Z": 3.9999995
+        },
+        "BoxExtent": {
+          "X": 150.0,
+          "Y": 150.0,
+          "Z": 0.9999999
+        },
+        "SphereRadius": 212.13439136491183
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Dome_Floor:BodySetup_0'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dome/Meshes/Modular/SM_Dome_Floor.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Dome_Floor:NavCollision_0'",
+      "ObjectPath": "/Game/TheIsle/Art/Human/Structures/Dome/Meshes/Modular/SM_Dome_Floor.1"
+    },
+    "LightingGuid": "B5C20212-49F34FB2-3C1077A7-2A027B20",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 10,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 19,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": null,
+          "VertexBuffer": null,
+          "ColorVertexBuffer": null
+        }
+      ],
+      "NaniteResources": {
+        "StreamablePages": null,
+        "AssemblyTransforms": [],
+        "AssemblyBoneAttachmentData": null,
+        "BoneIndices": null,
+        "VoxelMaterialsMask": 0,
+        "MeshBounds": null,
+        "PageRangeLookup": null,
+        "NumRootPages": 0,
+        "PositionPrecision": 0,
+        "NormalPrecision": 0,
+        "NumInputTriangles": 0,
+        "NumInputVertices": 0,
+        "NumInputMeshes": 0,
+        "NumInputTexCoords": 0,
+        "NumClusters": 0,
+        "NumInputCurves": 0,
+        "ResourceFlags": "NONE"
+      },
+      "Bounds": {
+        "Origin": {
+          "X": 150.0,
+          "Y": -150.0,
+          "Z": 3.9999995
+        },
+        "BoxExtent": {
+          "X": 150.0,
+          "Y": 150.0,
+          "Z": 0.9999999
+        },
+        "SphereRadius": 212.13438
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

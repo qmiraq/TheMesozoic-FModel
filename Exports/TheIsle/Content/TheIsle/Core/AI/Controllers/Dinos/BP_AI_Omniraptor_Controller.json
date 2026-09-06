@@ -1,0 +1,418 @@
+[
+  {
+    "Type": "AIPerceptionComponent",
+    "Name": "AIPerception Component",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AIPerceptionComponent'",
+    "Outer": {
+      "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+    },
+    "Properties": {
+      "SensesConfig": [
+        {
+          "ObjectName": "AISenseConfig_Sight'Default__BP_AI_Omniraptor_Controller_C:Sight Config'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.3"
+        },
+        {
+          "ObjectName": "AISenseConfig_Damage'Default__BP_AI_Omniraptor_Controller_C:Damage Config'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.1"
+        },
+        {
+          "ObjectName": "AISenseConfig_Hearing'Default__BP_AI_Omniraptor_Controller_C:Hearing Config'",
+          "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.2"
+        }
+      ],
+      "OnPerceptionUpdated": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+              "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+            },
+            "FunctionName": "OnPerceptionUpdated"
+          }
+        ]
+      },
+      "OnTargetPerceptionUpdated": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+              "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+            },
+            "FunctionName": "OnPerceptionTargetUpdated"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AISenseConfig_Damage",
+    "Name": "Damage Config",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AISenseConfig_Damage'",
+    "Outer": {
+      "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+    }
+  },
+  {
+    "Type": "AISenseConfig_Hearing",
+    "Name": "Hearing Config",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AISenseConfig_Hearing'",
+    "Outer": {
+      "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+    },
+    "Properties": {
+      "HearingRange": 4000.0
+    }
+  },
+  {
+    "Type": "AISenseConfig_Sight",
+    "Name": "Sight Config",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AISenseConfig_Sight'",
+    "Outer": {
+      "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+    },
+    "Properties": {
+      "SightRadius": 6000.0,
+      "LoseSightRadius": 6100.0,
+      "PeripheralVisionAngleDegrees": 120.0
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AI_Omniraptor_Controller_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller",
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_AI_Omniraptor_Controller_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AI_Omniraptor_Controller_C:ExecuteUbergraph_BP_AI_Omniraptor_Controller'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'TIAIOmniraptor'",
+      "ObjectPath": "/Script/TheIsle"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AI_Omniraptor_Controller_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.8"
+      },
+      {
+        "ObjectName": "Function'BP_AI_Omniraptor_Controller_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.9"
+      },
+      {
+        "ObjectName": "Function'BP_AI_Omniraptor_Controller_C:ExecuteUbergraph_BP_AI_Omniraptor_Controller'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsAdult",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AI_Omniraptor_Controller": {
+        "ObjectName": "Function'BP_AI_Omniraptor_Controller_C:ExecuteUbergraph_BP_AI_Omniraptor_Controller'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.7"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_AI_Omniraptor_Controller_C:ReceiveTick'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.9"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_AI_Omniraptor_Controller_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.8"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_NotPlaceable | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AI_Omniraptor_Controller_C",
+    "Name": "Default__BP_AI_Omniraptor_Controller_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.BP_AI_Omniraptor_Controller_C'",
+    "Package": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AttackData": [
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_Bite_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Attacks/GA_Bite.0"
+          },
+          "MaxRange": 320.0,
+          "MinRange": 0.0,
+          "MinStamina": 0.0,
+          "ChanceToUse": 0.8,
+          "Cooldown": 0.0,
+          "AbilityDirection": "EAttackDirection::AD_Forward",
+          "AbilityType": "EAttackType::AT_Attack",
+          "bCanUseInAir": true,
+          "bCanUseInWater": true,
+          "bDoesDamageOverTime": false,
+          "IsMelee": true,
+          "MinGrowthRequired": 0.0,
+          "TimeSinceLastUse": 0.0,
+          "MinTargetSize": 0.0,
+          "MaxTargetSize": 0.0,
+          "ProhibitedTargetClasses": null
+        },
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_PounceReal_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Attacks/GA_PounceReal.0"
+          },
+          "MaxRange": 550.0,
+          "MinRange": 200.0,
+          "MinStamina": 0.3,
+          "ChanceToUse": 0.6,
+          "Cooldown": 7.0,
+          "AbilityDirection": "EAttackDirection::AD_Forward",
+          "AbilityType": "EAttackType::AT_Attack",
+          "bCanUseInAir": true,
+          "bCanUseInWater": false,
+          "bDoesDamageOverTime": false,
+          "IsMelee": false,
+          "MinGrowthRequired": 0.1,
+          "TimeSinceLastUse": 0.0,
+          "MinTargetSize": 0.0,
+          "MaxTargetSize": 0.0,
+          "ProhibitedTargetClasses": null
+        },
+        {
+          "Ability": {
+            "ObjectName": "BlueprintGeneratedClass'GA_DirectionalOmniraptorBite_C'",
+            "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/Attacks/Directional/GA_DirectionalOmniraptorBite.0"
+          },
+          "MaxRange": 400.0,
+          "MinRange": 0.0,
+          "MinStamina": 0.0,
+          "ChanceToUse": 1.0,
+          "Cooldown": 0.0,
+          "AbilityDirection": "EAttackDirection::AD_Forward",
+          "AbilityType": "EAttackType::AT_Attack",
+          "bCanUseInAir": true,
+          "bCanUseInWater": true,
+          "bDoesDamageOverTime": false,
+          "IsMelee": true,
+          "MinGrowthRequired": 0.0,
+          "TimeSinceLastUse": 0.0,
+          "MinTargetSize": 0.0,
+          "MaxTargetSize": 0.0,
+          "ProhibitedTargetClasses": null
+        }
+      ],
+      "bStartAILogicOnPossess": true,
+      "bSetControlRotationFromPawnOrientation": false,
+      "PathFollowingComponent": {
+        "ObjectName": "CrowdFollowingComponent'Default__BP_AI_Omniraptor_Controller_C:PathFollowingComponent'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.6"
+      },
+      "PerceptionComponent": {
+        "ObjectName": "AIPerceptionComponent'Default__BP_AI_Omniraptor_Controller_C:AIPerception Component'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.0"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__BP_AI_Omniraptor_Controller_C:TransformComponent0'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.11"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_AI_Omniraptor_Controller_C:TransformComponent0'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.11"
+      },
+      "OnTakeAnyDamage": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+              "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+            },
+            "FunctionName": "OnTakeDamage"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CrowdFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CrowdFollowingComponent'",
+    "Outer": {
+      "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AI_Omniraptor_Controller",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.4"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.4"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.4"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BP_AI_Omniraptor_Controller_C'Default__BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.5"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AI_Omniraptor_Controller_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.13"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_AI_Omniraptor_Controller_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.10"
+      },
+      "VariableGuid": "8801A657-4685223D-5B531181-217031F6",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AI_Omniraptor_Controller_C'",
+      "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.4"
+    },
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_AI_Omniraptor_Controller_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/AI/Controllers/Dinos/BP_AI_Omniraptor_Controller.12"
+      }
+    }
+  }
+]

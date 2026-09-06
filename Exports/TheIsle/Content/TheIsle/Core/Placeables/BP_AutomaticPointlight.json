@@ -1,0 +1,817 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AutomaticPointlight_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.0"
+    },
+    "Properties": {
+      "bHasCookedComponentInstancingData": true,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_AutomaticPointlight_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.15"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_AutomaticPointlight_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:ExecuteUbergraph_BP_AutomaticPointlight'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.2"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:UserConstructionScript'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.8"
+      },
+      {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.3"
+      },
+      {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:TurnOn'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.6"
+      },
+      {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:TurnOff'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.4"
+      },
+      {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:TurnOffShadows'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.5"
+      },
+      {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:TurnOnShadows'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.7"
+      },
+      {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:ExecuteUbergraph_BP_AutomaticPointlight'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Light",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'PointLightComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMeshComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "LightIntensity",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMeshAsset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMesh'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "LightColor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "Class'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "AttenuationRadius",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "SourceRadius",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "SourceLength",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Temperature",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bUseTemperature",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "IndirectLightingIntensity",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "VolumetricScatteringIntensity",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "IntensityUnits",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "Class'ELightUnits'",
+          "ObjectPath": "/Script/Engine"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TurningOnSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'SoundBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TurningOffSound",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "Class'SoundBase'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "LightVariationMultiplier",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "IMaterial",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "EmissiveColor",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'LinearColor'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AutomaticPointlight": {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:ExecuteUbergraph_BP_AutomaticPointlight'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.2"
+      },
+      "TurnOnShadows": {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:TurnOnShadows'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.7"
+      },
+      "TurnOffShadows": {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:TurnOffShadows'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.5"
+      },
+      "TurnOff": {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:TurnOff'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.4"
+      },
+      "TurnOn": {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:TurnOn'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.6"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.3"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BP_AutomaticPointlight_C:UserConstructionScript'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.8"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NoExport | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AutomaticPointlight_C'Default__BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_AutomaticPointlight_C",
+    "Name": "Default__BP_AutomaticPointlight_C",
+    "Flags": "RF_Public | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.BP_AutomaticPointlight_C'",
+    "Package": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight",
+    "Template": {
+      "ObjectName": "BP_BaseLight_C'Default__BP_BaseLight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.1"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "LightIntensity": 5.0,
+      "StaticMeshAsset": {
+        "ObjectName": "StaticMesh'SM_Fixture_Light'",
+        "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Light_Fixture/Meshes/SM_Fixture_Light.2"
+      },
+      "LightColor": {
+        "R": 1.0,
+        "G": 0.040702,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF3900"
+      },
+      "AttenuationRadius": 100.0,
+      "SourceRadius": 10.0,
+      "Temperature": 1150.0,
+      "bUseTemperature": true,
+      "VolumetricScatteringIntensity": 1.0,
+      "IntensityUnits": "ELightUnits::Candelas",
+      "TurningOnSound": {
+        "ObjectName": "SoundCue'CUE_LightTurningOn_TEST'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/CUE_LightTurningOn_TEST.0"
+      },
+      "TurningOffSound": {
+        "ObjectName": "SoundCue'CU_Monitor_Off'",
+        "ObjectPath": "/Game/TheIsle/Sound/UI/Cues/CU_Monitor_Off.0"
+      },
+      "LightVariationMultiplier": 1.0,
+      "EmissiveColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      },
+      "RemoteRole": "ROLE_SimulatedProxy"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AutomaticPointlight",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetMaterial_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInterface'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'MaterialInstanceDynamic'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetIntensity_NewIntensity_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "Super": {
+      "ObjectName": "Function'BP_BaseLight_C:ReceiveBeginPlay'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.9"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TurnOff",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "Super": {
+      "ObjectName": "Function'BP_BaseLight_C:TurnOff'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.12"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TurnOffShadows",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "Super": {
+      "ObjectName": "Function'BP_BaseLight_C:TurnOffShadows'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.13"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TurnOn",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "Super": {
+      "ObjectName": "Function'BP_BaseLight_C:TurnOn'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.14"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "TurnOnShadows",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "Super": {
+      "ObjectName": "Function'BP_BaseLight_C:TurnOnShadows'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_BaseLight.15"
+    },
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Flags": "RF_Public | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Function'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDedicatedServer_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SetStaticMesh_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetIndirectLightingIntensity_NewIntensity_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetTemperature_NewTemperature_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetSourceLength_NewValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetSourceRadius_bNewValue_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_SetAttenuationRadius_NewRadius_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Flags": "RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "Light_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PointLightComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "Properties": {
+      "IntensityUnits": "ELightUnits::Lumens",
+      "Intensity": 5.0,
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": 50.0,
+        "Y": 0.0,
+        "Z": 580.0
+      },
+      "bVisible": false
+    },
+    "IntensityNits": 0.0
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SceneComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AutomaticPointlight_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.15"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_AutomaticPointlight_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.11"
+      },
+      "VariableGuid": "C1511975-4335A39A-A3FDC5B6-49AE016A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AutomaticPointlight_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.15"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'BP_AutomaticPointlight_C:StaticMeshComponent_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.16"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "StaticMesh",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'StaticMeshComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_BaseLight_C",
+      "VariableGuid": "188838DF-437A4AC6-FA85A4AD-2ABCAD42",
+      "InternalVariableName": "StaticMeshComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SCS_Node'",
+    "Outer": {
+      "ObjectName": "SimpleConstructionScript'BP_AutomaticPointlight_C:SimpleConstructionScript_0'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.15"
+    },
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'PointLightComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PointLightComponent'BP_AutomaticPointlight_C:Light_GEN_VARIABLE'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.10"
+      },
+      "CookedComponentInstancingData": {
+        "ChangedPropertyList": [
+          {
+            "PropertyName": "IntensityUnits",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PointLightComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "Intensity",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PointLightComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "CastShadows",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PointLightComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "RelativeLocation",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PointLightComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          },
+          {
+            "PropertyName": "X",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "Z",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            }
+          },
+          {
+            "PropertyName": "bVisible",
+            "ArrayIndex": 0,
+            "PropertyScope": {
+              "ObjectName": "Class'PointLightComponent'",
+              "ObjectPath": "/Script/Engine"
+            }
+          }
+        ],
+        "bHasValidCookedData": true
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "BP_BaseLight_C",
+      "VariableGuid": "09ADD64F-4B8D9352-E4CEC5A7-D8B33B7E",
+      "InternalVariableName": "Light"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_AutomaticPointlight_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AutomaticPointlight_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.14"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_AutomaticPointlight_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.13"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_AutomaticPointlight_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.14"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_AutomaticPointlight_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.12"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent_GEN_VARIABLE",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Outer": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AutomaticPointlight_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Placeables/BP_AutomaticPointlight.0"
+    },
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Fixture_Light'",
+        "ObjectPath": "/Game/TheIsle/Art/Human/Props/General/Light_Fixture/Meshes/SM_Fixture_Light.2"
+      }
+    }
+  }
+]

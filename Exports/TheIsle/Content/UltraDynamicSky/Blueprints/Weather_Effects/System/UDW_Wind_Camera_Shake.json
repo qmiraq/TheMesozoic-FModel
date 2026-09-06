@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "UDW_Wind_Camera_Shake_C",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake",
+    "SuperStruct": {
+      "ObjectName": "Class'CameraShakeBase'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassFlags": "CLASS_EditInlineNew | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "UDW_Wind_Camera_Shake_C'Default__UDW_Wind_Camera_Shake_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "CompositeCameraShakePattern",
+    "Name": "CompositeCameraShakePattern_0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'CompositeCameraShakePattern'",
+    "Outer": {
+      "ObjectName": "UDW_Wind_Camera_Shake_C'Default__UDW_Wind_Camera_Shake_C'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake.4"
+    },
+    "Properties": {
+      "ChildPatterns": [
+        {
+          "ObjectName": "PerlinNoiseCameraShakePattern'Default__UDW_Wind_Camera_Shake_C:CompositeCameraShakePattern_0.PerlinNoiseCameraShakePattern_0'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake.2"
+        },
+        {
+          "ObjectName": "PerlinNoiseCameraShakePattern'Default__UDW_Wind_Camera_Shake_C:CompositeCameraShakePattern_0.PerlinNoiseCameraShakePattern_1'",
+          "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PerlinNoiseCameraShakePattern",
+    "Name": "PerlinNoiseCameraShakePattern_0",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PerlinNoiseCameraShakePattern'",
+    "Outer": {
+      "ObjectName": "CompositeCameraShakePattern'Default__UDW_Wind_Camera_Shake_C:CompositeCameraShakePattern_0'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake.1"
+    },
+    "Properties": {
+      "RotationAmplitudeMultiplier": 0.3,
+      "Pitch": {
+        "Frequency": 0.8
+      },
+      "Yaw": {
+        "Frequency": 1.2
+      },
+      "Roll": {
+        "Amplitude": 0.3
+      }
+    }
+  },
+  {
+    "Type": "PerlinNoiseCameraShakePattern",
+    "Name": "PerlinNoiseCameraShakePattern_1",
+    "Flags": "RF_Public | RF_Transactional | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PerlinNoiseCameraShakePattern'",
+    "Outer": {
+      "ObjectName": "CompositeCameraShakePattern'Default__UDW_Wind_Camera_Shake_C:CompositeCameraShakePattern_0'",
+      "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake.1"
+    },
+    "Properties": {
+      "LocationAmplitudeMultiplier": 0.0,
+      "RotationAmplitudeMultiplier": 0.25,
+      "RotationFrequencyMultiplier": 0.85,
+      "Pitch": {
+        "Frequency": 7.0
+      },
+      "Yaw": {
+        "Frequency": 6.0
+      },
+      "Roll": {
+        "Amplitude": 0.5,
+        "Frequency": 8.0
+      },
+      "BlendInTime": 0.5,
+      "BlendOutTime": 0.5
+    }
+  },
+  {
+    "Type": "UDW_Wind_Camera_Shake_C",
+    "Name": "Default__UDW_Wind_Camera_Shake_C",
+    "Flags": "RF_Public | RF_Transactional | RF_ClassDefaultObject | RF_ArchetypeObject | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake.UDW_Wind_Camera_Shake_C'",
+    "Package": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake",
+    "Properties": {
+      "RootShakePattern": {
+        "ObjectName": "CompositeCameraShakePattern'Default__UDW_Wind_Camera_Shake_C:CompositeCameraShakePattern_0'",
+        "ObjectPath": "/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Wind_Camera_Shake.1"
+      }
+    }
+  }
+]

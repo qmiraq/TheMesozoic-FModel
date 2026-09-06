@@ -1,0 +1,130 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "AM_Stand_DrinkWater",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'AnimMontage'",
+    "Package": "/Game/TheIsle/Characters/Humans/Animations/00_HumanProto_01/Ti_Manny/AM_Stand_DrinkWater",
+    "Properties": {
+      "CompositeSections": [
+        {
+          "SectionName": "Default",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'AM_Stand_DrinkWater'",
+            "ObjectPath": "/Game/TheIsle/Characters/Humans/Animations/00_HumanProto_01/Ti_Manny/AM_Stand_DrinkWater.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 3.6,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'Stand_DrinkWater'",
+            "ObjectPath": "/Game/TheIsle/Characters/Humans/Animations/00_HumanProto_01/Ti_Manny/Stand_DrinkWater.0"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "DefaultSlot",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'Stand_DrinkWater'",
+                  "ObjectPath": "/Game/TheIsle/Characters/Humans/Animations/00_HumanProto_01/Ti_Manny/Stand_DrinkWater.0"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 3.6,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "CommonTargetFrameRate": {
+        "Numerator": 25
+      },
+      "Notifies": [
+        {
+          "TriggerTimeOffset": -0.0001,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "BPAN_Generic_C",
+          "Notify": {
+            "ObjectName": "BPAN_Generic_C'AM_Stand_DrinkWater:BPAN_Generic_C_1'",
+            "ObjectPath": "/Game/TheIsle/Characters/Humans/Animations/00_HumanProto_01/Ti_Manny/AM_Stand_DrinkWater.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 3.6,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bCanBeFilteredViaRequest": true,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'AM_Stand_DrinkWater'",
+            "ObjectPath": "/Game/TheIsle/Characters/Humans/Animations/00_HumanProto_01/Ti_Manny/AM_Stand_DrinkWater.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 3.6,
+          "LinkValue": 3.6,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'Stand_DrinkWater'",
+            "ObjectPath": "/Game/TheIsle/Characters/Humans/Animations/00_HumanProto_01/Ti_Manny/Stand_DrinkWater.0"
+          }
+        }
+      ],
+      "SequenceLength": 3.6,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SKEL_TiMannyNew'",
+        "ObjectPath": "/Game/TheIsle/Characters/Humans/Mesh/TiManny/SKEL_TiMannyNew.7"
+      }
+    },
+    "SkeletonGuid": "14B2D2FD-4B1183FC-2A2FBE92-BE53FA85"
+  },
+  {
+    "Type": "BPAN_Generic_C",
+    "Name": "BPAN_Generic_C_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "BlueprintGeneratedClass'/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BPAN_Generic.BPAN_Generic_C'",
+    "Outer": {
+      "ObjectName": "AnimMontage'AM_Stand_DrinkWater'",
+      "ObjectPath": "/Game/TheIsle/Characters/Humans/Animations/00_HumanProto_01/Ti_Manny/AM_Stand_DrinkWater.0"
+    },
+    "Template": {
+      "ObjectName": "BPAN_Generic_C'Default__BPAN_Generic_C'",
+      "ObjectPath": "/Game/TheIsle/Core/Characters/Dinosaurs/Abilities/AnimNotify/BPAN_Generic.1"
+    },
+    "Properties": {
+      "EventTag": {
+        "TagName": "Event.Montage.EndAbility"
+      }
+    }
+  }
+]

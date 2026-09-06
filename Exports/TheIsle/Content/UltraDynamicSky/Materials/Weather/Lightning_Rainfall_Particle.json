@@ -1,0 +1,266 @@
+[
+  {
+    "Type": "Material",
+    "Name": "Lightning_Rainfall_Particle",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'Material'",
+    "Package": "/Game/UltraDynamicSky/Materials/Weather/Lightning_Rainfall_Particle",
+    "Properties": {
+      "BlendMode": "BLEND_Additive",
+      "MaterialDecalResponse": "MDR_None",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "bAllowNegativeEmissiveColor": true,
+      "TranslucencyPass": "MTP_BeforeDOF",
+      "TranslucencyLightingMode": "TLM_VolumetricDirectional",
+      "bTangentSpaceNormal": false,
+      "bUsedWithNiagaraSprites": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "bCastRayTracedShadows": false,
+      "bUseTranslucencyVertexFog": false,
+      "PixelDepthOffsetMode": "PDOM_Legacy",
+      "StateId": "C21AAE92-40814C5D-2C97598C-28A8ACD8",
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 2.0,
+          "UVChannelIndex": 0,
+          "TextureName": "ParticleClouds"
+        }
+      ],
+      "bIncludedInBaseGame": true
+    },
+    "LoadedMaterialResources": [],
+    "CachedExpressionData": {
+      "RuntimeEntries": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[1]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[2]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[3]": {
+        "ParameterInfoSet": [
+          {
+            "Name": "Cloud_Profile",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Formation Texture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "RuntimeEntries[4]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[5]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[6]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[7]": {
+        "ParameterInfoSet": []
+      },
+      "RuntimeEntries[8]": {
+        "ParameterInfoSet": [
+          {
+            "Name": "TwoLayers",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Simplified Extinction",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          {
+            "Name": "Apply Drawn Target",
+            "Association": "GlobalParameter",
+            "Index": -1
+          }
+        ]
+      },
+      "ScalarPrimitiveDataIndexValues": [],
+      "VectorPrimitiveDataIndexValues": [],
+      "ScalarValues": [],
+      "StaticSwitchValues": [
+        false,
+        false,
+        true
+      ],
+      "DynamicSwitchValues": [
+        false,
+        false,
+        false
+      ],
+      "VectorValues": [],
+      "DoubleVectorValues": [],
+      "TextureValues": [
+        {
+          "AssetPathName": "/Game/UltraDynamicSky/Textures/Volumetric_Clouds/Cloud_Profile.Cloud_Profile",
+          "SubPathString": ""
+        },
+        {
+          "AssetPathName": "/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_32.3D_Cells_32",
+          "SubPathString": ""
+        }
+      ],
+      "TextureCollectionValues": [],
+      "FontValues": [],
+      "FontPageValues": [],
+      "RuntimeVirtualTextureValues": [],
+      "SparseVolumeTextureValues": [],
+      "ReferencedTextures": [
+        {
+          "ObjectName": "VolumeTexture'3D_Cells_64'",
+          "ObjectPath": "/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_64.0"
+        },
+        {
+          "ObjectName": "Texture2D'Cloud_Profile'",
+          "ObjectPath": "/Game/UltraDynamicSky/Textures/Volumetric_Clouds/Cloud_Profile.0"
+        },
+        {
+          "ObjectName": "VolumeTexture'3D_Cells_32'",
+          "ObjectPath": "/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_32.0"
+        },
+        {
+          "ObjectName": "TextureRenderTarget2D'CloudPaintTarget'",
+          "ObjectPath": "/Game/UltraDynamicSky/Textures/Sky/CloudPaintTarget.0"
+        },
+        {
+          "ObjectName": "Texture2D'ParticleClouds'",
+          "ObjectPath": "/Game/UltraDynamicSky/Textures/Weather/ParticleClouds.0"
+        }
+      ],
+      "ReferencedTextureCollections": [],
+      "ReferencedExternalCodeExpressionClasses": [
+        {
+          "ObjectName": "Class'MaterialExpressionCloudSampleAttribute'",
+          "ObjectPath": "/Script/Engine"
+        },
+        {
+          "ObjectName": "Class'MaterialExpressionParticleRandom'",
+          "ObjectPath": "/Script/Engine"
+        },
+        {
+          "ObjectName": "Class'MaterialExpressionParticleRelativeTime'",
+          "ObjectPath": "/Script/Engine"
+        },
+        {
+          "ObjectName": "Class'MaterialExpressionParticleColor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      ],
+      "FunctionInfos": [
+        {
+          "StateId": "C05AD785-473A96B7-93C75C88-50659472",
+          "Function": {
+            "ObjectName": "MaterialFunction'Cloud_Altitude_Mask'",
+            "ObjectPath": "/Game/UltraDynamicSky/Materials/Weather/Cloud_Altitude_Mask.0"
+          }
+        },
+        {
+          "StateId": "A23741C2-4D507EE4-DD0AB584-652DC0C7",
+          "Function": {
+            "ObjectName": "MaterialFunction'Volumetric_Clouds_Conservative_Density'",
+            "ObjectPath": "/Game/UltraDynamicSky/Materials/Material_Functions/Volumetric_Clouds_Conservative_Density.0"
+          }
+        },
+        {
+          "StateId": "5F3B7207-44CF3C4A-25EFD7B1-67C3B62F",
+          "Function": {
+            "ObjectName": "MaterialFunction'Hide_Weather_Particle_With_Local_Cloud_Coverage'",
+            "ObjectPath": "/Game/UltraDynamicSky/Materials/Weather/Hide_Weather_Particle_With_Local_Cloud_Coverage.0"
+          }
+        },
+        {
+          "StateId": "EBEF33B3-4758D724-E4E55F9F-C3D66FBA",
+          "Function": {
+            "ObjectName": "MaterialFunction'RadialGradientBasic'",
+            "ObjectPath": "/Game/UltraDynamicSky/Materials/Material_Functions/RadialGradientBasic.0"
+          }
+        },
+        {
+          "StateId": "6E72935E-4C8CC037-48F9B5B3-AF5769AC",
+          "Function": {
+            "ObjectName": "MaterialFunction'Lightning_Color_Scaled'",
+            "ObjectPath": "/Game/UltraDynamicSky/Materials/Weather/Lightning_Color_Scaled.0"
+          }
+        }
+      ],
+      "FunctionInfosStateCRC": 529042921,
+      "ParameterCollectionInfos": [
+        {
+          "StateId": "1DD38A8B-4AA64DA0-A29E208A-06FACCBD",
+          "ParameterCollection": {
+            "ObjectName": "MaterialParameterCollection'UltraDynamicWeather_Parameters'",
+            "ObjectPath": "/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.0"
+          }
+        },
+        {
+          "StateId": "BB73337E-41C07F54-FB50CBBE-AA8AD1B9",
+          "ParameterCollection": {
+            "ObjectName": "MaterialParameterCollection'UDS_VolumetricClouds_MPC'",
+            "ObjectPath": "/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.0"
+          }
+        }
+      ],
+      "GrassTypes": [],
+      "MaterialLayers": {
+        "Layers": [],
+        "Blends": [],
+        "Tree": {
+          "Nodes": [],
+          "Payloads": [],
+          "Root": -1
+        }
+      },
+      "DynamicParameterNames": [
+        "Param1",
+        "Param2",
+        "Param3",
+        "Param4"
+      ],
+      "QualityLevelsUsed": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "bHasMaterialLayers": false,
+      "bHasRuntimeVirtualTextureOutput": false,
+      "bHasFirstPersonOutput": false,
+      "bHasMaterialCacheOutput": false,
+      "bMaterialCacheHasNonUVDerivedExpression": false,
+      "bHasSceneColor": false,
+      "bHasPerInstanceCustomData": false,
+      "bHasPerInstanceRandom": false,
+      "bHasVertexInterpolator": false,
+      "bHasCustomizedUVs": false,
+      "bHasMeshPaintTexture": false,
+      "bHasWorldPosition": true,
+      "PropertyConnectedMask": 4099
+    },
+    "ReferencedTextures": [
+      {
+        "ObjectName": "Texture2D'Cloud_Profile'",
+        "ObjectPath": "/Game/UltraDynamicSky/Textures/Volumetric_Clouds/Cloud_Profile.0"
+      },
+      {
+        "ObjectName": "Texture2D'ParticleClouds'",
+        "ObjectPath": "/Game/UltraDynamicSky/Textures/Weather/ParticleClouds.0"
+      },
+      {
+        "ObjectName": "TextureRenderTarget2D'CloudPaintTarget'",
+        "ObjectPath": "/Game/UltraDynamicSky/Textures/Sky/CloudPaintTarget.0"
+      }
+    ]
+  }
+]

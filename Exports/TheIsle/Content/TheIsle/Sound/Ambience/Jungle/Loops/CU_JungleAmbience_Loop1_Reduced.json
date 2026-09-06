@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "SoundCue",
+    "Name": "CU_JungleAmbience_Loop1_Reduced",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SoundCue'",
+    "Package": "/Game/TheIsle/Sound/Ambience/Jungle/Loops/CU_JungleAmbience_Loop1_Reduced",
+    "Properties": {
+      "FirstNode": null,
+      "VolumeMultiplier": 1.5,
+      "bPrimeOnLoad": true,
+      "SoundClassObject": {
+        "ObjectName": "SoundClass'Ambi_BirdCalls'",
+        "ObjectPath": "/Game/TheIsle/Sound/Classes/Ambi_BirdCalls.0"
+      },
+      "bOverrideConcurrency": true,
+      "bHasDelayNode": true,
+      "ConcurrencyOverrides": {
+        "MaxCount": 1
+      },
+      "Duration": 10000.0,
+      "MaxDistance": 2097152.0,
+      "Priority": 100.0,
+      "AttenuationSettings": {
+        "ObjectName": "SoundAttenuation'ATT_AmbientLoops'",
+        "ObjectPath": "/Game/TheIsle/Sound/_Utilities/Attenuation/Amb/ATT_AmbientLoops.0"
+      },
+      "SoundSubmixSends": [
+        {
+          "SendStage": "ESubmixSendStage::PostDistanceAttenuation",
+          "SendLevelControlMethod": "ESendLevelControlMethod::Manual",
+          "SoundSubmix": {
+            "ObjectName": "SoundSubmix'Submix_LargeRoars'",
+            "ObjectPath": "/Game/TheIsle/Sound/_Utilities/SubMixes/Submix_LargeRoars.0"
+          },
+          "SendLevel": 0.2,
+          "DisableManualSendClamp": false,
+          "MinSendLevel": 0.0,
+          "MaxSendLevel": 100.0,
+          "MinSendDistance": 100.0,
+          "MaxSendDistance": 1000.0,
+          "CustomSendLevelCurve": {
+            "EditorCurveData": {
+              "Keys": [],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          }
+        }
+      ]
+    }
+  }
+]

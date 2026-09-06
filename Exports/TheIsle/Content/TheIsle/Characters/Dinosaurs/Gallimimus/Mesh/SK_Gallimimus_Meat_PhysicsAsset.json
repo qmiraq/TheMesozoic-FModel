@@ -1,0 +1,161 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Gallimimus_Meat_PhysicsAsset",
+    "Flags": "RF_Public | RF_Standalone | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Package": "/Game/TheIsle/Characters/Dinosaurs/Gallimimus/Mesh/SK_Gallimimus_Meat_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Gallimimus_Meat_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Gallimimus/Mesh/SK_Gallimimus_Meat_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Gallimimus_Meat_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Gallimimus/Mesh/SK_Gallimimus_Meat_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Gallimimus_Meat_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Gallimimus/Mesh/SK_Gallimimus_Meat_PhysicsAsset.1"
+        }
+      ],
+      "SolverSettings": {
+        "bUseManifolds": false
+      },
+      "ThumbnailInfo": null
+    },
+    "CollisionDisableTable": [
+      {
+        "Key": {
+          "Indices": [
+            0,
+            1
+          ]
+        },
+        "Value": false
+      }
+    ]
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_Gallimimus_Meat_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Gallimimus/Mesh/SK_Gallimimus_Meat_PhysicsAsset.0"
+    },
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "DinoSpine02",
+        "ConstraintBone1": "DinoSpine02",
+        "ConstraintBone2": "DinoSpine01",
+        "Pos2": {
+          "X": 40.20798,
+          "Y": -5.9173267E-06,
+          "Z": 1.2773999E-06
+        },
+        "PriAxis2": {
+          "X": 0.99304926,
+          "Y": -0.11769957,
+          "Z": -5.173797E-08
+        },
+        "SecAxis2": {
+          "X": 0.11769957,
+          "Y": 0.99304926,
+          "Z": 8.201269E-08
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_Gallimimus_Meat_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Gallimimus/Mesh/SK_Gallimimus_Meat_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 22.806055,
+              "Y": -10.315646,
+              "Z": 1.9417102
+            },
+            "Rotation": {
+              "Pitch": -7.116091,
+              "Yaw": -90.0,
+              "Roll": -60.970722
+            },
+            "Radius": 26.61205,
+            "Length": 28.683666,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "DinoSpine01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "589C94B649C02F0EDD42C19BD822230D"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Flags": "RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Outer": {
+      "ObjectName": "PhysicsAsset'SK_Gallimimus_Meat_PhysicsAsset'",
+      "ObjectPath": "/Game/TheIsle/Characters/Dinosaurs/Gallimimus/Mesh/SK_Gallimimus_Meat_PhysicsAsset.0"
+    },
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 24.798788,
+              "Y": -11.852364,
+              "Z": 2.599068
+            },
+            "Rotation": {
+              "Pitch": -6.305651,
+              "Yaw": -90.0,
+              "Roll": -97.13323
+            },
+            "Radius": 22.543886,
+            "Length": 23.961897,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "DinoSpine02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "435790A749AB7E58A4B92199CABC7ADF"
+  }
+]
